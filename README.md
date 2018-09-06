@@ -15,6 +15,8 @@ Wir freuen uns auf deine Bewerbung noch im **September 2018!**
 jobs@renuo.ch
 
 
+
+
 Du hast den ersten Schritt zu deinem Renuo Praktikum geschafft:
 
 Hier sind alle wichtigen Infos: 
