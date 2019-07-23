@@ -10,7 +10,7 @@ IO.puts "Hello World"
 console.log('Hello World');
 ```
 
-Wir freuen uns auf deine Bewerbung noch im **September 2018!** 
+Wir freuen uns auf deine Bewerbung noch im **September 2020!** 
 
 jobs@renuo.ch
 
@@ -22,6 +22,7 @@ Du hast den ersten Schritt zu deinem Renuo Praktikum geschafft:
 Hier sind alle wichtigen Infos: 
 - [Praktikum bei der Renuo](https://github.com/renuo/renuo-praktikum/raw/master/Praktikum%20bei%20der%20Renuo.pdf)
 - [renuo.ch/jobs](https://www.renuo.ch/jobs)
+- [Brauchst Du noch mehr Infos?](https://github.com/renuo/renuo-praktikum/raw/master/Praktikum%20bei%20der%20Renuo.pdf)
 
 Hier warten ein paar Herausforderungen falls dir langweilig wird:
 - [Katas](http://kata-log.rocks/starter)
