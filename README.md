@@ -15,7 +15,7 @@ puts "你好，世界"
 Wir freuen uns auf deine Bewerbung noch im **September 2020!** 
 
 **[Weitere Infos zum Praktikum](https://www.renuo.ch/en/jobs/ims-internship-2020-2021)**
-<p style="font-size: 100px;">Bewirb dich hier 👉 jobs@renuo.ch</p>
+<p style="font-size: 32pt;">Bewirb dich hier 👉 jobs@renuo.ch</p>
 
 <img width="1029" alt="screen shot 2018-09-06 at 13 56 46" src="https://user-images.githubusercontent.com/20790833/45155918-ce7cb180-b1dc-11e8-9444-31876dcecfea.png">
 
