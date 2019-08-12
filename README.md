@@ -26,7 +26,7 @@ Hier sind alle wichtigen Infos:
 - [Praktikum bei der Renuo](https://github.com/renuo/renuo-praktikum/raw/master/Praktikum%20bei%20der%20Renuo.pdf)
 - [renuo.ch/jobs](https://www.renuo.ch/en/jobs/ims-internship-2020-2021)
 
-Hier warten noch andere Herausforderungen falls dir langweilig wird:
+Hier warten noch andere Herausforderungen, falls dir langweilig wird:
 - [Katas](http://kata-log.rocks/starter)
 - [Coding Game](https://www.codingame.com/start)
 - [Project Euler](https://projecteuler.net/)
