@@ -1,13 +1,16 @@
 # Willkommen
 
 ```ruby
-puts 'Hello World'
-```
-```elixir
-IO.puts "Hello World"
-```
-```js
-console.log('Hello World');
+puts "Hello World"
+puts "Bonjour le monde"
+puts "Hola Mundo"
+puts "Olá Mundo"
+puts "Ciao Mondo"
+puts "Talofa Lalolagi"
+puts "Hallo wereld"
+puts "Привет, Мир"
+puts "హలో వరల్డ్"
+puts "你好，世界"
 ```
 
 Wir freuen uns auf deine Bewerbung noch im **September 2020!** 
