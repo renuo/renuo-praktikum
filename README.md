@@ -19,9 +19,6 @@ jobs@renuo.ch
 
 <img width="1029" alt="screen shot 2018-09-06 at 13 56 46" src="https://user-images.githubusercontent.com/20790833/45155918-ce7cb180-b1dc-11e8-9444-31876dcecfea.png">
 
-
-Du hast den ersten Schritt zu deinem Renuo Praktikum geschafft:
-
 Hier sind alle wichtigen Infos: 
 - [Praktikum bei der Renuo](https://github.com/renuo/renuo-praktikum/raw/master/Praktikum%20bei%20der%20Renuo.pdf)
 - [renuo.ch/jobs](https://www.renuo.ch/en/jobs/ims-internship-2020-2021)
