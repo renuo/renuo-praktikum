@@ -34,3 +34,5 @@ Spannende Artikel die du lesen solltest: 🗞
 - [The Absolute Minimum Every Software Developer Must Know About Unicode](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 
 <p style="font-size: 32pt;">Alles Gute und bis dann! 🙂👍</p>
+
+<img src="https://user-images.githubusercontent.com/42026584/63007974-ef846280-be81-11e9-94ca-6b98f29726eb.png" height="80px"/>
