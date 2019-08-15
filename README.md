@@ -21,6 +21,8 @@ Wir freuen uns auf deine Bewerbung noch im **September 2020! 📅**
 
 Flyer: [Praktikum bei der Renuo 📰](https://github.com/renuo/renuo-praktikum/raw/master/Praktikum%20bei%20der%20Renuo.pdf) 
 
+So wird dein Praktikum: [Praktikumskonzept 📖](https://github.com/renuo/renuo-praktikum/raw/master/Praktikumskonzept%202019.pdf) 
+
 😎 Ruby TDD Code-Challenge: [Repeated Substring](https://github.com/renuo/repeated_substring) 😎
 
 Hier warten noch andere Herausforderungen, falls dir langweilig wird: 🏃‍♀️
