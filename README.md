@@ -23,7 +23,9 @@ Flyer: [Praktikum bei der Renuo 📰](https://github.com/renuo/renuo-praktikum/r
 
 So wird dein Praktikum: [Praktikumskonzept 📖](https://github.com/renuo/renuo-praktikum/raw/master/Praktikumskonzept%202019.pdf) 
 
-😎 Ruby TDD Code-Challenge: [Repeated Substring](https://github.com/renuo/repeated_substring) 😎
+<iframe src="https://github.com/renuo/renuo-praktikum/raw/master/Kontaktseminar%202019.pdf" ></iframe>
+
+<p style="font-size: 20pt;">😎 Ruby TDD Code-Challenge: [Repeated Substring](https://github.com/renuo/repeated_substring) 😎</p>
 
 Hier warten noch andere Herausforderungen, falls dir langweilig wird: 🏃‍♀️
 - [Katas](http://kata-log.rocks/starter)
