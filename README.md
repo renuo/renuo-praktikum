@@ -21,7 +21,7 @@ Wir freuen uns auf deine Bewerbung noch im **September 2020! 📅**
 
 Flyer: [Praktikum bei der Renuo 📰](https://github.com/renuo/renuo-praktikum/raw/master/Praktikum%20bei%20der%20Renuo.pdf) 
 
-So wird dein Praktikum: [Praktikumskonzept 📖](https://github.com/renuo/renuo-praktikum/raw/master/Praktikumskonzept%202019.pdf) 
+So wird dein Praktikum: [Praktikumskonzept 📖](https://github.com/renuo/renuo-praktikum/raw/master/Praktikumskonzept%202020.pdf) 
 
 Noch mehr Infos?: [Slides Kontaktseminar 💻](https://github.com/renuo/renuo-praktikum/raw/master/Kontaktseminar%202019.pdf)
 
