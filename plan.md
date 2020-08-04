@@ -4,15 +4,15 @@ Create a mobile first webpage that displays all the relevant information about r
 
 ## Components
 
-* Homepage
-* About Renuo
+* Homepage *
+* About Renuo * **Janis**
   * Fast travel bar
-* About the internship
+* About the internship *
   * Fast travel bar
 * Gallery
 * Projects
-* Footer
-* Navbar
+* Footer *
+* Navbar * **Nick**
 * Google maps comp
 * Challenges
 * Jobs
