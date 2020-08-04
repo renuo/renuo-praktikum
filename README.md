@@ -1,7 +1,11 @@
-# Renuo Praktikum
+# 👨🏼‍🎓 Renuo Praktikum
+
+![Deploy to GitHub Pages](https://github.com/renuo/renuo-praktikum/workflows/Deploy%20to%20GitHub%20Pages/badge.svg?branch=master)
 
 ## Project setup
 ```
+git clone git@github.com:renuo/renuo-praktikum.git
+cd renuo-praktikum
 npm install
 ```
 
