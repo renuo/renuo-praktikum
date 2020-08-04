@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AboutRenuo/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AboutRenuo from './components/AboutRenuo.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AboutRenuo
   }
 }
 </script>
