@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 80 80">
+    <defs>
+        <path id="a" d="M.09 0h19.524v7.434H.09z"/>
+        <path id="c" d="M.374 0h19.524v7.434H.374V0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#27D79D" d="M52.087 61.81h-24.19a3.717 3.717 0 1 1 0-7.434h24.19a3.717 3.717 0 1 1 0 7.434M64.178 43.715H15.806a3.717 3.717 0 1 1 0-7.434h48.373a3.717 3.717 0 1 1 0 7.434"/>
+        <g transform="translate(12)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="#27D79D" d="M15.896 7.434H3.807a3.717 3.717 0 1 1 0-7.434h12.09a3.717 3.717 0 1 1 0 7.434" mask="url(#b)"/>
+        </g>
+        <g transform="translate(48)">
+            <mask id="d" fill="#fff">
+                <use xlink:href="#c"/>
+            </mask>
+            <path fill="#27D79D" d="M16.181 7.434H4.091a3.717 3.717 0 1 1 0-7.434h12.09a3.717 3.717 0 1 1 0 7.434" mask="url(#d)"/>
+        </g>
+        <path fill="#27D79D" d="M76.265 25.575H3.717a3.717 3.717 0 1 1 0-7.434h72.548a3.717 3.717 0 1 1 0 7.434M36.274 76.283a3.717 3.717 0 1 1 7.434 0 3.717 3.717 0 0 1-7.434 0"/>
+    </g>
+</svg>
