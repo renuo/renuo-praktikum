@@ -1,4 +1,4 @@
-# renuo-praktikum
+# Renuo Praktikum
 
 ## Project setup
 ```
