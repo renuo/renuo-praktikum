@@ -2,6 +2,8 @@
 
 Create a mobile first webpage that displays all the relevant information about renuo and the internship at renuo
 
+Testing device to ensure that all devices should work: Iphone 4
+
 ## Components
 
 * Homepage *
