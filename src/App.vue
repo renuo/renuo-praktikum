@@ -2,7 +2,7 @@
   <div id="app">
     <Navigation @selected="setActive"/>
       <div v-show="isActive('home')">
-    <Homepage />
+        <Homepage />
       </div>
       <div v-show="isActive('renuo')">
         <HelloWorld />
@@ -11,14 +11,16 @@
   </div>
 </template>
 <script>
+// eslint-disable-next-line no-unused-vars
+import AboutRenuo from './components/AboutRenuo.vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Navigation from './components/Navigation.vue'
 import Footer from './components/Footer.vue'
 import Homepage from './components/Homepage.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import Vue from 'vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
@@ -47,12 +49,9 @@ export default {
   }
 }
 </script>
-
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
 }
