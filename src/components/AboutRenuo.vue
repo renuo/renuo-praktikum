@@ -2,6 +2,15 @@
   <div class="hello">
     <h1>About Renuo</h1>
 
+    <h3>Team</h3>
+
+    <img
+      class="smallFullSize"
+      style="width: 80%;"
+      alt="technologies"
+      src="../assets/team.jpg"
+    />
+
     <h3>Values</h3>
     <ul>
       <li>
@@ -157,7 +166,7 @@ a {
 
 @media only screen and (max-width: 600px) {
   .smallFullSize{
-    width: 100%;
+    width: 100% !important;
   }
 }
 
