@@ -2,55 +2,113 @@
   <div class="hello">
     <h1>About Renuo</h1>
 
-    <h3>Werte</h3>
-
-    <v-container class="grey lighten-5">
-      <v-row no-gutters>
-        <v-col sm="5">
-          <v-card class="pa-2" outlined>
-            <img
-              @mouseover="hover = true"
-              @mouseleave="hover = false"
-              alt="w"
-              src="../assets/w1.svg"
-            />
-
-            <span v-if="hover">Quality and Precision</span>
-          </v-card>
-          <v-card class="pa-2" outlined>
-            <img alt="Fairness and Transparency" src="../assets/w2.svg" />
-          </v-card>
-
-          <v-card class="pa-2" outlined>
-            <img alt="Responsibilitz" src="../assets/w3.svg" />
-          </v-card>
-
-          <v-card class="pa-2" outlined>
-            <img alt="Together" src="../assets/w4.svg" />
-          </v-card>
-
-          <v-card class="pa-2" outlined>
-            <img alt="New ways" src="../assets/w5.svg" />
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
+    <h3>Values</h3>
+    <ul>
+      <li>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 text-right">
+              <img
+                class="valuesIMG"
+                alt="Quality and Precision"
+                src="../assets/w1.svg"
+              />
+            </div>
+            <div class="col-md-6 text-left">
+              <h2 class="">Quality and Precision</h2>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 text-right">
+              <img
+                class="valuesIMG"
+                alt="Fairness and Transparency"
+                src="../assets/w2.svg"
+              />
+            </div>
+            <div class="col-md-6 text-left">
+              <h2 class="">Responsibility</h2>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 text-right">
+              <img
+                class="valuesIMG"
+                alt="Responsibility"
+                src="../assets/w3.svg"
+              />
+            </div>
+            <div class="col-md-6 text-left">
+              <h2 class="">Responsibility</h2>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 text-right">
+              <img class="valuesIMG" alt="Together" src="../assets/w4.svg" />
+            </div>
+            <div class="col-md-6 text-left">
+              <h2 class="">Together</h2>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 text-right">
+              <img class="valuesIMG" alt="New ways" src="../assets/w5.svg" />
+            </div>
+            <div class="col-md-6 text-left">
+              <h2 class="">New ways</h2>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
 
     <h3>Tools</h3>
+
+    <img
+      class="smallFullSize"
+      style="width: 80%;"
+      alt="technologies"
+      src="../assets/technologies.png"
+    />
     <h3>Wo?</h3>
+    <iframe class="smallFullSize" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.059992876826!2d8.588275315623724!3d47.41077097917222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b1b31f3d935%3A0x4ac272717f6e976!2sRenuo%20AG!5e0!3m2!1sen!2sch!4v1596548442258!5m2!1sen!2sch" width="80%" height="400rem" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <h3>Social media</h3>
     <ul>
-      <li>insta</li>
-      <li />
-      <li>website</li>
-      <li />
+      <li><a href="https://www.renuo.ch/">website</a></li>
+      <li><a href="https://www.instagram.com/renuo_ag/">insta</a></li>
+      <!--
+      <li><a href="https://www.facebook.com/RenuoAG/">facebook</a></li>
+      <li><a href="https://twitter.com/renuo">twitter</a></li>
+      <li><a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQETp1CcbNXcWQAAAXO5xE7ICqlVdf45_Qajp_xvrIr_eynm44xXPnzTsJx3SLdtoRFrA1pDZqeLIIHYSpFXfj-FFlpKwTIKWG-51OJD0QVXDXJbleYNoN3_f_gZvDGzLZq6haA=&originalReferer=https://www.renuo.ch/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Frenuo">linkedin</a></li>
+      <li><a href="https://www.xing.com/companies/renuoag">xing</a></li>
+      <li><a href="https://github.com/renuo/">github</a></li>
       <li>email</li>
-      <li />
+      -->
     </ul>
   </div>
 </template>
 
 <script>
+// eslint-disable-next-line no-unused-vars
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default {
   name: 'AboutRenuo',
@@ -67,22 +125,40 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
-  margin: 40px 0 0;
+  margin: 0rem;
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 ul {
   list-style-type: none;
   padding: 0;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+
+.valuesIMG {
+  margin: 1rem;
+  width: 3rem;
+  height: 3rem;
 }
 
-img {
-  width: 10%;
-  height: 10%;
+h2 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
+
+.col-md-6 {
+  padding: 0px;
+  width: 10rem;
+}
+
+a {
+  color: #42b983;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .smallFullSize{
+    width: 100%;
+  }
+}
+
 </style>
