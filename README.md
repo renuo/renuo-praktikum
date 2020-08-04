@@ -6,22 +6,22 @@
 ```
 git clone git@github.com:renuo/renuo-praktikum.git
 cd renuo-praktikum
-npm install
+bin/setup
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+bin/run
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+bin/deploy
 ```
 
 ### Lints and fixes files
 ```
-npm run lint
+bin/check
 ```
 
 ### Customize configuration

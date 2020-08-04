@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navigation />
-		<Homepage />
+      <Homepage />
     <Footer />
   </div>
 </template>
@@ -26,7 +26,6 @@ export default {
   }
 }
 </script>
-
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
