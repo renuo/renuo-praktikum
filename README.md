@@ -1,23 +1,27 @@
-# Renuo Praktikum
+# 👨🏼‍🎓 Renuo Praktikum
+
+![Deploy to GitHub Pages](https://github.com/renuo/renuo-praktikum/workflows/Deploy%20to%20GitHub%20Pages/badge.svg?branch=master)
 
 ## Project setup
 ```
-npm install
+git clone git@github.com:renuo/renuo-praktikum.git
+cd renuo-praktikum
+bin/setup
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+bin/run
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+bin/deploy
 ```
 
 ### Lints and fixes files
 ```
-npm run lint
+bin/check
 ```
 
 ### Customize configuration
