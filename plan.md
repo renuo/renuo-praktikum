@@ -16,7 +16,7 @@ Testing device to ensure that all devices should work: Iphone 4
 * Footer * **Nick**
 * Navbar * **Nick**
 * Google maps comp ==> Location of the renuo office in google maps
-* Challenges ==> some coding challenges that can be solved
+* Challenges ==> some coding challenges that can be solved **Janis**
 * Jobs ==> direct link to the renuo jobs page
 
 
