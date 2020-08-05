@@ -29,7 +29,7 @@ export default {
   name: 'App',
   data () {
     return {
-      activeBody: 'home' // visible to template
+      activeBody: 'home'
     }
   },
   methods: {
