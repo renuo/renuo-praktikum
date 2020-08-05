@@ -16,7 +16,6 @@ export default {
 <style scoped lang="scss">
 footer {
     margin-top:auto;
-    position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;

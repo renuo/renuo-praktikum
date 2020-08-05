@@ -14,7 +14,7 @@
     </b-navbar-toggle>
     <b-collapse id="navbar-toggle-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
-        <b-nav-item @click.prevent="passUpNewBody('renuo')">About Renuo</b-nav-item>
+        <b-nav-item @click.prevent="passUpNewBody('about-renuo')">About Renuo</b-nav-item>
         <b-nav-item @click.prevent="passUpNewBody('internship')" href="#">About your internship</b-nav-item>
         <b-nav-item @click.prevent="passUpNewBody('projects')" href="#">Projects</b-nav-item>
         <b-nav-item @click.prevent="passUpNewBody('challenges')" href="#">Challenges</b-nav-item>
@@ -65,6 +65,7 @@ export default {
 }
 
 .nav-link{
+  text-align:center;
   color:white !important;
 }
 

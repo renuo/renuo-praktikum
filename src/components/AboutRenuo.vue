@@ -1,16 +1,13 @@
 <template>
   <div class="hello">
     <h1>About Renuo</h1>
-
     <h3>Team</h3>
-
     <img
       class="smallFullSize"
       style="width: 80%;"
       alt="technologies"
       src="../assets/team.jpg"
     />
-
     <h3>Values</h3>
     <ul>
       <li>
@@ -115,10 +112,6 @@
 
 <script>
 // eslint-disable-next-line no-unused-vars
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
 export default {
   name: 'AboutRenuo',
   props: {
