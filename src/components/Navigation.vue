@@ -14,20 +14,28 @@
     </b-navbar-toggle>
     <b-collapse id="navbar-toggle-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
-        <b-nav-item href="#">About Renuo</b-nav-item>
-        <b-nav-item href="#">About your internship</b-nav-item>
-        <b-nav-item href="#">Projects</b-nav-item>
-        <b-nav-item href="#">Challenges</b-nav-item>
+        <b-nav-item @click.prevent="passUpNewBody('renuo')">About Renuo</b-nav-item>
+        <b-nav-item @click.prevent="passUpNewBody('internship')" href="#">About your internship</b-nav-item>
+        <b-nav-item @click.prevent="passUpNewBody('projects')" href="#">Projects</b-nav-item>
+        <b-nav-item @click.prevent="passUpNewBody('challenges')" href="#">Challenges</b-nav-item>
         <b-nav-item href="https://www.renuo.ch/en/jobs">Jobs</b-nav-item>
         <b-nav-item href="https://www.renuo.ch/en/blog">Blog</b-nav-item>
-        <b-nav-item href="#">Gallery</b-nav-item>
+        <b-nav-item @click.prevent="passUpNewBody('gallery')" href="#">Gallery</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </template>
 <script>
 export default {
-  name: 'Navigation'
+  name: 'Navigation',
+  props: {
+    method: { type: Function }
+  },
+  methods: {
+    passUpNewBody (value) {
+      this.$emit('selected', value)
+    }
+  }
 }
 
 </script>

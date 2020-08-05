@@ -1,7 +1,12 @@
 <template>
   <div id="app">
-    <Navigation />
-      <Homepage />
+    <Navigation @selected="setActive"/>
+      <div v-show="isActive('home')">
+        <Homepage />
+      </div>
+      <div v-show="isActive('renuo')">
+        <HelloWorld />
+      </div>
     <Footer />
   </div>
 </template>
@@ -14,6 +19,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Navigation from './components/Navigation.vue'
 import Footer from './components/Footer.vue'
 import Homepage from './components/Homepage.vue'
+import HelloWorld from './components/HelloWorld.vue'
 import Vue from 'vue'
 // Install BootstrapVue
 Vue.use(BootstrapVue)
@@ -21,10 +27,25 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 export default {
   name: 'App',
+  data () {
+    return {
+      activeBody: 'home'
+    }
+  },
+  methods: {
+    isActive (menuItem) {
+      return this.activeBody === menuItem
+    },
+    setActive (menuItem) {
+      console.log('Test')
+      this.activeBody = menuItem
+    }
+  },
   components: {
     Navigation,
     Homepage,
-    Footer
+    Footer,
+    HelloWorld
   }
 }
 </script>
