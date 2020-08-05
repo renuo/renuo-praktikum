@@ -1,16 +1,13 @@
 <template>
   <div class="hello">
     <h1>About Renuo</h1>
-
     <h3>Team</h3>
-
     <img
       class="smallFullSize"
       style="width: 80%;"
       alt="technologies"
       src="../assets/team.jpg"
     />
-
     <h3>Values</h3>
     <ul>
       <li>
@@ -86,9 +83,7 @@
         </div>
       </li>
     </ul>
-
     <h3>Tools</h3>
-
     <img
       class="smallFullSize"
       style="width: 80%;"
@@ -96,7 +91,16 @@
       src="../assets/technologies.png"
     />
     <h3>Wo?</h3>
-    <iframe class="smallFullSize" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.059992876826!2d8.588275315623724!3d47.41077097917222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b1b31f3d935%3A0x4ac272717f6e976!2sRenuo%20AG!5e0!3m2!1sen!2sch!4v1596548442258!5m2!1sen!2sch" width="80%" height="400rem" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe
+      class="smallFullSize"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.059992876826!2d8.588275315623724!3d47.41077097917222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b1b31f3d935%3A0x4ac272717f6e976!2sRenuo%20AG!5e0!3m2!1sen!2sch!4v1596548442258!5m2!1sen!2sch"
+      width="80%"
+      height="400rem"
+      style="border:0;"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
     <h3>Social media</h3>
     <ul>
       <li><a href="https://www.renuo.ch/">website</a></li>
@@ -114,28 +118,21 @@
 </template>
 
 <script>
-// eslint-disable-next-line no-unused-vars
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
 export default {
-  name: 'AboutRenuo',
+  name: "AboutRenuo",
   props: {
     msg: String
   },
-  data () {
+  data() {
     return {
       hover: false
-    }
+    };
   }
-}
+};
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
-  margin: 0rem;
-  margin-top: 2rem;
+  margin: 2rem 0rem 0rem;
   font-size: 2rem;
 }
 ul {
@@ -165,9 +162,8 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  .smallFullSize{
+  .smallFullSize {
     width: 100% !important;
   }
 }
-
 </style>
