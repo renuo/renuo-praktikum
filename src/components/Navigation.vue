@@ -283,6 +283,9 @@
         <b-nav-item @click.prevent="passUpNewBody('gallery')" href="#"
           >Gallery</b-nav-item
         >
+        <b-nav-item @click.prevent="invertColour" href="#"
+          ><i class="fal fa-magic"></i
+        ></b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -290,12 +293,12 @@
 <script>
 export default {
   name: "Navigation",
-  props: {
-    method: { type: Function }
-  },
   methods: {
     passUpNewBody(value) {
       this.$emit("selected", value);
+    },
+    invertColour() {
+      this.$emit("invert");
     }
   }
 };

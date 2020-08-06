@@ -10,6 +10,14 @@
       class="img-fluid image-block--centered"
       src="https://www.renuo.ch/images/renuo-landingpage-1a-dab40b370e94b1a9fbb951ee297870f9.jpg?vsn=d"
     />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 </template>
 <script>
