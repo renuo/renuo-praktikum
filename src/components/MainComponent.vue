@@ -22,6 +22,7 @@ import Vue from "vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+
 var VueScrollTo = require("vue-scrollto");
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
@@ -54,33 +55,24 @@ export default {
 @mixin renuo-background {
   background-color: #27d79d !important;
   /*
-				 * Add font colour and other changes that are needed for green background
-				*/
+		* Add font colour and other changes that are needed for green background
+	*/
 }
 
 @mixin default-background {
   background-color: #fff;
   /*
-				 * Add font colour and other changes that are needed for green background
-				*/
+		* Add font colour and other changes that are needed for green background
+  */
 }
 
 $inverted: true !default;
-
-.content-container:nth-child(even) {
-  @if $inverted {
-    @include renuo-background;
-  } @else {
-    @include default-background;
-  }
+.renuo_color_section {
+  @include renuo-background;
 }
 
-.content-container:nth-child(odd) {
-  @if $inverted == false {
-    @include renuo-background;
-  } @else {
-    @include default-background;
-  }
+.default_color_section {
+  @include default-background;
 }
 
 .content-container {
