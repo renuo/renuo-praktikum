@@ -9,17 +9,12 @@
       <CenterTitle id="internship" title="Internship" />
       <Homepage />
     </div>
-    <div class="content-container">
-      <CenterTitle id="projects" title="Projects" />
-      <Projects />
-    </div>
     <Footer />
   </div>
 </template>
 <script>
 import AboutRenuo from "./AboutRenuo.vue";
 import CenterTitle from "./CenterTitle.vue";
-import Projects from "./Projects.vue";
 import Footer from "./Footer.vue";
 import Navigation from "./Navigation.vue";
 import Homepage from "./Homepage.vue";
@@ -43,8 +38,7 @@ export default {
     CenterTitle,
     Footer,
     Navigation,
-    Homepage,
-    Projects
+    Homepage
   },
   methods: {
     isActive(menuItem) {
