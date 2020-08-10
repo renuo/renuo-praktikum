@@ -6,16 +6,15 @@ Testing device to ensure that all devices should work: Iphone 4
 
 ## Components
 
-* Homepage *
 * About Renuo * **Janis**
   * Fast travel bar
 * About the internship *
   * Fast travel bar
 * Gallery
-* Projects ==> Some sample projects that can be visited to get an impression what project Renuo AG is involved in
+* Projects ==> Some sample projects that can be visited to get an impression what project Renuo AG is involved in **Nick**
 * Footer * **Nick**
 * Navbar * **Nick**
-* Google maps comp ==> Location of the renuo office in google maps
+* Google maps comp ==> Location of the renuo office in google maps **Janis**
 * Challenges ==> some coding challenges that can be solved **Janis**
 * Jobs ==> direct link to the renuo jobs page
 
