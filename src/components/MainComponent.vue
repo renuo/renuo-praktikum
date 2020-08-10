@@ -9,7 +9,6 @@
       <CenterTitle id="internship" title="Internship" />
       <Homepage />
     </div>
-
     <div class="content-container">
       <CenterTitle id="projects" title="Projects" />
       <Projects />

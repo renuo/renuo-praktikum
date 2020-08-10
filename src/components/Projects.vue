@@ -1,15 +1,16 @@
 <template>
   <div>
-    <ul class="project_list">
+    <div class="project_list">
       <li v-for="project in this.projects.projects" :key="project.title">
         <Project
           :title="project.title"
           :images="project.images"
           :description="project.description"
           :imgpos="project.imgpos"
+          :technologies="project.technologies"
         />
       </li>
-    </ul>
+    </div>
   </div>
 </template>
 
@@ -33,7 +34,7 @@ export default {
   width: 100%;
   list-style: none;
   li {
-    margin-bottom: 5%;
+    padding-bottom: 5%;
   }
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="project_container">
     <div :class="getBackgroundContainerStyle" v-if="this.imgpos == 'left'">
       <div class="container">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm order-first">
             <ul class="image_list">
               <li v-for="image_source in this.images" :key="image_source">
                 <img class="side_image" :src="image_source" />
@@ -17,16 +17,17 @@
           </div>
         </div>
       </div>
+      <Technologies :name="this.title" :technologies="this.technologies" />
     </div>
     <div :class="getBackgroundContainerStyle" v-else>
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <span class="project_title">{{ this.title }}</span>
+            <span :class="getTitleClass">{{ this.title }}</span>
             <br />
             <p v-html="this.description"></p>
           </div>
-          <div class="col-sm">
+          <div class="col-sm order-first">
             <ul class="image_list">
               <li v-for="image_source in this.images" :key="image_source">
                 <img class="side_image" :src="image_source" />
@@ -35,13 +36,18 @@
           </div>
         </div>
       </div>
+      <Technologies :name="this.title" :technologies="this.technologies" />
     </div>
   </div>
 </template>
 
 <script>
+import Technologies from "./Technologies.vue";
 export default {
   name: "Project",
+  components: {
+    Technologies
+  },
   props: {
     title: {
       type: String,
@@ -58,9 +64,14 @@ export default {
     imgpos: {
       type: String,
       required: true
+    },
+    technologies: {
+      type: Array,
+      required: true
     }
   },
-  methods: {
+  methods: {},
+  computed: {
     getTitleClass() {
       if (this.imgpos == "left") {
         return "project_title";
@@ -83,8 +94,12 @@ export default {
 </script>
 <style scoped lang="scss">
 .side_image {
-  width: 50%;
+  width: 100%;
   margin-bottom: 2%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .image_list {
   text-decoration: none;
@@ -94,7 +109,7 @@ export default {
   font-weight: 500;
   color: #143327;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3vw;
   line-height: 1.2;
   color: #27d79d;
   padding-bottom: 1%;
@@ -102,6 +117,8 @@ export default {
 
 .project_container {
   background-color: #fff !important;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .project_container_renuo {
@@ -111,9 +128,12 @@ export default {
   font-weight: 500;
   color: #143327;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3vw;
   line-height: 1.2;
-  color: #fff;
+  color: #fff !important;
   padding-bottom: 1%;
+}
+.project_container {
+  text-align: center;
 }
 </style>
