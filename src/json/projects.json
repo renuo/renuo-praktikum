@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "title": "Manor Onboarding",
+            "description": "Für Manor/myONE entwickelten wir ein Portal, über welches Kunden sowohl Treue-, als auch MyOne und Mastercard Kreditkarten bestellen können. Dieser Prozess beinhaltet zahlreiche aufwändige Validierungen, Bonitätsprüfungen sowie Einbindungen in das Kernsystem von Manor (POS), damit die Karten direkt nach dem Antrag funktionieren und einsatzfähig sind. Über Schnittstellen (API) kann Manor die Verwaltung der Karten und Kunden vornehmen.",
+            "images": ["assets/manor_card.png", "assets/manor_customer_form.png", "assets/manor_registration.png"],
+            "imgpos": "left"
+        },
+        {
+            "title": "PWA für Graubünden Ferien",
+            "description": "<ul><li>Digitale Welt von Gian und Giachen als PWA</li>\n<li>Machine Learning: Anhand Foto erkennen wir Seite und führen ins digitale über</li>\n<li>Sehr Frontend/UX-lastiges Projekt</li>",
+            "images": ["assets/manor_card.png", "assets/manor_customer_form.png", "assets/manor_registration.png"],
+            "imgpos": "right"
+        },
+        {
+            "title": "Bankentracker",
+            "description": "Abbildung diversester Gebührenmodelle\nUX und Formular folgt Entscheidungsbaum\nBerechnung Gebühren über mehrere tausend Faktoren hinweg",
+            "images": ["assets/bankentracker_selection.png"],
+            "imgpos": "left"
+        }
+    ]
+}

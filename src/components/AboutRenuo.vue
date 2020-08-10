@@ -6,7 +6,7 @@
       class="smallFullSize"
       style="width: 80%;"
       alt="technologies"
-      src="../assets/team.jpg"
+      src="assets/team.jpg"
     />
     <h3>Values</h3>
     <ul>
@@ -17,7 +17,7 @@
               <img
                 class="valuesIMG"
                 alt="Quality and Precision"
-                src="../assets/w1.svg"
+                src="assets/w1.svg"
               />
             </div>
             <div class="col-md-6 text-left">
@@ -33,7 +33,7 @@
               <img
                 class="valuesIMG"
                 alt="Fairness and Transparency"
-                src="../assets/w2.svg"
+                src="assets/w2.svg"
               />
             </div>
             <div class="col-md-6 text-left">
@@ -46,11 +46,7 @@
         <div class="container">
           <div class="row text-center">
             <div class="col-md-6 text-right">
-              <img
-                class="valuesIMG"
-                alt="Responsibility"
-                src="../assets/w3.svg"
-              />
+              <img class="valuesIMG" alt="Responsibility" src="assets/w3.svg" />
             </div>
             <div class="col-md-6 text-left">
               <h2 class="">Responsibility</h2>
@@ -62,7 +58,7 @@
         <div class="container">
           <div class="row text-center">
             <div class="col-md-6 text-right">
-              <img class="valuesIMG" alt="Together" src="../assets/w4.svg" />
+              <img class="valuesIMG" alt="Together" src="assets/w4.svg" />
             </div>
             <div class="col-md-6 text-left">
               <h2 class="">Together</h2>
@@ -74,7 +70,7 @@
         <div class="container">
           <div class="row text-center">
             <div class="col-md-6 text-right">
-              <img class="valuesIMG" alt="New ways" src="../assets/w5.svg" />
+              <img class="valuesIMG" alt="New ways" src="assets/w5.svg" />
             </div>
             <div class="col-md-6 text-left">
               <h2 class="">New ways</h2>
@@ -88,7 +84,7 @@
       class="smallFullSize"
       style="width: 80%;"
       alt="technologies"
-      src="../assets/technologies.png"
+      src="assets/technologies.png"
     />
     <h3>Wo?</h3>
     <iframe
