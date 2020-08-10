@@ -1,7 +1,7 @@
 <template>
-  <div class="bouble_section">
+  <div class="bubble_section">
     <div v-if="title">
-      <span class="bouble-title">
+      <span class="bubble-title">
         {{ title === "/" ? "-" : title }}
       </span>
     </div>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "Bouble",
+  name: "Bubble",
   props: {
     radius: {
       type: Number,
@@ -40,11 +40,7 @@ export default {
   },
   computed: {
     isCentered() {
-      if (this.centered) {
-        return "centered_bouble";
-      } else {
-        return "";
-      }
+      return this.centered ? "centered_bubble" : "";
     },
     size() {
       return {
@@ -61,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.bouble-title {
+.bubble-title {
   color: #27d79d;
 }
 .circle-text {
@@ -88,7 +84,7 @@ export default {
   height: $size;
   @extend .circle-text;
 }
-.centered_bouble {
+.centered_bubble {
   margin: 0 auto;
 }
 #green-renuo-circle {
@@ -97,7 +93,7 @@ export default {
   font-weight: bold;
   @include circle-text(var(--size));
 }
-.bouble_section:hover {
+.bubble_section:hover {
   transform: scale(1.2);
 }
 </style>
