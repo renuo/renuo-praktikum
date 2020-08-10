@@ -5,7 +5,7 @@
       class="smallFullSize"
       style="width: 80%;"
       alt="technologies"
-      src="assets/team.jpg"
+      src="../assets/team.jpg"
     />
     <h3>Fokus und Stärken</h3>
     <p>Wir entwickeln individuelle Software auf höchstem Niveau.</p>
@@ -17,7 +17,7 @@
               <img
                 class="valuesIMG"
                 alt="Quality and Precision"
-                src="assets/w1.svg"
+                src="../assets/w1.svg"
               />
             </div>
             <div class="col-md-6 text-left">
@@ -33,8 +33,7 @@
               <img
                 class="valuesIMG"
                 alt="Fairness and Transparency"
-
-                src="assets/w2.svg"
+                src="../assets/w3.svg"
               />
             </div>
             <div class="col-md-6 text-left">
@@ -46,9 +45,12 @@
       <li>
         <div class="container">
           <div class="row text-center">
-
-            <div class="col-md-6 text-right">
-              <img class="valuesIMG" alt="Responsibility" src="assets/w3.svg" />
+            <div class="col-md-6 text-right img-col">
+              <img
+                class="valuesIMG"
+                alt="Responsibility"
+                src="../assets/w2.svg"
+              />
             </div>
             <div class="col-md-6 text-left">
               <h2 class="">Gerechtigkeit und Transparenz</h2>
@@ -59,9 +61,8 @@
       <li>
         <div class="container">
           <div class="row text-center">
-
-            <div class="col-md-6 text-right">
-              <img class="valuesIMG" alt="Together" src="assets/w4.svg" />
+            <div class="col-md-6 text-right img-col">
+              <img class="valuesIMG" alt="Together" src="../assets/w5.svg" />
             </div>
             <div class="col-md-6 text-left">
               <h2 class="">Neue Wege</h2>
@@ -72,9 +73,8 @@
       <li>
         <div class="container">
           <div class="row text-center">
-
-            <div class="col-md-6 text-right">
-              <img class="valuesIMG" alt="New ways" src="assets/w5.svg" />
+            <div class="col-md-6 text-right img-col">
+              <img class="valuesIMG" alt="New ways" src="../assets/w4.svg" />
             </div>
             <div class="col-md-6 text-left">
               <h2 class="">Zusammen</h2>
@@ -88,9 +88,8 @@
     <img
       class="smallFullSize"
       style="width: 80%;"
-
-      alt="technologies"
-      src="assets/technologies.png"
+      alt="tools"
+      src="../assets/tools.png"
     />
 
     <h3>Standort</h3>
@@ -115,7 +114,7 @@
       class="smallFullSize"
       style="width: 80%;"
       alt="tools"
-      src="assets/kundenauszug.png"
+      src="../assets/kundenauszug.png"
     />
   </div>
 </template>
