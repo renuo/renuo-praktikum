@@ -38,7 +38,7 @@
         },
         {
             "title": "Bankentracker",
-            "description": "Abbildung diversester Gebührenmodelle\nUX und Formular folgt Entscheidungsbaum\nBerechnung Gebühren über mehrere tausend Faktoren hinweg",
+            "description": "<ul><li>Abbildung diversester Gebührenmodelle</li><li>UX und Formular folgt Entscheidungsbaum</li><li>Berechnung Gebühren über mehrere tausend Faktoren hinweg</li></ul>",
             "images": ["assets/bankentracker_selection.png", "assets/bankentracker_laptop.png"],
             "imgpos": "left",
             "technologies": [
@@ -53,6 +53,18 @@
             "description": "Für die Vereinigte Hagelversicherung (D) wurde ein Portal entwickelt, mit welchem Landwirte Feldstücke und darauf angebaute Kulturen auf einer interaktiven Karte verwalten können. Dies umfasst das Einzeichnen von Feldern oder das Setzen von Markern (bspw. für Hofstandort). Die in der Web-Plattform erfassten Daten werden zur weiteren, internen Verarbeitung über eine Schnittstelle (API) an die versicherungsinternen Applikationen gesendet. Die Plattform ermöglicht auch das Abschliessen von Verträgen und das Melden von Wetterschäden.",
             "images": ["assets/geo_first.png","assets/geo_second.png"],
             "imgpos": "right"
+        },
+        {
+            "title": "Alterswohnplattform home60.ch",
+            "description": "home60 ist ein Portal, welches sämtliche Alterswohnheime in der Schweiz zusammenfasst.\nUmfasst zahlreiche Suchfunktionen sowie ein Freemium-Modell mit zahlreichen (kostenpflichtigen) Optionen für Alterswohnheime.",
+            "images": ["assets/home60_preview.png"],
+            "imgpos": "left"
+        },
+        {
+            "title": "Lawoon",
+            "description": "Lawoon vermittelt Kleinaufträge zwischen Anbieter und Auftraggeber und übernimmt dabei den ganzen Prozess vom Matching bis zur Rechnungsstellung: ",
+            "images": ["assets/lawoon_preview.png"],
+            "imgpos": "left"
         }
     ]
 }
