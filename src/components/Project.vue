@@ -17,7 +17,6 @@
           </div>
         </div>
       </div>
-      <Technologies :name="this.title" :technologies="this.technologies" />
     </div>
     <div :class="getBackgroundContainerStyle" v-else>
       <div class="container">
@@ -36,18 +35,13 @@
           </div>
         </div>
       </div>
-      <Technologies :name="this.title" :technologies="this.technologies" />
     </div>
   </div>
 </template>
 
 <script>
-import Technologies from "./Technologies.vue";
 export default {
   name: "Project",
-  components: {
-    Technologies
-  },
   props: {
     title: {
       type: String,

@@ -33,7 +33,6 @@
               <img
                 class="valuesIMG"
                 alt="Fairness and Transparency"
-
                 src="assets/w2.svg"
               />
             </div>
@@ -46,8 +45,7 @@
       <li>
         <div class="container">
           <div class="row text-center">
-
-            <div class="col-md-6 text-right">
+            <div class="col-md-6 text-right img-col">
               <img class="valuesIMG" alt="Responsibility" src="assets/w3.svg" />
             </div>
             <div class="col-md-6 text-left">
@@ -59,8 +57,7 @@
       <li>
         <div class="container">
           <div class="row text-center">
-
-            <div class="col-md-6 text-right">
+            <div class="col-md-6 text-right img-col">
               <img class="valuesIMG" alt="Together" src="assets/w4.svg" />
             </div>
             <div class="col-md-6 text-left">
@@ -72,8 +69,7 @@
       <li>
         <div class="container">
           <div class="row text-center">
-
-            <div class="col-md-6 text-right">
+            <div class="col-md-6 text-right img-col">
               <img class="valuesIMG" alt="New ways" src="assets/w5.svg" />
             </div>
             <div class="col-md-6 text-left">
@@ -88,9 +84,8 @@
     <img
       class="smallFullSize"
       style="width: 80%;"
-
       alt="technologies"
-      src="assets/technologies.png"
+      src="assets/tools.png"
     />
 
     <h3>Standort</h3>
