@@ -1,11 +1,7 @@
 <template>
   <div class="my-container">
     <h3 class="remove-border">Gemeinsam sind wir Renuo!</h3>
-    <img
-      class="smallFullSize max-width"
-      alt="technologies"
-      src="assets/team.jpg"
-    />
+    <img class="img-full" alt="technologies" src="assets/team.jpg" />
     <h3>Fokus und Stärken</h3>
     <p>Wir entwickeln individuelle Software auf höchstem Niveau.</p>
     <ul>
@@ -84,39 +80,40 @@
     </ul>
     <h3>Tools</h3>
     <p>Damit arbeiten wir</p>
-    <img class="smallFullSize max-width" alt="tools" src="assets/tools.png" />
+    <img class="img-padded" alt="tools" src="assets/tools.png" />
     <h3>Standort</h3>
     <p>Hier findest du uns</p>
-    <iframe
-      class="smallFullSize max-width remove-border"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.059992876826!2d8.588275315623724!3d47.41077097917222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b1b31f3d935%3A0x4ac272717f6e976!2sRenuo%20AG!5e0!3m2!1sen!2sch!4v1596548442258!5m2!1sen!2sch"
-      height="600rem"
-      width="80%"
-      allowfullscreen=""
-      aria-hidden="false"
-      tabindex="0"
-    ></iframe>
+    <div class="map img-full">
+      <iframe
+        class="img-full remove-border"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.059992876826!2d8.588275315623724!3d47.41077097917222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b1b31f3d935%3A0x4ac272717f6e976!2sRenuo%20AG!5e0!3m2!1sen!2sch!4v1596548442258!5m2!1sen!2sch"
+        height="600rem"
+        width="80%"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+      <img class="cat" :src="cat" />
+    </div>
+    <blockquote>
+      Aa zelle Bölle schelle, d’Chatz gaht uf Walliselle
+    </blockquote>
     <h3>Kundenauszug</h3>
     <p>
       Die Stärke der Renuo zeigt sich in der Vielseitigkeit der Produkte, welche
       von den verschiedensten Branchen und Firmen beauftragt wurden.
     </p>
-    <img
-      class="smallFullSize max-width"
-      alt="tools"
-      src="assets/kundenauszug.png"
-    />
+    <img class="img-padded" alt="tools" src="assets/kundenauszug.png" />
   </div>
 </template>
 
 <script>
+import cat from "@/assets/cat.png";
 export default {
   name: "AboutRenuo",
-  props: {
-    msg: String
-  },
   data() {
     return {
+      cat: cat,
       hover: false
     };
   }
@@ -175,8 +172,13 @@ p {
   margin-right: auto;
 }
 
-.max-width {
-  max-width: 60%;
+.img-padded {
+  margin: 4%;
+  width: 92%;
+}
+
+.img-full {
+  width: 100%;
 }
 
 .remove-border {
@@ -184,15 +186,39 @@ p {
   border: 0;
 }
 
+.map {
+  position: relative;
+}
+
 @media only screen and (max-width: 1200px) {
-  .smallFullSize {
-    width: 100% !important;
-  }
-  .max-width {
-    max-width: 100% !important;
-  }
   .my-container {
     width: 100% !important;
   }
+}
+
+.cat {
+  width: 10rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }
 </style>

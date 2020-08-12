@@ -1,8 +1,6 @@
 <template>
   <div class="hello">
     <h3>Unterfordert?</h3>
-
-    <p>-</p>
   </div>
 </template>
 
