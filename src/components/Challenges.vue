@@ -1,68 +1,51 @@
 <template>
   <div class="hello">
     <h3>Unterfordert?</h3>
-    <div style="width: 70%; margin: auto" class="smallFullSize">
-        <p>Finde die längste wiederholende Teilzeichenkette in einem bestimmten Text.
-            <ul>
-                <li>Wiederholte Zeichenfolgen dürfen sich nicht überlappen. </li>
-                <li>Wenn mehr als eine Zeichenkette mit gleicher Länge wiederholt wird, nimm die erste, die Du findest (beginnend mit dem Anfang des Textes).  </li>
-            </ul>
-            <b>Hinweis: </b>Leerzeichen gehören nicht zur Zeichenkette
-        </p>
-    </div>
+
+    <p>-</p>
   </div>
 </template>
 
 <script>
-// eslint-disable-next-line no-unused-vars
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
 export default {
-  name: 'AboutRenuo',
+  name: "Challenges",
   props: {
     msg: String
   },
-  data () {
+  data() {
     return {
       hover: false
-    }
+    };
   }
-}
+};
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 h3 {
-  margin: 0rem;
-  margin-top: 2rem;
+  margin: 4rem 20% 2px 20%;
   font-size: 2rem;
+  color: #27d79d;
+  font-weight: bold;
+
+  border-width: 1px;
+  border-color: black;
+  border-style: none none solid none;
 }
 
-.valuesIMG {
-  margin: 1rem;
-  width: 3rem;
-  height: 3rem;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 h2 {
   margin-top: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
-li, p{
-    text-align: left;
-}
-
-p{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 1rem;
-}
-
-.col-md-6 {
-  padding: 0px;
-  width: 10rem;
+.values-img {
+  margin: 1rem;
+  size: 6rem 6rem !important;
+  height: 3rem;
 }
 
 a {
@@ -70,10 +53,43 @@ a {
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .smallFullSize{
+p {
+  margin-bottom: 10px;
+}
+
+.img-col {
+  max-width: 15rem;
+}
+
+.col-md-6 {
+  padding: 0px;
+  width: 10rem;
+}
+
+.my-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-width {
+  max-width: 60%;
+}
+
+.remove-border {
+  border-style: none;
+  border: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .smallFullSize {
+    width: 100% !important;
+  }
+  .max-width {
+    max-width: 100% !important;
+  }
+  .my-container {
     width: 100% !important;
   }
 }
-
 </style>

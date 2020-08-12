@@ -1,9 +1,8 @@
 <template>
-  <div class="hello">
-    <h3 style="border-style: none;">Gemeinsam sind wir Renuo!</h3>
+  <div class="my-container">
+    <h3 class="remove-border">Gemeinsam sind wir Renuo!</h3>
     <img
-      class="smallFullSize"
-      style="width: 80%;"
+      class="smallFullSize max-width"
       alt="technologies"
       src="assets/team.jpg"
     />
@@ -15,7 +14,7 @@
           <div class="row text-center">
             <div class="col-md-6 text-right img-col">
               <img
-                class="valuesIMG"
+                class="values-img"
                 alt="Quality and Precision"
                 src="assets/w1.svg"
               />
@@ -31,7 +30,7 @@
           <div class="row text-center">
             <div class="col-md-6 text-right img-col">
               <img
-                class="valuesIMG"
+                class="values-img"
                 alt="Fairness and Transparency"
                 src="assets/w2.svg"
               />
@@ -46,7 +45,11 @@
         <div class="container">
           <div class="row text-center">
             <div class="col-md-6 text-right img-col">
-              <img class="valuesIMG" alt="Responsibility" src="assets/w3.svg" />
+              <img
+                class="values-img"
+                alt="Responsibility"
+                src="assets/w3.svg"
+              />
             </div>
             <div class="col-md-6 text-left">
               <h2 class="">Gerechtigkeit und Transparenz</h2>
@@ -58,7 +61,7 @@
         <div class="container">
           <div class="row text-center">
             <div class="col-md-6 text-right img-col">
-              <img class="valuesIMG" alt="Together" src="assets/w4.svg" />
+              <img class="values-img" alt="Together" src="assets/w4.svg" />
             </div>
             <div class="col-md-6 text-left">
               <h2 class="">Neue Wege</h2>
@@ -70,7 +73,7 @@
         <div class="container">
           <div class="row text-center">
             <div class="col-md-6 text-right img-col">
-              <img class="valuesIMG" alt="New ways" src="assets/w5.svg" />
+              <img class="values-img" alt="New ways" src="assets/w5.svg" />
             </div>
             <div class="col-md-6 text-left">
               <h2 class="">Zusammen</h2>
@@ -81,34 +84,25 @@
     </ul>
     <h3>Tools</h3>
     <p>Damit arbeiten wir</p>
-    <img
-      class="smallFullSize"
-      style="width: 80%;"
-      alt="technologies"
-      src="assets/tools.png"
-    />
-
+    <img class="smallFullSize max-width" alt="tools" src="assets/tools.png" />
     <h3>Standort</h3>
     <p>Hier findest du uns</p>
     <iframe
-      class="smallFullSize"
+      class="smallFullSize max-width remove-border"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.059992876826!2d8.588275315623724!3d47.41077097917222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b1b31f3d935%3A0x4ac272717f6e976!2sRenuo%20AG!5e0!3m2!1sen!2sch!4v1596548442258!5m2!1sen!2sch"
+      height="600rem"
       width="80%"
-      height="400rem"
-      style="border:0;"
       allowfullscreen=""
       aria-hidden="false"
       tabindex="0"
     ></iframe>
-
     <h3>Kundenauszug</h3>
     <p>
       Die Stärke der Renuo zeigt sich in der Vielseitigkeit der Produkte, welche
       von den verschiedensten Branchen und Firmen beauftragt wurden.
     </p>
     <img
-      class="smallFullSize"
-      style="width: 80%;"
+      class="smallFullSize max-width"
       alt="tools"
       src="assets/kundenauszug.png"
     />
@@ -128,6 +122,7 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 h3 {
   margin: 4rem 20% 2px 20%;
@@ -139,15 +134,10 @@ h3 {
   border-color: black;
   border-style: none none solid none;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
-}
-
-.valuesIMG {
-  margin: 1rem;
-  size: 6rem 6rem !important;
-  height: 3rem;
 }
 
 h2 {
@@ -155,13 +145,10 @@ h2 {
   font-size: 2rem;
 }
 
-.img-col {
-  max-width: 15rem;
-}
-
-.col-md-6 {
-  padding: 0px;
-  width: 10rem;
+.values-img {
+  margin: 1rem;
+  size: 6rem 6rem !important;
+  height: 3rem;
 }
 
 a {
@@ -173,8 +160,38 @@ p {
   margin-bottom: 10px;
 }
 
+.img-col {
+  max-width: 15rem;
+}
+
+.col-md-6 {
+  padding: 0px;
+  width: 10rem;
+}
+
+.my-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-width {
+  max-width: 60%;
+}
+
+.remove-border {
+  border-style: none;
+  border: 0;
+}
+
 @media only screen and (max-width: 1200px) {
   .smallFullSize {
+    width: 100% !important;
+  }
+  .max-width {
+    max-width: 100% !important;
+  }
+  .my-container {
     width: 100% !important;
   }
 }
