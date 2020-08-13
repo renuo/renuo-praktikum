@@ -15,7 +15,13 @@
               <span :class="getTitleClass">{{ this.title }}</span>
               <br />
               <hr class="project_divider_renuo" />
-              <p v-html="this.description"></p>
+              <div class="markdown-styling">
+                <vue-markdown>
+                  <template v-for="line in this.description">
+                    {{ line }}
+                  </template>
+                </vue-markdown>
+              </div>
             </div>
           </div>
         </div>
@@ -27,7 +33,13 @@
               <span :class="getTitleClass">{{ this.title }}</span>
               <br />
               <hr class="project_divider" />
-              <p v-html="this.description"></p>
+              <div class="markdown-styling">
+                <vue-markdown>
+                  <template v-for="line in this.description">
+                    {{ line }}
+                  </template>
+                </vue-markdown>
+              </div>
             </div>
             <div class="col-sm order-first">
               <ul class="image_list">
@@ -44,6 +56,8 @@
 </template>
 
 <script>
+import VueMarkdown from "vue-markdown";
+
 export default {
   name: "Project",
   props: {
@@ -52,7 +66,7 @@ export default {
       required: true
     },
     description: {
-      type: String,
+      type: Array,
       required: true
     },
     images: {
@@ -67,6 +81,9 @@ export default {
       type: Array,
       required: false
     }
+  },
+  components: {
+    VueMarkdown
   },
   methods: {},
   computed: {
@@ -104,7 +121,9 @@ export default {
     transform: scale(1.1);
   }
 }
-
+.markdown-styling {
+  text-align: left;
+}
 img {
   border-radius: 5px;
 }
