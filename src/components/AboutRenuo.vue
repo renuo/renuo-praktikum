@@ -11,8 +11,8 @@
             <div class="col-md-6 text-right img-col">
               <img class="values-img" alt="Quality and Precision" :src="w1" />
             </div>
-            <div class="col-md-6 text-left">
-              <h2 class="">Qualität und Präzision</h2>
+            <div class="col-md-6 text-left text-col">
+              <h2 class="values-title">Qualität und Präzision</h2>
             </div>
           </div>
         </div>
@@ -27,8 +27,8 @@
                 :src="w2"
               />
             </div>
-            <div class="col-md-6 text-left">
-              <h2 class="">Verantwortlichkeit</h2>
+            <div class="col-md-6 text-left text-col">
+              <h2 class="values-title">Verantwortlichkeit</h2>
             </div>
           </div>
         </div>
@@ -39,8 +39,8 @@
             <div class="col-md-6 text-right img-col">
               <img class="values-img" alt="Responsibility" :src="w3" />
             </div>
-            <div class="col-md-6 text-left">
-              <h2 class="">Gerechtigkeit und Transparenz</h2>
+            <div class="col-md-6 text-left text-col">
+              <h2 class="values-title">Gerechtigkeit und Transparenz</h2>
             </div>
           </div>
         </div>
@@ -51,8 +51,8 @@
             <div class="col-md-6 text-right img-col">
               <img class="values-img" alt="Together" :src="w4" />
             </div>
-            <div class="col-md-6 text-left">
-              <h2 class="">Neue Wege</h2>
+            <div class="col-md-6 text-left text-col">
+              <h2 class="values-title">Neue Wege</h2>
             </div>
           </div>
         </div>
@@ -63,8 +63,8 @@
             <div class="col-md-6 text-right img-col">
               <img class="values-img" alt="New ways" :src="w5" />
             </div>
-            <div class="col-md-6 text-left">
-              <h2 class="">Zusammen</h2>
+            <div class="col-md-6 text-left text-col">
+              <h2 class="values-title">Zusammen</h2>
             </div>
           </div>
         </div>
@@ -75,11 +75,11 @@
     <img class="img-padded" alt="tools" :src="tools" />
     <h3 class="h3-title">Standort</h3>
     <p>Hier findest du uns</p>
-    <div class="map img-full">
+    <div class="map img-full iframe-container">
       <iframe
         class="img-full remove-border"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.059992876826!2d8.588275315623724!3d47.41077097917222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b1b31f3d935%3A0x4ac272717f6e976!2sRenuo%20AG!5e0!3m2!1sen!2sch!4v1596548442258!5m2!1sen!2sch"
-        height="600rem"
+        height="100%"
         width="80%"
         allowfullscreen=""
         aria-hidden="false"

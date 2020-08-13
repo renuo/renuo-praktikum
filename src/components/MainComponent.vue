@@ -14,7 +14,7 @@
       <Projects />
     </div>
     <div class="content-container">
-      <CenterTitle id="challenges" title="Challenges" />
+      <CenterTitle id="challenges" title="Challenge" />
       <Challenges />
     </div>
     <Footer />

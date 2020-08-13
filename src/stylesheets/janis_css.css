@@ -1,91 +1,234 @@
 .h3-title {
-    margin: 4rem 0px 0px 0px;
-    font-size: 2rem;
-    color: #27d79d;
-    font-weight: bold !important;
+  margin: 6vw 0px 0px 0px;
+  font-size: 4vw;
+  color: #27d79d;
+  font-weight: bold !important;
 }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.values-title {
+  margin-top: 3vw;
+  font-weight: 500;
+  font-size: 2vw;
+}
+
+.values-img {
+  margin: 2vw;
+  height: 5vw;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 1.25vw;
+}
+
+.img-col {
+  width: 35% !important;
+  max-width: 35% !important;
+}
+
+.text-col{
+  width: 65% !important;
+  max-width: 65% !important;
+}
+
+.col-md-6 {
+  padding: 0px !important;
+}
+
+.my-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-padded {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.iframe-container{
+  height: 60vh;
+}
+
+.remove-border{
+  border-style: none;
+}
+
+.img-full {
+  width: 100%;
+}
+
+.map {
+  position: relative;
+}
+
+.cat {
+  width: 20vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-size: 1.25vw;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4vw;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+.readme-title, .readme-sub-title, .readme-sub-sub-title, .readme-text, .code-display{
+  text-align: left;
+  color: black;
+  margin: 1rem;
+}
+
+.code-display{
+  text-align: left;
+  padding: 0px;
+}
+
+.readme-title{
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.readme-sub-title{
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+.readme-sub-sub-title{
+  font-size: 2vw;
+}
+
+.readme-text{
+  margin-top: 0.3vw;
+  margin-bottom: 0.3vw;
+  font-size: 1vw;
+}
+
+.instructions{
+  max-width: 80%;
+  margin: auto;
+  padding: 1.5vw;
+}
+
+.corner-container{
+  position: relative;
+}
+
+.github-corner{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.language-bash, .language-ruby{
+  font-size: 1vw;
+  padding: 0;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .readme-title, .readme-sub-title, .readme-sub-sub-title, .readme-text, .code-display{
+    margin: 0.5rem;
+  }
+  .my-container {
+    width: 100% !important;
+  }
+  .instructions {
+    max-width: 100% !important;
   }
   
-  h2 {
-    margin-top: 1.5rem;
-    font-size: 2rem;
+  .readme-title{
+    font-size: 5vw;
+  }
+  
+  .readme-sub-title{
+    font-size: 4vw;
+  }
+  
+  .readme-sub-sub-title{
+    font-size: 3vw;
+  }
+  
+  .readme-text{
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    font-size: 2.5vw;
+  }
+  
+  .instructions{
+    padding: 2vw;
+  }  
+
+  .language-bash, .language-ruby{
+    font-size: 2.5vw;
+    padding: 0;
+  }
+
+  .values-title {
+    margin-top: 3.5vw;
+    font-weight: 500;
+    font-size: 3vw;
   }
   
   .values-img {
-    margin: 1rem;
-    size: 6rem 6rem !important;
-    height: 3rem;
+    margin: 2vw;
+    height: 7vw;
   }
-  
-  a {
-    color: #42b983;
-    font-size: 1rem;
+
+  p{
+    font-size: 2vw;
   }
-  
-  p {
-    margin-bottom: 10px;
+
+  blockquote{
+    font-size: 2vw;
   }
-  
-  .img-col {
-    max-width: 15rem;
-  }
-  
-  .col-md-6 {
-    padding: 0px;
-    width: 10rem;
-  }
-  
-  .my-container {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .img-padded {
-    margin: 4%;
-    width: 92%;
-  }
-  
-  .img-full {
-    width: 100%;
-  }
-  
-  .map {
-    position: relative;
-  }
-  
-  @media only screen and (max-width: 1200px) {
-    .my-container {
-      width: 100% !important;
-    }
-  }
-  
-  .cat {
-    width: 10rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-  
-  blockquote {
-    background: #f9f9f9;
-    border-left: 10px solid #ccc;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
-  }
-  blockquote:before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-  }
-  blockquote p {
-    display: inline;
-  }
+}
