@@ -24,4 +24,8 @@ export default {
   color: #2c3e50;
   font-family: "Montserrat", sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
 </style>
