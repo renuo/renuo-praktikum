@@ -1,0 +1,91 @@
+.h3-title {
+    margin: 4rem 0px 0px 0px;
+    font-size: 2rem;
+    color: #27d79d;
+    font-weight: bold !important;
+}
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  h2 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  .values-img {
+    margin: 1rem;
+    size: 6rem 6rem !important;
+    height: 3rem;
+  }
+  
+  a {
+    color: #42b983;
+    font-size: 1rem;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .img-col {
+    max-width: 15rem;
+  }
+  
+  .col-md-6 {
+    padding: 0px;
+    width: 10rem;
+  }
+  
+  .my-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .img-padded {
+    margin: 4%;
+    width: 92%;
+  }
+  
+  .img-full {
+    width: 100%;
+  }
+  
+  .map {
+    position: relative;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .my-container {
+      width: 100% !important;
+    }
+  }
+  
+  .cat {
+    width: 10rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  blockquote p {
+    display: inline;
+  }
