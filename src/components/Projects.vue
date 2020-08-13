@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="project_list">
-      <li v-for="project in this.projects.projects" :key="project.title">
+      <li v-for="(project, index) in this.projects" :key="project.title">
         <Project
           :title="project.title"
           :images="project.images"
@@ -9,6 +9,7 @@
           :imgpos="project.imgpos"
           :technologies="project.technologies"
         />
+        <hr v-if="needsBreakbar(index)" />
       </li>
     </div>
   </div>
@@ -22,9 +23,25 @@ export default {
   components: {
     Project
   },
+  methods: {
+    needsBreakbar(current_index) {
+      if (current_index == 0 || current_index == this.projects.length - 1) {
+        return false;
+      } else if (
+        !(
+          this.projects[current_index + 1].imgpos ==
+          this.projects[current_index].imgpos
+        )
+      ) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+  },
   data: function() {
     return {
-      projects: json
+      projects: json.projects
     };
   }
 };

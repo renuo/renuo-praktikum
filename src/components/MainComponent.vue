@@ -13,6 +13,10 @@
       <CenterTitle id="projects" title="Projects" />
       <Projects />
     </div>
+    <div class="content-container">
+      <CenterTitle id="challenges" title="Challenges" />
+      <Challenges />
+    </div>
     <Footer />
   </div>
 </template>
@@ -23,6 +27,7 @@ import Projects from "./Projects.vue";
 import Footer from "./Footer.vue";
 import Navigation from "./Navigation.vue";
 import Homepage from "./Homepage.vue";
+import Challenges from "./Challenges.vue";
 import Vue from "vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
@@ -44,6 +49,7 @@ export default {
     Footer,
     Navigation,
     Homepage,
+    Challenges,
     Projects
   },
   methods: {
