@@ -98,6 +98,7 @@ export default {
 .image_list {
   text-decoration: none;
   list-style: none;
+  padding-inline-start: 0;
 }
 .project_title {
   font-weight: 500;
