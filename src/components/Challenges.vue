@@ -48,18 +48,11 @@
         Du kannst deine Lösung per pull request einreichen.
       </p>
 
-      <p class="readme-text">Wir freuen uns auf deine Lösung</p>
-
-      <p class="readme-text">Fragen kannst du im "Issues" tab stellen.</p>
-
-      <h4 class="readme-title">Setup</h4>
-
-      <pre><code class="language-bash code-display">
-    git clone git@github.com:renuo/christmas_tree.git
-    cd christmas_tree
-    gem install bundler
-    bundle install
-      </code></pre>
+      <p class="readme-text">
+        Fragen kannst du im
+        <a href="https://github.com/renuo/christmas_tree/issues">"Issues"</a>
+        tab stellen.
+      </p>
 
       <h4 class="readme-title">Weihnachtsbaum 🌲</h4>
 
@@ -71,14 +64,14 @@
       <h4 class="readme-sub-title">Basis</h4>
 
       <p class="readme-text">
-        Klein ruby app mir bereits vorbereiteten tests..
+        Kleine ruby app mir bereits vorbereiteten tests..
       </p>
 
       <h4 class="readme-sub-title">Aufgabe</h4>
 
       <p class="readme-text">
         Du musst eine Funktion schreiben, welche einen Weihhnachtsbaum in ASCII
-        art zurück gibt. Versuche es mit test-driven (TDD) in Ruby zu entwicklen
+        art zurück gibt. Versuche test-driven (TDD) in Ruby zu entwicklen.
       </p>
 
       <h4 class="readme-sub-sub-title">Input</h4>
@@ -91,7 +84,7 @@
       <h4 class="readme-sub-sub-title">Output</h4>
 
       <p class="readme-text">
-        Die implementierte Funktion sollte einen Weihhnachtsbaum als string
+        Die implementierte Funktion sollte einen Weihnachtsbaum als string
         zurück geben.
       </p>
 
@@ -138,20 +131,6 @@
 
       <p class="readme-text">
         Vergiss nicht einen Test für diese Aufgabe zu schreiben. 👨🏻‍💻 👩🏼‍💻
-      </p>
-
-      <h4 class="readme-title">Tests ausführen</h4>
-
-      <pre><code class="language-bash code-display">
-    bundle exec rspec
-      </code></pre>
-
-      <h4 class="readme-sub-title">Credits</h4>
-
-      <p class="readme-text">
-        Challenge from
-        https://ccd-school.de/coding-dojo/function-katas/tannenbaum/, adapted by
-        simon-isler
       </p>
     </div>
 
