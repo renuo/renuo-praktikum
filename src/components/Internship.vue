@@ -49,6 +49,16 @@
         ></b-col>
       </b-row>
     </b-container>
+    <div class="work_during_internship_section">
+      Waehrend deines Praktikums wirst du dich vielen verschiedenen Technologien
+      konfrontiert sehen. Darunter sind Ruby on Rails, Angular, React und andere
+      Web Technologien. Du wirst fuer Kunden einen Mehrwert generieren und
+      groesstenteils durch das Arbeiten an Erfahrung gewinnen. Also learning by
+      doing. Es ist ebenfalls ein Wunsch vom Team dass sich die Praktikanten an
+      Pair Programming beteiligen und dadurch schneller in die Projekte
+      eingearbeite bist und dich an die Methodik und Techniken der Renuo
+      gewoehnst und anpasst.
+    </div>
   </div>
 </template>
 <script>
@@ -100,6 +110,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.work_during_internship_section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 1rem;
+}
+
 .center-layout {
   width: 60%;
   margin: auto;
