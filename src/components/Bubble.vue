@@ -7,13 +7,21 @@
     </div>
     <div :style="setColour" id="background_colour_div">
       <div :style="size" id="green-renuo-circle" v-bind:class="isCentered">
-        <span class="inner-text">{{ text }}</span>
+        <fitty :options="options">
+          <template v-slot:content>
+            <span class="inner-text">{{ text }}</span>
+          </template>
+        </fitty>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Vue from "vue";
+
+import Fitty from "vue-fitty";
+Vue.use(Fitty);
 export default {
   name: "Bubble",
   props: {
@@ -27,7 +35,7 @@ export default {
     },
     title: {
       type: String,
-      required: true
+      required: false
     },
     colour: {
       type: String,
@@ -38,13 +46,19 @@ export default {
       required: false
     }
   },
+  data: () => ({
+    options: {
+      minSize: 5,
+      maxSize: 10
+    }
+  }),
   computed: {
     isCentered() {
       return this.centered ? "centered_bubble" : "";
     },
     size() {
       return {
-        "--size": this.radius + "px"
+        "--size": this.radius + "em"
       };
     },
     setColour() {
@@ -57,8 +71,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$default_font_size: var(--size);
+$font_size: $default_font_size;
+
 .bubble-title {
   color: #27d79d;
+  white-space: pre-line;
+  font-size: $font_size;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .circle-text {
   position: relative;
@@ -80,8 +101,8 @@ export default {
   transform: translateX(-50%) translateY(-50%);
 }
 @mixin circle-text($size) {
-  width: $size;
-  height: $size;
+  width: var(--size);
+  height: var(--size);
   @extend .circle-text;
 }
 .centered_bubble {

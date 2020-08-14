@@ -140,6 +140,7 @@ img {
 .image_list {
   text-decoration: none;
   list-style: none;
+  padding-inline-start: 0;
 }
 @mixin project_title_default {
   font-weight: bold;
