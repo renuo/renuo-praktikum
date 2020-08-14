@@ -5,11 +5,7 @@
       >Dein IMS Praktikum bei der Renuo AG</span
     >
     <br />
-    <img
-      alt="renuo-team"
-      class="img-fluid image-block--centered"
-      src="https://www.renuo.ch/images/renuo-landingpage-1a-dab40b370e94b1a9fbb951ee297870f9.jpg?vsn=d"
-    />
+    <img alt="renuo team" class="img-fluid image-block--centered" :src="team" />
 
     <br />
     <br />
@@ -21,8 +17,15 @@
   </div>
 </template>
 <script>
+import team from "@/assets/team.jpg";
+
 export default {
-  name: "Navigation"
+  team: team,
+  data() {
+    return {
+      team: team
+    };
+  }
 };
 </script>
 
