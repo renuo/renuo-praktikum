@@ -117,4 +117,8 @@ $font_size: $default_font_size;
 .bubble_section:hover {
   transform: scale(1.2);
 }
+
+.bubble_section {
+  transition-duration: 0.5s;
+}
 </style>

@@ -278,8 +278,12 @@
         <b-nav-item @click.prevent="passUpNewBody('challenges')" href="#"
           >Challenges</b-nav-item
         >
-        <b-nav-item href="https://www.renuo.ch/en/jobs">Jobs</b-nav-item>
-        <b-nav-item href="https://www.renuo.ch/en/blog">Blog</b-nav-item>
+        <b-nav-item href="https://www.renuo.ch/en/jobs"
+          >Jobs<i class="fal fa-external-link"></i
+        ></b-nav-item>
+        <b-nav-item href="https://www.renuo.ch/en/blog"
+          >Blog<i class="fal fa-external-link"></i
+        ></b-nav-item>
         <b-nav-item @click.prevent="passUpNewBody('gallery')" href="#"
           >Gallery</b-nav-item
         >
