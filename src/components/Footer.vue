@@ -113,9 +113,9 @@ footer {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 8vw;
-          height: 8vw;
-          font-size: 5vw;
+          width: 5vw;
+          height: 5vw;
+          font-size: 3vw;
           -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
           -webkit-box-sizing: content-box;
@@ -132,9 +132,9 @@ footer {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 8vw;
-          height: 8vw;
-          font-size: 5vw;
+          width: 5vw;
+          height: 5vw;
+          font-size: 3vw;
           -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
           -webkit-box-sizing: content-box;
@@ -221,6 +221,7 @@ footer {
   margin-bottom: 3% !important;
   color: white;
 }
+
 .container-fluid,
 .container-sm,
 .container-md,

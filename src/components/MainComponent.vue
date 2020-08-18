@@ -6,15 +6,15 @@
       <AboutRenuo />
     </div>
     <div class="content-container">
-      <CenterTitle id="internship" title="Internship" />
-      <Homepage />
+      <CenterTitle id="internship" title="Praktikum" />
+      <Internship />
     </div>
     <div class="content-container">
-      <CenterTitle id="projects" title="Projects" />
+      <CenterTitle id="projects" title="Projekte" />
       <Projects />
     </div>
     <div class="content-container">
-      <CenterTitle id="challenges" title="Challenges" />
+      <CenterTitle id="challenges" title="Challenge" />
       <Challenges />
     </div>
     <Footer />
@@ -26,16 +26,16 @@ import CenterTitle from "./CenterTitle.vue";
 import Projects from "./Projects.vue";
 import Footer from "./Footer.vue";
 import Navigation from "./Navigation.vue";
-import Homepage from "./Homepage.vue";
 import Challenges from "./Challenges.vue";
+import Internship from "./Internship.vue";
 import Vue from "vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
-
 var VueScrollTo = require("vue-scrollto");
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
+
 export default {
   name: "MainComponent",
   data: function() {
@@ -48,9 +48,9 @@ export default {
     CenterTitle,
     Footer,
     Navigation,
-    Homepage,
     Challenges,
-    Projects
+    Projects,
+    Internship
   },
   methods: {
     isActive(menuItem) {
