@@ -64,105 +64,111 @@
       dadurch schneller in die Projekte eingearbeite bist und dich an die
       Methodik und Techniken der Renuo gewöhnst und anpasst.
     </div>
-    <div></div>
-    <div class="row mt-5 job-desc justify-content-between">
-      <div class="col-12 col-md-6 col-lg-4 mt-4">
-        <h3>Deine Mission</h3>
-        <ul class="ul--jobs ul--jobs-detail">
-          <ul class="icons-ul">
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Softwareentwicklung mit
-              Webtechnologien (Ruby on Rails / Angular / HTML5 / Javascript)
-            </li>
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Anforderungsanalyse, Technische
-              Betreuung und Beratung von Kunden
-            </li>
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Datenbankdesign mit SQL (MySQL,
-              Postgres)
-            </li>
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Mitwirkung im Projektmanagement
-              mit <a href="/de/scrum">Scrum</a>
-            </li>
-            <br />
+    <div class="container pl-md-5 job-container">
+      <div class="row mt-5 job-desc justify-content-between">
+        <div class="col-12 col-md-12 col-lg-4 col-sm-12">
+          <h3>Deine Mission</h3>
+          <ul class="ul--jobs ul--jobs-detail">
+            <ul class="icons-ul">
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Softwareentwicklung mit
+                Webtechnologien (Ruby on Rails / Angular / HTML5 / Javascript)
+              </li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Anforderungsanalyse, Technische
+                Betreuung und Beratung von Kunden
+              </li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Datenbankdesign mit SQL (MySQL,
+                Postgres)
+              </li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Mitwirkung im Projektmanagement
+                mit <a href="/de/scrum">Scrum</a>
+              </li>
+              <br />
+            </ul>
           </ul>
-        </ul>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mt-4">
-        <h3>Was erwarten wir?</h3>
-        <ul class="ul--jobs ul--jobs-detail">
-          <ul class="icons-ul">
-            <br />
-            <li><i class="icon-li icon-ok"></i> Du ♥️ Open Source</li>
-            <br />
-            <li><i class="icon-li icon-ok"></i> Du hast gute Noten</li>
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Du programmierst manchmal auch in
-              deier Freizeit
-            </li>
-            <br />
-            <li><i class="icon-li icon-ok"></i> Du lernst gerne neue Dinge</li>
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Du willst mit Linux oder Mac
-              arbeiten
-            </li>
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Du kannst sehr selbständig
-              arbeiten
-            </li>
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Du kannst klar kommunizieren
-            </li>
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Ein Plus: Du kennst Ruby oder Ruby
-              on Rails, Javascript, TypeScript oder Coffeescript, AngularJS,
-              SSH, Linux-Server oder andere Webtechnologien (z.B. Python,
-              Django, PHP, JSF)
-            </li>
-            <br />
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 col-sm-12">
+          <h3>Was erwarten wir?</h3>
+          <ul class="ul--jobs ul--jobs-detail">
+            <ul class="icons-ul">
+              <br />
+              <li><i class="icon-li icon-ok"></i> Du ♥️ Open Source</li>
+              <br />
+              <li><i class="icon-li icon-ok"></i> Du hast gute Noten</li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Du programmierst manchmal auch
+                in deier Freizeit
+              </li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Du lernst gerne neue Dinge
+              </li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Du willst mit Linux oder Mac
+                arbeiten
+              </li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Du kannst sehr selbständig
+                arbeiten
+              </li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Du kannst klar kommunizieren
+              </li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Ein Plus: Du kennst Ruby oder
+                Ruby on Rails, Javascript, TypeScript oder Coffeescript,
+                AngularJS, SSH, Linux-Server oder andere Webtechnologien (z.B.
+                Python, Django, PHP, JSF)
+              </li>
+              <br />
+            </ul>
           </ul>
-        </ul>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mt-4">
-        <h3>Was bieten wir?</h3>
-        <ul class="ul--jobs ul--jobs-detail">
-          <ul class="icons-ul">
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Spannende und vielseitige Projekte
-            </li>
-            <br />
-            <li><i class="icon-li icon-ok"></i> Neue Technologien</li>
-            <br />
-            <li><i class="icon-li icon-ok"></i> Selbsständige Arbeitsweise</li>
-            <br />
-            <li><i class="icon-li icon-ok"></i> Flexible Arbeitszeiten</li>
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Ein technisch sehr kompetentes,
-              motiviertes, kollegiales und junges Team
-            </li>
-            <br />
-            <li><i class="icon-li icon-ok"></i> Betreuung deiner IPA</li>
-            <br />
-            <li>
-              <i class="icon-li icon-ok"></i> Wir haben viele IMS-Abgänger unter
-              uns und wissen genau, was auf dich zukommt!
-            </li>
-            <br />
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 col-sm-12">
+          <h3>Was bieten wir?</h3>
+          <ul class="ul--jobs ul--jobs-detail">
+            <ul class="icons-ul">
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Spannende und vielseitige
+                Projekte
+              </li>
+              <br />
+              <li><i class="icon-li icon-ok"></i> Neue Technologien</li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Selbsständige Arbeitsweise
+              </li>
+              <br />
+              <li><i class="icon-li icon-ok"></i> Flexible Arbeitszeiten</li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Ein technisch sehr kompetentes,
+                motiviertes, kollegiales und junges Team
+              </li>
+              <br />
+              <li><i class="icon-li icon-ok"></i> Betreuung deiner IPA</li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Wir haben viele IMS-Abgänger
+                unter uns und wissen genau, was auf dich zukommt!
+              </li>
+              <br />
+            </ul>
           </ul>
-        </ul>
+        </div>
       </div>
     </div>
     <div class="apply-now">
@@ -321,8 +327,12 @@ h6,
   width: 60%;
   margin: auto;
 }
+.job-container {
+  h3 {
+    font-weight: bold !important;
+  }
+}
 .ul--jobs-detail {
-  margin-left: 50px;
   list-style-image: url(https://www.renuo.ch/images/check-ddee0b6009fa00fff3365f0a93ccefb3.png?vsn=d);
   li {
     display: list-item;
@@ -365,6 +375,9 @@ h6,
     margin-left: auto;
     margin-right: auto;
   }
+  .ul--jobs-detail {
+    padding-inline-start: 0px !important;
+  }
 }
 
 @media (max-width: 750px) {
@@ -372,6 +385,9 @@ h6,
     width: 50% !important;
     margin-left: auto;
     margin-right: auto;
+  }
+  .ul--jobs-detail {
+    padding-inline-start: 5px !important;
   }
 }
 
@@ -397,7 +413,15 @@ h6,
   .ul--jobs-detail {
     ul {
       font-size: 0.8rem;
+      padding-inline-start: 5px !important;
     }
+  }
+}
+@media (max-width: 450px) {
+  .special_row {
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>
