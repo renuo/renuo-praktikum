@@ -133,8 +133,6 @@
         Vergiss nicht einen Test für diese Aufgabe zu schreiben. 👨🏻‍💻 👩🏼‍💻
       </p>
     </div>
-
-    <!-- https://tholman.com/github-corners/ -->
   </div>
 </template>
 

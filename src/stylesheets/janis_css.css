@@ -140,8 +140,8 @@ blockquote p {
 
 .github-corner{
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  right: 0.5rem;
+  top: 0.5rem;
 }
 
 .language-bash, .language-ruby{
@@ -166,14 +166,6 @@ blockquote p {
     transform: rotate(10deg);
   }
 }
-@media (max-width: 500px) {
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-}
 
 @media only screen and (max-width: 1200px) {
   .readme-title, .readme-sub-title, .readme-sub-sub-title, .readme-text, .code-display{
@@ -187,21 +179,21 @@ blockquote p {
   }
   
   .readme-title{
-    font-size: 5vw;
+    font-size: 3vw;
   }
   
   .readme-sub-title{
-    font-size: 4vw;
+    font-size: 2.5vw;
   }
   
   .readme-sub-sub-title{
-    font-size: 3vw;
+    font-size: 2vw;
   }
   
   .readme-text{
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
-    font-size: 2.5vw;
+    font-size: 1.6vw;
   }
   
   .instructions{
@@ -209,7 +201,7 @@ blockquote p {
   }  
 
   .language-bash, .language-ruby{
-    font-size: 2.5vw;
+    font-size: 1.6vw;
     padding: 0;
   }
 
@@ -231,4 +223,33 @@ blockquote p {
   blockquote{
     font-size: 2vw;
   }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+
+  .readme-title{
+    font-size: 5vw;
+  }
+  
+  .readme-sub-title{
+    font-size: 4vw;
+  }
+  
+  .readme-sub-sub-title{
+    font-size: 3vw;
+  }
+  
+  .readme-text{
+    font-size: 2.5vw;
+  }
+
+  .language-bash, .language-ruby{
+    font-size: 2.5vw;
+  }  
 }
