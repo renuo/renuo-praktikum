@@ -287,9 +287,6 @@
         <b-nav-item @click.prevent="passUpNewBody('gallery')" href="#"
           >Gallery</b-nav-item
         >
-        <b-nav-item @click.prevent="invertColour" href="#"
-          ><i class="fal fa-magic"></i
-        ></b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -309,6 +306,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+i {
+  margin-left: 10px;
+}
+
 #navigationbar {
   background-color: #27d79d;
 }

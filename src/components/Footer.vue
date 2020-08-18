@@ -206,7 +206,6 @@ footer {
   width: 100% !important;
   max-width: 100% !important;
   text-align: left;
-
   img {
     max-width: 100%;
     max-height: 1.5rem;
@@ -235,7 +234,13 @@ footer {
   background-color: white;
 }
 
+.col-12 .col-md-6 {
+  text-align: left !important;
+}
+
 .footer--made-by {
+  text-align: left;
+  padding-left: 20px !important;
   padding: 0.8rem 2rem;
   font-size: 0.8rem;
   line-height: 1.7rem;
@@ -246,6 +251,7 @@ footer {
     font-size: 0.7rem;
   }
 }
+
 .footer--made-by img {
   float: right;
   max-height: 1.7rem;
