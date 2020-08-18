@@ -302,7 +302,6 @@ export default {
 }
 
 .job-desc {
-  width: 130%;
   margin-bottom: 0.5rem;
 }
 h1,
@@ -327,7 +326,7 @@ h6,
   margin: auto;
 }
 .ul--jobs-detail {
-  padding-right: 50px;
+  margin-left: 50px;
   list-style-image: url(https://www.renuo.ch/images/check-ddee0b6009fa00fff3365f0a93ccefb3.png?vsn=d);
   li {
     display: list-item;
