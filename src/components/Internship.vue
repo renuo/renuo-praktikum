@@ -3,7 +3,7 @@
     <div>
       <img
         class="centered-gallery-image"
-        alt="Fairness and Transparency"
+        alt="Praktikumskonzept"
         :src="internship_book"
       />
     </div>
@@ -58,14 +58,18 @@
       </b-row>
     </b-container>
     <div class="work_during_internship_section">
-      Waehrend deines Praktikums wirst du dich vielen verschiedenen Technologien
-      konfrontiert sehen. Darunter sind Ruby on Rails, Angular, React und andere
-      Web Technologien. Du wirst fuer Kunden einen Mehrwert generieren und
-      groesstenteils durch das Arbeiten an Erfahrung gewinnen. Also learning by
-      doing. Es ist ebenfalls ein Wunsch vom Team dass sich die Praktikanten an
-      Pair Programming beteiligen und dadurch schneller in die Projekte
-      eingearbeite bist und dich an die Methodik und Techniken der Renuo
-      gewoehnst und anpasst.
+      Während deines Praktikums wirst du dich mit vielen verschiedenen
+      Technologien konfrontiert sehen. Darunter sind Ruby on Rails, Angular,
+      React und andere Web Technologien stehts vertreten. Du wirst für Kunden
+      einen Mehrwert generieren und grösstenteils durch das Arbeiten an
+      Erfahrung gewinnen. Also learning by doing. Es ist ebenfalls ein Wunsch
+      vom Team dass sich die Praktikanten an Pair Programming beteiligen und
+      dadurch schneller in die Projekte eingearbeite bist und dich an die
+      Methodik und Techniken der Renuo gewöhnst und anpasst.
+    </div>
+
+    <div>
+      <img class="centered-gallery-image" alt="Workspace" :src="work_space" />
     </div>
     <div class="row mt-5 job-desc justify-content-between">
       <div class="col-12 col-md-6 col-lg-4 mt-4">
@@ -178,14 +182,19 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import Vue from "vue";
 import internship_book from "@/assets/internship_book.jpeg";
+import work_space from "@/assets/work_space.png";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 import Bubble from "./Bubble.vue";
 import VueSweetalert2 from "vue-sweetalert2";
 // If you don't need the styles, do not connect
+const options = {
+  confirmButtonColor: "#27d79d",
+  cancelButtonColor: "#27d79d"
+};
 import "sweetalert2/dist/sweetalert2.min.css";
-Vue.use(VueSweetalert2);
+Vue.use(VueSweetalert2, options);
 
 export default {
   name: "Internship",
@@ -194,34 +203,90 @@ export default {
   },
   data() {
     return {
+      work_space: work_space,
       internship_book: internship_book
     };
   },
   methods: {
     showEinfuehrung() {
-      this.$swal(
-        "Du wirst von den Mitarbeitern von Renuo in das Praktikum eingearbeitet und folgst einem detailierten Plan"
-      );
+      this.$swal({
+        title: "Einstieg",
+        text:
+          "Du wirst von den Mitarbeitern von Renuo in das Praktikum eingearbeitet und folgst einem detailierten Plan",
+        icon: "info",
+        showConfirmButton: false,
+        showCloseButton: true,
+        showClass: {
+          popup: "animate__animated animate__fadeInDown"
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp"
+        }
+      });
     },
     showKundenprojekt() {
-      this.$swal(
-        "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert fuer einen Kunden. Du wirst waehrend dem Projekt vom Team unterstuetzt"
-      );
+      this.$swal({
+        title: "Kundenproject",
+        text:
+          "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für einen Kunden. Du wirst während dem Projekt vom Team unterstützt",
+        icon: "info",
+        showConfirmButton: false,
+        showCloseButton: true,
+        showClass: {
+          popup: "animate__animated animate__fadeInDown"
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp"
+        }
+      });
     },
     showCoding() {
-      this.$swal(
-        "Nun wird endlich Software entwickelt. Bleib dran und erfreue dich an der Hauptaufgabe deines Praktikums"
-      );
+      this.$swal({
+        title: "Entwickeln !!",
+        text:
+          "Nun wird endlich Software entwickelt. Bleib dran und erfreue dich an der Hauptaufgabe deines Praktikums",
+        icon: "info",
+        showConfirmButton: false,
+        showCloseButton: true,
+        showClass: {
+          popup: "animate__animated animate__fadeInDown"
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp"
+        }
+      });
     },
     showIPA() {
-      this.$swal(
-        "Der Abschluss der Schulischen Aufgaben. Bei Renuo unterstuetzten wird dich eine gute Note zu erreichen"
-      );
+      this.$swal({
+        title: "IPA",
+        text:
+          "Der Abschluss der Schulischen Aufgaben. Bei Renuo unterstützten wir dich eine gute Note zu erreichen",
+        icon: "info",
+        showConfirmButton: false,
+        showCloseButton: true,
+        showClass: {
+          popup: "animate__animated animate__fadeInDown"
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp"
+        }
+      });
     },
     showStudium() {
-      this.$swal(
-        "Als Informatiker ist ein dauerhaftes weiterbilden eine wichtige Komponente von Erfolg. Also ab ins Studium"
-      );
+      this.$swal({
+        title: "Studieren",
+        text:
+          "Als Informatiker ist ein dauerhaftes Weiterbilden eine wichtige Komponente von Erfolg. Also ab ins Studium",
+        icon: "info",
+        showConfirmButton: false,
+        showCloseButton: true,
+        showClass: {
+          popup: "animate__animated animate__fadeInDown"
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp"
+        }
+      });
     }
   }
 };
@@ -241,7 +306,6 @@ export default {
 }
 
 .job-desc {
-  width: 130%;
   margin-bottom: 0.5rem;
 }
 h1,
@@ -266,7 +330,7 @@ h6,
   margin: auto;
 }
 .ul--jobs-detail {
-  padding-right: 50px;
+  margin-left: 50px;
   list-style-image: url(https://www.renuo.ch/images/check-ddee0b6009fa00fff3365f0a93ccefb3.png?vsn=d);
   li {
     display: list-item;

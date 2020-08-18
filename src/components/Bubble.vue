@@ -116,6 +116,7 @@ $font_size: $default_font_size;
 }
 .bubble_section:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .bubble_section {
