@@ -167,6 +167,10 @@
         </ul>
       </div>
     </div>
+    <div class="apply-now">
+      Bewirb dich
+      <a href="https://www.renuo.ch/en/jobs/ims-internship-2021-2022">jetzt</a>
+    </div>
   </div>
 </template>
 <script>
@@ -279,5 +283,25 @@ h6,
 }
 .swal2-show {
   font-size: 2rem;
+}
+
+.apply-now {
+  font-size: 1.5vw;
+  background-color: #27d79d;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  background-image: url("http://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
+}
+
+@media (max-width: 1200px) {
+  .apply-now {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .apply-now {
+    font-size: 4.5vw;
+  }
 }
 </style>
