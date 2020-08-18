@@ -5,7 +5,7 @@
   font-weight: bold !important;
 }
 
-ul {
+.values_listing {
   list-style-type: none;
   padding: 0;
 }
@@ -226,6 +226,29 @@ blockquote p {
 }
 
 @media (max-width: 500px) {
+
+
+  .values-title {
+    margin-top: 3vw;
+    font-weight: 500;
+    font-size: 3.3vw;
+  }
+
+  .h3-title {
+    margin: 6vw 0px 0px 0px;
+    font-size: 4vw;
+    color: #27d79d;
+    font-weight: bold !important;
+  }
+  
+
+  
+
+  p, blockquote{
+    margin-bottom: 10px;
+    font-size: 2.5vw;
+  }
+  
   .github-corner:hover .octo-arm {
     animation: none;
   }

@@ -1,16 +1,13 @@
 <template>
   <div class="center-layout">
     <div>
-      <img
-        class="centered-gallery-image"
-        alt="Praktikumskonzept"
-        :src="internship_book"
-      />
+      <img class="centered-gallery-image" alt="Workspace" :src="work_space" />
     </div>
     <br />
+    <br />
     <b-container>
-      <b-row>
-        <b-col
+      <b-row class="d-flex justify-content-center special_row">
+        <b-col class="bubble-item"
           ><div @click="showEinfuehrung">
             <Bubble
               centered
@@ -19,7 +16,7 @@
               v-bind:radius="5"
             ></Bubble></div
         ></b-col>
-        <b-col
+        <b-col class="bubble-item"
           ><div @click="showKundenprojekt">
             <Bubble
               centered
@@ -28,7 +25,7 @@
               v-bind:radius="5"
             ></Bubble></div
         ></b-col>
-        <b-col
+        <b-col class="bubble-item"
           ><div @click="showCoding">
             <Bubble
               centered
@@ -37,7 +34,7 @@
               v-bind:radius="8"
             ></Bubble></div
         ></b-col>
-        <b-col
+        <b-col class="bubble-item"
           ><div @click="showIPA">
             <Bubble
               centered
@@ -46,7 +43,7 @@
               v-bind:radius="5"
             ></Bubble></div
         ></b-col>
-        <b-col
+        <b-col class="bubble-item"
           ><div @click="showStudium">
             <Bubble
               centered
@@ -67,10 +64,7 @@
       dadurch schneller in die Projekte eingearbeite bist und dich an die
       Methodik und Techniken der Renuo gewöhnst und anpasst.
     </div>
-
-    <div>
-      <img class="centered-gallery-image" alt="Workspace" :src="work_space" />
-    </div>
+    <div></div>
     <div class="row mt-5 job-desc justify-content-between">
       <div class="col-12 col-md-6 col-lg-4 mt-4">
         <h3>Deine Mission</h3>
@@ -181,7 +175,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import Vue from "vue";
-import internship_book from "@/assets/internship_book.jpeg";
 import work_space from "@/assets/work_space.png";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 Vue.use(BootstrapVue);
@@ -203,8 +196,7 @@ export default {
   },
   data() {
     return {
-      work_space: work_space,
-      internship_book: internship_book
+      work_space: work_space
     };
   },
   methods: {
@@ -345,6 +337,10 @@ h6,
     }
   }
 }
+
+.bubble-item {
+  margin-top: 10px;
+}
 .swal2-show {
   font-size: 2rem;
 }
@@ -363,9 +359,45 @@ h6,
   }
 }
 
+@media (max-width: 1207px) {
+  .special_row {
+    width: 35% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .special_row {
+    width: 50% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 500px) {
   .apply-now {
     font-size: 4.5vw;
+  }
+  .special_row {
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 500px) {
+  .apply-now {
+    font-size: 4.5vw;
+  }
+  .special_row {
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ul--jobs-detail {
+    ul {
+      font-size: 0.8rem;
+    }
   }
 }
 </style>

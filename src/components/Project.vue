@@ -121,12 +121,11 @@ export default {
     transform: scale(1.1);
   }
 }
-
+ul {
+  list-style-type: square !important;
+}
 .markdown-styling {
   text-align: left;
-  li {
-    list-style-type: square;
-  }
 }
 
 img {
@@ -140,8 +139,8 @@ img {
 }
 
 .image_list {
+  list-style-type: none !important;
   text-decoration: none;
-  list-style: none;
   padding-inline-start: 0;
 }
 @mixin project_title_default {
@@ -196,5 +195,13 @@ img {
 
 .project_container {
   text-align: center;
+}
+@media (max-width: 700px) {
+  .project_title_white {
+    font-size: 5vw;
+  }
+  .project_title {
+    font-size: 5vw;
+  }
 }
 </style>
