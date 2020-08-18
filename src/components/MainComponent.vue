@@ -1,10 +1,12 @@
 <template>
   <div>
     <Navigation @selected="setActive" />
+    <br />
     <div class="content-container">
       <CenterTitle id="about-renuo" title="Renuo" />
       <AboutRenuo />
     </div>
+    <br />
     <div class="content-container">
       <CenterTitle id="internship" title="Praktikum" />
       <Internship />

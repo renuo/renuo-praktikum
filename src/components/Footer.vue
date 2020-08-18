@@ -265,4 +265,37 @@ footer {
     padding: 0 10px;
   }
 }
+
+@media (max-width: 991.98px) {
+  .fab {
+    width: 10vw !important;
+    height: 10vw !important;
+    font-size: 7vw !important;
+  }
+
+  .fas {
+    width: 10vw !important;
+    height: 10vw !important;
+    font-size: 7vw !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #footer_compiled_text {
+    font-size: 2.5vw;
+    margin-bottom: 3% !important;
+    color: white;
+  }
+  .fab {
+    width: 10vw !important;
+    height: 10vw !important;
+    font-size: 7vw !important;
+  }
+
+  .fas {
+    width: 10vw !important;
+    height: 10vw !important;
+    font-size: 7vw !important;
+  }
+}
 </style>

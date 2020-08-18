@@ -3,7 +3,7 @@
         {
             "title": "Manor Onboarding",
 						"description":[
-										"Für Manor/myONE entwickelten wir ein Portal, über welches Kunden sowohl Treue-, als auch MyOne und Mastercard Kreditkarten bestellen können. Dieser Prozess beinhaltet zahlreiche aufwändige Validierungen, Bonitätsprüfungen sowie Einbindungen in das Kernsystem von Manor (POS), damit die Karten direkt nach dem Antrag funktionieren und einsatzfähig sind. Über Schnittstellen (API) kann Manor die Verwaltung der Karten und Kunden vornehmen.\n"
+										"* Für Manor/myONE entwickelten wir ein Portal, über welches Kunden sowohl Treue-, als auch MyOne und Mastercard Kreditkarten bestellen können. Dieser Prozess beinhaltet zahlreiche aufwändige Validierungen, Bonitätsprüfungen sowie Einbindungen in das Kernsystem von Manor (POS), damit die Karten direkt nach dem Antrag funktionieren und einsatzfähig sind. Über Schnittstellen (API) kann Manor die Verwaltung der Karten und Kunden vornehmen.\n"
 						],
             "images": ["assets/manor_card.png", "assets/manor_customer_form.png", "assets/manor_registration.png"],
             "imgpos": "left",

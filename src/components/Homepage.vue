@@ -6,14 +6,6 @@
     >
     <br />
     <img alt="renuo team" class="img-fluid image-block--centered" :src="team" />
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
 </template>
 <script>

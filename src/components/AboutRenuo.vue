@@ -4,7 +4,7 @@
     <img class="img-full" alt="renuo team" :src="team" />
     <h3 class="h3-title">Fokus und Stärken</h3>
     <p>Wir entwickeln individuelle Software auf höchstem Niveau.</p>
-    <ul>
+    <ul class="values_listing">
       <li>
         <div class="container">
           <div class="row text-center">
