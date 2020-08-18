@@ -1,6 +1,11 @@
 <template>
   <footer>
     <div class="footer-content">
+      <br />
+      <br />
+      <ApplyNow />
+      <br />
+      <br />
       <section class="social-icon__wrapper">
         <ul>
           <li v-for="icon in icons" :key="icon">
@@ -15,7 +20,7 @@
         >hello@renuo.ch / +41 44 500 83 50 / Industriestrasse 44 / 8304
         Wallisellen</span
       >
-      <div class="container-fluid footer--made-by">
+      <div class="container-fluid footer-made-by">
         <div class="row">
           <div class="col-12 col-md-6">
             © 2020 Renuo AG —
@@ -48,6 +53,8 @@
   </footer>
 </template>
 <script>
+import ApplyNow from "./ApplyNow.vue";
+
 export default {
   name: "Footer",
   data() {
@@ -68,16 +75,18 @@ export default {
         }
       ]
     };
+  },
+  components: {
+    ApplyNow
   }
 };
 </script>
+
 <style scoped lang="scss">
 footer {
-  margin-top: auto;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-
   .footer-content {
     background-color: #27d79d;
     /*variables*/
@@ -107,7 +116,7 @@ footer {
         justify-content: center;
       }
       li {
-        padding: 2rem;
+        padding: 1.5rem;
         list-style: none;
         .fab {
           display: flex;
@@ -238,7 +247,7 @@ footer {
   text-align: left !important;
 }
 
-.footer--made-by {
+.footer-made-by {
   text-align: left;
   padding-left: 20px !important;
   padding: 0.8rem 2rem;
@@ -246,19 +255,19 @@ footer {
   line-height: 1.7rem;
 }
 @media (max-width: 991.98px) {
-  .footer--made-by {
+  .footer-made-by {
     text-align: center;
     font-size: 0.7rem;
   }
 }
 
-.footer--made-by img {
+.footer-made-by img {
   float: right;
   max-height: 1.7rem;
   margin-right: 2rem;
 }
 @media (max-width: 991.98px) {
-  .footer--made-by img {
+  .footer-made-by img {
     max-height: 1.5rem;
     margin: auto;
     float: none;

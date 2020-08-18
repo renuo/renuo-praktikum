@@ -1,60 +1,28 @@
 <template>
   <div>
     <div class="project_container">
-      <div :class="getBackgroundContainerStyle" v-if="this.imgpos == 'left'">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm order-first">
-              <ul class="image_list">
-                <li v-for="image_source in this.images" :key="image_source">
-                  <img class="side_image" :src="image_source" />
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm text-side">
-              <span :class="getTitleClass">{{ this.title }}</span>
-              <br />
-              <hr class="project_divider_renuo" />
-              <div class="markdown-styling">
-                <vue-markdown>
-                  <template v-for="line in this.description">
-                    {{ line }}
-                  </template>
-                </vue-markdown>
-              </div>
-            </div>
+      <div :class="getBackgroundContainerStyle">
+        <div class="content-container">
+          <img class="heading-image" :src="images[0]" />
+          <br />
+          <br />
+          <br />
+          <span :class="getTitleClass">{{ this.title }}</span>
+          <br />
+          <hr class="project_divider_renuo" />
+          <div class="markdown-styling">
+            <vue-markdown>
+              <template v-for="line in this.description">
+                {{ line }}
+              </template>
+            </vue-markdown>
           </div>
-        </div>
-      </div>
-      <div :class="getBackgroundContainerStyle" v-else>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm text-side">
-              <span :class="getTitleClass">{{ this.title }}</span>
-              <br />
-              <hr class="project_divider" />
-              <div class="markdown-styling">
-                <vue-markdown>
-                  <template v-for="line in this.description">
-                    {{ line }}
-                  </template>
-                </vue-markdown>
-              </div>
-            </div>
-            <div class="col-sm order-first">
-              <ul class="image_list">
-                <li v-for="image_source in this.images" :key="image_source">
-                  <img class="side_image" :src="image_source" />
-                </li>
-              </ul>
-            </div>
-          </div>
+          <a :href="this.more">Mehr</a>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 <script>
 import VueMarkdown from "vue-markdown";
 
@@ -65,6 +33,11 @@ export default {
       type: String,
       required: true
     },
+    more: {
+      type: String,
+      required: true
+    },
+
     description: {
       type: Array,
       required: true
@@ -108,41 +81,54 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-.side_image {
-  width: 80%;
-  margin-bottom: 2%;
-  max-height: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
 .project_container {
+  img {
+    width: 100%;
+    max-height: auto;
+    border-radius: 10px;
+  }
+
   img:hover {
     transform: scale(1.1);
   }
 }
-ul {
-  list-style-type: square !important;
-}
-.markdown-styling {
-  text-align: left;
-}
 
-img {
-  border-radius: 5px;
-}
-
-.text-side {
-  p {
-    text-align: left;
+@media only screen and (min-width: 700px) {
+  .project_container {
+    img {
+      width: 80%;
+      max-height: 600px;
+      border-radius: 10px;
+    }
+  }
+  .project_container {
+    p {
+      font-size: 3rem !important;
+    }
+    a {
+      color: white;
+    }
   }
 }
 
-.image_list {
-  list-style-type: none !important;
-  text-decoration: none;
-  padding-inline-start: 0;
+@media only screen and (min-width: 1000px) {
+  .project_container {
+    img {
+      width: 60%;
+      max-height: 800px;
+      border-radius: 10px;
+    }
+  }
 }
+
+.content-container {
+  width: 80%;
+}
+
+ul {
+  list-style-type: square !important;
+}
+
 @mixin project_title_default {
   font-weight: bold;
   color: #143327;
@@ -152,6 +138,7 @@ img {
   color: #27d79d;
   padding-bottom: 1%;
 }
+
 .project_title {
   @include project_title_default;
 }
@@ -186,7 +173,8 @@ img {
 }
 
 .project_divider {
-  @include project_default_divider color: #27d79d;
+  @include project_default_divider;
+  color: #27d79d;
 }
 
 .project_divider_renuo {

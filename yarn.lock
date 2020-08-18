@@ -8157,6 +8157,11 @@ vue-sweetalert2@^3.0.6:
   dependencies:
     sweetalert2 "9.x"
 
+vue-tasty-burgers@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/vue-tasty-burgers/-/vue-tasty-burgers-1.2.3.tgz#6465f6eae6d96f065c8ab3ab165a581ced4759fb"
+  integrity sha512-SHY87M3BMKsksRFXePNHByLMzYzem5D4RYRrb5Rpb0dmWAi9WQKEPZcDLD66dNqy/5X4fF8ztLhEDACm223c/Q==
+
 vue-template-compiler@^2.6.11:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.6.11.tgz#c04704ef8f498b153130018993e56309d4698080"

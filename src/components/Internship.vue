@@ -1,70 +1,72 @@
 <template>
-  <div class="center-layout">
+  <div>
     <div>
-      <img class="centered-gallery-image" alt="Workspace" :src="work_space" />
+      <div>
+        <img class="centered-gallery-image" alt="Workspace" :src="work_space" />
+      </div>
+      <br />
+      <br />
+      <b-container>
+        <b-row class="d-flex justify-content-center special_row">
+          <b-col class="bubble-item col-12 col-md-12 col-lg-2 col-sm-12"
+            ><div @click="showEinfuehrung">
+              <Bubble
+                centered
+                text="Einfuehrung"
+                title="August 2021"
+                v-bind:radius="5"
+              ></Bubble></div
+          ></b-col>
+          <b-col class="bubble-item col-12 col-md-12 col-lg-2 col-sm-12"
+            ><div @click="showKundenprojekt">
+              <Bubble
+                centered
+                text="Kundenprojekt"
+                title="September 2021"
+                v-bind:radius="5"
+              ></Bubble></div
+          ></b-col>
+          <div class="bubble-item col-12 col-md-12 col-lg-2 col-sm-12">
+            <div @click="showCoding">
+              <Bubble
+                centered
+                title="Oktober 21 - August 22"
+                text="Coding"
+                v-bind:radius="7"
+              ></Bubble>
+            </div>
+          </div>
+          <b-col class="bubble-item col-12 col-md-12 col-lg-2 col-sm-12"
+            ><div @click="showIPA">
+              <Bubble
+                centered
+                text="IPA (5.0+)"
+                title="September 2021"
+                v-bind:radius="5"
+              ></Bubble></div
+          ></b-col>
+          <b-col class="bubble-item col-12 col-md-12 col-lg-2 col-sm-12"
+            ><div @click="showStudium">
+              <Bubble
+                centered
+                text="Studium ?"
+                title="September 2022"
+                v-bind:radius="5"
+              ></Bubble></div
+          ></b-col>
+        </b-row>
+      </b-container>
+      <div class="work_during_internship_section center-layout">
+        Während deines Praktikums wirst du dich mit vielen verschiedenen
+        Technologien auseinandersetzten - unter anderem mit Ruby on Rails,
+        Angular und React. Du wirst für Kunden einen Mehrwert generieren und
+        durch die praktische Arbeit viel Erfahrung sammeln, ganz im Sinne von
+        Learning by Doing. Unsere Praktikant*innen beteiligen sich weiter auch
+        an Pair Programming, wodurch sie schnell Einblick in unsere Projekte
+        erhalten und sich an unsere Methoden und Techniken gewöhnen.
+      </div>
     </div>
-    <br />
-    <br />
-    <b-container>
-      <b-row class="d-flex justify-content-center special_row">
-        <b-col class="bubble-item"
-          ><div @click="showEinfuehrung">
-            <Bubble
-              centered
-              text="Einfuehrung"
-              title="August 21"
-              v-bind:radius="5"
-            ></Bubble></div
-        ></b-col>
-        <b-col class="bubble-item"
-          ><div @click="showKundenprojekt">
-            <Bubble
-              centered
-              text="Kundenprojekt"
-              title="September 21"
-              v-bind:radius="5"
-            ></Bubble></div
-        ></b-col>
-        <b-col class="bubble-item"
-          ><div @click="showCoding">
-            <Bubble
-              centered
-              title="August - September"
-              text="Coding"
-              v-bind:radius="8"
-            ></Bubble></div
-        ></b-col>
-        <b-col class="bubble-item"
-          ><div @click="showIPA">
-            <Bubble
-              centered
-              text="IPA (5.0+)"
-              title="September 21"
-              v-bind:radius="5"
-            ></Bubble></div
-        ></b-col>
-        <b-col class="bubble-item"
-          ><div @click="showStudium">
-            <Bubble
-              centered
-              text="Studium"
-              title="September 22"
-              v-bind:radius="5"
-            ></Bubble></div
-        ></b-col>
-      </b-row>
-    </b-container>
-    <div class="work_during_internship_section">
-      Während deines Praktikums wirst du dich mit vielen verschiedenen
-      Technologien konfrontiert sehen. Darunter sind Ruby on Rails, Angular,
-      React und andere Web Technologien stehts vertreten. Du wirst für Kunden
-      einen Mehrwert generieren und grösstenteils durch das Arbeiten an
-      Erfahrung gewinnen. Also learning by doing. Es ist ebenfalls ein Wunsch
-      vom Team dass sich die Praktikanten an Pair Programming beteiligen und
-      dadurch schneller in die Projekte eingearbeite bist und dich an die
-      Methodik und Techniken der Renuo gewöhnst und anpasst.
-    </div>
-    <div class="container pl-md-5 job-container">
+    <div class="pl-md-5 job-container">
       <div class="row mt-5 job-desc justify-content-between">
         <div class="col-12 col-md-12 col-lg-4 col-sm-12">
           <h3>Deine Mission</h3>
@@ -170,10 +172,6 @@
           </ul>
         </div>
       </div>
-    </div>
-    <div class="apply-now">
-      Bewirb dich
-      <a href="https://www.renuo.ch/en/jobs/ims-internship-2021-2022">jetzt</a>
     </div>
   </div>
 </template>
@@ -328,10 +326,14 @@ h6,
   margin: auto;
 }
 .job-container {
+  max-width: 80% !important;
+  width: 80% !important;
+  margin: auto;
   h3 {
     font-weight: bold !important;
   }
 }
+
 .ul--jobs-detail {
   list-style-image: url(https://www.renuo.ch/images/check-ddee0b6009fa00fff3365f0a93ccefb3.png?vsn=d);
   li {
@@ -370,22 +372,12 @@ h6,
 }
 
 @media (max-width: 1207px) {
-  .special_row {
-    width: 35% !important;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .ul--jobs-detail {
     padding-inline-start: 0px !important;
   }
 }
 
 @media (max-width: 750px) {
-  .special_row {
-    width: 50% !important;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .ul--jobs-detail {
     padding-inline-start: 5px !important;
   }
@@ -395,20 +387,10 @@ h6,
   .apply-now {
     font-size: 4.5vw;
   }
-  .special_row {
-    width: 70% !important;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 @media (max-width: 500px) {
   .apply-now {
     font-size: 4.5vw;
-  }
-  .special_row {
-    width: 90% !important;
-    margin-left: auto;
-    margin-right: auto;
   }
   .ul--jobs-detail {
     ul {
@@ -418,10 +400,5 @@ h6,
   }
 }
 @media (max-width: 450px) {
-  .special_row {
-    width: 100% !important;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 </style>

@@ -3,6 +3,7 @@
     <div class="project_list">
       <div v-for="(project, index) in this.projects" :key="project.title">
         <Project
+          :more="project.more"
           :title="project.title"
           :images="project.images"
           :description="project.description"

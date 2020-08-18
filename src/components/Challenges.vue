@@ -1,10 +1,8 @@
 <template>
   <div class="hello">
     <h3 class="h3-title">Unterfordert?</h3>
-
     <div class="instructions">
       <h4 class="readme-title">Wir haben eine Challenge für dich!</h4>
-
       <div class="corner-container" style="width: 100%;">
         <a
           href="https://github.com/renuo/christmas_tree"
@@ -150,3 +148,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@import "@/stylesheets/janis_css.scss";
+</style>
