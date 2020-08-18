@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.5b3390ae954b04263366f883789f3462.js"
+  "/precache-manifest.a64fa48a47365b6b89ab71de86655da4.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "renuo-praktikum"});
