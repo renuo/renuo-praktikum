@@ -121,17 +121,19 @@ export default {
     transform: scale(1.1);
   }
 }
+
 .markdown-styling {
   text-align: left;
+  li {
+    list-style-type: square;
+  }
 }
+
 img {
   border-radius: 5px;
 }
 
 .text-side {
-  ul {
-    list-style: square outside !important;
-  }
   p {
     text-align: left;
   }
