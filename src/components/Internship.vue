@@ -294,7 +294,7 @@ export default {
         from: new Date(current_year + 1, 7),
         title: "Einführung",
         description:
-          "Du wirst von den Mitarbeitern von Renuo in das Praktikum eingearbeitet und folgst einem detailierten Plan"
+          "Du wirst von den Mitarbeitern von Renuo in das Praktikum eingearbeitet und folgst einem detailierten <a href='assets/praktikumskonzept_2020.pdf' style='color: #27d79d' download>Plan</a>"
       },
       {
         from: new Date(current_year + 1, 8),
