@@ -133,5 +133,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/stylesheets/janis_css.scss";
+@import "@/stylesheets/janis_styling.scss";
 </style>
