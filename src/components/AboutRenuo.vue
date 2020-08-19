@@ -8,7 +8,7 @@
     <img class="img-padded" alt="tools" :src="tools" />
     <h3 class="h3-title">Fokus und Stärken</h3>
     <p>Wir entwickeln individuelle Software auf höchstem Niveau.</p>
-    <ul class="values_listing">
+    <ul class="values-listing">
       <li>
         <div class="container">
           <div class="row text-center">
@@ -112,6 +112,8 @@ import w5 from "@/assets/w5.svg";
 import team from "@/assets/team.jpg";
 import tools from "@/assets/tools.png";
 import kundenauszug from "@/assets/kundenauszug.png";
+
+import "timeline-vuejs/dist/timeline-vuejs.css";
 
 export default {
   name: "AboutRenuo",
