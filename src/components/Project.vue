@@ -83,6 +83,7 @@ export default {
 <style scoped lang="scss">
 .project_container {
   img {
+    transition: all 0.5s ease-in-out;
     object-fit: contain;
   }
 
