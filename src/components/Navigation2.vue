@@ -284,13 +284,7 @@
             v-on:click="closeNav"
             class="nav-link"
             @click.prevent="passUpNewBody('about-renuo')"
-            >About Renuo</a
-          >
-          <a
-            v-on:click="closeNav"
-            class="nav-link"
-            @click.prevent="passUpNewBody('internship')"
-            >About your internship</a
+            >Dein künftiger Praktikumsort</a
           >
           <a
             v-on:click="closeNav"
@@ -301,21 +295,24 @@
           <a
             v-on:click="closeNav"
             class="nav-link"
+            @click.prevent="passUpNewBody('internship')"
+            >Dein Praktikum bei uns</a
+          >
+          <a
+            v-on:click="closeNav"
+            class="nav-link"
             @click.prevent="passUpNewBody('challenges')"
             >Challenge</a
           >
           <a href="https://www.renuo.ch/en/jobs"
-            >Jobs<i class="fal fa-external-link"></i
+            >Jobs <i class="fal fa-external-link"></i
           ></a>
           <a href="https://www.renuo.ch/en/blog"
-            >Blog<i class="fal fa-external-link"></i
+            >Blog <i class="fal fa-external-link"></i
           ></a>
-          <a
-            v-on:click="closeNav"
-            class="nav-link"
-            @click.prevent="passUpNewBody('gallery')"
-            >Gallery</a
-          >
+          <a href="assets/praktikumskonzept_2020.pdf" download
+            >Praktikumskonzept <i class="fal fa-external-link"></i
+          ></a>
         </div>
       </div>
     </div>
@@ -395,7 +392,7 @@ export default {
   left: 0;
   top: 0;
   background-color: rgb(39, 215, 157);
-  background-image: url("http://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
+  background-image: url("https://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -411,14 +408,14 @@ export default {
   padding: 8px;
   text-decoration: none;
   font-size: 2.5rem;
-  color: #818181;
   display: block;
+  color: $renuo-dark-gray !important;
   transition: 0.3s;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #f1f1f1;
+  color: #f1f1f1 !important;
 }
 
 .nav-link {
@@ -460,7 +457,7 @@ export default {
 }
 
 #navigationbar {
-  background-image: url("http://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
+  background-image: url("https://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
   background-color: $renuo-base-color;
 }
 .navbar-brand {
