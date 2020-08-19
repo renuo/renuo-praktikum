@@ -256,31 +256,19 @@
         </div>
         <span>Renuo</span></b-navbar-brand
       >
-      <b-navbar-toggle
-        target="navbar-toggle-collapse"
-        id="navigationButton"
-        @click="openNav"
-      >
-        <template>
-          <tasty-burger-button
-            :type="buttonType"
-            :active="isActive"
-            :size="size"
-            :color="color"
-            :active-color="activeColor"
-          />
-        </template>
-      </b-navbar-toggle>
-    </b-navbar>
-    <div id="myNav" class="overlay">
-      <a class="closebtn" @click="closeNav"
-        ><tasty-burger-button
-          :type="buttonType"
+      <template>
+        <tasty-burger-button
+          id="overlayButton"
+          v-on:toggle="toggleOverlay(isActive)"
           :active="isActive"
           :size="size"
           :color="color"
+          :type="buttonType"
           :active-color="activeColor"
-      /></a>
+        />
+      </template>
+    </b-navbar>
+    <div id="myNav" class="overlay">
       <div class="overlay-content">
         <div class="overlay-links">
           <a href="#" @click.prevent="passUpNewBody('about-renuo')"
@@ -311,8 +299,15 @@
   </div>
 </template>
 <script>
+import $ from "jquery";
 export default {
   name: "Navigation",
+  mounted() {
+    var element = $(".hamburger-box");
+    element.css("transform", "");
+    element.css("height", "");
+    element.css("width", "");
+  },
   methods: {
     passUpNewBody(value) {
       this.$emit("selected", value);
@@ -321,23 +316,24 @@ export default {
     invertColour() {
       this.$emit("invert");
     },
-    openNav() {
-      if (this.isActive) {
-        return;
+    toggleOverlay() {
+      var isExtended = document.getElementById("myNav").style.width == "100%";
+      if (isExtended) {
+        this.closeNav();
+      } else {
+        this.openNav();
       }
-      this.isActive = true;
+    },
+    openNav() {
       document.getElementById("myNav").style.width = "100%";
-      this.$forceUpdate();
     },
     closeNav() {
-      this.isActive = false;
       document.getElementById("myNav").style.width = "0%";
-      this.$forceUpdate();
     }
   },
   data() {
     return {
-      buttonType: "spin",
+      buttonType: "spring",
       isActive: false,
       size: "xl",
       color: "white",
@@ -346,27 +342,25 @@ export default {
   }
 };
 </script>
-
 <style scoped lang="scss">
 @import "@/stylesheets/variables.scss";
 
 i {
   margin-left: 10px;
 }
+
 #navigationbar {
   background-color: $renuo-base-color;
 }
 .navbar-brand {
   font-size: 2rem !important;
 }
+
 .navbar-toggler {
   border: none;
 }
 
 #navigationButton {
-  color: white !important;
-  border-color: white;
-  font-size: 2em;
 }
 
 #rotatedNavigationButton {
@@ -376,6 +370,18 @@ i {
 
 #navigationButton rect {
   fill: white !important;
+}
+
+#overlayButton {
+  vertical-align: middle;
+  color: white !important;
+  border-color: white;
+  font-size: 2em;
+  z-index: 2;
+
+  .hamburger-box {
+    transform: scale(1) !important;
+  }
 }
 
 .logo {
@@ -392,10 +398,6 @@ i {
   vertical-align: middle;
   line-height: normal;
   margin-left: 0.5rem;
-}
-
-.hamburger-box {
-  margin-top: 2% !important;
 }
 
 .overlay {
@@ -425,6 +427,7 @@ i {
   color: $navigation-item-color;
   display: block;
   transition: 0.3s;
+  transition: border-width 0.5s ease-in-out;
 }
 
 .overlay-links a {

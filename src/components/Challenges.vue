@@ -43,13 +43,13 @@
       </div>
 
       <p class="readme-text">
-        Du kannst deine Lösung per pull request einreichen.
+        Du kannst deine Lösung per Pull Request einreichen.
       </p>
 
       <p class="readme-text">
         Fragen kannst du im
         <a href="https://github.com/renuo/christmas_tree/issues">"Issues"</a>
-        tab stellen.
+        Tab stellen.
       </p>
 
       <h4 class="readme-title">Weihnachtsbaum 🌲</h4>
@@ -90,7 +90,7 @@
     ChristmasTree.draw(5)
       </code></pre>
 
-      <p class="readme-text">Der output sollte dann wiefolgt aussehen:</p>
+      <p class="readme-text">Der Output sollte dann wie folgt aussehen:</p>
       <pre><code class="language-bash code-display">
         X
        XXX
