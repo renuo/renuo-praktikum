@@ -150,6 +150,7 @@ const options = {
 import "sweetalert2/dist/sweetalert2.min.css";
 Vue.use(VueSweetalert2, options);
 import Timeline from "timeline-vuejs";
+var current_year = new Date().getFullYear();
 export default {
   name: "Internship",
   components: {
@@ -157,34 +158,35 @@ export default {
   },
   data: () => ({
     colorDots: "#27d79d",
+
     timelineItems: [
       {
-        from: new Date(2021, 7),
+        from: new Date(current_year + 1, 7),
         title: "Einführung",
         description:
           "Du wirst von den Mitarbeitern von Renuo in das Praktikum eingearbeitet und folgst einem detailierten Plan"
       },
       {
-        from: new Date(2021, 8),
+        from: new Date(current_year + 1, 8),
         title: "Kundenprojekt",
         description:
           "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für einen Kunden. Du wirst während dem Projekt vom Team unterstützt"
       },
       {
-        from: new Date(2021, 9),
+        from: new Date(current_year + 1, 9),
         to: new Date(2021, 12),
         title: "Coden",
         description:
           "Nun wird endlich Software entwickelt. Bleib dran und erfreue dich an der Hauptaufgabe deines Praktikums"
       },
       {
-        from: new Date(2022, 2),
+        from: new Date(current_year + 2, 2),
         title: "IPA (5+)",
         description:
           "Der Abschluss der Schulischen Aufgaben. Bei Renuo unterstützten wir dich eine gute Note zu erreichen"
       },
       {
-        from: new Date(2022, 8),
+        from: new Date(current_year + 2, 8),
         title: "Studium ?",
         description:
           "Als Informatiker ist ein dauerhaftes Weiterbilden eine wichtige Komponente von Erfolg. Also ab ins Studium"
