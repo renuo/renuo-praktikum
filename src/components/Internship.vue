@@ -6,56 +6,13 @@
       </div>
       <br />
       <br />
-      <b-container>
-        <b-row class="d-flex justify-content-center special_row">
-          <b-col class="bubble-item col-12 col-md-12 col-lg-2 col-sm-12"
-            ><div @click="showEinfuehrung">
-              <Bubble
-                centered
-                text="Einfuehrung"
-                title="August 2021"
-                v-bind:radius="5"
-              ></Bubble></div
-          ></b-col>
-          <b-col class="bubble-item col-12 col-md-12 col-lg-2 col-sm-12"
-            ><div @click="showKundenprojekt">
-              <Bubble
-                centered
-                text="Kundenprojekt"
-                title="September 2021"
-                v-bind:radius="5"
-              ></Bubble></div
-          ></b-col>
-          <div class="bubble-item col-12 col-md-12 col-lg-2 col-sm-12">
-            <div @click="showCoding">
-              <Bubble
-                centered
-                title="Oktober 21 - August 22"
-                text="Coding"
-                v-bind:radius="7"
-              ></Bubble>
-            </div>
-          </div>
-          <b-col class="bubble-item col-12 col-md-12 col-lg-2 col-sm-12"
-            ><div @click="showIPA">
-              <Bubble
-                centered
-                text="IPA (5.0+)"
-                title="September 2021"
-                v-bind:radius="5"
-              ></Bubble></div
-          ></b-col>
-          <b-col class="bubble-item col-12 col-md-12 col-lg-2 col-sm-12"
-            ><div @click="showStudium">
-              <Bubble
-                centered
-                text="Studium ?"
-                title="September 2022"
-                v-bind:radius="5"
-              ></Bubble></div
-          ></b-col>
-        </b-row>
-      </b-container>
+      <Timeline
+        class="timeline-center"
+        :timeline-items="timelineItems"
+        :colorDots="colorDots"
+        :message-when-no-items="messageWhenNoItems"
+      />
+
       <div class="work_during_internship_section center-layout">
         Während deines Praktikums wirst du dich mit vielen verschiedenen
         Technologien auseinandersetzten - unter anderem mit Ruby on Rails,
@@ -79,7 +36,7 @@
               </li>
               <br />
               <li>
-                <i class="icon-li icon-ok"></i> Anforderungsanalyse, Technische
+                <i class="icon-li icon-ok"></i> Anforderungsanalyse, technische
                 Betreuung und Beratung von Kunden
               </li>
               <br />
@@ -176,6 +133,7 @@
   </div>
 </template>
 <script>
+import "timeline-vuejs/dist/timeline-vuejs.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import Vue from "vue";
@@ -183,7 +141,6 @@ import work_space from "@/assets/work_space.png";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
-import Bubble from "./Bubble.vue";
 import VueSweetalert2 from "vue-sweetalert2";
 // If you don't need the styles, do not connect
 const options = {
@@ -192,99 +149,49 @@ const options = {
 };
 import "sweetalert2/dist/sweetalert2.min.css";
 Vue.use(VueSweetalert2, options);
-
+import Timeline from "timeline-vuejs";
 export default {
   name: "Internship",
   components: {
-    Bubble
+    Timeline
   },
-  data() {
-    return {
-      work_space: work_space
-    };
-  },
-  methods: {
-    showEinfuehrung() {
-      this.$swal({
-        title: "Einstieg",
-        text:
-          "Du wirst von den Mitarbeitern von Renuo in das Praktikum eingearbeitet und folgst einem detailierten Plan",
-        icon: "info",
-        showConfirmButton: false,
-        showCloseButton: true,
-        showClass: {
-          popup: "animate__animated animate__fadeInDown"
-        },
-        hideClass: {
-          popup: "animate__animated animate__fadeOutUp"
-        }
-      });
-    },
-    showKundenprojekt() {
-      this.$swal({
-        title: "Kundenproject",
-        text:
-          "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für einen Kunden. Du wirst während dem Projekt vom Team unterstützt",
-        icon: "info",
-        showConfirmButton: false,
-        showCloseButton: true,
-        showClass: {
-          popup: "animate__animated animate__fadeInDown"
-        },
-        hideClass: {
-          popup: "animate__animated animate__fadeOutUp"
-        }
-      });
-    },
-    showCoding() {
-      this.$swal({
-        title: "Entwickeln !!",
-        text:
-          "Nun wird endlich Software entwickelt. Bleib dran und erfreue dich an der Hauptaufgabe deines Praktikums",
-        icon: "info",
-        showConfirmButton: false,
-        showCloseButton: true,
-        showClass: {
-          popup: "animate__animated animate__fadeInDown"
-        },
-        hideClass: {
-          popup: "animate__animated animate__fadeOutUp"
-        }
-      });
-    },
-    showIPA() {
-      this.$swal({
-        title: "IPA",
-        text:
-          "Der Abschluss der Schulischen Aufgaben. Bei Renuo unterstützten wir dich eine gute Note zu erreichen",
-        icon: "info",
-        showConfirmButton: false,
-        showCloseButton: true,
-        showClass: {
-          popup: "animate__animated animate__fadeInDown"
-        },
-        hideClass: {
-          popup: "animate__animated animate__fadeOutUp"
-        }
-      });
-    },
-    showStudium() {
-      this.$swal({
-        title: "Studieren",
-        text:
-          "Als Informatiker ist ein dauerhaftes Weiterbilden eine wichtige Komponente von Erfolg. Also ab ins Studium",
-        icon: "info",
-        showConfirmButton: false,
-        showCloseButton: true,
-        showClass: {
-          popup: "animate__animated animate__fadeInDown"
-        },
-        hideClass: {
-          popup: "animate__animated animate__fadeOutUp"
-        }
-      });
-    }
-  }
+  data: () => ({
+    colorDots: "#27d79d",
+    timelineItems: [
+      {
+        from: new Date(2021, 7),
+        title: "Einführung",
+        description:
+          "Du wirst von den Mitarbeitern von Renuo in das Praktikum eingearbeitet und folgst einem detailierten Plan"
+      },
+      {
+        from: new Date(2021, 8),
+        title: "Kundenprojekt",
+        description:
+          "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für einen Kunden. Du wirst während dem Projekt vom Team unterstützt"
+      },
+      {
+        from: new Date(2021, 9),
+        to: new Date(2021, 12),
+        title: "Coden",
+        description:
+          "Nun wird endlich Software entwickelt. Bleib dran und erfreue dich an der Hauptaufgabe deines Praktikums"
+      },
+      {
+        from: new Date(2022, 2),
+        title: "IPA (5+)",
+        description:
+          "Der Abschluss der Schulischen Aufgaben. Bei Renuo unterstützten wir dich eine gute Note zu erreichen"
+      },
+      {
+        from: new Date(2022, 8),
+        title: "Studium ?",
+        description:
+          "Als Informatiker ist ein dauerhaftes Weiterbilden eine wichtige Komponente von Erfolg. Also ab ins Studium"
+      }
+    ],
+    work_space: work_space
+  })
 };
 </script>
 <style lang="scss" scoped>
@@ -295,8 +202,14 @@ export default {
   font-size: 1rem;
 }
 
+.timeline-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .centered-gallery-image {
   width: 60%;
+  border-radius: 10px;
   height: auto;
   margin: auto;
 }

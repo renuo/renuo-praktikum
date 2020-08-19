@@ -1,6 +1,6 @@
 <template>
   <div class="my-container">
-    <h3 class="h3-title">Dein künftiger Praktikumsort</h3>
+    <h3 class="h3-title" id="about-renuo">Dein künftiger Praktikumsort</h3>
     <br />
     <img class="img-full" alt="renuo team" :src="team" />
     <h3 class="h3-title">Fokus und Stärken</h3>
@@ -96,7 +96,7 @@
     <img class="img-padded" alt="kundenauszug" :src="kundenauszug" />
     <br />
     <p>
-      Die Stärke der Renuo zeigt sich in der Vielseitigkeit der Produkte, welche
+      Die Stärke der Renuo zeigt sich in der Vielseitigkeit der Projekte, welche
       von den verschiedensten Branchen und Firmen beauftragt wurden.
     </p>
   </div>
