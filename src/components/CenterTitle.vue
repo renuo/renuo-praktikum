@@ -33,6 +33,12 @@ export default {
   margin-top: -5rem;
 }
 
+@media (max-width: 1000px) {
+  .heading .title {
+    font-size: 2rem;
+  }
+}
+
 .background-header {
   margin-top: 80px;
   background-color: #fff;
