@@ -3,6 +3,41 @@
     <h3 class="h3-title" id="about-renuo">Dein künftiger Praktikumsort</h3>
     <br />
     <img class="img-full" alt="renuo team" :src="team" />
+    <h3 class="h3-title">Tools</h3>
+    <p>Damit arbeiten wir</p>
+    <img class="img-padded" alt="tools" :src="tools" />
+    <h3 class="h3-title">Standort</h3>
+    <p>Hier findest du uns</p>
+    <div class="map img-full iframe-container">
+      <iframe
+        class="img-full remove-border"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.059992876826!2d8.588275315623724!3d47.41077097917222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b1b31f3d935%3A0x4ac272717f6e976!2sRenuo%20AG!5e0!3m2!1sen!2sch!4v1596548442258!5m2!1sen!2sch"
+        height="100%"
+        width="80%"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+      <img class="cat" :src="cat" />
+    </div>
+    <blockquote>
+      "Aa zelle Bölle schelle, d’Chatz gaht uf Walliselle"
+    </blockquote>
+    <div>
+      <ul id="locatin-listing">
+        <li>🌟 2 Minuten vom Bahnhof entfernt</li>
+        <li>🌟 5 Minuten bis zum Glatzentrum</li>
+      </ul>
+    </div>
+
+    <h3 class="h3-title">Kundenauszug</h3>
+    <br />
+    <img class="img-padded" alt="kundenauszug" :src="kundenauszug" />
+    <br />
+    <p>
+      Die Stärke der Renuo zeigt sich in der Vielseitigkeit der Projekte, welche
+      von den verschiedensten Branchen und Firmen beauftragt wurden.
+    </p>
     <h3 class="h3-title">Fokus und Stärken</h3>
     <p>Wir entwickeln individuelle Software auf höchstem Niveau.</p>
     <ul class="values_listing">
@@ -71,34 +106,6 @@
         </div>
       </li>
     </ul>
-    <h3 class="h3-title">Tools</h3>
-    <p>Damit arbeiten wir</p>
-    <img class="img-padded" alt="tools" :src="tools" />
-    <h3 class="h3-title">Standort</h3>
-    <p>Hier findest du uns</p>
-    <div class="map img-full iframe-container">
-      <iframe
-        class="img-full remove-border"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.059992876826!2d8.588275315623724!3d47.41077097917222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b1b31f3d935%3A0x4ac272717f6e976!2sRenuo%20AG!5e0!3m2!1sen!2sch!4v1596548442258!5m2!1sen!2sch"
-        height="100%"
-        width="80%"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
-      <img class="cat" :src="cat" />
-    </div>
-    <blockquote>
-      "Aa zelle Bölle schelle, d’Chatz gaht uf Walliselle"
-    </blockquote>
-    <h3 class="h3-title">Kundenauszug</h3>
-    <br />
-    <img class="img-padded" alt="kundenauszug" :src="kundenauszug" />
-    <br />
-    <p>
-      Die Stärke der Renuo zeigt sich in der Vielseitigkeit der Projekte, welche
-      von den verschiedensten Branchen und Firmen beauftragt wurden.
-    </p>
   </div>
 </template>
 
@@ -134,4 +141,16 @@ export default {
 
 <style scoped lang="scss">
 @import "@/stylesheets/janis_styling.scss";
+
+#locatin-listing {
+  list-style-type: none;
+  font-size: 1.75rem;
+  text-align: center !important;
+}
+
+@media (max-width: 700px) {
+  #locatin-listing {
+    font-size: 1rem;
+  }
+}
 </style>

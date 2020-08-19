@@ -36,7 +36,7 @@ export default {
 
 @media (max-width: 1000px) {
   .heading .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .background-header {
