@@ -17,12 +17,13 @@
     </div>
     <br />
     <br />
+    <br />
+
     <div class="content-container">
       <CenterTitle id="challenges" title="Challenge" />
       <br />
       <Challenges />
     </div>
-
     <Footer />
   </div>
 </template>

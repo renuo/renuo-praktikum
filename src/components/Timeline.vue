@@ -169,7 +169,6 @@ export default {
   .wrapper-item {
     display: grid;
     grid-template-columns: 100px 1fr;
-    margin-bottom: 20px;
     .section-year {
       display: flex;
       flex-direction: column;

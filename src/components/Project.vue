@@ -83,9 +83,7 @@ export default {
 <style scoped lang="scss">
 .project_container {
   img {
-    width: 100%;
-    max-height: auto;
-    border-radius: 10px;
+    object-fit: contain;
   }
 
   img:hover {
@@ -93,12 +91,18 @@ export default {
   }
 }
 
+.heading-image {
+  width: 80%;
+  border-radius: 10px;
+  max-height: 300px !important;
+}
+
 @media only screen and (min-width: 700px) {
   .project_container {
-    img {
+    .heading-image {
       width: 80%;
-      max-height: 600px;
       border-radius: 10px;
+      max-height: 500px !important;
     }
   }
   .project_container {
@@ -112,7 +116,7 @@ export default {
   .project_container {
     img {
       width: 60%;
-      max-height: 800px;
+      max-height: 800px !important;
       border-radius: 10px;
     }
   }
@@ -153,12 +157,18 @@ ul {
   background-color: #fff !important;
   padding-top: 2%;
   padding-bottom: 2%;
+  a {
+    color: #27d79d;
+  }
   @include project_card_padding;
 }
 
 .project_container_renuo {
   background-color: #27d79d !important;
   color: white;
+  a {
+    color: white;
+  }
   @include project_card_padding;
 }
 .project_title_white {

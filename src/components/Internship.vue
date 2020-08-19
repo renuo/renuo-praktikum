@@ -6,6 +6,28 @@
       </div>
       <br />
       <br />
+      <div id="dummy-lineitem-for-image-insertion">
+        <section
+          data-v-7f3aebf1=""
+          data-v-6f737b7e=""
+          class="timeline timeline-center"
+        >
+          <div data-v-7f3aebf1="" class="wrapper-timeline">
+            <div data-v-7f3aebf1="" class="wrapper-item">
+              <div data-v-7f3aebf1="" class="section-year">
+                <p data-v-7f3aebf1="" class="year"></p>
+              </div>
+              <section data-v-7f3aebf1="" class="timeline-item">
+                <div data-v-818295b8="" id="" class="item">
+                  <h3 data-v-818295b8="" class="date-item"></h3>
+                  <h4 data-v-818295b8="" class="title-item"></h4>
+                  <p data-v-818295b8="" class="description-item"></p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
       <Timeline
         class="timeline-center"
         :timeline-items="timelineItems"
@@ -129,6 +151,45 @@
             </ul>
           </ul>
         </div>
+        <div
+          id="center-goodies-row"
+          class="col-12 col-md-12 col-lg-12 col-sm-12"
+        >
+          <h3>Noch mehr Goodies</h3>
+          <ul class="ul--jobs ul--jobs-detail center-goodies-row">
+            <ul class="icons-ul">
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i> Einmal jährliche Learning Week
+                (2015 nach Sizilien, 2016 nach Lissabon, 2017 an den Comer See,
+                2018 & 2019 im Elsass)
+              </li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i>½ Tag pro Woche für die
+                eigenverantwortliche Weiterbildung
+              </li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i>Regelmässige Meetups und
+                Konferenzbesuche
+              </li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i>Kaffee (wir haben eine Bialetti
+                :-)) und echten, chinesischen Tee
+              </li>
+              <br />
+              <li><i class="icon-li icon-ok"></i> Früchte und Snacks</li>
+              <br />
+              <li>
+                <i class="icon-li icon-ok"></i>Regelmässige Events (Team
+                Ausflüge, Monthly Beers, Skitag, Weihnachtsessen)
+              </li>
+              <br />
+            </ul>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -171,7 +232,7 @@ export default {
         from: new Date(current_year + 1, 9),
         to: new Date(current_year + 2, 2),
         isMainTimeEntry: true,
-        mainItemStyles: "background-color: #9bf542",
+        mainItemStyles: "background-color: #28d79d7d",
         title: "Coden",
         description:
           "Nun wird endlich Software entwickelt. Bleib dran und erfreue dich an der Hauptaufgabe deines Praktikums"
@@ -201,12 +262,24 @@ export default {
   font-size: 1rem;
 }
 
+@media (max-width: 700px) {
+  .work_during_internship_section {
+    text-align: left !important;
+    width: 90% !important;
+  }
+  .centered-gallery-image {
+    width: 75% !important;
+  }
+}
+
 .timeline-center {
   margin-left: auto;
   margin-right: auto;
 }
 
 .centered-gallery-image {
+  z-index: 1;
+  position: relative;
   width: 60%;
   border-radius: 10px;
   height: auto;
@@ -244,6 +317,11 @@ h6,
   h3 {
     font-weight: bold !important;
   }
+}
+
+#dummy-lineitem-for-image-insertion {
+  z-index: -1;
+  margin-top: -60px;
 }
 
 .ul--jobs-detail {
