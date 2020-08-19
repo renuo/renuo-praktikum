@@ -23,16 +23,14 @@ export default {
 @import "@/stylesheets/variables.scss";
 
 .title {
-  width: 100%;
+  width: 100% !important;
   color: $renuo-base-color;
   font-size: 4rem;
   font-weight: 500;
-  padding-left: 5rem;
-  padding-right: 5rem;
   padding-top: 8rem;
+  margin: auto;
   padding-bottom: 5rem;
   margin-top: -5rem;
-  margin: auto;
   max-width: 55rem;
 }
 

@@ -24,6 +24,7 @@ export default {
   margin-bottom: 50px;
   background-color: $renuo-base-color;
   a {
+    font-weight: normal;
     transition: border-width 0.5s ease-in-out;
     text-decoration: none;
     border-bottom: 1px solid #fff;
@@ -37,5 +38,6 @@ export default {
 .h2 {
   color: #3a4440;
   font-size: 3rem;
+  font-weight: bold;
 }
 </style>

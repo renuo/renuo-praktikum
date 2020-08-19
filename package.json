@@ -12,6 +12,7 @@
     "bootstrap-vue": "^2.16.0",
     "jquery": "^3.5.1",
     "register-service-worker": "^1.7.1",
+    "timeline-vuejs": "^1.1.7",
     "vue": "^2.6.11",
     "vue-fitty": "^0.1.8",
     "vue-markdown": "^2.2.4",

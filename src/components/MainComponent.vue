@@ -2,18 +2,23 @@
   <div>
     <Navigation @selected="setActive" />
     <div class="content-container">
-      <CenterTitle id="about-renuo" title="Renuo" />
       <AboutRenuo />
     </div>
-    <br />
+    <br /><br />
+
     <CenterTitle id="internship" title="Dein Praktikum bei uns" />
+    <br />
     <Internship />
+    <br />
     <div class="content-container">
       <CenterTitle id="projects" title="Projekte" />
+      <br />
       <Projects />
     </div>
+
     <div class="content-container">
       <CenterTitle id="challenges" title="Challenge" />
+      <br />
       <Challenges />
     </div>
 
@@ -65,6 +70,15 @@ export default {
 };
 </script>
 <style lang="scss">
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 @mixin renuo-background {
   background-color: #27d79d !important;
   /*
