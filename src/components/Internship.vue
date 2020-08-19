@@ -430,7 +430,7 @@ h6,
   background-color: #27d79d;
   margin-bottom: 5rem;
   padding: 1rem;
-  background-image: url("http://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
+  background-image: url("https://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
 }
 
 @media (max-width: 1200px) {
