@@ -150,5 +150,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/stylesheets/janis_css.scss";
+@import "@/stylesheets/janis_styling.scss";
 </style>
