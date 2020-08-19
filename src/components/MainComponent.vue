@@ -4,21 +4,19 @@
     <div class="content-container">
       <AboutRenuo />
     </div>
-    <br /><br />
-
-    <CenterTitle id="internship" title="Dein Praktikum bei uns" />
     <br />
-    <Internship />
     <br />
     <div class="content-container">
       <CenterTitle id="projects" title="Projekte" />
       <br />
       <Projects />
     </div>
+    <br /><br />
+    <CenterTitle id="internship" title="Dein Praktikum bei uns" />
+    <br />
+    <Internship />
     <br />
     <br />
-    <br />
-
     <div class="content-container">
       <CenterTitle id="challenges" title="Challenge" />
       <br />
