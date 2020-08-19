@@ -395,7 +395,7 @@ export default {
   left: 0;
   top: 0;
   background-color: rgb(39, 215, 157);
-  background-image: url("http://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
+  background-image: url("https://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -460,7 +460,7 @@ export default {
 }
 
 #navigationbar {
-  background-image: url("http://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
+  background-image: url("https://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
   background-color: $renuo-base-color;
 }
 .navbar-brand {

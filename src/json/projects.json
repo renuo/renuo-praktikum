@@ -7,7 +7,7 @@
 						],
             "images": ["assets/manor_registration.png"],
             "imgpos": "left",
-            "more": "https://www.renuo.ch/en/references/bankentracker",
+            "more": "https://www.renuo.ch/en/references/manor",
             "technologies": [
                 {
                     "technology": "Ruby on Rails",
@@ -22,7 +22,7 @@
 						],
             "images": ["assets/gian_giachen.png"],
             "imgpos": "right",
-            "more": "https://www.renuo.ch/en/references/bankentracker",
+            "more": "https://www.renuo.ch/en/references/graubuenden-ferien",
             "technologies": [
                 {
                     "technology": "Python",
@@ -45,7 +45,7 @@
         {
             "title": "Bankentracker",
 						"description":[
-							"Dieses Vergleichsportal wertet relevante Gebühren und die zum Anlegerprofil passende Bank aus, ohne die Bedürfnisse der Kunden nach einer individuellen Bankberatung zu vernachlässigen. Zusammen mit dem Geschäftsführer von bankentracker.ch, erarbeiteten wir das Businessmodell, dass dahintersteht. Das Endprodukt ist ein Webportal, das nur in wenigen Augenblicken die Gebühren von rund 30 Banken der Deutschschweiz im Anlagegewesen vergleicht und ermittelt, wo sich für einen Nutzer eine Anlage am meisten lohnt."
+							"Dieses Vergleichsportal wertet relevante Gebühren und die zum Anlegerprofil passende Bank aus, ohne die Bedürfnisse der Kunden nach einer individuellen Bankberatung zu vernachlässigen. Zusammen mit dem Geschäftsführer von bankentracker&#46;ch, erarbeiteten wir das Businessmodell, dass dahintersteht. Das Endprodukt ist ein Webportal, das nur in wenigen Augenblicken die Gebühren von rund 30 Banken der Deutschschweiz im Anlagegewesen vergleicht und ermittelt, wo sich für einen Nutzer eine Anlage am meisten lohnt."
                         ],
             "more": "https://www.renuo.ch/en/references/bankentracker",
             "images": ["assets/bankentracker_selection.png"],
