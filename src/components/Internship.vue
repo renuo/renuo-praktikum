@@ -6,7 +6,7 @@
       </div>
       <br />
       <br />
-      <div id="dummy-lineitem-for-image-insertion">
+      <div id="dummy-line-item-for-image-insertion">
         <section
           data-v-7f3aebf1=""
           data-v-6f737b7e=""
@@ -46,6 +46,74 @@
         erhalten und sich an unsere Methoden und Techniken gewöhnen.
       </div>
     </div>
+    <h2 class="h3-title">Fokus und Stärken</h2>
+    <p>Wir entwickeln individuelle Software auf höchstem Niveau.</p>
+    <ul class="values_listing">
+      <li>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 text-right img-col">
+              <img class="values-img" alt="Quality and Precision" :src="w1" />
+            </div>
+            <div class="col-md-6 text-left text-col">
+              <h2 class="values-title">Qualität und Präzision</h2>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 text-right img-col">
+              <img
+                class="values-img"
+                alt="Fairness and Transparency"
+                :src="w2"
+              />
+            </div>
+            <div class="col-md-6 text-left text-col">
+              <h2 class="values-title">Verantwortlichkeit</h2>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 text-right img-col">
+              <img class="values-img" alt="Responsibility" :src="w3" />
+            </div>
+            <div class="col-md-6 text-left text-col">
+              <h2 class="values-title">Gerechtigkeit und Transparenz</h2>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 text-right img-col">
+              <img class="values-img" alt="Together" :src="w4" />
+            </div>
+            <div class="col-md-6 text-left text-col">
+              <h2 class="values-title">Neue Wege</h2>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 text-right img-col">
+              <img class="values-img" alt="New ways" :src="w5" />
+            </div>
+            <div class="col-md-6 text-left text-col">
+              <h2 class="values-title">Zusammen</h2>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
     <div class="pl-md-5 job-container">
       <div class="row mt-5 job-desc justify-content-between">
         <div class="col-12 col-md-12 col-lg-4 col-sm-12">
@@ -87,7 +155,7 @@
               <br />
               <li>
                 <i class="icon-li icon-ok"></i> Du programmierst manchmal auch
-                in deier Freizeit
+                in deiner Freizeit
               </li>
               <br />
               <li>
@@ -198,6 +266,11 @@
 import "timeline-vuejs/dist/timeline-vuejs.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+import w1 from "@/assets/w1.svg";
+import w2 from "@/assets/w2.svg";
+import w3 from "@/assets/w3.svg";
+import w4 from "@/assets/w4.svg";
+import w5 from "@/assets/w5.svg";
 import Vue from "vue";
 import work_space from "@/assets/work_space.png";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
@@ -205,6 +278,7 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 // If you don't need the styles, do not connect
 import Timeline from "./Timeline.vue";
+
 var current_year = new Date().getFullYear();
 export default {
   name: "Internship",
@@ -250,11 +324,18 @@ export default {
           "Nach deinem Praktikum hast du die Möglichkeit ein Studium zu beginnen oder weiter bei uns zu arbeiten"
       }
     ],
-    work_space: work_space
+    work_space: work_space,
+    w1: w1,
+    w2: w2,
+    w3: w3,
+    w4: w4,
+    w5: w5
   })
 };
 </script>
 <style lang="scss" scoped>
+@import "@/stylesheets/custom_stylesheet.scss";
+
 .work_during_internship_section {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -319,9 +400,9 @@ h6,
   }
 }
 
-#dummy-lineitem-for-image-insertion {
+#dummy-line-item-for-image-insertion {
   z-index: -1;
-  margin-top: -60px;
+  margin-top: -80px;
 }
 
 .ul--jobs-detail {
@@ -340,9 +421,6 @@ h6,
   }
 }
 
-.bubble-item {
-  margin-top: 10px;
-}
 .swal2-show {
   font-size: 2rem;
 }
