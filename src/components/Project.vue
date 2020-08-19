@@ -16,8 +16,8 @@
                 {{ line }}
               </template>
             </vue-markdown>
+            <a :href="this.more">Mehr</a>
           </div>
-          <a :href="this.more">Mehr</a>
         </div>
       </div>
     </div>
@@ -105,9 +105,6 @@ export default {
     p {
       font-size: 3rem !important;
     }
-    a {
-      color: white;
-    }
   }
 }
 
@@ -123,6 +120,10 @@ export default {
 
 .content-container {
   width: 80%;
+}
+
+a {
+  position: relative;
 }
 
 ul {
