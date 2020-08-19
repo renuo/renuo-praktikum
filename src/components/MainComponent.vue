@@ -15,7 +15,8 @@
       <br />
       <Projects />
     </div>
-
+    <br />
+    <br />
     <div class="content-container">
       <CenterTitle id="challenges" title="Challenge" />
       <br />

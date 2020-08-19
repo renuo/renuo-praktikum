@@ -279,7 +279,6 @@
           &times;
         </div>
 
-        <!-- Overlay content -->
         <div class="overlay-content">
           <a
             v-on:click="closeNav"
@@ -332,9 +331,11 @@ export default {
     openNav: function() {
       console.log("asdasd");
       document.getElementById("myNav").style.height = "100%";
+      document.body.style.overflow = "hidden";
     },
     closeNav: function() {
       document.getElementById("myNav").style.height = "0%";
+      document.body.style.overflow = "";
     },
     passUpNewBody(value) {
       this.$emit("selected", value);
@@ -347,29 +348,31 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/stylesheets/janis_styling.scss";
+@import "@/stylesheets/custom_stylesheet.scss";
 @import "@/stylesheets/variables.scss";
+
 .btn-navigation {
   position: absolute;
   right: 2rem;
   margin: auto;
 }
 
+#open-navigation:hover {
+  background-image: url("../../public/assets/nav3_white.png");
+}
+
 #open-navigation {
   width: 2.5rem;
   height: 2.5rem;
-
   background-repeat: no-repeat;
   background-size: 2.5rem 2.5rem;
-
-  image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
-  image-rendering: -moz-crisp-edges; /* Firefox                        */
-  image-rendering: -o-crisp-edges; /* Opera                          */
-  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-  image-rendering: pixelated; /* Chrome */
-  image-rendering: optimize-contrast; /* CSS3 Proposed                  */
-  -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
-
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
   background-image: url("../../public/assets/nav3_black.png");
 }
 
@@ -380,65 +383,42 @@ export default {
   right: 1.5rem;
 }
 
-#open-navigation:hover {
-  background-image: url("../../public/assets/nav3_white.png");
-}
-
 #close-navigation:hover {
   color: white;
 }
 
-.title {
-  margin-top: 30px;
-  font-size: 4rem;
-}
-
-/* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 0%;
   width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  background-color: rgb(39, 215, 157); /* Black fallback color */
-  //background-color: rgba(39,215,157, 0.9); /* Black w/opacity */
+  background-color: rgb(39, 215, 157);
   background-image: url("http://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  overflow-y: hidden;
+  transition: 0.5s;
 }
 
-/* Position the content inside the overlay */
 .overlay-content {
-  position: relative; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 10%; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
 }
 
-/* The navigation links inside the overlay */
 .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 2.5rem;
   color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  display: block;
+  transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
 }
 
 .nav-link {
@@ -478,19 +458,13 @@ export default {
     padding: 4px;
   }
 }
-i {
-  margin-left: 10px;
-}
+
 #navigationbar {
   background-image: url("http://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
   background-color: $renuo-base-color;
 }
 .navbar-brand {
   font-size: 2rem !important;
-}
-
-#navigationButton rect {
-  fill: white !important;
 }
 
 .logo-container {
@@ -504,6 +478,7 @@ i {
   margin: 0 auto;
   display: inline-block;
 }
+
 .navbar-brand span {
   color: white;
   font-weight: bold;
