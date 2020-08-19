@@ -10,9 +10,10 @@
         class="timeline-center"
         :timeline-items="timelineItems"
         :colorDots="colorDots"
+        :dateLocale="dateLocale"
+        :shortToYearFormat="shortToYearFormat"
         :message-when-no-items="messageWhenNoItems"
       />
-
       <div class="work_during_internship_section center-layout">
         Während deines Praktikums wirst du dich mit vielen verschiedenen
         Technologien auseinandersetzten - unter anderem mit Ruby on Rails,
@@ -141,15 +142,8 @@ import work_space from "@/assets/work_space.png";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
-import VueSweetalert2 from "vue-sweetalert2";
 // If you don't need the styles, do not connect
-const options = {
-  confirmButtonColor: "#27d79d",
-  cancelButtonColor: "#27d79d"
-};
-import "sweetalert2/dist/sweetalert2.min.css";
-Vue.use(VueSweetalert2, options);
-import Timeline from "timeline-vuejs";
+import Timeline from "./Timeline.vue";
 var current_year = new Date().getFullYear();
 export default {
   name: "Internship",
@@ -157,8 +151,9 @@ export default {
     Timeline
   },
   data: () => ({
+    dateLocale: "de-DE",
     colorDots: "#27d79d",
-
+    shortToYearFormat: false,
     timelineItems: [
       {
         from: new Date(current_year + 1, 7),
@@ -174,7 +169,9 @@ export default {
       },
       {
         from: new Date(current_year + 1, 9),
-        to: new Date(2021, 12),
+        to: new Date(current_year + 2, 2),
+        isMainTimeEntry: true,
+        mainItemStyles: "background-color: #9bf542",
         title: "Coden",
         description:
           "Nun wird endlich Software entwickelt. Bleib dran und erfreue dich an der Hauptaufgabe deines Praktikums"
@@ -187,9 +184,9 @@ export default {
       },
       {
         from: new Date(current_year + 2, 8),
-        title: "Studium ?",
+        title: "Studium (Arbeiten)",
         description:
-          "Als Informatiker ist ein dauerhaftes Weiterbilden eine wichtige Komponente von Erfolg. Also ab ins Studium"
+          "Nach deinem Praktikum hast du die Möglichkeit ein Studium zu beginnen oder weiter bei uns zu arbeiten"
       }
     ],
     work_space: work_space

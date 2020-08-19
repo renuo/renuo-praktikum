@@ -236,13 +236,11 @@ blockquote p {
 
 @media (max-width: 1000px){
   .h3-title{
-    font-size: 2.75rem;
+    font-size: 35px;
   }
 }
 
 @media (max-width: 500px) {
-
-
   .values-title {
     margin-top: 3vw;
     font-weight: 500;
@@ -251,43 +249,41 @@ blockquote p {
 
   .h3-title {
     margin: 6vw 0px 0px 0px;
-    font-size: 4vw;
+    font-size: 20px;
     color: #27d79d;
     font-weight: bold !important;
   }
-  
-
-  
 
   p, blockquote{
     margin-bottom: 10px;
-    font-size: 2.5vw;
+    font-size: 0.75rem;
   }
   
   .github-corner:hover .octo-arm {
     animation: none;
   }
+  
   .github-corner .octo-arm {
     animation: octocat-wave 560ms ease-in-out;
   }
 
   .readme-title{
-    font-size: 5vw;
+    font-size: 1.1rem;
   }
   
   .readme-sub-title{
-    font-size: 4vw;
+    font-size: 1rem;
   }
   
   .readme-sub-sub-title{
-    font-size: 3vw;
+    font-size: 0.9rem;
   }
   
   .readme-text{
-    font-size: 2.5vw;
+    font-size: 0.7rem;
   }
 
   .language-bash, .language-ruby{
-    font-size: 2.5vw;
+    font-size: 0.7rem;
   }  
 }

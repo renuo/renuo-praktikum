@@ -40,4 +40,16 @@ export default {
   font-size: 3rem;
   font-weight: bold;
 }
+
+@media (max-width: 500px) {
+  .h2 {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 1.6rem !important;
+  }
+  .apply-now-container {
+    margin-bottom: -50px !important;
+  }
+}
 </style>

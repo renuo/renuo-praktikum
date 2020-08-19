@@ -3,6 +3,9 @@
     <h3 class="h3-title" id="about-renuo">Dein künftiger Praktikumsort</h3>
     <br />
     <img class="img-full" alt="renuo team" :src="team" />
+    <h3 class="h3-title">Tools</h3>
+    <p>Damit arbeiten wir</p>
+    <img class="img-padded" alt="tools" :src="tools" />
     <h3 class="h3-title">Fokus und Stärken</h3>
     <p>Wir entwickeln individuelle Software auf höchstem Niveau.</p>
     <ul class="values_listing">
@@ -71,9 +74,6 @@
         </div>
       </li>
     </ul>
-    <h3 class="h3-title">Tools</h3>
-    <p>Damit arbeiten wir</p>
-    <img class="img-padded" alt="tools" :src="tools" />
     <h3 class="h3-title">Standort</h3>
     <p>Hier findest du uns</p>
     <div class="map img-full iframe-container">
@@ -133,5 +133,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/stylesheets/janis_styling.scss";
+@import "@/stylesheets/custom_stylesheet.scss";
 </style>
