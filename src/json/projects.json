@@ -3,10 +3,11 @@
         {
             "title": "Manor Onboarding",
 						"description":[
-										"* Für Manor/myONE entwickelten wir ein Portal, über welches Kunden sowohl Treue-, als auch MyOne und Mastercard Kreditkarten bestellen können. Dieser Prozess beinhaltet zahlreiche aufwändige Validierungen, Bonitätsprüfungen sowie Einbindungen in das Kernsystem von Manor (POS), damit die Karten direkt nach dem Antrag funktionieren und einsatzfähig sind. Über Schnittstellen (API) kann Manor die Verwaltung der Karten und Kunden vornehmen.\n"
+										"Für die grösste Schweizer Warenhauskette Manor entwickelten wir ein Onboarding Application Process zur Kreditkarten-Bestellung. Die Applikation sieht auf den ersten Blick wie ein einfaches Kreditkarten-Bestellformular aus – im Hintergrund ist sie weit komplexer: Dank diverser Schnittstellen verfügt die Anwendung über eine integrierte Bonitätsprüfung und eine Adressvalidierung, die nach dem Ausfüllen des Kreditkarten-Bestellformulars eine sofortige Autorisierung der Kunden ermöglicht. Nach erfolgreicher Autorisierung können die Kunden die Kreditkarte direkt elektronisch nutzen und sind nicht auf den Postversand der Karte angewiesen.\n"
 						],
-            "images": ["assets/manor_card.png", "assets/manor_customer_form.png", "assets/manor_registration.png"],
+            "images": ["assets/manor_registration.png"],
             "imgpos": "left",
+            "more": "https://www.renuo.ch/en/references/bankentracker",
             "technologies": [
                 {
                     "technology": "Ruby on Rails",
@@ -17,12 +18,11 @@
         {
             "title": "PWA für Graubünden Ferien",
 						"description":[
-										"* Digitale Welt von Gian und Giachen als PWA\n",
-										"* Machine Learning: Anhand Foto erkennen wir Seite und führen ins digitale über\n",
-										"* Sehr Frontend/UX-lastiges Projekt\n"
+										"Wir entwickelten eine Progressive Web App mit der die Buchseiten der Kinderbücher von Gian und Giachen mit Hilfe von künstlicher Intelligenz zum Leben erweckt und digital animiert werden. Das Herzstück der App bildet die auf Machine Learning basierte Scanfunktion, welche den nahtlosen Übergang vom Buch zur Plattform ermöglicht. Mittels Deep Learning werden gescannte oder fotografierte Kinderbuchseiten (oder Ausschnitte davon) erkannt und die User werden anschliessend auf die entsprechende, animierte Buchszene geführt."
 						],
-            "images": ["assets/graubuenden-preview.gif","assets/gian_giachen.png"],
+            "images": ["assets/gian_giachen.png"],
             "imgpos": "right",
+            "more": "https://www.renuo.ch/en/references/bankentracker",
             "technologies": [
                 {
                     "technology": "Python",
@@ -45,11 +45,10 @@
         {
             "title": "Bankentracker",
 						"description":[
-										"* Abbildung diversester Gebührenmodelle\n",
-										"* UX und Formular folgt Entscheidungsbaum\n",
-										"* Berechnung Gebühren über mehrere tausend Faktoren hinweg\n"
-						],
-            "images": ["assets/bankentracker_selection.png", "assets/bankentracker_laptop.png"],
+							"Dieses Vergleichsportal wertet relevante Gebühren und die zum Anlegerprofil passende Bank aus, ohne die Bedürfnisse der Kunden nach einer individuellen Bankberatung zu vernachlässigen. Zusammen mit dem Geschäftsführer von bankentracker.ch, erarbeiteten wir das Businessmodell, dass dahintersteht. Das Endprodukt ist ein Webportal, das nur in wenigen Augenblicken die Gebühren von rund 30 Banken der Deutschschweiz im Anlagegewesen vergleicht und ermittelt, wo sich für einen Nutzer eine Anlage am meisten lohnt."
+                        ],
+            "more": "https://www.renuo.ch/en/references/bankentracker",
+            "images": ["assets/bankentracker_selection.png"],
             "imgpos": "left",
             "technologies": [
                 {
@@ -57,30 +56,6 @@
                     "image": "assets/tech_rails.png"
                 }
             ]
-        },
-        {
-            "title": "Geo-Informations gestütztes Portal für Hagelversicherung",
-						"description":[
-										"* Für die Vereinigte Hagelversicherung (D) wurde ein Portal entwickelt, mit welchem Landwirte Feldstücke und darauf angebaute Kulturen auf einer interaktiven Karte verwalten können. Dies umfasst das Einzeichnen von Feldern oder das Setzen von Markern (bspw. für Hofstandort). Die in der Web-Plattform erfassten Daten werden zur weiteren, internen Verarbeitung über eine Schnittstelle (API) an die versicherungsinternen Applikationen gesendet. Die Plattform ermöglicht auch das Abschliessen von Verträgen und das Melden von Wetterschäden.\n"
-						],
-            "images": ["assets/geo_first.png","assets/geo_second.png"],
-            "imgpos": "right"
-        },
-        {
-            "title": "Alterswohnplattform home60.ch",
-						"description":[
-										"* home60 ist ein Portal, welches sämtliche Alterswohnheime in der Schweiz zusammenfasst. Umfasst zahlreiche Suchfunktionen sowie ein Freemium-Modell mit zahlreichen (kostenpflichtigen) Optionen für Alterswohnheime.\n"
-						],
-            "images": ["assets/home60_preview.png"],
-            "imgpos": "left"
-        },
-        {
-            "title": "Lawoon",
-						"description":[
-										"* Lawoon vermittelt Kleinaufträge zwischen Anbieter und Auftraggeber und übernimmt dabei den ganzen Prozess vom Matching bis zur Rechnungsstellung:\n"
-						],
-            "images": ["assets/lawoon_preview.png"],
-            "imgpos": "left"
         }
     ]
 }
