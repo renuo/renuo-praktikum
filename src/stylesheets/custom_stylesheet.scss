@@ -5,7 +5,7 @@
   font-weight: bold !important;
 }
 
-.values_listing {
+.values-listing {
   list-style-type: none;
   padding: 0;
 }
@@ -21,9 +21,8 @@
   height: 5vw;
 }
 
-p {
-  margin-bottom: 10px;
-  font-size: 1.25vw;
+p, blockquote{
+  font-weight: 100;
 }
 
 .img-col {
@@ -79,6 +78,10 @@ p {
   position: relative;
 }
 
+p{
+  font-size: 1.2rem;
+}
+
 .cat {
   width: 20vw;
   position: absolute;
@@ -92,12 +95,10 @@ blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
-  font-size: 1.25vw;
 }
 blockquote:before {
   color: #ccc;
   content: open-quote;
-  font-size: 4vw;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
@@ -202,7 +203,8 @@ blockquote p {
   .readme-text{
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
-    font-size: 1.6vw;
+    font-weight: 100;
+    font-size: 1rem;
   }
   
   .instructions{
@@ -224,14 +226,6 @@ blockquote p {
     margin: 2vw;
     height: 7vw;
   }
-
-  p{
-    font-size: 2vw;
-  }
-
-  blockquote{
-    font-size: 2vw;
-  }
 }
 
 @media (max-width: 1000px){
@@ -244,20 +238,32 @@ blockquote p {
   .values-title {
     margin-top: 3vw;
     font-weight: 500;
-    font-size: 3.3vw;
+    font-size: 1rem;
+  }
+
+  .img-col {
+    width: 25% !important;
+    max-width: 25% !important;
+  }
+  
+  .text-col{
+    width: 75% !important;
+    max-width: 75% !important;
   }
 
   .h3-title {
     margin: 6vw 0px 0px 0px;
-    font-size: 20px;
+    font-size: 2rem;
     color: #27d79d;
     font-weight: bold !important;
   }
 
-  p, blockquote{
+    p, blockquote{
     margin-bottom: 10px;
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
+
+
   
   .github-corner:hover .octo-arm {
     animation: none;
@@ -268,22 +274,22 @@ blockquote p {
   }
 
   .readme-title{
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
   
   .readme-sub-title{
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   
   .readme-sub-sub-title{
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   
   .readme-text{
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .language-bash, .language-ruby{
-    font-size: 0.7rem;
+    font-size: 1rem;
   }  
 }
