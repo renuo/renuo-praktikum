@@ -1,0 +1,515 @@
+<template>
+  <div>
+    <div>
+      <b-navbar id="navigationbar">
+        <div class="logo-container">
+          <b-navbar-brand>
+            <div class="logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 120 120"
+                width="120"
+                height="120"
+                preserveAspectRatio="xMidYMid meet"
+                style="width: 100%; height: 100%;"
+              >
+                <defs>
+                  <clipPath id="animationMask_sSHNbnBIZf">
+                    <rect width="120" height="120" x="0" y="0"></rect>
+                  </clipPath>
+                </defs>
+                <g clip-path="url(#animationMask_sSHNbnBIZf)">
+                  <g
+                    transform="matrix(1,0,0,1,-579,-212)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M669.939,316.029 C677.866,316.029 683.112,316.029 683.112,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-212)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M626.02,316.029 C633.114,316.029 640.714,316.029 647.979,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-212)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M595.279,316.029 C595.279,316.029 598.646,316.029 604.061,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-241.5)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M639.195,316.029 C661.154,316.029 683.112,316.029 683.112,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-241.5)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M617.236,316.029 C617.266,316.029 617.295,316.029 617.324,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-241.5)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M595.279,316.029 C595.279,316.029 595.308,316.029 595.364,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-270.75)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="0"
+                        d="M0 0 M639.195,316.029 C639.225,316.029 639.254,316.029 639.283,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-270.75)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M683.027,316.029 C683.083,316.029 683.112,316.029 683.112,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-270.75)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M595.279,316.029 C595.279,316.029 635.139,316.029 661.155,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-300)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M683.027,316.029 C683.083,316.029 683.112,316.029 683.112,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-300)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M661.155,316.029 C661.184,316.029 661.213,316.029 661.243,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-300)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M617.236,316.029 C623.943,316.029 631.569,316.029 639.195,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                  <g
+                    transform="matrix(1,0,0,1,-579,-300)"
+                    opacity="1"
+                    style="user-select: none;"
+                  >
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="miter"
+                        fill-opacity="0"
+                        stroke-miterlimit="10"
+                        stroke="rgb(255,255,255)"
+                        stroke-opacity="1"
+                        stroke-width="6"
+                        d="M0 0 M595.279,316.029 C595.279,316.029 595.308,316.029 595.364,316.029"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <span>Renuo</span></b-navbar-brand
+          >
+        </div>
+        <div
+          id="open-navigation"
+          v-on:click="openNav"
+          alt="navigation icon"
+          class="btn-navigation"
+        ></div>
+      </b-navbar>
+    </div>
+
+    <div>
+      <div id="myNav" class="overlay">
+        <div
+          id="close-navigation"
+          v-on:click="closeNav"
+          alt="navigation icon"
+          class="btn-navigation"
+        >
+          &times;
+        </div>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a
+            v-on:click="closeNav"
+            class="nav-link"
+            @click.prevent="passUpNewBody('about-renuo')"
+            >About Renuo</a
+          >
+          <a
+            v-on:click="closeNav"
+            class="nav-link"
+            @click.prevent="passUpNewBody('internship')"
+            >About your internship</a
+          >
+          <a
+            v-on:click="closeNav"
+            class="nav-link"
+            @click.prevent="passUpNewBody('projects')"
+            >Projects</a
+          >
+          <a
+            v-on:click="closeNav"
+            class="nav-link"
+            @click.prevent="passUpNewBody('challenges')"
+            >Challenge</a
+          >
+          <a href="https://www.renuo.ch/en/jobs"
+            >Jobs<i class="fal fa-external-link"></i
+          ></a>
+          <a href="https://www.renuo.ch/en/blog"
+            >Blog<i class="fal fa-external-link"></i
+          ></a>
+          <a
+            v-on:click="closeNav"
+            class="nav-link"
+            @click.prevent="passUpNewBody('gallery')"
+            >Gallery</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  name: "Navigation",
+  data() {
+    return {};
+  },
+  methods: {
+    openNav: function() {
+      console.log("asdasd");
+      document.getElementById("myNav").style.height = "100%";
+    },
+    closeNav: function() {
+      document.getElementById("myNav").style.height = "0%";
+    },
+    passUpNewBody(value) {
+      this.$emit("selected", value);
+    },
+    invertColour() {
+      this.$emit("invert");
+    }
+  }
+};
+</script>
+
+<style scoped lang="scss">
+@import "@/stylesheets/janis_styling.scss";
+@import "@/stylesheets/variables.scss";
+.btn-navigation {
+  position: absolute;
+  right: 2rem;
+  margin: auto;
+}
+
+#open-navigation {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  background-repeat: no-repeat;
+  background-size: 2.5rem 2.5rem;
+
+  image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges; /* Firefox                        */
+  image-rendering: -o-crisp-edges; /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast; /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
+
+  background-image: url("../../public/assets/nav3_black.png");
+}
+
+#close-navigation {
+  font-size: 100px;
+  line-height: 60px;
+  top: 0.75rem;
+  right: 1.5rem;
+}
+
+#open-navigation:hover {
+  background-image: url("../../public/assets/nav3_white.png");
+}
+
+#close-navigation:hover {
+  color: white;
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 4rem;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(39, 215, 157); /* Black fallback color */
+  //background-color: rgba(39,215,157, 0.9); /* Black w/opacity */
+  background-image: url("http://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 10%; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.nav-link {
+  color: $renuo-dark-gray !important;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .overlay-content {
+    margin-top: 20%;
+  }
+  .overlay a {
+    font-size: 2.3rem;
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .overlay-content {
+    margin-top: 20%;
+  }
+  .overlay a {
+    font-size: 1.75rem;
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .overlay-content {
+    margin-top: 35%;
+  }
+  .overlay a {
+    font-size: 1.5rem;
+    padding: 4px;
+  }
+}
+i {
+  margin-left: 10px;
+}
+#navigationbar {
+  background-image: url("http://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
+  background-color: $renuo-base-color;
+}
+.navbar-brand {
+  font-size: 2rem !important;
+}
+
+#navigationButton rect {
+  fill: white !important;
+}
+
+.logo-container {
+  z-index: 2;
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0 auto;
+  display: inline-block;
+}
+.navbar-brand span {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin-left: 0.5rem;
+}
+</style>

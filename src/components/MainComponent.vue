@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navigation @selected="setActive" />
+    <Navigation2 @selected="setActive" />
     <div class="content-container">
       <AboutRenuo />
     </div>
@@ -27,7 +27,7 @@
 </template>
 <script>
 import * as TastyBurgerButton from "vue-tasty-burgers";
-import Navigation from "./Navigation.vue";
+import Navigation2 from "./Navigation2.vue";
 import AboutRenuo from "./AboutRenuo.vue";
 import Footer from "./Footer.vue";
 import CenterTitle from "./CenterTitle.vue";
@@ -50,7 +50,7 @@ export default {
     };
   },
   components: {
-    Navigation,
+    Navigation2,
     AboutRenuo,
     CenterTitle,
     Internship,
