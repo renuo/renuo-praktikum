@@ -5,10 +5,9 @@
       <CenterTitle id="about-renuo" title="Renuo" />
       <AboutRenuo />
     </div>
-    <div class="content-container">
-      <CenterTitle id="internship" title="Praktikum" />
-      <Internship />
-    </div>
+    <br />
+    <CenterTitle id="internship" title="Dein Praktikum bei uns" />
+    <Internship />
     <div class="content-container">
       <CenterTitle id="projects" title="Projekte" />
       <Projects />
@@ -17,15 +16,17 @@
       <CenterTitle id="challenges" title="Challenge" />
       <Challenges />
     </div>
+
     <Footer />
   </div>
 </template>
 <script>
+import * as TastyBurgerButton from "vue-tasty-burgers";
+import Navigation from "./Navigation.vue";
 import AboutRenuo from "./AboutRenuo.vue";
+import Footer from "./Footer.vue";
 import CenterTitle from "./CenterTitle.vue";
 import Projects from "./Projects.vue";
-import Footer from "./Footer.vue";
-import Navigation from "./Navigation.vue";
 import Challenges from "./Challenges.vue";
 import Internship from "./Internship.vue";
 import Vue from "vue";
@@ -35,7 +36,7 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 var VueScrollTo = require("vue-scrollto");
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
-
+Vue.use(TastyBurgerButton);
 export default {
   name: "MainComponent",
   data: function() {
@@ -44,13 +45,13 @@ export default {
     };
   },
   components: {
+    Navigation,
     AboutRenuo,
     CenterTitle,
-    Footer,
-    Navigation,
-    Challenges,
+    Internship,
     Projects,
-    Internship
+    Challenges,
+    Footer
   },
   methods: {
     isActive(menuItem) {

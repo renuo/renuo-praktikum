@@ -1,8 +1,9 @@
 <template>
   <div>
     <div class="project_list">
-      <li v-for="(project, index) in this.projects" :key="project.title">
+      <div v-for="(project, index) in this.projects" :key="project.title">
         <Project
+          :more="project.more"
           :title="project.title"
           :images="project.images"
           :description="project.description"
@@ -10,7 +11,7 @@
           :technologies="project.technologies"
         />
         <hr v-if="needsBreakbar(index)" />
-      </li>
+      </div>
     </div>
   </div>
 </template>
@@ -49,7 +50,6 @@ export default {
 <style scoped lang="scss">
 .project_list {
   width: 100%;
-  list-style: none;
   li {
     padding-bottom: 5%;
   }

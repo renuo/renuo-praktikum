@@ -1,10 +1,11 @@
 <template>
   <div class="my-container">
-    <h3 class="h3-title">Gemeinsam sind wir Renuo!</h3>
+    <h3 class="h3-title">Dein künftiger Praktikumsort</h3>
+    <br />
     <img class="img-full" alt="renuo team" :src="team" />
     <h3 class="h3-title">Fokus und Stärken</h3>
     <p>Wir entwickeln individuelle Software auf höchstem Niveau.</p>
-    <ul>
+    <ul class="values_listing">
       <li>
         <div class="container">
           <div class="row text-center">
@@ -88,14 +89,16 @@
       <img class="cat" :src="cat" />
     </div>
     <blockquote>
-      Aa zelle Bölle schelle, d’Chatz gaht uf Walliselle
+      "Aa zelle Bölle schelle, d’Chatz gaht uf Walliselle"
     </blockquote>
     <h3 class="h3-title">Kundenauszug</h3>
+    <br />
+    <img class="img-padded" alt="kundenauszug" :src="kundenauszug" />
+    <br />
     <p>
       Die Stärke der Renuo zeigt sich in der Vielseitigkeit der Produkte, welche
       von den verschiedensten Branchen und Firmen beauftragt wurden.
     </p>
-    <img class="img-padded" alt="kundenauszug" :src="kundenauszug" />
   </div>
 </template>
 
@@ -109,8 +112,6 @@ import w5 from "@/assets/w5.svg";
 import team from "@/assets/team.jpg";
 import tools from "@/assets/tools.png";
 import kundenauszug from "@/assets/kundenauszug.png";
-
-import "@/stylesheets/janis_css.css";
 
 export default {
   name: "AboutRenuo",
@@ -130,3 +131,7 @@ export default {
   }
 };
 </script>
+
+<style scoped lang="scss">
+@import "@/stylesheets/janis_css.scss";
+</style>

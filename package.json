@@ -10,12 +10,14 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.16.0",
+    "jquery": "^3.5.1",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-fitty": "^0.1.8",
-    "vue-sweetalert2": "^3.0.6",
     "vue-markdown": "^2.2.4",
-    "vue-scrollto": "^2.18.2"
+    "vue-scrollto": "^2.18.2",
+    "vue-sweetalert2": "^3.0.6",
+    "vue-tasty-burgers": "^1.2.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "~4.4.0",
