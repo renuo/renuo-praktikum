@@ -8,42 +8,20 @@
       <br />
       <div id="dummy-line-item-for-image-insertion">
         <section
-          data-v-7f3aebf1=""
-          data-v-6f737b7e=""
+          data-v-7f3aebf1=" "
+          data-v-6f737b7e=" "
           class="timeline timeline-center"
         >
-          <div data-v-7f3aebf1="" class="wrapper-timeline">
-            <div data-v-7f3aebf1="" class="wrapper-item">
-              <div data-v-7f3aebf1="" class="section-year">
-                <p data-v-7f3aebf1="" class="year"></p>
+          <div data-v-7f3aebf1=" " class="wrapper-timeline">
+            <div data-v-7f3aebf1=" " class="wrapper-item">
+              <div data-v-7f3aebf1=" " class="section-year">
+                <p data-v-7f3aebf1=" " class="year"></p>
               </div>
-              <section data-v-7f3aebf1="" class="timeline-item">
-                <div data-v-818295b8="" id="" class="item">
-                  <h3 data-v-818295b8="" class="date-item"></h3>
-                  <h4 data-v-818295b8="" class="title-item"></h4>
-                  <p data-v-818295b8="" class="description-item"></p>
-                </div>
-              </section>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div>
-        <section
-          data-v-7f3aebf1=""
-          data-v-6f737b7e=""
-          class="timeline timeline-center"
-        >
-          <div data-v-7f3aebf1="" class="wrapper-timeline">
-            <div data-v-7f3aebf1="" class="wrapper-item">
-              <div data-v-7f3aebf1="" class="section-year">
-                <p data-v-7f3aebf1="" class="year"></p>
-              </div>
-              <section data-v-7f3aebf1="" class="timeline-item">
-                <div data-v-818295b8="" id="" class="item">
-                  <h3 data-v-818295b8="" class="date-item"></h3>
-                  <h4 data-v-818295b8="" class="title-item"></h4>
-                  <p data-v-818295b8="" class="description-item"></p>
+              <section data-v-7f3aebf1=" " class="timeline-item">
+                <div data-v-818295b8=" " id="" class="item">
+                  <h3 data-v-818295b8=" " class="date-item"></h3>
+                  <h4 data-v-818295b8=" " class="title-item"></h4>
+                  <p data-v-818295b8=" " class="description-item"></p>
                 </div>
               </section>
             </div>
@@ -63,8 +41,8 @@
         Technologien auseinandersetzten – unter anderem mit Ruby on Rails,
         Angular und React. Du wirst für Kunden einen Mehrwert generieren und
         durch die praktische Arbeit viel Erfahrung sammeln, ganz im Sinne von
-        Learning by Doing. Unsere PraktikantInnen beteiligen sich weiter auch
-        an Pair Programming, wodurch sie schnell Einblick in unsere Projekte
+        Learning by Doing. Unsere PraktikantInnen beteiligen sich weiter auch an
+        Pair Programming, wodurch sie schnell Einblick in unsere Projekte
         erhalten und sich an unsere Methoden und Techniken gewöhnen.
       </div>
     </div>
@@ -94,7 +72,7 @@
               />
             </div>
             <div class="col-md-6 text-left text-col">
-              <h2 class="values-title">Verantwortlichkeit</h2>
+              <h2 class="values-title">Fairness und Transparenz</h2>
             </div>
           </div>
         </div>
@@ -106,7 +84,7 @@
               <img class="values-img" alt="Responsibility" :src="w3" />
             </div>
             <div class="col-md-6 text-left text-col">
-              <h2 class="values-title">Gerechtigkeit und Transparenz</h2>
+              <h2 class="values-title">Verantwortung</h2>
             </div>
           </div>
         </div>
@@ -118,7 +96,7 @@
               <img class="values-img" alt="Together" :src="w4" />
             </div>
             <div class="col-md-6 text-left text-col">
-              <h2 class="values-title">Neue Wege</h2>
+              <h2 class="values-title">Zusammen</h2>
             </div>
           </div>
         </div>
@@ -130,7 +108,7 @@
               <img class="values-img" alt="New ways" :src="w5" />
             </div>
             <div class="col-md-6 text-left text-col">
-              <h2 class="values-title">Zusammen</h2>
+              <h2 class="values-title">Neue Wege</h2>
             </div>
           </div>
         </div>
@@ -200,9 +178,9 @@
               <br />
               <li>
                 <i class="icon-li icon-ok"></i> Ein Plus: Du kennst Ruby oder
-                Ruby on Rails, JavaScript, TypeScript oder CoffeeScript,
-                React, Angular, SSH, Linux-Server oder andere Webtechnologien
-                (z. B. Python, Django, PHP, JSF)
+                Ruby on Rails, JavaScript, TypeScript oder CoffeeScript, React,
+                Angular, SSH, Linux-Server oder andere Webtechnologien (z. B.
+                Python, Django, PHP, JSF)
               </li>
               <br />
             </ul>
@@ -427,9 +405,8 @@ h6,
 }
 
 #dummy-line-item-for-image-insertion {
+  margin-top: -50px;
   z-index: -1;
-  min-height: 30px;
-  margin-top: -60px;
 }
 
 .ul--jobs-detail {
