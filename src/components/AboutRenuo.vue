@@ -26,7 +26,7 @@
     <div>
       <ul id="locatin-listing">
         <li>🌟 2 Minuten vom Bahnhof entfernt</li>
-        <li>🌟 5 Minuten bis zum Glatzentrum</li>
+        <li>🌟 5 Minuten bis zum Glattzentrum</li>
       </ul>
     </div>
     <h2 class="h3-title">Kundenauszug</h2>

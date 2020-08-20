@@ -28,6 +28,28 @@
           </div>
         </section>
       </div>
+      <div>
+        <section
+          data-v-7f3aebf1=""
+          data-v-6f737b7e=""
+          class="timeline timeline-center"
+        >
+          <div data-v-7f3aebf1="" class="wrapper-timeline">
+            <div data-v-7f3aebf1="" class="wrapper-item">
+              <div data-v-7f3aebf1="" class="section-year">
+                <p data-v-7f3aebf1="" class="year"></p>
+              </div>
+              <section data-v-7f3aebf1="" class="timeline-item">
+                <div data-v-818295b8="" id="" class="item">
+                  <h3 data-v-818295b8="" class="date-item"></h3>
+                  <h4 data-v-818295b8="" class="title-item"></h4>
+                  <p data-v-818295b8="" class="description-item"></p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
       <Timeline
         class="timeline-center"
         :timeline-items="timelineItems"
@@ -315,7 +337,7 @@ export default {
         from: new Date(current_year + 2, 2),
         title: "IPA (5+)",
         description:
-          "Der Abschluss der Schulischen Aufgaben. Bei Renuo unterstützten wir dich eine gute Note zu erreichen"
+          "Der Abschluss der schulischen Aufgaben. Bei Renuo unterstützten wir dich eine gute Note zu erreichen"
       },
       {
         from: new Date(current_year + 2, 8),
@@ -356,6 +378,10 @@ export default {
 .timeline-center {
   margin-left: auto;
   margin-right: auto;
+}
+
+.values_listing {
+  list-style-type: none;
 }
 
 .centered-gallery-image {
@@ -402,7 +428,7 @@ h6,
 
 #dummy-line-item-for-image-insertion {
   z-index: -1;
-  margin-top: -80px;
+  margin-top: -120px;
 }
 
 .ul--jobs-detail {
