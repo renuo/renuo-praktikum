@@ -60,10 +60,10 @@
       />
       <div class="work_during_internship_section center-layout">
         Während deines Praktikums wirst du dich mit vielen verschiedenen
-        Technologien auseinandersetzten - unter anderem mit Ruby on Rails,
+        Technologien auseinandersetzten – unter anderem mit Ruby on Rails,
         Angular und React. Du wirst für Kunden einen Mehrwert generieren und
         durch die praktische Arbeit viel Erfahrung sammeln, ganz im Sinne von
-        Learning by Doing. Unsere Praktikant*innen beteiligen sich weiter auch
+        Learning by Doing. Unsere PraktikantInnen beteiligen sich weiter auch
         an Pair Programming, wodurch sie schnell Einblick in unsere Projekte
         erhalten und sich an unsere Methoden und Techniken gewöhnen.
       </div>
@@ -145,7 +145,7 @@
               <br />
               <li>
                 <i class="icon-li icon-ok"></i> Softwareentwicklung mit
-                Webtechnologien (Ruby on Rails / Angular / HTML5 / Javascript)
+                Webtechnologien (Ruby on Rails / React / HTML5 / Javascript)
               </li>
               <br />
               <li>
@@ -173,7 +173,7 @@
               <br />
               <li><i class="icon-li icon-ok"></i> Du ♥️ Open Source</li>
               <br />
-              <li><i class="icon-li icon-ok"></i> Du hast gute Noten</li>
+              <li><i class="icon-li icon-ok"></i> Du hast (sehr) gute Noten</li>
               <br />
               <li>
                 <i class="icon-li icon-ok"></i> Du programmierst manchmal auch
@@ -200,9 +200,9 @@
               <br />
               <li>
                 <i class="icon-li icon-ok"></i> Ein Plus: Du kennst Ruby oder
-                Ruby on Rails, Javascript, TypeScript oder Coffeescript,
-                AngularJS, SSH, Linux-Server oder andere Webtechnologien (z.B.
-                Python, Django, PHP, JSF)
+                Ruby on Rails, JavaScript, TypeScript oder CoffeeScript,
+                React, Angular, SSH, Linux-Server oder andere Webtechnologien
+                (z. B. Python, Django, PHP, JSF)
               </li>
               <br />
             </ul>
@@ -316,13 +316,13 @@ export default {
         from: new Date(current_year + 1, 7),
         title: "Einführung",
         description:
-          "Du wirst von den Mitarbeitern von Renuo in das Praktikum eingearbeitet und folgst einem detailierten <a href='assets/praktikumskonzept_2020.pdf' style='color: #27d79d' download>Plan</a>"
+          "Du wirst von den Mitarbeitenden von Renuo in das Praktikum eingearbeitet und folgst einem detailierten <a href='assets/praktikumskonzept_2020.pdf' style='color: #27d79d' download>Plan</a>."
       },
       {
         from: new Date(current_year + 1, 8),
         title: "Kundenprojekt",
         description:
-          "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für einen Kunden. Du wirst während dem Projekt vom Team unterstützt"
+          "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für einen Kunden. Du wirst während dem Projekt vom Team unterstützt."
       },
       {
         from: new Date(current_year + 1, 9),
@@ -331,19 +331,19 @@ export default {
         mainItemStyles: "background-color: #28d79d7d",
         title: "Coden",
         description:
-          "Nun wird endlich Software entwickelt. Bleib dran und erfreue dich an der Hauptaufgabe deines Praktikums"
+          "Nun wird endlich Software entwickelt. Bleib dran und erfreue dich an der Hauptaufgabe deines Praktikums."
       },
       {
         from: new Date(current_year + 2, 2),
         title: "IPA (5+)",
         description:
-          "Der Abschluss der schulischen Aufgaben. Bei Renuo unterstützten wir dich eine gute Note zu erreichen"
+          "Der Abschluss der schulischen Aufgaben. Bei Renuo unterstützten wir dich, eine gute Note zu erreichen."
       },
       {
         from: new Date(current_year + 2, 8),
         title: "Studium (Arbeiten)",
         description:
-          "Nach deinem Praktikum hast du die Möglichkeit ein Studium zu beginnen oder weiter bei uns zu arbeiten"
+          "Nach deinem Praktikum hast du die Möglichkeit, ein Studium zu beginnen oder weiter bei uns zu arbeiten."
       }
     ],
     work_space: work_space,
