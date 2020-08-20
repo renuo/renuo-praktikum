@@ -8,42 +8,20 @@
       <br />
       <div id="dummy-line-item-for-image-insertion">
         <section
-          data-v-7f3aebf1=""
-          data-v-6f737b7e=""
+          data-v-7f3aebf1=" "
+          data-v-6f737b7e=" "
           class="timeline timeline-center"
         >
-          <div data-v-7f3aebf1="" class="wrapper-timeline">
-            <div data-v-7f3aebf1="" class="wrapper-item">
-              <div data-v-7f3aebf1="" class="section-year">
-                <p data-v-7f3aebf1="" class="year"></p>
+          <div data-v-7f3aebf1=" " class="wrapper-timeline">
+            <div data-v-7f3aebf1=" " class="wrapper-item">
+              <div data-v-7f3aebf1=" " class="section-year">
+                <p data-v-7f3aebf1=" " class="year"></p>
               </div>
-              <section data-v-7f3aebf1="" class="timeline-item">
-                <div data-v-818295b8="" id="" class="item">
-                  <h3 data-v-818295b8="" class="date-item"></h3>
-                  <h4 data-v-818295b8="" class="title-item"></h4>
-                  <p data-v-818295b8="" class="description-item"></p>
-                </div>
-              </section>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div>
-        <section
-          data-v-7f3aebf1=""
-          data-v-6f737b7e=""
-          class="timeline timeline-center"
-        >
-          <div data-v-7f3aebf1="" class="wrapper-timeline">
-            <div data-v-7f3aebf1="" class="wrapper-item">
-              <div data-v-7f3aebf1="" class="section-year">
-                <p data-v-7f3aebf1="" class="year"></p>
-              </div>
-              <section data-v-7f3aebf1="" class="timeline-item">
-                <div data-v-818295b8="" id="" class="item">
-                  <h3 data-v-818295b8="" class="date-item"></h3>
-                  <h4 data-v-818295b8="" class="title-item"></h4>
-                  <p data-v-818295b8="" class="description-item"></p>
+              <section data-v-7f3aebf1=" " class="timeline-item">
+                <div data-v-818295b8=" " id="" class="item">
+                  <h3 data-v-818295b8=" " class="date-item"></h3>
+                  <h4 data-v-818295b8=" " class="title-item"></h4>
+                  <p data-v-818295b8=" " class="description-item"></p>
                 </div>
               </section>
             </div>
@@ -60,11 +38,11 @@
       />
       <div class="work_during_internship_section center-layout">
         Während deines Praktikums wirst du dich mit vielen verschiedenen
-        Technologien auseinandersetzten - unter anderem mit Ruby on Rails,
+        Technologien auseinandersetzten – unter anderem mit Ruby on Rails,
         Angular und React. Du wirst für Kunden einen Mehrwert generieren und
         durch die praktische Arbeit viel Erfahrung sammeln, ganz im Sinne von
-        Learning by Doing. Unsere Praktikant*innen beteiligen sich weiter auch
-        an Pair Programming, wodurch sie schnell Einblick in unsere Projekte
+        Learning by Doing. Unsere PraktikantInnen beteiligen sich weiter auch an
+        Pair Programming, wodurch sie schnell Einblick in unsere Projekte
         erhalten und sich an unsere Methoden und Techniken gewöhnen.
       </div>
     </div>
@@ -94,7 +72,7 @@
               />
             </div>
             <div class="col-md-6 text-left text-col">
-              <h2 class="values-title">Verantwortlichkeit</h2>
+              <h2 class="values-title">Fairness und Transparenz</h2>
             </div>
           </div>
         </div>
@@ -106,7 +84,7 @@
               <img class="values-img" alt="Responsibility" :src="w3" />
             </div>
             <div class="col-md-6 text-left text-col">
-              <h2 class="values-title">Gerechtigkeit und Transparenz</h2>
+              <h2 class="values-title">Verantwortung</h2>
             </div>
           </div>
         </div>
@@ -118,7 +96,7 @@
               <img class="values-img" alt="Together" :src="w4" />
             </div>
             <div class="col-md-6 text-left text-col">
-              <h2 class="values-title">Neue Wege</h2>
+              <h2 class="values-title">Zusammen</h2>
             </div>
           </div>
         </div>
@@ -130,7 +108,7 @@
               <img class="values-img" alt="New ways" :src="w5" />
             </div>
             <div class="col-md-6 text-left text-col">
-              <h2 class="values-title">Zusammen</h2>
+              <h2 class="values-title">Neue Wege</h2>
             </div>
           </div>
         </div>
@@ -145,7 +123,7 @@
               <br />
               <li>
                 <i class="icon-li icon-ok"></i> Softwareentwicklung mit
-                Webtechnologien (Ruby on Rails / Angular / HTML5 / Javascript)
+                Webtechnologien (Ruby on Rails / React / HTML5 / Javascript)
               </li>
               <br />
               <li>
@@ -173,7 +151,7 @@
               <br />
               <li><i class="icon-li icon-ok"></i> Du ♥️ Open Source</li>
               <br />
-              <li><i class="icon-li icon-ok"></i> Du hast gute Noten</li>
+              <li><i class="icon-li icon-ok"></i> Du hast (sehr) gute Noten</li>
               <br />
               <li>
                 <i class="icon-li icon-ok"></i> Du programmierst manchmal auch
@@ -200,8 +178,8 @@
               <br />
               <li>
                 <i class="icon-li icon-ok"></i> Ein Plus: Du kennst Ruby oder
-                Ruby on Rails, Javascript, TypeScript oder Coffeescript,
-                AngularJS, SSH, Linux-Server oder andere Webtechnologien (z.B.
+                Ruby on Rails, JavaScript, TypeScript oder CoffeeScript, React,
+                Angular, SSH, Linux-Server oder andere Webtechnologien (z. B.
                 Python, Django, PHP, JSF)
               </li>
               <br />
@@ -316,13 +294,13 @@ export default {
         from: new Date(current_year + 1, 7),
         title: "Einführung",
         description:
-          "Du wirst von den Mitarbeitern von Renuo in das Praktikum eingearbeitet und folgst einem detailierten <a href='assets/praktikumskonzept_2020.pdf' style='color: #27d79d' download>Plan</a>"
+          "Du wirst von den Mitarbeitenden von Renuo in das Praktikum eingearbeitet und folgst einem detailierten <a href='assets/praktikumskonzept_2020.pdf' style='color: #27d79d' download>Plan</a>."
       },
       {
         from: new Date(current_year + 1, 8),
         title: "Kundenprojekt",
         description:
-          "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für einen Kunden. Du wirst während dem Projekt vom Team unterstützt"
+          "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für einen Kunden. Du wirst während dem Projekt vom Team unterstützt."
       },
       {
         from: new Date(current_year + 1, 9),
@@ -331,19 +309,19 @@ export default {
         mainItemStyles: "background-color: #28d79d7d",
         title: "Coden",
         description:
-          "Nun wird endlich Software entwickelt. Bleib dran und erfreue dich an der Hauptaufgabe deines Praktikums"
+          "Nun wird endlich Software entwickelt. Bleib dran und erfreue dich an der Hauptaufgabe deines Praktikums."
       },
       {
         from: new Date(current_year + 2, 2),
         title: "IPA (5+)",
         description:
-          "Der Abschluss der schulischen Aufgaben. Bei Renuo unterstützten wir dich eine gute Note zu erreichen"
+          "Der Abschluss der schulischen Aufgaben. Bei Renuo unterstützten wir dich, eine gute Note zu erreichen."
       },
       {
         from: new Date(current_year + 2, 8),
         title: "Studium (Arbeiten)",
         description:
-          "Nach deinem Praktikum hast du die Möglichkeit ein Studium zu beginnen oder weiter bei uns zu arbeiten"
+          "Nach deinem Praktikum hast du die Möglichkeit, ein Studium zu beginnen oder weiter bei uns zu arbeiten."
       }
     ],
     work_space: work_space,
@@ -427,9 +405,8 @@ h6,
 }
 
 #dummy-line-item-for-image-insertion {
+  margin-top: -50px;
   z-index: -1;
-  min-height: 30px;
-  margin-top: -60px;
 }
 
 .ul--jobs-detail {
