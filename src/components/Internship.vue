@@ -428,7 +428,8 @@ h6,
 
 #dummy-line-item-for-image-insertion {
   z-index: -1;
-  margin-top: -120px;
+  min-height: 30px;
+  margin-top: -60px;
 }
 
 .ul--jobs-detail {
