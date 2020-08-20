@@ -315,7 +315,7 @@ export default {
         from: new Date(current_year + 2, 2),
         title: "IPA (5+)",
         description:
-          "Der Abschluss der schulischen Aufgaben. Bei Renuo unterstützten wir dich, eine gute Note zu erreichen."
+          "Der Abschluss der schulischen Aufgaben. Bei Renuo unterstützen wir dich, eine gute Note zu erreichen."
       },
       {
         from: new Date(current_year + 2, 8),
