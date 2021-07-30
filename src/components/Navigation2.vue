@@ -310,7 +310,7 @@
           <a href="https://www.renuo.ch/en/blog"
             >Blog <i class="fal fa-external-link"></i
           ></a>
-          <a href="assets/praktikumskonzept_2020.pdf" download
+          <a href="assets/praktikumskonzept_2021.pdf" download
             >Praktikumskonzept <i class="fal fa-external-link"></i
           ></a>
         </div>
