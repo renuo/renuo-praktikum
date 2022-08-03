@@ -1,10 +1,23 @@
 <template>
-  <div class="my-container">
+  <div class="container">
     <h1 class="h3-title" id="about-renuo">Dein künftiger Praktikumsort</h1>
     <br />
     <img class="img-full" alt="renuo team" :src="team" />
+    <h2 class="h3-title">Goodies</h2>
+    <p>
+      Komm zu uns, wir bieten dir nebst Coding-Erfahrung noch mehr Benefits.
+      Lass Sie dir nicht entgehen.
+    </p>
+    <div>
+      <a href="https://renuo.ch/jobs" class="btn btn-info" role="button"
+        >Komm zu uns ins Team</a
+      >
+    </div>
+    <br />
+    <br />
+    <img class="goodies-img-full" alt="goodies" :src="goodies" />
     <h2 class="h3-title">Tools</h2>
-    <p>Damit arbeiten wir</p>
+    <p>Mit diesen Werkzeugen arbeiten wir</p>
     <img class="img-padded" alt="tools" :src="tools" />
     <h2 class="h3-title">Standort</h2>
     <p>Hier findest du uns</p>
@@ -46,17 +59,19 @@ import cat from "@/assets/cat.png";
 import team from "@/assets/team.jpg";
 import tools from "@/assets/tools.png";
 import kundenauszug from "@/assets/kundenauszug.png";
+import goodies from "@/assets/goodies.png";
 
 import "timeline-vuejs/dist/timeline-vuejs.css";
 
 export default {
-  name: "AboutRenuo",
+  name: "About Renuo",
   data() {
     return {
       cat: cat,
       team: team,
       tools: tools,
       kundenauszug: kundenauszug,
+      goodies: goodies,
       hover: false
     };
   }

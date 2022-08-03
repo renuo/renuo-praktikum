@@ -61,17 +61,8 @@ export default {
     return {
       icons: [
         {
-          socialIcon: "fab fa-facebook",
-          socialLink:
-            "https://de-de.facebook.com/RenuoAG/?referrer=services_landing_page"
-        },
-        {
           socialIcon: "fab fa-github",
           socialLink: "https://github.com/renuo/"
-        },
-        {
-          socialIcon: "fas fa-browser",
-          socialLink: "https://www.renuo.ch/"
         }
       ]
     };
@@ -89,13 +80,11 @@ footer {
   height: 2.5rem;
   .footer-content {
     background-color: #27d79d;
+
     /*variables*/
     $white: #fff;
-    $fb-color: #3b5998;
-    $google-color: #dd4b39;
-    $youtube-color: #bb0000;
-    $codepen-color: #111;
-    $github-color: #24292e;
+    $github-color: #585858;
+
     /*reset*/
     *,
     *::before,
@@ -129,7 +118,7 @@ footer {
           transform: rotate(45deg);
           -webkit-box-sizing: content-box;
           box-sizing: content-box;
-          border-radius: 6px;
+          border-radius: 100px;
           overflow: hidden;
           transition: all 0.5s;
           &::before {
@@ -148,36 +137,12 @@ footer {
           transform: rotate(45deg);
           -webkit-box-sizing: content-box;
           box-sizing: content-box;
-          border-radius: 6px;
+          border-radius: 100px;
           overflow: hidden;
           transition: all 0.5s;
           &::before {
             -webkit-transform: rotate(-45deg);
           }
-        }
-        .fa-facebook {
-          color: $github-color;
-          background: $white;
-        }
-        &:hover .fa-facebook {
-          color: $white;
-          background: $github-color;
-        }
-        .fa-browser {
-          color: $github-color;
-          background: $white;
-        }
-        &:hover .fa-browser {
-          color: $white;
-          background: $github-color;
-        }
-        .fa-google {
-          color: $google-color;
-          background: $white;
-        }
-        &:hover .fa-google {
-          color: $white;
-          background: $google-color;
         }
         .fa-github {
           color: $github-color;
@@ -186,22 +151,6 @@ footer {
         &:hover .fa-github {
           color: $white;
           background: $github-color;
-        }
-        .fa-youtube {
-          color: $youtube-color;
-          border: 1px solid $youtube-color;
-        }
-        &:hover .fa-youtube {
-          color: $white;
-          background: $youtube-color;
-        }
-        .fa-codepen {
-          color: $codepen-color;
-          border: 1px solid $codepen-color;
-        }
-        &:hover .fa-codepen {
-          color: $white;
-          background: $codepen-color;
         }
       }
     }
@@ -225,7 +174,7 @@ footer {
 }
 
 #footer_compiled_text {
-  font-size: 1.5vw;
+  font-size: 1vw;
   margin-bottom: 3% !important;
   color: white;
 }

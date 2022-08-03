@@ -1,13 +1,6 @@
 <template>
   <div class="apply-now-container">
-    <div class="h2">
-      Wir sind bereit !
-      <br />Du auch ?
-      <br />
-      <a href="https://www.renuo.ch/de/jobs/">
-        Bewirb dich jetzt
-      </a>
-    </div>
+    <div class="h2"><br />Neugierig auf unsere Github-Projekte?</div>
   </div>
 </template>
 
@@ -28,7 +21,7 @@ export default {
     transition: border-width 0.5s ease-in-out;
     text-decoration: none;
     border-bottom: 1px solid #fff;
-    font-size: 2rem;
+    font-size: 1rem;
     color: white;
   }
   a:hover {
@@ -37,7 +30,7 @@ export default {
 }
 .h2 {
   color: #3a4440;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 

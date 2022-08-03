@@ -2,7 +2,7 @@
   <div>
     <div>
       <div>
-        <img class="centered-gallery-image" alt="Workspace" :src="work_space" />
+        <img class="img-full" alt="Workspace" :src="work_space" />
       </div>
       <br />
       <br />
@@ -116,148 +116,7 @@
     </ul>
     <div class="pl-md-5 job-container">
       <div class="row mt-5 job-desc justify-content-between">
-        <div class="col-12 col-md-12 col-lg-4 col-sm-12">
-          <h3>Deine Mission</h3>
-          <ul class="ul--jobs ul--jobs-detail">
-            <ul class="icons-ul">
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Softwareentwicklung mit
-                Webtechnologien (Ruby on Rails / React / HTML5 / Javascript)
-              </li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Anforderungsanalyse, technische
-                Betreuung und Beratung von Kunden
-              </li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Datenbankdesign mit SQL (MySQL,
-                Postgres)
-              </li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Mitwirkung im Projektmanagement
-                mit <a href="/de/scrum">Scrum</a>
-              </li>
-              <br />
-            </ul>
-          </ul>
-        </div>
-        <div class="col-12 col-md-12 col-lg-4 col-sm-12">
-          <h3>Was erwarten wir?</h3>
-          <ul class="ul--jobs ul--jobs-detail">
-            <ul class="icons-ul">
-              <br />
-              <li><i class="icon-li icon-ok"></i> Du ♥️ Open Source</li>
-              <br />
-              <li><i class="icon-li icon-ok"></i> Du hast (sehr) gute Noten</li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Du programmierst manchmal auch
-                in deiner Freizeit
-              </li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Du lernst gerne neue Dinge
-              </li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Du willst mit Linux oder Mac
-                arbeiten
-              </li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Du kannst sehr selbständig
-                arbeiten
-              </li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Du kannst klar kommunizieren
-              </li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Ein Plus: Du kennst Ruby oder
-                Ruby on Rails, JavaScript, TypeScript oder CoffeeScript, React,
-                Angular, SSH, Linux-Server oder andere Webtechnologien (z. B.
-                Python, Django, PHP, JSF)
-              </li>
-              <br />
-            </ul>
-          </ul>
-        </div>
-        <div class="col-12 col-md-12 col-lg-4 col-sm-12">
-          <h3>Was bieten wir?</h3>
-          <ul class="ul--jobs ul--jobs-detail">
-            <ul class="icons-ul">
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Spannende und vielseitige
-                Projekte
-              </li>
-              <br />
-              <li><i class="icon-li icon-ok"></i> Neue Technologien</li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Selbsständige Arbeitsweise
-              </li>
-              <br />
-              <li><i class="icon-li icon-ok"></i> Flexible Arbeitszeiten</li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Ein technisch sehr kompetentes,
-                motiviertes, kollegiales und junges Team
-              </li>
-              <br />
-              <li><i class="icon-li icon-ok"></i> Betreuung deiner IPA</li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Wir haben viele IMS-Abgänger
-                unter uns und wissen genau, was auf dich zukommt!
-              </li>
-              <br />
-            </ul>
-          </ul>
-        </div>
-        <div
-          id="center-goodies-row"
-          class="col-12 col-md-12 col-lg-12 col-sm-12"
-        >
-          <h3>Noch mehr Goodies</h3>
-          <ul class="ul--jobs ul--jobs-detail center-goodies-row">
-            <ul class="icons-ul">
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i> Einmal jährliche Learning Week
-                (2015 nach Sizilien, 2016 nach Lissabon, 2017 an den Comer See,
-                2018 & 2019 im Elsass)
-              </li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i>½ Tag pro Woche für die
-                eigenverantwortliche Weiterbildung
-              </li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i>Regelmässige Meetups und
-                Konferenzbesuche
-              </li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i>Kaffee (wir haben eine Bialetti
-                :-)) und echten, chinesischen Tee
-              </li>
-              <br />
-              <li><i class="icon-li icon-ok"></i> Früchte und Snacks</li>
-              <br />
-              <li>
-                <i class="icon-li icon-ok"></i>Regelmässige Events (Team
-                Ausflüge, Monthly Beers, Skitag, Weihnachtsessen)
-              </li>
-              <br />
-            </ul>
-          </ul>
-        </div>
+        <div class="col-12 col-md-12 col-lg-4 col-sm-12"></div>
       </div>
     </div>
   </div>
@@ -339,7 +198,7 @@ export default {
 .work_during_internship_section {
   padding-top: 25px;
   padding-bottom: 25px;
-  text-align: center;
+  text-align: justify;
   font-size: 1rem;
 }
 
@@ -365,9 +224,8 @@ export default {
 .centered-gallery-image {
   z-index: 1;
   position: relative;
-  width: 60%;
+  width: 40%;
   border-radius: 10px;
-  height: auto;
   margin: auto;
 }
 
@@ -414,7 +272,7 @@ h6,
   li {
     display: list-item;
     text-align: left !important;
-    line-height: 2rem;
+    line-height: 1rem;
     a {
       font-weight: 200;
       padding-bottom: 0.25rem;

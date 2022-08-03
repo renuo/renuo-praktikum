@@ -10,6 +10,11 @@
   padding: 0;
 }
 
+a.btn.btn-info {
+  background-color: #27d79d;
+  border-color: white;
+}
+
 .values-title {
   margin-top: 3vw;
   font-weight: 500;
@@ -73,7 +78,9 @@ p, blockquote{
 .img-full {
   width: 100%;
 }
-
+.goodies-img-full{
+  width: 80%;
+}
 .map {
   position: relative;
 }

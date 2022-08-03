@@ -1,28 +1,30 @@
 <template>
-  <div>
+  <div style="background: #ccd5db">
     <Navigation2 @selected="setActive" />
-    <div class="content-container">
-      <AboutRenuo />
-    </div>
-    <br />
-    <br />
-    <div class="content-container">
-      <CenterTitle id="projects" title="Projekte" />
+    <div style="max-width: 750px; margin: auto; background: white;">
+      <CenterTitle id="internship" title="Dein Praktikum bei uns" />
       <br />
-      <Projects />
-    </div>
-    <br /><br />
-    <CenterTitle id="internship" title="Dein Praktikum bei uns" />
-    <br />
-    <Internship />
-    <br />
-    <br />
-    <div class="content-container">
-      <CenterTitle id="challenges" title="Challenge" />
+      <Internship />
+      <div class="content-container">
+        <AboutRenuo />
+      </div>
       <br />
-      <Challenges />
+      <br />
+      <div class="content-container">
+        <CenterTitle id="projects" title="Projekte" />
+        <br />
+        <Projects />
+      </div>
+      <br /><br />
+      <br />
+      <br />
+      <div class="content-container">
+        <CenterTitle id="challenges" title="Challenge" />
+        <br />
+        <Challenges />
+      </div>
+      <Footer />
     </div>
-    <Footer />
   </div>
 </template>
 <script>
@@ -38,6 +40,7 @@ import Vue from "vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+
 var VueScrollTo = require("vue-scrollto");
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
