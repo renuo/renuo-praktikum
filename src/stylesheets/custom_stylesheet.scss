@@ -1,8 +1,23 @@
+@use "variables.scss";
+
+.title {
+  width: 100% !important;
+  font-size: 80px;
+  font-weight: 500;
+  padding-top: 128px;
+  margin: auto;
+  padding-bottom: 80px;
+  margin-top: -80px;
+}
+
 .h3-title {
   margin: 6vw 0px 0px 0px;
   font-size: 50px;
-  color: #27d79d;
   font-weight: bold !important;
+}
+
+h1, h2:not(.values-title), .h3-title {
+  color: variables.$renuo-base-color;
 }
 
 .values-listing {
@@ -11,14 +26,14 @@
 }
 
 a.btn.btn-info {
-  background-color: #27d79d;
+  background-color: variables.$renuo-base-color;
   border-color: white;
 }
 
 .values-title {
   margin-top: 3vw;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 32px;
 }
 
 .values-img {
@@ -45,9 +60,7 @@ p, blockquote{
 }
 
 .my-container {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 
   blockquote{
     border-left: none;
@@ -55,7 +68,7 @@ p, blockquote{
   }
   blockquote:before {
     color: #f9f9f9;
- }
+  }
   
 }
 
@@ -86,7 +99,7 @@ p, blockquote{
 }
 
 p{
-  font-size: 1.2rem;
+  font-size: 19.2px;
 }
 
 .cat {
@@ -99,8 +112,8 @@ p{
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  margin: 24px 10px;
+  padding: 8px 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
@@ -117,7 +130,7 @@ blockquote p {
 .readme-title, .readme-sub-title, .readme-sub-sub-title, .readme-text, .code-display{
   text-align: left;
   color: black;
-  margin: 1rem;
+  margin: 16px;
 }
 
 .code-display{
@@ -145,20 +158,14 @@ blockquote p {
   font-size: 1vw;
 }
 
-.instructions{
-  max-width: 80%;
-  margin: auto;
-  padding: 1.5vw;
-}
-
 .corner-container{
   position: relative;
 }
 
 .github-corner{
   position: absolute;
-  right: 0.5rem;
-  top: 0.5rem;
+  right: 8px;
+  top: 8px;
 }
 
 .language-bash, .language-ruby{
@@ -169,6 +176,7 @@ blockquote p {
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }
+
 @keyframes octocat-wave {
   0%,
   100% {
@@ -184,9 +192,9 @@ blockquote p {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 750px) {
   .readme-title, .readme-sub-title, .readme-sub-sub-title, .readme-text, .code-display{
-    margin: 0.5rem;
+    margin: 0rem;
   }
   .my-container {
     width: 100% !important;
@@ -211,7 +219,7 @@ blockquote p {
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 16px;
   }
   
   .instructions{
@@ -241,11 +249,10 @@ blockquote p {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .values-title {
     margin-top: 3vw;
     font-weight: 500;
-    font-size: 1rem;
   }
 
   .img-col {
@@ -259,18 +266,12 @@ blockquote p {
   }
 
   .h3-title {
-    margin: 6vw 0px 0px 0px;
-    font-size: 2rem;
-    color: #27d79d;
-    font-weight: bold !important;
+    font-size: 32px;
   }
 
-    p, blockquote{
+  p, blockquote {
     margin-bottom: 10px;
-    font-size: 1rem;
   }
-
-
   
   .github-corner:hover .octo-arm {
     animation: none;
@@ -281,22 +282,18 @@ blockquote p {
   }
 
   .readme-title{
-    font-size: 1.6rem;
+    font-size: 25.6px;
   }
   
   .readme-sub-title{
-    font-size: 1.3rem;
+    font-size: 20.8px;
   }
   
   .readme-sub-sub-title{
-    font-size: 1.2rem;
-  }
-  
-  .readme-text{
-    font-size: 1rem;
+    font-size: 19.2px;
   }
 
-  .language-bash, .language-ruby{
-    font-size: 1rem;
+  .language-bash, .language-ruby, .readme-text, .values-title, p, blockquote {
+    font-size: 16px;
   }  
 }

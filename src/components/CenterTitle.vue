@@ -22,18 +22,7 @@ export default {
 <style scoped lang="scss">
 @import "@/stylesheets/variables.scss";
 
-.title {
-  width: 100% !important;
-  color: $renuo-base-color;
-  font-size: 5rem;
-  font-weight: 500;
-  padding-top: 8rem;
-  margin: auto;
-  padding-bottom: 5rem;
-  margin-top: -5rem;
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 750px) {
   .heading .title {
     font-size: 2rem;
   }
@@ -49,18 +38,7 @@ export default {
   z-index: -1;
 }
 
-@media (max-width: 1200px) {
-  .title {
-    font-size: 4rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  .background-header {
-    margin-top: 60px;
-  }
-}
-
-@media (max-width: 1000px) {
+@media (min-width: 750px) {
   .title {
     font-size: 3.5rem;
     padding-top: 3rem;
@@ -68,7 +46,7 @@ export default {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .title {
     font-size: 2.5rem;
     padding: 25px;

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="h3-title" id="about-renuo">Dein künftiger Praktikumsort</h1>
+    <h2 class="h3-title" id="about-renuo">Dein künftiger Praktikumsort</h2>
     <br />
     <img class="img-full" alt="renuo team" :src="team" />
     <h2 class="h3-title">Goodies</h2>
