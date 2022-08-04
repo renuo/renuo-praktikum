@@ -4,7 +4,7 @@
       <h4 class="readme-title">Wir haben eine Challenge für dich!</h4>
       <p class="readme-text">
         <span style="color: red;">Achtung</span> Die Teilnahme ist keine
-        Vorraussetzung für eine Bewerbung und nur zum Spass gedacht.
+        Voraussetzung für eine Bewerbung und nur zum Spass gedacht.
       </p>
       <div class="corner-container" style="width: 100%;">
         <a
@@ -112,7 +112,7 @@
         bestimmen ob der Baum einen Stamm beziehungsweise Stern haben soll.
       </p>
       <pre><code class="language-bash code-display">
-    ChristmasTree.draw(height: 5, tree_stand: true, star: true)       
+    ChristmasTree.draw(height: 5, tree_stand: true, star: true)
       </code></pre>
 
       <p class="readme-text">

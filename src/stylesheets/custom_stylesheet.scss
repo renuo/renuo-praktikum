@@ -14,14 +14,17 @@
   margin: 6vw 0px 0px 0px;
   font-size: 50px;
   font-weight: bold !important;
+  width: 100%;
 }
+
 
 h1, h2:not(.values-title), .h3-title {
   color: variables.$renuo-base-color;
 }
 
+
 .values-listing {
-  list-style-type: none;
+  list-style-type: nƒone;
   padding: 0;
 }
 
