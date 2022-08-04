@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img :src="work_space.png" alt="tools" />
+    <img src="@/assets/projekte.png" class="img-fluid" alt="tools" />
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="apply-now-container">
-    <div class="h2"><br />Neugierig auf unsere Github-Projekte?</div>
+    <div class="h2">Neugierig auf unsere Github-Projekte?</div>
   </div>
 </template>
 
@@ -11,11 +11,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/stylesheets/variables.scss";
+@use "../stylesheets/variables.scss";
 
 .apply-now-container {
   margin-bottom: 50px;
-  background-color: $renuo-base-color;
+  background-color: variables.$renuo-base-color;
   a {
     font-weight: normal;
     transition: border-width 0.5s ease-in-out;

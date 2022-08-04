@@ -1,11 +1,7 @@
 <template>
   <footer>
     <div class="footer-content">
-      <br />
-      <br />
       <ApplyNow />
-      <br />
-      <br />
       <section class="social-icon__wrapper">
         <ul>
           <li v-for="icon in icons" :key="icon">
@@ -15,7 +11,6 @@
           </li>
         </ul>
       </section>
-      <br />
       <span id="footer_compiled_text"
         >hello@renuo.ch / +41 44 500 83 50 / Industriestrasse 44 / 8304
         Wallisellen</span
@@ -198,7 +193,6 @@ footer {
 
 .footer-made-by {
   text-align: left;
-  padding-left: 20px !important;
   padding: 0.8rem 2rem;
   font-size: 0.8rem;
   line-height: 1.7rem;

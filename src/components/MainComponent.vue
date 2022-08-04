@@ -1,7 +1,7 @@
 <template>
   <div style="background: #ccd5db">
     <Navigation2 @selected="setActive" />
-    <div class="main-content">
+    <div style="padding: 0px 20px" class="main-content">
       <Internship />
       <AboutRenuo />
       <CenterTitle id="projects" title="Projekte" />
@@ -60,7 +60,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@use "@/stylesheets/variables.scss";
+@use "../stylesheets/variables.scss";
 
 .main-content {
   max-width: 750px;
