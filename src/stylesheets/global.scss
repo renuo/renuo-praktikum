@@ -1,66 +1,20 @@
 @use "variables.scss";
 
-.title {
-  width: 100% !important;
-  font-size: 80px;
-  font-weight: 500;
-  padding-top: 128px;
-  margin: auto;
-  padding-bottom: 80px;
-  margin-top: -80px;
-}
-
-.h3-title {
-  margin: 6vw 0px 0px 0px;
-  font-size: 50px;
-  font-weight: bold !important;
-  width: 100%;
-}
-
-
 h1, h2:not(.values-title), .h3-title {
   color: variables.$renuo-base-color;
 }
-
 
 a.btn.btn-info {
   background-color: variables.$renuo-base-color;
   border-color: white;
 }
 
-
 p, blockquote {
   font-weight: 100;
 }
 
-
-
-
-.iframe-container {
-  height: 60vh;
-}
-
-.remove-border {
-  border-style: none;
-}
-
-.goodies-img-fluid {
-  width: 80%;
-}
-
-.map {
-  position: relative;
-}
-
 p {
   font-size: 19.2px;
-}
-
-.cat {
-  width: 20vw;
-  position: absolute;
-  left: 0;
-  bottom: 0;
 }
 
 blockquote {
@@ -83,150 +37,8 @@ blockquote p {
   display: inline;
 }
 
-.readme-title, .readme-sub-title, .readme-sub-sub-title, .readme-text, .code-display {
-  text-align: left;
-  color: black;
-  margin: 16px;
-}
-
-.code-display {
-  text-align: left;
-  padding: 0px;
-}
-
-.readme-title {
-  font-weight: bold;
-  font-size: 3vw;
-}
-
-.readme-sub-title {
-  font-weight: bold;
-  font-size: 2.5vw;
-}
-
-.readme-sub-sub-title {
-  font-size: 2vw;
-}
-
-.readme-text {
-  margin-top: 0.3vw;
-  margin-bottom: 0.3vw;
-  font-size: 1vw;
-}
-
-.corner-container {
-  position: relative;
-}
-
-.github-corner {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-}
-
-.language-bash, .language-ruby {
-  font-size: 1vw;
-  padding: 0;
-}
-
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
-}
-
-@keyframes octocat-wave {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  20%,
-  60% {
-    transform: rotate(-25deg);
-  }
-  40%,
-  80% {
-    transform: rotate(10deg);
-  }
-}
-
-@media only screen and (min-width: 750px) {
-  .readme-title, .readme-sub-title, .readme-sub-sub-title, .readme-text, .code-display {
-    margin: 0rem;
-  }
-  .my-container {
-    width: 100% !important;
-  }
-  .instructions {
-    max-width: 100% !important;
-  }
-
-  .readme-title {
-    font-size: 3vw;
-  }
-
-  .readme-sub-title {
-    font-size: 2.5vw;
-  }
-
-  .readme-sub-sub-title {
-    font-size: 2vw;
-  }
-
-  .readme-text {
-    margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
-    font-weight: 100;
-    font-size: 16px;
-  }
-
-  .instructions {
-    padding: 2vw;
-  }
-
-  .language-bash, .language-ruby {
-    font-size: 1.6vw;
-    padding: 0;
-  }
-
-
-  .values-img {
-    margin: 2vw;
-    height: 7vw;
-  }
-}
-
-@media (max-width: 1000px) {
-  .h3-title {
-    font-size: 35px;
-  }
-}
-
 @media (max-width: 750px) {
-
-  .h3-title {
-    font-size: 32px;
-  }
-
   p, blockquote {
     margin-bottom: 10px;
-  }
-
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
-
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-
-  .readme-title {
-    font-size: 25.6px;
-  }
-
-  .readme-sub-title {
-    font-size: 20.8px;
-  }
-
-  .readme-sub-sub-title {
-    font-size: 19.2px;
   }
 }

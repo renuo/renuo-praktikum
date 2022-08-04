@@ -81,10 +81,52 @@ export default {
 <style scoped lang="scss">
 @import "@/stylesheets/global.scss";
 
+@media (max-width: 750px) {
+  .h3-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .h3-title {
+    font-size: 35px;
+  }
+}
+
+.h3-title {
+  margin: 6vw 0px 0px 0px;
+  font-size: 50px;
+  font-weight: bold !important;
+  width: 100%;
+}
+
 #locatin-listing {
   list-style-type: none;
   font-size: 1.75rem;
   text-align: center !important;
+}
+
+.cat {
+  width: 20vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.iframe-container {
+  height: 60vh;
+}
+
+.remove-border {
+  border-style: none;
+}
+
+.goodies-img-fluid {
+  width: 80%;
+}
+
+.map {
+  position: relative;
 }
 
 @media (max-width: 700px) {

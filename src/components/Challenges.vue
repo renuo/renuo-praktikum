@@ -160,4 +160,138 @@ export default {
 <style lang="scss" scoped>
 @import "@/stylesheets/global.scss";
 // todo: use https://highlightjs.org/
+@media (max-width: 750px) {
+  .readme-sub-sub-title {
+    font-size: 19.2px;
+  }
+
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+
+  .readme-title {
+    font-size: 25.6px;
+  }
+
+  .readme-sub-title {
+    font-size: 20.8px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .readme-title,
+  .readme-sub-title,
+  .readme-sub-sub-title,
+  .readme-text,
+  .code-display {
+    margin: 0rem;
+  }
+
+  .instructions {
+    max-width: 100% !important;
+  }
+
+  .readme-title {
+    font-size: 3vw;
+  }
+
+  .readme-sub-title {
+    font-size: 2.5vw;
+  }
+
+  .readme-sub-sub-title {
+    font-size: 2vw;
+  }
+
+  .readme-text {
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    font-weight: 100;
+    font-size: 16px;
+  }
+
+  .instructions {
+    padding: 2vw;
+  }
+
+  .language-bash,
+  .language-ruby {
+    font-size: 1.6vw;
+    padding: 0;
+  }
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+.readme-title,
+.readme-sub-title,
+.readme-sub-sub-title,
+.readme-text,
+.code-display {
+  text-align: left;
+  color: black;
+  margin: 16px;
+}
+
+.code-display {
+  text-align: left;
+  padding: 0px;
+}
+
+.readme-title {
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.readme-sub-title {
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+.readme-sub-sub-title {
+  font-size: 2vw;
+}
+
+.readme-text {
+  margin-top: 0.3vw;
+  margin-bottom: 0.3vw;
+  font-size: 1vw;
+}
+
+.corner-container {
+  position: relative;
+}
+
+.github-corner {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.language-bash,
+.language-ruby {
+  font-size: 1vw;
+  padding: 0;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
 </style>

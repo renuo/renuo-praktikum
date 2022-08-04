@@ -28,6 +28,16 @@ export default {
   }
 }
 
+.title {
+  width: 100% !important;
+  font-size: 80px;
+  font-weight: 500;
+  padding-top: 128px;
+  margin: auto;
+  padding-bottom: 80px;
+  margin-top: -80px;
+}
+
 .background-header {
   margin-top: 80px;
   background-color: #fff;
