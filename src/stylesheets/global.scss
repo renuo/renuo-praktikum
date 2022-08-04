@@ -23,85 +23,36 @@ h1, h2:not(.values-title), .h3-title {
 }
 
 
-.values-listing {
-  list-style-type: nƒone;
-  padding: 0;
-}
-
 a.btn.btn-info {
   background-color: variables.$renuo-base-color;
   border-color: white;
 }
 
-.values-title {
-  margin-top: 3vw;
-  font-weight: 500;
-  font-size: 32px;
-}
 
-.values-img {
-  margin: 2vw;
-  height: 5vw;
-}
-
-p, blockquote{
+p, blockquote {
   font-weight: 100;
 }
 
-.img-col {
-  width: 35% !important;
-  max-width: 35% !important;
-}
 
-.text-col{
-  width: 65% !important;
-  max-width: 65% !important;
-}
 
-.col-md-6 {
-  padding: 0px !important;
-}
 
-.my-container {
-  width: 100%;
-
-  blockquote{
-    border-left: none;
-    
-  }
-  blockquote:before {
-    color: #f9f9f9;
-  }
-  
-}
-
-.img-padded {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-right: 10%;
-  margin-left: 10%;
-  width: 80%;
-}
-
-.iframe-container{
+.iframe-container {
   height: 60vh;
 }
 
-.remove-border{
+.remove-border {
   border-style: none;
 }
 
-.img-full {
-  width: 100%;
-}
-.goodies-img-full{
+.goodies-img-fluid {
   width: 80%;
 }
+
 .map {
   position: relative;
 }
 
-p{
+p {
   font-size: 19.2px;
 }
 
@@ -119,6 +70,7 @@ blockquote {
   padding: 8px 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
+
 blockquote:before {
   color: #ccc;
   content: open-quote;
@@ -126,52 +78,53 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 blockquote p {
   display: inline;
 }
 
-.readme-title, .readme-sub-title, .readme-sub-sub-title, .readme-text, .code-display{
+.readme-title, .readme-sub-title, .readme-sub-sub-title, .readme-text, .code-display {
   text-align: left;
   color: black;
   margin: 16px;
 }
 
-.code-display{
+.code-display {
   text-align: left;
   padding: 0px;
 }
 
-.readme-title{
+.readme-title {
   font-weight: bold;
   font-size: 3vw;
 }
 
-.readme-sub-title{
+.readme-sub-title {
   font-weight: bold;
   font-size: 2.5vw;
 }
 
-.readme-sub-sub-title{
+.readme-sub-sub-title {
   font-size: 2vw;
 }
 
-.readme-text{
+.readme-text {
   margin-top: 0.3vw;
   margin-bottom: 0.3vw;
   font-size: 1vw;
 }
 
-.corner-container{
+.corner-container {
   position: relative;
 }
 
-.github-corner{
+.github-corner {
   position: absolute;
   right: 8px;
   top: 8px;
 }
 
-.language-bash, .language-ruby{
+.language-bash, .language-ruby {
   font-size: 1vw;
   padding: 0;
 }
@@ -196,7 +149,7 @@ blockquote p {
 }
 
 @media only screen and (min-width: 750px) {
-  .readme-title, .readme-sub-title, .readme-sub-sub-title, .readme-text, .code-display{
+  .readme-title, .readme-sub-title, .readme-sub-sub-title, .readme-text, .code-display {
     margin: 0rem;
   }
   .my-container {
@@ -205,68 +158,49 @@ blockquote p {
   .instructions {
     max-width: 100% !important;
   }
-  
-  .readme-title{
+
+  .readme-title {
     font-size: 3vw;
   }
-  
-  .readme-sub-title{
+
+  .readme-sub-title {
     font-size: 2.5vw;
   }
-  
-  .readme-sub-sub-title{
+
+  .readme-sub-sub-title {
     font-size: 2vw;
   }
-  
-  .readme-text{
+
+  .readme-text {
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     font-weight: 100;
     font-size: 16px;
   }
-  
-  .instructions{
-    padding: 2vw;
-  }  
 
-  .language-bash, .language-ruby{
+  .instructions {
+    padding: 2vw;
+  }
+
+  .language-bash, .language-ruby {
     font-size: 1.6vw;
     padding: 0;
   }
 
-  .values-title {
-    margin-top: 3.5vw;
-    font-weight: 500;
-    font-size: 3vw;
-  }
-  
+
   .values-img {
     margin: 2vw;
     height: 7vw;
   }
 }
 
-@media (max-width: 1000px){
-  .h3-title{
+@media (max-width: 1000px) {
+  .h3-title {
     font-size: 35px;
   }
 }
 
 @media (max-width: 750px) {
-  .values-title {
-    margin-top: 3vw;
-    font-weight: 500;
-  }
-
-  .img-col {
-    width: 25% !important;
-    max-width: 25% !important;
-  }
-  
-  .text-col{
-    width: 75% !important;
-    max-width: 75% !important;
-  }
 
   .h3-title {
     font-size: 32px;
@@ -275,28 +209,24 @@ blockquote p {
   p, blockquote {
     margin-bottom: 10px;
   }
-  
+
   .github-corner:hover .octo-arm {
     animation: none;
   }
-  
+
   .github-corner .octo-arm {
     animation: octocat-wave 560ms ease-in-out;
   }
 
-  .readme-title{
+  .readme-title {
     font-size: 25.6px;
   }
-  
-  .readme-sub-title{
+
+  .readme-sub-title {
     font-size: 20.8px;
   }
-  
-  .readme-sub-sub-title{
+
+  .readme-sub-sub-title {
     font-size: 19.2px;
   }
-
-  .language-bash, .language-ruby, .readme-text, .values-title, p, blockquote {
-    font-size: 16px;
-  }  
 }

@@ -345,7 +345,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/stylesheets/custom_stylesheet.scss";
+@import "@/stylesheets/global.scss";
 @import "@/stylesheets/variables.scss";
 
 .btn-navigation {

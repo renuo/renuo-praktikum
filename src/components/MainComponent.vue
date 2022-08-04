@@ -1,45 +1,31 @@
 <template>
   <div style="background: #ccd5db">
     <Navigation2 @selected="setActive" />
-    <div style="max-width: 750px; margin: auto; background: white;">
-      <CenterTitle id="internship" title="Dein Praktikum bei uns" />
-      <br />
+    <div class="main-content">
       <Internship />
-      <div class="content-container">
-        <AboutRenuo />
-      </div>
-      <br />
-      <br />
-      <div class="content-container">
-        <CenterTitle id="projects" title="Projekte" />
-        <br />
-        <Projects />
-      </div>
-      <br /><br />
-      <br />
-      <br />
-      <div class="content-container">
-        <CenterTitle id="challenges" title="Challenge" />
-        <br />
-        <Challenges />
-      </div>
+      <AboutRenuo />
+      <CenterTitle id="projects" title="Projekte" />
+      <Projects />
+      <Values />
+      <Challenges />
       <Footer />
     </div>
   </div>
 </template>
 <script>
 import * as TastyBurgerButton from "vue-tasty-burgers";
-import Navigation2 from "./Navigation2.vue";
-import AboutRenuo from "./AboutRenuo.vue";
-import Footer from "./Footer.vue";
-import CenterTitle from "./CenterTitle.vue";
-import Projects from "./Projects.vue";
-import Challenges from "./Challenges.vue";
-import Internship from "./Internship.vue";
 import Vue from "vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+import AboutRenuo from "@/components/AboutRenuo";
+import CenterTitle from "@/components/CenterTitle";
+import Challenges from "@/components/Challenges";
+import Footer from "@/components/Footer";
+import Internship from "@/components/Internship";
+import Navigation2 from "@/components/Navigation2";
+import Projects from "@/components/Projects";
+import Values from "@/components/Values";
 
 var VueScrollTo = require("vue-scrollto");
 Vue.use(BootstrapVue);
@@ -53,13 +39,14 @@ export default {
     };
   },
   components: {
-    Navigation2,
     AboutRenuo,
     CenterTitle,
-    Internship,
-    Projects,
     Challenges,
-    Footer
+    Footer,
+    Internship,
+    Navigation2,
+    Projects,
+    Values
   },
   methods: {
     isActive(menuItem) {
@@ -73,40 +60,11 @@ export default {
 };
 </script>
 <style lang="scss">
-body::-webkit-scrollbar {
-  display: none;
-}
+@use "@/stylesheets/variables.scss";
 
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-@mixin renuo-background {
-  background-color: #27d79d !important;
-  /*
-		* Add font colour and other changes that are needed for green background
-	*/
-}
-
-@mixin default-background {
-  background-color: #fff;
-  /*
-		* Add font colour and other changes that are needed for green background
-  */
-}
-
-$inverted: true !default;
-.renuo_color_section {
-  @include renuo-background;
-}
-
-.default_color_section {
-  @include default-background;
-}
-
-.content-container {
-  margin-left: auto;
-  margin-right: auto;
+.main-content {
+  max-width: 750px;
+  margin: auto;
+  background: variables.$default-background-color;
 }
 </style>

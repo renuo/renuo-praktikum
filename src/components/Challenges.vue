@@ -1,5 +1,7 @@
 <template>
   <div class="hello">
+    <CenterTitle id="challenges" title="Challenge" />
+
     <div class="instructions">
       <h4 class="readme-title">Wir haben eine Challenge für dich!</h4>
       <p class="readme-text">
@@ -137,9 +139,13 @@
 </template>
 
 <script>
+import CenterTitle from "@/components/CenterTitle";
+
 export default {
   name: "Challenges",
-
+  components: {
+    CenterTitle
+  },
   props: {
     msg: String
   },
@@ -152,5 +158,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/stylesheets/custom_stylesheet.scss";
+@import "@/stylesheets/global.scss";
+// todo: use https://highlightjs.org/
 </style>
