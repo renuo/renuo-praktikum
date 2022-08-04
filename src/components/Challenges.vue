@@ -56,17 +56,10 @@
         Tab stellen.
       </p>
 
-      <h4 class="readme-title">Weihnachtsbaum 🌲</h4>
-
       <p class="readme-text">
-        Obwohl es noch nicht Weihnachten ist, hoffen wir trotzdem, dass du Spass
-        mit dieser Challenge haben wirst. 😎
-      </p>
-
-      <h4 class="readme-sub-title">Basis</h4>
-
-      <p class="readme-text">
-        Kleine ruby app mir bereits vorbereiteten tests..
+        Das Projekt basiert aus Ruby und wird mit RSpec getestet. In dieser
+        Aufgabe musst du einen Ruby Algorithmus, sowie dessen Tests in RSpec
+        schreiben.
       </p>
 
       <h4 class="readme-sub-title">Aufgabe</h4>
@@ -76,25 +69,16 @@
         art zurück gibt. Versuche test-driven (TDD) in Ruby zu entwicklen.
       </p>
 
-      <h4 class="readme-sub-sub-title">Input</h4>
-
       <p class="readme-text">
         Deine Funktion sollte als ihren ersten Parameter die Höhe des Baumes
-        annehmen.
+        annehmen und dann den in ASCII-Code gezeichneten Baum als String wieder
+        ausgeben. Das würde Beispielsweise wie folgt aussehen:
       </p>
-
-      <h4 class="readme-sub-sub-title">Output</h4>
-
-      <p class="readme-text">
-        Die implementierte Funktion sollte einen Weihnachtsbaum als string
-        zurück geben.
-      </p>
-
       <pre><code class="language-bash code-display">
     ChristmasTree.draw(5)
       </code></pre>
 
-      <p class="readme-text">Der Output sollte dann wie folgt aussehen:</p>
+      <p class="readme-text">Der Output sieht dann so aus:</p>
       <pre><code class="language-bash code-display">
         X
        XXX
@@ -103,7 +87,7 @@
     XXXXXXXXX
       </code></pre>
 
-      <h4 class="readme-sub-title">Fortgeschritten</h4>
+      <h4 class="readme-sub-title">Erweiterung</h4>
 
       <p class="readme-text">
         Langsam nimmt der Baum Form an. Wenn du noch einen Schritt weiter gehen
@@ -139,6 +123,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import CenterTitle from "@/components/CenterTitle";
 
 export default {
@@ -156,7 +141,6 @@ export default {
   }
 };
 </script>
-
 <style lang="scss" scoped>
 @import "@/stylesheets/global.scss";
 // todo: use https://highlightjs.org/
