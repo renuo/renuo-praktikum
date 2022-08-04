@@ -35,7 +35,6 @@ export default {
   padding-top: 128px;
   margin: auto;
   padding-bottom: 80px;
-  margin-top: -80px;
 }
 
 .background-header {

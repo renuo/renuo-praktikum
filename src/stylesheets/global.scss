@@ -4,9 +4,27 @@ h1, h2:not(.values-title), .h3-title {
   color: variables.$renuo-base-color;
 }
 
+.h3-title {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
 a.btn.btn-info {
   background-color: variables.$renuo-base-color;
   border-color: white;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+
+
+}
+
+a.btn.btn-info:hover {
+  background-color: variables.$renuo-base-color-dark;
+}
+
+a.btn.btn-info:active {
+  color: white;
 }
 
 p, blockquote {

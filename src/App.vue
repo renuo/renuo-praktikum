@@ -25,6 +25,10 @@ export default {
   font-family: "Montserrat", sans-serif;
 }
 
+:root::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
