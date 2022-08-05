@@ -15,8 +15,10 @@ export default {
 
 .apply-now-container {
   margin-bottom: 50px;
+
   background-color: variables.$renuo-base-color;
   a {
+    margin-top: 20px;
     font-weight: normal;
     transition: border-width 0.5s ease-in-out;
     text-decoration: none;
@@ -32,6 +34,7 @@ export default {
   color: #3a4440;
   font-size: 2rem;
   font-weight: bold;
+  padding-top: 20px;
 }
 
 @media (max-width: 500px) {
