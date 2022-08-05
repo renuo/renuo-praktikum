@@ -408,7 +408,7 @@ export default {
 div#svg-container-nav {
   position: absolute;
   z-index: 2;
-  top: 22.5px;
+  top: 18px;
   right: 0px;
   height: 55px;
   aspect-ratio: 1/1;
