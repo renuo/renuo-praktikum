@@ -10,7 +10,7 @@
       </p>
       <div class="corner-container" style="width: 100%;">
         <a
-          href="https://github.com/renuo/christmas_tree"
+          href="https://github.com/renuo/nearest-vowel"
           class="github-corner"
           aria-label="View source on GitHub"
           ><svg
@@ -34,14 +34,12 @@
             ></path></svg
         ></a>
         <pre><code class="language-ruby code-display">
-    # frozen_string_literal: true
+    class Searcher
+      VOWELS = # Add your code here
 
-    class ChristmasTree
-      TREE_CHARACTER = 'X'
-
-      def draw(height)
-        # TODO: implement logic
-        height
+      def nearest_vowel(str)
+        # Add your code here
+        # Make sure that your solution is being returned
       end
     end
     </code></pre>
@@ -52,72 +50,36 @@
 
       <p class="readme-text">
         Fragen kannst du im
-        <a href="https://github.com/renuo/christmas_tree/issues">"Issues"</a>
+        <a href="https://github.com/renuo/nearest-vowel/issues">"Issues"</a>
         Tab stellen.
       </p>
 
       <p class="readme-text">
-        Das Projekt basiert aus Ruby und wird mit RSpec getestet. In dieser
-        Aufgabe musst du einen Ruby Algorithmus, sowie dessen Tests in RSpec
-        schreiben.
+        Das Projekt basiert auf einem einfachem Ruby script, sowie RSpec tests.
+        Den Algorithmus musst du selbst schreiben, doch die Tests dazu sind
+        bereits auf dem GitHub des Projektes unter dem "spec" Ordner.
       </p>
 
       <h4 class="readme-sub-title">Aufgabe</h4>
 
       <p class="readme-text">
-        Du musst eine Funktion schreiben, welche einen Weihhnachtsbaum in ASCII
-        art zurück gibt. Versuche test-driven (TDD) in Ruby zu entwicklen.
-      </p>
-
-      <p class="readme-text">
-        Deine Funktion sollte als ihren ersten Parameter die Höhe des Baumes
-        annehmen und dann den in ASCII-Code gezeichneten Baum als String wieder
-        ausgeben. Das würde Beispielsweise wie folgt aussehen:
-      </p>
-      <pre><code class="language-bash code-display">
-    ChristmasTree.draw(5)
-      </code></pre>
-
-      <p class="readme-text">Der Output sieht dann so aus:</p>
-      <pre><code class="language-bash code-display">
-        X
-       XXX
-      XXXXX
-     XXXXXXX
-    XXXXXXXXX
-      </code></pre>
-
-      <h4 class="readme-sub-title">Erweiterung</h4>
-
-      <p class="readme-text">
-        Langsam nimmt der Baum Form an. Wenn du noch einen Schritt weiter gehen
-        willst, kannst du dem Baum einen Stamm und einen Stern geben.
-      </p>
-      <p class="readme-text">
-        Zusätzlich könntest du der Funktion zwei weiterere Argumente geben, die
-        bestimmen ob der Baum einen Stamm beziehungsweise Stern haben soll.
-      </p>
-      <pre><code class="language-bash code-display">
-    ChristmasTree.draw(height: 5, tree_stand: true, star: true)
-      </code></pre>
-
-      <p class="readme-text">
-        Wenn beide Argumente auf `true` sind, sollte dies der ouput sein:
+        Deine Aufgabe ist es, die vorgegebene Funktion auszubauen, sodass sie
+        mit einem eingegeben String einen Array zurück gibt, welcher die Distanz
+        von jedem Buchstaben zum nächsten Vokal zeigt. Das würde dann wie folgt
+        aussehen:
       </p>
 
       <pre><code class="language-bash code-display">
-        *
-        X
-       XXX
-      XXXXX
-     XXXXXXX
-    XXXXXXXXX
-        |
+        Searcher.nearest_vowel("Renuo AG")
       </code></pre>
 
       <p class="readme-text">
-        Vergiss nicht einen Test für diese Aufgabe zu schreiben. 👨🏻‍💻 👩🏼‍💻
+        Die Funktion soll dann folgenden Array zurückgeben:
       </p>
+
+      <pre><code class="language-bash code-display">
+        [1, 0, 1, 0, 0, 1, 0, 1]
+      </code></pre>
     </div>
   </div>
 </template>
