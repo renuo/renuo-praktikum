@@ -1,7 +1,7 @@
 <template>
-  <div style="background: #ccd5db">
+  <div style="background: white">
     <Navigation @selected="setActive" />
-    <div style="padding: 0px 20px" class="main-content">
+    <div style="padding: -50px 20px" class="main-content">
       <Internship />
       <AboutRenuo />
       <CenterTitle id="projects" title="Projekte" />

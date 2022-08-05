@@ -1,6 +1,10 @@
 <template>
   <div>
-    <CenterTitle id="internship" title="Dein künftiger Praktikumsort" />
+    <CenterTitle
+      id="internship"
+      title="Dein künftiger Praktikumsort"
+      style="margin-top: 20px"
+    />
     <img class="img-fluid" alt="Workspace" src="@/assets/work_space.png" />
     <!--      TODO: check if space is needed -->
     <Timeline

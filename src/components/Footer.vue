@@ -12,14 +12,14 @@
         </ul>
       </section>
       <span id="footer_compiled_text"
-        >hello@renuo.ch / +41 44 500 83 50 / Industriestrasse 44 / 8304
+        >hello@renuo.ch +41 44 500 83 50 Industriestrasse 44 8304
         Wallisellen</span
       >
       <div class="container-fluid footer-made-by">
         <div class="row">
           <div class="col-12 col-md-6">
-            © 2020 Renuo AG —
-            <a href="https://renuo.ch/en/impressum">Imprint / Privacy Policy</a>
+            © 2022 Renuo AG — hello@renuo.ch
+            <a href="https://renuo.ch/en/impressum">Privacy Policy</a>
           </div>
           <div class="col-12 col-md-6">
             <a
