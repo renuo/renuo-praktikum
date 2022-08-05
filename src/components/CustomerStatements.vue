@@ -1,11 +1,11 @@
 <template>
   <div>
     <h2 class="h3-title">Kundenauszug</h2>
-    <img class="img-fluid" alt="kundenauszug" src="@/assets/kundenauszug.png" />
     <p>
       Die Stärke der Renuo zeigt sich in der Vielseitigkeit der Projekte, welche
       von den verschiedensten Branchen und Firmen beauftragt wurden.
     </p>
+    <img class="img-fluid" alt="kundenauszug" src="@/assets/kundenauszug.png" />
   </div>
 </template>
 
