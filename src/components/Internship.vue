@@ -15,11 +15,11 @@
       <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>,
       <a href="https://angular.io/" target="_blank">Angular</a> oder
       <a href="https://reactjs.org/" target="_blank">React</a>. Du wirst für
-      Kunden einen Mehrwert generieren und durch die praktische Arbeit viel
+      unsere Kundschaft einen Mehrwert generieren und durch die praktische Arbeit viel
       Erfahrung sammeln, ganz im Sinne von Learning by Doing. Unsere
-      PraktikantInnen beteiligen sich weiter auch an Pair Programming, wodurch
-      sie schnell Einblick in unsere Projekte erhalten und sich an unsere
-      Methoden und Techniken gewöhnen.
+      Praktikant:innen beteiligen sich weiter auch an Pair Programming, wodurch
+      sie schnell Einblick in unsere Projekte erhalten und mit unseren
+      Methoden und Techniken vertraut werden.
     </p>
   </div>
 </template>
@@ -51,13 +51,13 @@ export default {
         from: new Date(current_year + 1, 7),
         title: "Einführung",
         description:
-          "Du wirst von den Mitarbeitenden von Renuo in das Praktikum eingearbeitet und folgst einem detailierten <a href='https://praktikumskonzept.renuo.ch' style='color: #27d79d' target='_blank'>Plan</a>."
+          "Du wirst von den Mitarbeitenden der Renuo ins Praktikum eingearbeitet und folgst einem detaillierten <a href='https://praktikumskonzept.renuo.ch' style='color: #27d79d' target='_blank'>Plan</a>."
       },
       {
         from: new Date(current_year + 1, 8),
         title: "Kundenprojekt",
         description:
-          "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für einen Kunden. Du wirst während dem Projekt vom Team unterstützt."
+          "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für unsere Kundschaft. Du wirst während dem Projekt vom ganzen Team unterstützt."
       },
       {
         from: new Date(current_year + 1, 9),
@@ -72,13 +72,13 @@ export default {
         from: new Date(current_year + 2, 2),
         title: "IPA (5+)",
         description:
-          "Der Abschluss der schulischen Aufgaben. Bei Renuo unterstützen wir dich, eine gute Note zu erreichen."
+          "Der Abschluss der schulischen Aufgaben. Bei der Renuo unterstützen wir dich, eine gute Note zu erreichen."
       },
       {
         from: new Date(current_year + 2, 8),
         title: "Studium (Arbeiten)",
         description:
-          "Nach deinem Praktikum hast du die Möglichkeit, ein Studium zu beginnen oder weiter bei uns zu arbeiten."
+          "Nach deinem Praktikum hast du die Möglichkeit, ein Studium zu beginnen und/oder weiter bei uns zu arbeiten."
       }
     ]
   })
