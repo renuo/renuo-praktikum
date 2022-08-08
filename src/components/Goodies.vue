@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="h3-title">Goodies</h2>
-    <p>
+    <p class="mx-4">
       Komm zu uns, wir bieten dir nebst Coding-Erfahrung noch mehr Benefits.
       Lass Sie dir nicht entgehen.
     </p>
@@ -13,6 +13,7 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       overflow="visible"
+      class="mx-4"
     >
       <g id="Circles">
         <g id="coffee">
@@ -27,7 +28,7 @@
             font-weight="bold"
             letter-spacing="0em"
           >
-            <tspan x="436.531" y="413.17">Gratis&#x2028;</tspan>
+            <tspan x="436.531" y="413.17">Gratis</tspan>
             <tspan x="433.182" y="437.17">Kaffee</tspan>
           </text>
         </g>
@@ -43,8 +44,8 @@
             font-weight="bold"
             letter-spacing="0em"
           >
-            <tspan x="441.627" y="153.17">Code &#38; &#x2028;</tspan>
-            <tspan x="435.006" y="177.17">Learning&#x2028;</tspan>
+            <tspan x="441.627" y="153.17">Code &#38;</tspan>
+            <tspan x="435.006" y="177.17">Learning</tspan>
             <tspan x="451.197" y="201.17">Week</tspan>
           </text>
         </g>
@@ -66,7 +67,7 @@
             font-weight="bold"
             letter-spacing="0em"
           >
-            <tspan x="230.668" y="110.17">Neuste IT-&#x2028;</tspan>
+            <tspan x="230.668" y="110.17">Neuste IT-</tspan>
             <tspan x="219.379" y="134.17">Technologie</tspan>
           </text>
         </g>
@@ -113,7 +114,7 @@
             font-weight="bold"
             letter-spacing="0em"
           >
-            <tspan x="355.186" y="221.17">Team-&#x2028;</tspan>
+            <tspan x="355.186" y="221.17">Team-</tspan>
             <tspan x="352.129" y="245.17">Events</tspan>
           </text>
         </g>
@@ -178,7 +179,7 @@
             font-weight="bold"
             letter-spacing="0em"
           >
-            <tspan x="133.402" y="408.17">Investment &#38;&#x2028;</tspan>
+            <tspan x="133.402" y="408.17">Investment &#38;</tspan>
             <tspan x="127.436" y="432.17">Selbststudium</tspan>
           </text>
         </g>
@@ -200,7 +201,7 @@
             font-weight="bold"
             letter-spacing="0em"
           >
-            <tspan x="81.2402" y="151.17">Work-Life&#x2028;</tspan>
+            <tspan x="81.2402" y="151.17">Work-Life</tspan>
             <tspan x="90.4004" y="175.17">Balance</tspan>
           </text>
         </g>

@@ -256,7 +256,7 @@
                 </g>
               </svg>
             </div>
-            <span>Renuo</span>
+            <span>Internship</span>
           </b-navbar-brand>
           <div id="svg-container-nav">
             <svg
@@ -337,7 +337,7 @@
           <a href="https://www.renuo.ch/en/blog"
             >Blog <i class="fal fa-external-link"></i
           ></a>
-          <a href="https://praktikumskonzept.renuo.ch" download
+          <a href="https://praktikumskonzept.renuo.ch"
             >Praktikumskonzept <i class="fal fa-external-link"></i
           ></a>
         </div>

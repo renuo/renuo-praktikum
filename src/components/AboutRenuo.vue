@@ -4,7 +4,6 @@
     <Goodies />
     <Tools />
     <Location />
-    <CustomerStatements />
   </div>
 </template>
 
@@ -12,7 +11,6 @@
 import Location from "@/components/Location";
 import Team from "@/components/Team";
 import Tools from "@/components/Tools";
-import CustomerStatements from "@/components/CustomerStatements";
 import Goodies from "@/components/Goodies";
 
 import "timeline-vuejs/dist/timeline-vuejs.css";
@@ -25,7 +23,6 @@ export default {
     };
   },
   components: {
-    CustomerStatements,
     Location,
     Team,
     Tools,

@@ -1,12 +1,7 @@
 <template>
   <div>
-    <CenterTitle
-      id="internship"
-      title="Dein künftiger Praktikumsort"
-      style="margin-top: 20px"
-    />
+    <CenterTitle id="internship" title="Dein künftiger Praktikumsort" />
     <img class="img-fluid" alt="Workspace" src="@/assets/work_space.png" />
-    <!--      TODO: check if space is needed -->
     <Timeline
       class="timeline-center"
       :timeline-items="timelineItems"
@@ -14,17 +9,15 @@
       :dateLocale="dateLocale"
       :shortToYearFormat="shortToYearFormat"
     />
-    <div class="text-justify my-4">
-      <p style="text-align: justify; text-align-last: center">
-        Während deines Praktikums wirst du dich mit vielen verschiedenen
-        Technologien auseinandersetzten – unter anderem mit Ruby on Rails,
-        Angular und React. Du wirst für Kunden einen Mehrwert generieren und
-        durch die praktische Arbeit viel Erfahrung sammeln, ganz im Sinne von
-        Learning by Doing. Unsere PraktikantInnen beteiligen sich weiter auch an
-        Pair Programming, wodurch sie schnell Einblick in unsere Projekte
-        erhalten und sich an unsere Methoden und Techniken gewöhnen.
-      </p>
-    </div>
+    <p class="text-justify m-4">
+      Während deines Praktikums wirst du dich mit vielen verschiedenen
+      Technologien auseinandersetzten – unter anderem mit Ruby on Rails, Angular
+      und React. Du wirst für Kunden einen Mehrwert generieren und durch die
+      praktische Arbeit viel Erfahrung sammeln, ganz im Sinne von Learning by
+      Doing. Unsere PraktikantInnen beteiligen sich weiter auch an Pair
+      Programming, wodurch sie schnell Einblick in unsere Projekte erhalten und
+      sich an unsere Methoden und Techniken gewöhnen.
+    </p>
   </div>
 </template>
 <script>
@@ -55,7 +48,7 @@ export default {
         from: new Date(current_year + 1, 7),
         title: "Einführung",
         description:
-          "Du wirst von den Mitarbeitenden von Renuo in das Praktikum eingearbeitet und folgst einem detailierten <a href='assets/praktikumskonzept_2021.pdf' style='color: #27d79d' download>Plan</a>."
+          "Du wirst von den Mitarbeitenden von Renuo in das Praktikum eingearbeitet und folgst einem detailierten <a href='https://praktikumskonzept.renuo.ch' style='color: #27d79d' target='_blank'>Plan</a>."
       },
       {
         from: new Date(current_year + 1, 8),

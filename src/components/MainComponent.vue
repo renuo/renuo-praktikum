@@ -1,16 +1,15 @@
 <template>
-  <div style="background: white">
+  <div class="outer-container">
     <Navigation @selected="setActive" />
-    <div style="padding: -50px 20px" class="main-content">
+    <div class="main-content">
       <Internship />
       <AboutRenuo />
-      <CenterTitle id="projects" title="Projekte" />
       <Projects />
-      <Values />
+      <!--      <Values />-->
       <Challenges />
-      <Footer />
-      <GoUp />
     </div>
+    <Footer />
+    <GoUp />
   </div>
 </template>
 <script>
@@ -19,13 +18,12 @@ import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import AboutRenuo from "@/components/AboutRenuo";
-import CenterTitle from "@/components/CenterTitle";
 import Challenges from "@/components/Challenges";
 import Footer from "@/components/Footer";
 import Internship from "@/components/Internship";
 import Navigation from "@/components/Navigation";
 import Projects from "@/components/Projects";
-import Values from "@/components/Values";
+// import Values from "@/components/Values";
 import GoUp from "@/components/GoUpButton";
 
 var VueScrollTo = require("vue-scrollto");
@@ -41,13 +39,12 @@ export default {
   components: {
     GoUp,
     AboutRenuo,
-    CenterTitle,
     Challenges,
     Footer,
     Internship,
     Navigation,
-    Projects,
-    Values
+    Projects
+    // Values
   },
   methods: {
     isActive(menuItem) {
@@ -64,8 +61,13 @@ export default {
 @use "../stylesheets/variables.scss";
 
 .main-content {
-  max-width: 750px;
-  margin: auto;
+  max-width: 770px;
   background: variables.$default-background-color;
+  margin: 20px auto auto;
+  border-radius: 10px;
+}
+
+.outer-container {
+  background: #f3f5f7;
 }
 </style>

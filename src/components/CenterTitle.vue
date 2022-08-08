@@ -1,7 +1,7 @@
 <template>
   <div class="background-header">
     <div class="heading">
-      <h1 class="title">
+      <h1 class="title text-center">
         {{ title }}
       </h1>
     </div>
@@ -38,13 +38,13 @@ export default {
 }
 
 .background-header {
-  margin-top: 80px;
   background-color: #fff;
   background-image: url(https://www.renuo.ch/images/header-6edb7e4d413dc5d722e34a8be66e8f06.svg?vsn=d);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
   z-index: -1;
+  border-radius: 20px;
 }
 
 @media (min-width: 750px) {

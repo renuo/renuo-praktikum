@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="h3-title" id="about-renuo">Das Team</h2>
+    <h2 class="h3-title text-center" id="about-renuo">Das Team</h2>
     <img class="img-fluid" alt="renuo team" src="@/assets/team.jpg" />
   </div>
 </template>

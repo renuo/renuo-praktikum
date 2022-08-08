@@ -20,13 +20,8 @@ export default {
 </script>
 <style lang="scss">
 #app {
-  text-align: center;
   color: #2c3e50;
   font-family: "Montserrat", sans-serif;
-}
-
-:root::-webkit-scrollbar {
-  display: none;
 }
 
 * {

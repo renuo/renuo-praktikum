@@ -18,12 +18,11 @@
     <blockquote>
       "Aa zelle Bölle schelle, d’Chatz gaht uf Walliselle"
     </blockquote>
-    <div>
-      <ul id="locatin-listing">
-        <li>🌟 2 Minuten vom Bahnhof entfernt</li>
-        <li>🌟 5 Minuten bis zum Glattzentrum</li>
-      </ul>
-    </div>
+    <p class="text-center">
+      🌟 2 Minuten vom <b>Bahnhof 🚂</b> entfernt<br />
+      🌟 3 Minuten bis zur <b>Gastro-Oase 🍕</b><br />
+      🌟 5 Minuten bis zum <b>Glattzentrum 🛍</b><br />
+    </p>
   </div>
 </template>
 
@@ -53,13 +52,12 @@ export default {
 
 #locatin-listing {
   list-style-type: none;
-  font-size: 1.75rem;
   text-align: center !important;
 }
 
-@media (max-width: 700px) {
-  #locatin-listing {
-    font-size: 1rem;
-  }
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  padding: 8px 10px;
 }
 </style>

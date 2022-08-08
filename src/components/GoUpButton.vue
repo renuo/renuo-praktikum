@@ -10,8 +10,6 @@ export default {
 };
 
 addEventListener("scroll", () => {
-  console.log(window.scrollY);
-
   if (window.scrollY === 0) {
     document.querySelector("a#go-up").style.display = null;
   } else {
@@ -28,6 +26,9 @@ i {
   aspect-ratio: 1;
   font-size: 40px;
   color: #27d79d;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #fff;
 }
 
 a {
