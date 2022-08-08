@@ -9,6 +9,7 @@
       <Values />
       <Challenges />
       <Footer />
+      <GoUp />
     </div>
   </div>
 </template>
@@ -25,6 +26,7 @@ import Internship from "@/components/Internship";
 import Navigation from "@/components/Navigation";
 import Projects from "@/components/Projects";
 import Values from "@/components/Values";
+import GoUp from "@/components/GoUpButton";
 
 var VueScrollTo = require("vue-scrollto");
 Vue.use(BootstrapVue);
@@ -37,6 +39,7 @@ export default {
     };
   },
   components: {
+    GoUp,
     AboutRenuo,
     CenterTitle,
     Challenges,
