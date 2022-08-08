@@ -551,6 +551,7 @@ rect#header-menu-one {
 
 .logo-container {
   z-index: 2;
+  font-family: "Montserrat";
 }
 
 .logo {
