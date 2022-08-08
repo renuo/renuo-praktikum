@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Standort</h2>
-    <p class="text-center">Hier findest du uns</p>
+    <p class="text-center">Hier findest du uns:</p>
     <div class="map img-fluid iframe-container">
       <iframe
         style="height: 100%; width: 100%"
