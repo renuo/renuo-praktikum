@@ -4,8 +4,8 @@
 
     <div>
       <p class="mx-4">
-        <span style="color: red;">Achtung</span> Die Teilnahme ist keine
-        Voraussetzung für eine Bewerbung und nur zum Spass gedacht.
+        Die Teilnahme ist keine Voraussetzung für eine Bewerbung und nur zum
+        Spass gedacht 🥳
       </p>
       <div class="corner-container">
         <a
