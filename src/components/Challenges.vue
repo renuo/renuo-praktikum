@@ -70,7 +70,7 @@
       </p>
 
       <pre><code class="language-bash code-display">
-        Searcher.nearest_vowel("Renuo AG")
+  Searcher.nearest_vowel("Renuo AG")
       </code></pre>
 
       <p class="readme-text">
@@ -78,7 +78,7 @@
       </p>
 
       <pre><code class="language-bash code-display">
-        [1, 0, 1, 0, 0, 1, 0, 1]
+  [1, 0, 1, 0, 0, 1, 0, 1]
       </code></pre>
     </div>
   </div>

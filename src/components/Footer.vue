@@ -4,17 +4,29 @@
       <ApplyNow />
       <section class="social-icon__wrapper">
         <ul>
-          <li v-for="icon in icons" :key="icon">
-            <a :href="icon.socialLink" target="_blank">
-              <i :class="icon.socialIcon"></i>
-            </a>
-          </li>
+          <a href="https://github.com/renuo/" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/3198067/" target="_blank">
+            <i class="fab fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/RenuoAG/" target="_blank">
+            <i class="fab fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/renuo" target="_blank">
+            <i class="fab fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/renuo_ag/" target="_blank">
+            <i class="fab fa-brands fa-instagram"></i>
+          </a>
         </ul>
       </section>
+      <!--
       <span id="footer_compiled_text"
         >hello@renuo.ch +41 44 500 83 50 Industriestrasse 44 8304
         Wallisellen</span
       >
+      -->
       <div class="container-fluid footer-made-by">
         <div class="row">
           <div class="col-12 col-md-6">
@@ -54,12 +66,7 @@ export default {
   name: "Footer",
   data() {
     return {
-      icons: [
-        {
-          socialIcon: "fab fa-github",
-          socialLink: "https://github.com/renuo/"
-        }
-      ]
+      icons: []
     };
   },
   components: {
@@ -98,6 +105,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 30px;
       }
       li {
         padding: 1.5rem;
@@ -197,6 +205,16 @@ footer {
   font-size: 0.8rem;
   line-height: 1.7rem;
 }
+
+i {
+  color: white;
+  transition: all 0.2s ease-in-out;
+  aspect-ratio: inherit;
+}
+
+i:hover {
+  color: #dedede;
+}
 @media (max-width: 991.98px) {
   .footer-made-by {
     text-align: center;
@@ -209,30 +227,49 @@ footer {
   max-height: 1.7rem;
   margin-right: 2rem;
 }
+
+@media (min-width: 992px) {
+  .fab {
+    width: 50px;
+    aspect-ratio: 1;
+  }
+
+  i {
+    width: 100%;
+    font-size: 100%;
+    font-size: 50px !important;
+  }
+
+  ul > * {
+    margin: 0px 7.5px !important;
+  }
+
+  ul {
+    margin-bottom: 20px !important;
+  }
+}
+
 @media (max-width: 991.98px) {
+  i {
+    font-size: 40px !important;
+    margin: 0px 7.5px !important;
+  }
   .footer-made-by img {
     max-height: 1.5rem;
     margin: auto;
     float: none;
     padding: 0 10px;
   }
-}
 
-@media (max-width: 991.98px) {
-  .fab {
-    width: 10vw !important;
-    height: 10vw !important;
-    font-size: 7vw !important;
-  }
-
-  .fas {
-    width: 10vw !important;
-    height: 10vw !important;
-    font-size: 7vw !important;
+  ul {
+    margin-bottom: 20px !important;
   }
 }
 
 @media (max-width: 500px) {
+  ul {
+    margin-top: 60px !important;
+  }
   #footer_compiled_text {
     font-size: 2.5vw;
     margin-bottom: 3% !important;

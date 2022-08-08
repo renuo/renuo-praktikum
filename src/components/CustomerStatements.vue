@@ -132,11 +132,6 @@
         alt="tagesanzeiger-icon"
         id="tagesanzeiger"
       />
-      <img
-        src="@/assets/customer_statements/edge.png"
-        alt="edge-icon"
-        id="edge"
-      />
       <svg
         viewBox="0 0 472 440"
         fill="none"
@@ -212,6 +207,11 @@
           </g>
         </g>
       </svg>
+      <img
+        src="@/assets/customer_statements/edge.png"
+        alt="edge-icon"
+        id="edge"
+      />
 
       <!-- <img src="@/assets/customer_statements/.png" alt="-icon" id="" /> -->
     </div>

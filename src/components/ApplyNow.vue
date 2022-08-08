@@ -1,6 +1,9 @@
 <template>
   <div class="apply-now-container">
-    <div class="h2">Neugierig auf unsere Github-Projekte?</div>
+    <div class="h2">
+      Willst du dir einen besseren Einblick in unsere Projekte verschaffen?
+    </div>
+    <a href="https://github.com/renuo/">GitHub</a>
   </div>
 </template>
 
@@ -20,14 +23,13 @@ export default {
   a {
     margin-top: 20px;
     font-weight: normal;
-    transition: border-width 0.5s ease-in-out;
     text-decoration: none;
-    border-bottom: 1px solid #fff;
-    font-size: 1rem;
+    border-bottom: none;
+    font-size: 1.5rem;
     color: white;
   }
   a:hover {
-    border-bottom: 3px solid #fff;
+    border-bottom: 1px solid #fff;
   }
 }
 .h2 {
@@ -40,9 +42,6 @@ export default {
 @media (max-width: 500px) {
   .h2 {
     font-size: 2rem;
-  }
-  a {
-    font-size: 1.6rem !important;
   }
   .apply-now-container {
     margin-bottom: -50px !important;
