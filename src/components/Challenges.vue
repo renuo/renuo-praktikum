@@ -1,14 +1,15 @@
 <template>
   <div class="hello">
-    <div class="instructions">
-      <h4 class="readme-title">Wir haben eine Challenge für dich!</h4>
-      <p class="readme-text">
+    <CenterTitle id="challenges" title="Challenge" />
+
+    <div>
+      <p class="mx-4">
         <span style="color: red;">Achtung</span> Die Teilnahme ist keine
-        Vorraussetzung für eine Bewerbung und nur zum Spass gedacht.
+        Voraussetzung für eine Bewerbung und nur zum Spass gedacht.
       </p>
-      <div class="corner-container" style="width: 100%;">
+      <div class="corner-container">
         <a
-          href="https://github.com/renuo/christmas_tree"
+          href="https://github.com/renuo/nearest-vowel"
           class="github-corner"
           aria-label="View source on GitHub"
           ><svg
@@ -32,114 +33,65 @@
             ></path></svg
         ></a>
         <pre><code class="language-ruby code-display">
-    # frozen_string_literal: true
+    class Searcher
+      VOWELS = # Add your code here
 
-    class ChristmasTree
-      TREE_CHARACTER = 'X'
-
-      def draw(height)
-        # TODO: implement logic
-        height
+      def nearest_vowel(str)
+        # Add your code here
+        # Make sure that your solution is being returned
       end
     end
     </code></pre>
       </div>
-      <p class="readme-text">
+      <p class="mx-4">
         Du kannst deine Lösung per Pull Request einreichen.
       </p>
 
-      <p class="readme-text">
+      <p class="mx-4">
         Fragen kannst du im
-        <a href="https://github.com/renuo/christmas_tree/issues">"Issues"</a>
+        <a href="https://github.com/renuo/nearest-vowel/issues">Issues</a>
         Tab stellen.
       </p>
 
-      <h4 class="readme-title">Weihnachtsbaum 🌲</h4>
-
-      <p class="readme-text">
-        Obwohl es noch nicht Weihnachten ist, hoffen wir trotzdem, dass du Spass
-        mit dieser Challenge haben wirst. 😎
+      <p class="mx-4">
+        Das Projekt basiert auf einem einfachem Ruby script, sowie RSpec tests.
+        Den Algorithmus musst du selbst schreiben, doch die Tests dazu sind
+        bereits auf dem GitHub des Projektes unter dem "spec" Ordner.
       </p>
 
-      <h4 class="readme-sub-title">Basis</h4>
+      <h2 class="mt-3 mb-2">Aufgabe</h2>
 
-      <p class="readme-text">
-        Kleine ruby app mir bereits vorbereiteten tests..
+      <p class="mx-4">
+        Deine Aufgabe ist es, die vorgegebene Funktion auszubauen, sodass sie
+        mit einem eingegeben String einen Array zurück gibt, welcher die Distanz
+        von jedem Buchstaben zum nächsten Vokal zeigt. Das würde dann wie folgt
+        aussehen:
       </p>
 
-      <h4 class="readme-sub-title">Aufgabe</h4>
-
-      <p class="readme-text">
-        Du musst eine Funktion schreiben, welche einen Weihhnachtsbaum in ASCII
-        art zurück gibt. Versuche test-driven (TDD) in Ruby zu entwicklen.
-      </p>
-
-      <h4 class="readme-sub-sub-title">Input</h4>
-
-      <p class="readme-text">
-        Deine Funktion sollte als ihren ersten Parameter die Höhe des Baumes
-        annehmen.
-      </p>
-
-      <h4 class="readme-sub-sub-title">Output</h4>
-
-      <p class="readme-text">
-        Die implementierte Funktion sollte einen Weihnachtsbaum als string
-        zurück geben.
-      </p>
-
-      <pre><code class="language-bash code-display">
-    ChristmasTree.draw(5)
+      <pre><code class="language-ruby code-display">
+    Searcher.nearest_vowel("Renuo AG")
       </code></pre>
 
-      <p class="readme-text">Der Output sollte dann wie folgt aussehen:</p>
-      <pre><code class="language-bash code-display">
-        X
-       XXX
-      XXXXX
-     XXXXXXX
-    XXXXXXXXX
+      <p class="mx-4">
+        Die Funktion soll dann folgenden Array zurückgeben:
+      </p>
+
+      <pre><code class="language-ruby code-display">
+    [1, 0, 1, 0, 0, 1, 0, 1]
       </code></pre>
-
-      <h4 class="readme-sub-title">Fortgeschritten</h4>
-
-      <p class="readme-text">
-        Langsam nimmt der Baum Form an. Wenn du noch einen Schritt weiter gehen
-        willst, kannst du dem Baum einen Stamm und einen Stern geben.
-      </p>
-      <p class="readme-text">
-        Zusätzlich könntest du der Funktion zwei weiterere Argumente geben, die
-        bestimmen ob der Baum einen Stamm beziehungsweise Stern haben soll.
-      </p>
-      <pre><code class="language-bash code-display">
-    ChristmasTree.draw(height: 5, tree_stand: true, star: true)       
-      </code></pre>
-
-      <p class="readme-text">
-        Wenn beide Argumente auf `true` sind, sollte dies der ouput sein:
-      </p>
-
-      <pre><code class="language-bash code-display">
-        *
-        X
-       XXX
-      XXXXX
-     XXXXXXX
-    XXXXXXXXX
-        |
-      </code></pre>
-
-      <p class="readme-text">
-        Vergiss nicht einen Test für diese Aufgabe zu schreiben. 👨🏻‍💻 👩🏼‍💻
-      </p>
     </div>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
+import CenterTitle from "@/components/CenterTitle";
+
 export default {
   name: "Challenges",
-
+  components: {
+    CenterTitle
+  },
   props: {
     msg: String
   },
@@ -150,7 +102,33 @@ export default {
   }
 };
 </script>
-
 <style lang="scss" scoped>
-@import "@/stylesheets/custom_stylesheet.scss";
+@import "@/stylesheets/global.scss";
+.corner-container{
+  position: relative;
+}
+
+.github-corner{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
 </style>

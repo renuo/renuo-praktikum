@@ -1,30 +1,37 @@
 <template>
   <footer>
     <div class="footer-content">
-      <br />
-      <br />
       <ApplyNow />
-      <br />
-      <br />
       <section class="social-icon__wrapper">
         <ul>
-          <li v-for="icon in icons" :key="icon">
-            <a :href="icon.socialLink" target="_blank">
-              <i :class="icon.socialIcon"></i>
-            </a>
-          </li>
+          <a href="https://github.com/renuo/" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/3198067/" target="_blank">
+            <i class="fab fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/RenuoAG/" target="_blank">
+            <i class="fab fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/renuo" target="_blank">
+            <i class="fab fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/renuo_ag/" target="_blank">
+            <i class="fab fa-brands fa-instagram"></i>
+          </a>
         </ul>
       </section>
-      <br />
+      <!--
       <span id="footer_compiled_text"
-        >hello@renuo.ch / +41 44 500 83 50 / Industriestrasse 44 / 8304
+        >hello@renuo.ch +41 44 500 83 50 Industriestrasse 44 8304
         Wallisellen</span
       >
+      -->
       <div class="container-fluid footer-made-by">
         <div class="row">
           <div class="col-12 col-md-6">
-            © 2020 Renuo AG —
-            <a href="https://renuo.ch/en/impressum">Imprint / Privacy Policy</a>
+            © 2022 Renuo AG — hello@renuo.ch
+            <a href="https://renuo.ch/en/impressum">Privacy Policy</a>
           </div>
           <div class="col-12 col-md-6">
             <a
@@ -59,21 +66,7 @@ export default {
   name: "Footer",
   data() {
     return {
-      icons: [
-        {
-          socialIcon: "fab fa-facebook",
-          socialLink:
-            "https://de-de.facebook.com/RenuoAG/?referrer=services_landing_page"
-        },
-        {
-          socialIcon: "fab fa-github",
-          socialLink: "https://github.com/renuo/"
-        },
-        {
-          socialIcon: "fas fa-browser",
-          socialLink: "https://www.renuo.ch/"
-        }
-      ]
+      icons: []
     };
   },
   components: {
@@ -89,13 +82,11 @@ footer {
   height: 2.5rem;
   .footer-content {
     background-color: #27d79d;
+
     /*variables*/
     $white: #fff;
-    $fb-color: #3b5998;
-    $google-color: #dd4b39;
-    $youtube-color: #bb0000;
-    $codepen-color: #111;
-    $github-color: #24292e;
+    $github-color: #585858;
+
     /*reset*/
     *,
     *::before,
@@ -114,6 +105,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 30px;
       }
       li {
         padding: 1.5rem;
@@ -129,7 +121,7 @@ footer {
           transform: rotate(45deg);
           -webkit-box-sizing: content-box;
           box-sizing: content-box;
-          border-radius: 6px;
+          border-radius: 100px;
           overflow: hidden;
           transition: all 0.5s;
           &::before {
@@ -148,36 +140,12 @@ footer {
           transform: rotate(45deg);
           -webkit-box-sizing: content-box;
           box-sizing: content-box;
-          border-radius: 6px;
+          border-radius: 100px;
           overflow: hidden;
           transition: all 0.5s;
           &::before {
             -webkit-transform: rotate(-45deg);
           }
-        }
-        .fa-facebook {
-          color: $github-color;
-          background: $white;
-        }
-        &:hover .fa-facebook {
-          color: $white;
-          background: $github-color;
-        }
-        .fa-browser {
-          color: $github-color;
-          background: $white;
-        }
-        &:hover .fa-browser {
-          color: $white;
-          background: $github-color;
-        }
-        .fa-google {
-          color: $google-color;
-          background: $white;
-        }
-        &:hover .fa-google {
-          color: $white;
-          background: $google-color;
         }
         .fa-github {
           color: $github-color;
@@ -186,22 +154,6 @@ footer {
         &:hover .fa-github {
           color: $white;
           background: $github-color;
-        }
-        .fa-youtube {
-          color: $youtube-color;
-          border: 1px solid $youtube-color;
-        }
-        &:hover .fa-youtube {
-          color: $white;
-          background: $youtube-color;
-        }
-        .fa-codepen {
-          color: $codepen-color;
-          border: 1px solid $codepen-color;
-        }
-        &:hover .fa-codepen {
-          color: $white;
-          background: $codepen-color;
         }
       }
     }
@@ -225,7 +177,7 @@ footer {
 }
 
 #footer_compiled_text {
-  font-size: 1.5vw;
+  font-size: 1vw;
   margin-bottom: 3% !important;
   color: white;
 }
@@ -249,10 +201,19 @@ footer {
 
 .footer-made-by {
   text-align: left;
-  padding-left: 20px !important;
   padding: 0.8rem 2rem;
   font-size: 0.8rem;
   line-height: 1.7rem;
+}
+
+i {
+  color: white;
+  transition: all 0.2s ease-in-out;
+  aspect-ratio: inherit;
+}
+
+i:hover {
+  color: #dedede;
 }
 @media (max-width: 991.98px) {
   .footer-made-by {
@@ -266,30 +227,49 @@ footer {
   max-height: 1.7rem;
   margin-right: 2rem;
 }
+
+@media (min-width: 992px) {
+  .fab {
+    width: 50px;
+    aspect-ratio: 1;
+  }
+
+  i {
+    width: 100%;
+    font-size: 100%;
+    font-size: 50px !important;
+  }
+
+  ul > * {
+    margin: 0px 7.5px !important;
+  }
+
+  ul {
+    margin-bottom: 20px !important;
+  }
+}
+
 @media (max-width: 991.98px) {
+  i {
+    font-size: 40px !important;
+    margin: 0px 7.5px !important;
+  }
   .footer-made-by img {
     max-height: 1.5rem;
     margin: auto;
     float: none;
     padding: 0 10px;
   }
-}
 
-@media (max-width: 991.98px) {
-  .fab {
-    width: 10vw !important;
-    height: 10vw !important;
-    font-size: 7vw !important;
-  }
-
-  .fas {
-    width: 10vw !important;
-    height: 10vw !important;
-    font-size: 7vw !important;
+  ul {
+    margin-bottom: 20px !important;
   }
 }
 
 @media (max-width: 500px) {
+  ul {
+    margin-top: 60px !important;
+  }
   #footer_compiled_text {
     font-size: 2.5vw;
     margin-bottom: 3% !important;

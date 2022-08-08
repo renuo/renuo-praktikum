@@ -1,57 +1,70 @@
 <template>
   <div>
-    <div class="project_list">
-      <div v-for="(project, index) in this.projects" :key="project.title">
-        <Project
-          :more="project.more"
-          :title="project.title"
-          :images="project.images"
-          :description="project.description"
-          :imgpos="project.imgpos"
-          :technologies="project.technologies"
-        />
-        <hr v-if="needsBreakbar(index)" />
-      </div>
+    <CenterTitle id="projects" title="Projekte" />
+    <div class="scroll-container">
+      <a href="https://mugshotbot.com/" target="_blank">
+        <img src="@/assets/projects/msb.png" alt="mugshot bot" />
+      </a>
+      <a href="https://gifcoins.io/" target="_blank">
+        <img src="@/assets/projects/gifcoins.png" alt="gifcoins" />
+      </a>
+      <a href="https://agreeder.com/" target="_blank">
+        <img src="@/assets/projects/agreeder.png" alt="agreeder" />
+      </a>
+      <a href="https://www.auctionhub.io/" target="_blank">
+        <img src="@/assets/projects/auctionhub.png" alt="auctionhub" />
+      </a>
+      <a href="https://www.citymessenger.ch/" target="_blank">
+        <img src="@/assets/projects/citymessenger.png" alt="city messenger" />
+      </a>
     </div>
+    <CustomerStatements class="mt-5" />
   </div>
 </template>
 
 <script>
-import json from "../json/projects.json";
-import Project from "./Project.vue";
+import CustomerStatements from "@/components/CustomerStatements";
+import CenterTitle from "@/components/CenterTitle";
+
 export default {
   name: "Projects",
   components: {
-    Project
+    CustomerStatements,
+    CenterTitle
   },
-  methods: {
-    needsBreakbar(current_index) {
-      if (current_index == 0 || current_index == this.projects.length - 1) {
-        return false;
-      } else if (
-        !(
-          this.projects[current_index + 1].imgpos ==
-          this.projects[current_index].imgpos
-        )
-      ) {
-        return false;
-      } else {
-        return true;
-      }
-    }
-  },
+  methods: {},
   data: function() {
-    return {
-      projects: json.projects
-    };
+    return {};
   }
 };
 </script>
 <style scoped lang="scss">
-.project_list {
+.scroll-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
   width: 100%;
-  li {
-    padding-bottom: 5%;
-  }
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  display: flex;
+}
+
+a {
+  scroll-snap-align: start;
+}
+
+div.projects-container a img {
+  height: 100%;
+}
+
+div.projects-container a {
+  height: 100%;
+  transition: all 100ms ease-in-out;
+}
+
+div.projects-container a:hover {
+  transform: scale(1.05);
 }
 </style>

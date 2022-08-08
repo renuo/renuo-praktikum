@@ -256,50 +256,77 @@
                 </g>
               </svg>
             </div>
-            <span>Renuo</span></b-navbar-brand
-          >
+            <span>Internship</span>
+          </b-navbar-brand>
+          <div id="svg-container-nav">
+            <svg
+              viewBox="0 0 100 78"
+              width="30"
+              height="30"
+              id="header-menu open-navigation"
+              v-on:click="clickNav"
+              class="btn-navigation"
+            >
+              <rect
+                fill="#FFFFFF"
+                width="100"
+                height="12"
+                rx="8"
+                id="header-menu-one"
+              ></rect>
+              <rect
+                fill="#FFFFFF"
+                y="24"
+                width="100"
+                height="12"
+                rx="8"
+                id="header-menu-two"
+              ></rect>
+              <rect
+                fill="#FFFFFF"
+                y="48"
+                width="100"
+                height="12"
+                rx="8"
+                id="header-menu-three"
+              ></rect>
+              <rect
+                fill="#FFFFFF"
+                y="72"
+                width="100"
+                height="12"
+                rx="8"
+                id="header-menu-four"
+              ></rect>
+            </svg>
+          </div>
         </div>
-        <div
-          id="open-navigation"
-          v-on:click="openNav"
-          alt="navigation icon"
-          class="btn-navigation"
-        ></div>
       </b-navbar>
     </div>
 
     <div>
       <div id="myNav" class="overlay">
-        <div
-          id="close-navigation"
-          v-on:click="closeNav"
-          alt="navigation icon"
-          class="btn-navigation"
-        >
-          &times;
-        </div>
-
         <div class="overlay-content">
           <a
-            v-on:click="closeNav"
+            v-on:click="clickNav"
             class="nav-link"
             @click.prevent="passUpNewBody('about-renuo')"
             >Dein künftiger Praktikumsort</a
           >
           <a
-            v-on:click="closeNav"
+            v-on:click="clickNav"
             class="nav-link"
             @click.prevent="passUpNewBody('projects')"
             >Projects</a
           >
           <a
-            v-on:click="closeNav"
+            v-on:click="clickNav"
             class="nav-link"
             @click.prevent="passUpNewBody('internship')"
             >Dein Praktikum bei uns</a
           >
           <a
-            v-on:click="closeNav"
+            v-on:click="clickNav"
             class="nav-link"
             @click.prevent="passUpNewBody('challenges')"
             >Challenge</a
@@ -310,7 +337,7 @@
           <a href="https://www.renuo.ch/en/blog"
             >Blog <i class="fal fa-external-link"></i
           ></a>
-          <a href="assets/praktikumskonzept_2021.pdf" download
+          <a href="https://praktikumskonzept.renuo.ch"
             >Praktikumskonzept <i class="fal fa-external-link"></i
           ></a>
         </div>
@@ -319,34 +346,91 @@
   </div>
 </template>
 <script>
+let isOpen = false;
 export default {
   name: "Navigation",
   data() {
     return {};
   },
   methods: {
-    openNav: function() {
-      console.log("asdasd");
-      document.getElementById("myNav").style.height = "100%";
-      document.body.style.overflow = "hidden";
-    },
-    closeNav: function() {
-      document.getElementById("myNav").style.height = "0%";
-      document.body.style.overflow = "";
+    clickNav: function() {
+      let myNav = document.getElementById("myNav");
+      let rectone = document.getElementById("header-menu-one");
+      let recttwo = document.getElementById("header-menu-two");
+      let rectthree = document.getElementById("header-menu-three");
+      let rectfour = document.getElementById("header-menu-four");
+      if (!isOpen) {
+        setTimeout(() => {
+          rectone.style.transform = "translate(0px, 9px)";
+          rectfour.style.transform = "translate(0px, -9px)";
+          setTimeout(() => {
+            rectone.style.transform = "translate(0px, 9px) rotate(-45deg)";
+            rectfour.style.transform = "translate(0px, -9px) rotate(45deg)";
+          }, 400);
+          recttwo.style.display = "none";
+          rectthree.style.display = "none";
+        }, 200);
+        myNav.style.height = "100%";
+        document.body.style.overflow = "hidden";
+        recttwo.style.transform = "translate(0px, -24px)";
+        rectthree.style.transform = "translate(0px, 24px)";
+      } else {
+        myNav.style.height = "0%";
+        document.body.style.overflow = null;
+        setTimeout(() => {
+          rectone.style.transform = null;
+          rectfour.style.transform = null;
+          setTimeout(() => {
+            recttwo.style.display = null;
+            rectthree.style.display = null;
+            setTimeout(() => {
+              recttwo.style.transform = null;
+              rectthree.style.transform = null;
+            }, 20);
+          }, 400);
+        }, 400);
+        rectone.style.transform = "translate(0px, 9px)";
+        rectfour.style.transform = "translate(0px, -9px)";
+      }
+      isOpen = !isOpen;
     },
     passUpNewBody(value) {
       this.$emit("selected", value);
-    },
-    invertColour() {
-      this.$emit("invert");
     }
   }
 };
 </script>
 
 <style scoped lang="scss">
-@import "@/stylesheets/custom_stylesheet.scss";
+@import "@/stylesheets/global.scss";
 @import "@/stylesheets/variables.scss";
+
+div#svg-container-nav {
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  right: 0px;
+  height: 55px;
+  aspect-ratio: 1/1;
+}
+
+rect#header-menu-one {
+  transform-origin: 88px 6px;
+}
+
+rect#header-menu-two,
+rect#header-menu-three {
+  transition: transform 0.2s ease;
+}
+
+rect#header-menu-four {
+  transform-origin: 86px 78px;
+}
+
+rect#header-menu-four,
+rect#header-menu-one {
+  transition: all 0.4s ease;
+}
 
 .btn-navigation {
   position: absolute;
@@ -459,6 +543,7 @@ export default {
 #navigationbar {
   background-image: url("https://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
   background-color: $renuo-base-color;
+  width: 100%;
 }
 .navbar-brand {
   font-size: 2rem !important;
@@ -466,6 +551,7 @@ export default {
 
 .logo-container {
   z-index: 2;
+  font-family: "Montserrat";
 }
 
 .logo {
