@@ -18,7 +18,7 @@
         <img src="@/assets/projects/citymessenger.png" alt="city messenger" />
       </a>
     </div>
-    <CustomerStatements />
+    <CustomerStatements class="mt-5" />
   </div>
 </template>
 

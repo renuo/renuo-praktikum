@@ -1,49 +1,29 @@
 @use "variables.scss";
 
-h1, h2:not(.values-title), .h3-title {
+h1, h2 {
   color: variables.$renuo-base-color;
-}
-
-.h3-title {
-  margin-top: 50px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 a.btn.btn-info {
   background-color: variables.$renuo-base-color;
   border-color: white;
   color: white;
-  border-radius: 4px;
-  margin-bottom: 20px;
+  margin: 0px auto 20px;
+  display: block;
+  width: fit-content;
+  &:hover {
+    background-color: variables.$renuo-base-color-dark;
+  }
+  &:active {
+    color: white;
+  }
 }
 
-.text-justify {
-  text-align: justify;
-}
-
-a.btn.btn-info:hover {
-  background-color: variables.$renuo-base-color-dark;
-}
-
-a.btn.btn-info:active {
-  color: white;
-}
-
-
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-
-blockquote p {
-  display: inline;
-}
-
-@media (max-width: 750px) {
-  p, blockquote {
-    margin-bottom: 10px;
+a:not(.btn) {
+  color: variables.$renuo-base-color;
+  text-decoration: underline;
+  &:hover {
+    cursor: pointer;
   }
 }

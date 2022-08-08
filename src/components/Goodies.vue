@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="h3-title">Goodies</h2>
+    <h2>Goodies</h2>
     <p class="mx-4">
       Komm zu uns, wir bieten dir nebst Coding-Erfahrung noch mehr Benefits.
       Lass Sie dir nicht entgehen.

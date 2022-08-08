@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h2 class="h3-title text-center" id="about-renuo">Das Team</h2>
+    <h2 id="about-renuo">Das Team</h2>
+    <a href="https://renuo.ch/team" class="btn btn-info" role="button"
+      >Lerne das Team kennen</a
+    >
     <img class="img-fluid" alt="renuo team" src="@/assets/team.png" />
   </div>
 </template>

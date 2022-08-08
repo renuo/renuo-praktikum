@@ -2,13 +2,12 @@
   <div class="hello">
     <CenterTitle id="challenges" title="Challenge" />
 
-    <div class="instructions">
-      <h4 class="readme-title">Wir haben eine Challenge für dich!</h4>
-      <p class="readme-text">
+    <div>
+      <p class="mx-4">
         <span style="color: red;">Achtung</span> Die Teilnahme ist keine
         Voraussetzung für eine Bewerbung und nur zum Spass gedacht.
       </p>
-      <div class="corner-container" style="width: 100%;">
+      <div class="corner-container">
         <a
           href="https://github.com/renuo/nearest-vowel"
           class="github-corner"
@@ -44,41 +43,41 @@
     end
     </code></pre>
       </div>
-      <p class="readme-text">
+      <p class="mx-4">
         Du kannst deine Lösung per Pull Request einreichen.
       </p>
 
-      <p class="readme-text">
+      <p class="mx-4">
         Fragen kannst du im
         <a href="https://github.com/renuo/nearest-vowel/issues">"Issues"</a>
         Tab stellen.
       </p>
 
-      <p class="readme-text">
+      <p class="mx-4">
         Das Projekt basiert auf einem einfachem Ruby script, sowie RSpec tests.
         Den Algorithmus musst du selbst schreiben, doch die Tests dazu sind
         bereits auf dem GitHub des Projektes unter dem "spec" Ordner.
       </p>
 
-      <h4 class="readme-sub-title">Aufgabe</h4>
+      <h2>Aufgabe</h2>
 
-      <p class="readme-text">
+      <p class="mx-4">
         Deine Aufgabe ist es, die vorgegebene Funktion auszubauen, sodass sie
         mit einem eingegeben String einen Array zurück gibt, welcher die Distanz
         von jedem Buchstaben zum nächsten Vokal zeigt. Das würde dann wie folgt
         aussehen:
       </p>
 
-      <pre><code class="language-bash code-display">
-  Searcher.nearest_vowel("Renuo AG")
+      <pre><code class="language-ruby code-display">
+    Searcher.nearest_vowel("Renuo AG")
       </code></pre>
 
-      <p class="readme-text">
+      <p class="mx-4">
         Die Funktion soll dann folgenden Array zurückgeben:
       </p>
 
-      <pre><code class="language-bash code-display">
-  [1, 0, 1, 0, 0, 1, 0, 1]
+      <pre><code class="language-ruby code-display">
+    [1, 0, 1, 0, 0, 1, 0, 1]
       </code></pre>
     </div>
   </div>
@@ -105,72 +104,19 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/stylesheets/global.scss";
-// todo: use https://highlightjs.org/
-@media (max-width: 750px) {
-  .readme-sub-sub-title {
-    font-size: 19.2px;
-  }
-
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
-
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-
-  .readme-title {
-    font-size: 25.6px;
-  }
-
-  .readme-sub-title {
-    font-size: 20.8px;
-  }
+.corner-container{
+  position: relative;
 }
 
-@media only screen and (min-width: 750px) {
-  .readme-title,
-  .readme-sub-title,
-  .readme-sub-sub-title,
-  .readme-text,
-  .code-display {
-    margin: 0rem;
-  }
-
-  .instructions {
-    max-width: 100% !important;
-  }
-
-  .readme-title {
-    font-size: 3vw;
-  }
-
-  .readme-sub-title {
-    font-size: 2.5vw;
-  }
-
-  .readme-sub-sub-title {
-    font-size: 2vw;
-  }
-
-  .readme-text {
-    margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
-    font-weight: 100;
-    font-size: 16px;
-  }
-
-  .instructions {
-    padding: 2vw;
-  }
-
-  .language-bash,
-  .language-ruby {
-    font-size: 1.6vw;
-    padding: 0;
-  }
+.github-corner{
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
 @keyframes octocat-wave {
   0%,
   100% {
@@ -184,60 +130,5 @@ export default {
   80% {
     transform: rotate(10deg);
   }
-}
-
-.readme-title,
-.readme-sub-title,
-.readme-sub-sub-title,
-.readme-text,
-.code-display {
-  text-align: left;
-  color: black;
-  margin: 16px;
-}
-
-.code-display {
-  text-align: left;
-  padding: 0px;
-}
-
-.readme-title {
-  font-weight: bold;
-  font-size: 3vw;
-}
-
-.readme-sub-title {
-  font-weight: bold;
-  font-size: 2.5vw;
-}
-
-.readme-sub-sub-title {
-  font-size: 2vw;
-}
-
-.readme-text {
-  margin-top: 0.3vw;
-  margin-bottom: 0.3vw;
-  font-size: 1vw;
-}
-
-.corner-container {
-  position: relative;
-}
-
-.github-corner {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-}
-
-.language-bash,
-.language-ruby {
-  font-size: 1vw;
-  padding: 0;
-}
-
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
 }
 </style>
