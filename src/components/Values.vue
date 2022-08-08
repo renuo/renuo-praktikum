@@ -2,7 +2,7 @@
   <div>
     <h2 id="values">Fokus und Stärken</h2>
     <p class="text-center">
-      Wir entwickeln individuelle Software auf höchstem Niveau.
+      Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere Werte:
     </p>
 
     <div class="row align-items-center">
