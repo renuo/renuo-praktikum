@@ -261,8 +261,8 @@
           <div id="svg-container-nav">
             <svg
               viewBox="0 0 100 78"
-              width="50"
-              height="50"
+              width="30"
+              height="30"
               id="header-menu open-navigation"
               v-on:click="clickNav"
               class="btn-navigation"
@@ -408,7 +408,7 @@ export default {
 div#svg-container-nav {
   position: absolute;
   z-index: 2;
-  top: 18px;
+  top: 30px;
   right: 0px;
   height: 55px;
   aspect-ratio: 1/1;
