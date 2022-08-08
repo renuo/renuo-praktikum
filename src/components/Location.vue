@@ -60,4 +60,8 @@ blockquote {
   border-left: 10px solid #ccc;
   padding: 8px 10px;
 }
+
+p {
+  text-align: center;
+}
 </style>

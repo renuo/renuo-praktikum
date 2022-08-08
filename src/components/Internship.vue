@@ -12,14 +12,14 @@
     <p class="text-justify m-4">
       Während deines Praktikums wirst du dich mit vielen verschiedenen
       Technologien auseinandersetzen – unter anderem mit
-      <a href="https://rubyonrails.org/">Ruby on Rails</a>,
-      <a href="https://angular.io/">Angular</a> oder
-      <a href="https://reactjs.org/">React</a>. Du wirst für Kunden einen
-      Mehrwert generieren und durch die praktische Arbeit viel Erfahrung
-      sammeln, ganz im Sinne von Learning by Doing. Unsere PraktikantInnen
-      beteiligen sich weiter auch an Pair Programming, wodurch sie schnell
-      Einblick in unsere Projekte erhalten und sich an unsere Methoden und
-      Techniken gewöhnen.
+      <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>,
+      <a href="https://angular.io/" target="_blank">Angular</a> oder
+      <a href="https://reactjs.org/" target="_blank">React</a>. Du wirst für
+      Kunden einen Mehrwert generieren und durch die praktische Arbeit viel
+      Erfahrung sammeln, ganz im Sinne von Learning by Doing. Unsere
+      PraktikantInnen beteiligen sich weiter auch an Pair Programming, wodurch
+      sie schnell Einblick in unsere Projekte erhalten und sich an unsere
+      Methoden und Techniken gewöhnen.
     </p>
   </div>
 </template>

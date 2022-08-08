@@ -291,4 +291,8 @@ a#osi {
   left: 81.3%;
   top: 45.4%;
 }
+
+p {
+  text-align: center;
+}
 </style>

@@ -6,8 +6,29 @@
       von den verschiedensten Branchen und Firmen beauftragt wurden.
     </p>
     <div class="customer-container-sm d-md-none">
-      test
+      <!--  Einfügen von Kunden bei Responsive -->
+      <img
+        src="@/assets/customer_statements/jumbo.png"
+        alt="jumbo-icon"
+        id="jumbo"
+      />
+      <img
+        src="@/assets/customer_statements/graubuenden.png"
+        alt="graubuenden-icon"
+        id="graubuenden"
+      />
+      <img
+        src="@/assets/customer_statements/migrol.png"
+        alt="migrol-icon"
+        id="migrol"
+      />
+      <img
+        src="@/assets/customer_statements/renovero.png"
+        alt="renovero-icon"
+        id="renovero"
+      />
     </div>
+
     <div class="customer-container d-none d-md-block">
       <img
         src="@/assets/customer_statements/jumbo.png"
@@ -443,6 +464,15 @@ div.customer-container {
   & > * {
     position: absolute;
     display: block;
+  }
+}
+
+div.customer-container-sm {
+  img#jumbo {
+    aspect-ratio: 40/20;
+    height: 3.17%;
+    left: 3%;
+    top: 3%;
   }
 }
 </style>
