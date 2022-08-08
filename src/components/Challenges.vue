@@ -7,7 +7,7 @@
         <span style="color: red;">Achtung</span> Die Teilnahme ist keine
         Voraussetzung für eine Bewerbung und nur zum Spass gedacht.
       </p>
-      <div class="corner-container" style="width: 100%;">
+      <div class="corner-container">
         <a
           href="https://github.com/renuo/nearest-vowel"
           class="github-corner"
@@ -104,5 +104,31 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/stylesheets/global.scss";
+.corner-container{
+  position: relative;
+}
 
+.github-corner{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
 </style>

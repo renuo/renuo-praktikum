@@ -9,8 +9,9 @@ a.btn.btn-info {
   background-color: variables.$renuo-base-color;
   border-color: white;
   color: white;
-  border-radius: 4px;
-  margin-bottom: 20px;
+  margin: 0px auto 20px;
+  display: block;
+  width: fit-content;
   &:hover {
     background-color: variables.$renuo-base-color-dark;
   }
@@ -19,7 +20,7 @@ a.btn.btn-info {
   }
 }
 
-a {
+a:not(.btn) {
   color: variables.$renuo-base-color;
   text-decoration: underline;
   &:hover {
