@@ -1,5 +1,5 @@
 <template>
-  <section class="timeline">
+  <section class="timeline m-auto">
     <div v-if="hasItems" class="wrapper-timeline">
       <div
         v-for="(timelineContent, timelineIndex) in dataTimeline"
@@ -29,6 +29,7 @@
 
 <script>
 import TimelineItem from "./TimelineItem.vue";
+
 export default {
   name: "Timeline",
   components: {
@@ -163,12 +164,15 @@ export default {
   text-align: left;
   width: 100%;
   max-width: 500px;
+
   .wrapper-timeline {
     position: relative;
   }
+
   .wrapper-item {
     display: grid;
     grid-template-columns: 100px 1fr;
+
     .section-year {
       display: flex;
       flex-direction: column;
@@ -177,10 +181,12 @@ export default {
       padding: 15px;
       font-weight: bold;
       font-size: 18px;
+
       .year {
         margin: 0;
       }
     }
+
     &.unique-timeline {
       margin-bottom: 0;
     }

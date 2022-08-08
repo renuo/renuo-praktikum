@@ -1,13 +1,9 @@
 <template>
   <div class="apply-now-container">
-    <div class="h2">
-      Wir sind bereit !
-      <br />Du auch ?
-      <br />
-      <a href="https://www.renuo.ch/de/jobs/">
-        Bewirb dich jetzt
-      </a>
-    </div>
+    <h2>
+      Willst du dir einen besseren Einblick in unsere Projekte verschaffen?
+    </h2>
+    <a href="https://github.com/renuo/">GitHub</a>
   </div>
 </template>
 
@@ -18,35 +14,39 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/stylesheets/variables.scss";
+@use "../stylesheets/variables.scss";
 
 .apply-now-container {
   margin-bottom: 50px;
-  background-color: $renuo-base-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: variables.$renuo-base-color;
   a {
+    margin-top: 20px;
     font-weight: normal;
-    transition: border-width 0.5s ease-in-out;
     text-decoration: none;
-    border-bottom: 1px solid #fff;
-    font-size: 2rem;
+    border-bottom: none;
+    font-size: 1.5rem;
     color: white;
+    padding-bottom: 1px;
   }
   a:hover {
-    border-bottom: 3px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0px;
   }
 }
-.h2 {
+h2 {
   color: #3a4440;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
+  padding-top: 20px;
+  text-align: center;
 }
 
 @media (max-width: 500px) {
   .h2 {
     font-size: 2rem;
-  }
-  a {
-    font-size: 1.6rem !important;
   }
   .apply-now-container {
     margin-bottom: -50px !important;

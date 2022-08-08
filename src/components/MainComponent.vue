@@ -1,47 +1,42 @@
 <template>
-  <div>
-    <Navigation2 @selected="setActive" />
-    <div class="content-container">
+  <div class="outer-container">
+    <Navigation @selected="setActive" />
+    <div class="main-content">
+      <Internship />
       <AboutRenuo />
-    </div>
-    <br />
-    <br />
-    <div class="content-container">
-      <CenterTitle id="projects" title="Projekte" />
-      <br />
-      <Projects />
-    </div>
-    <br /><br />
-    <CenterTitle id="internship" title="Dein Praktikum bei uns" />
-    <br />
-    <Internship />
-    <br />
-    <br />
-    <div class="content-container">
-      <CenterTitle id="challenges" title="Challenge" />
-      <br />
-      <Challenges />
+
+      <Projects class="section-spacing" />
+      <Values class="mt-5" />
+
+      <Challenges class="section-spacing" />
+
+      <p class="text-center py-3">
+        Made with<br />
+        <span class="heart">❤️</span><br />
+        by Renuo IMS Interns {{ currentYear() }}
+      </p>
     </div>
     <Footer />
+    <GoUp />
   </div>
 </template>
 <script>
-import * as TastyBurgerButton from "vue-tasty-burgers";
-import Navigation2 from "./Navigation2.vue";
-import AboutRenuo from "./AboutRenuo.vue";
-import Footer from "./Footer.vue";
-import CenterTitle from "./CenterTitle.vue";
-import Projects from "./Projects.vue";
-import Challenges from "./Challenges.vue";
-import Internship from "./Internship.vue";
 import Vue from "vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+import AboutRenuo from "@/components/AboutRenuo";
+import Challenges from "@/components/Challenges";
+import Footer from "@/components/Footer";
+import Internship from "@/components/Internship";
+import Navigation from "@/components/Navigation";
+import Projects from "@/components/Projects";
+import Values from "@/components/Values";
+import GoUp from "@/components/GoUpButton";
+
 var VueScrollTo = require("vue-scrollto");
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
-Vue.use(TastyBurgerButton);
 export default {
   name: "MainComponent",
   data: function() {
@@ -50,13 +45,14 @@ export default {
     };
   },
   components: {
-    Navigation2,
+    GoUp,
     AboutRenuo,
-    CenterTitle,
-    Internship,
-    Projects,
     Challenges,
-    Footer
+    Footer,
+    Internship,
+    Navigation,
+    Projects,
+    Values
   },
   methods: {
     isActive(menuItem) {
@@ -65,45 +61,28 @@ export default {
     setActive(menuItem) {
       this.activeBody = menuItem;
       VueScrollTo.scrollTo("#" + menuItem, 1500);
+    },
+    currentYear() {
+      return new Date().getFullYear();
     }
   }
 };
 </script>
 <style lang="scss">
-body::-webkit-scrollbar {
-  display: none;
+@use "../stylesheets/variables.scss";
+
+.main-content {
+  max-width: 770px;
+  background: variables.$default-background-color;
+  margin: 20px auto auto;
+  border-radius: 10px;
 }
 
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+.outer-container {
+  background: #f3f5f7;
 }
 
-@mixin renuo-background {
-  background-color: #27d79d !important;
-  /*
-		* Add font colour and other changes that are needed for green background
-	*/
-}
-
-@mixin default-background {
-  background-color: #fff;
-  /*
-		* Add font colour and other changes that are needed for green background
-  */
-}
-
-$inverted: true !default;
-.renuo_color_section {
-  @include renuo-background;
-}
-
-.default_color_section {
-  @include default-background;
-}
-
-.content-container {
-  margin-left: auto;
-  margin-right: auto;
+.section-spacing {
+  margin-top: 100px;
 }
 </style>
