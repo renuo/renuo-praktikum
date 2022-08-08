@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="h3-title">Tools</h2>
+    <h2>Tools</h2>
     <p>Mit diesen Werkzeugen arbeiten wir</p>
     <div class="tools-listing">
       <a

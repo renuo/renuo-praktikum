@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="h3-title">Standort</h2>
+    <h2>Standort</h2>
     <p>Hier findest du uns</p>
     <div class="map img-fluid iframe-container">
       <iframe
@@ -15,7 +15,7 @@
       ></iframe>
       <img class="cat" src="@/assets/cat.png" />
     </div>
-    <blockquote>
+    <blockquote class="text-center">
       "Aa zelle Bölle schelle, d’Chatz gaht uf Walliselle"
     </blockquote>
     <p class="text-center">

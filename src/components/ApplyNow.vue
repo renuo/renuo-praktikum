@@ -1,8 +1,8 @@
 <template>
   <div class="apply-now-container">
-    <div class="h2">
+    <h2>
       Willst du dir einen besseren Einblick in unsere Projekte verschaffen?
-    </div>
+    </h2>
     <a href="https://github.com/renuo/">GitHub</a>
   </div>
 </template>
@@ -18,7 +18,9 @@ export default {
 
 .apply-now-container {
   margin-bottom: 50px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: variables.$renuo-base-color;
   a {
     margin-top: 20px;
@@ -27,16 +29,19 @@ export default {
     border-bottom: none;
     font-size: 1.5rem;
     color: white;
+    padding-bottom: 1px;
   }
   a:hover {
     border-bottom: 1px solid #fff;
+    padding-bottom: 0px;
   }
 }
-.h2 {
+h2 {
   color: #3a4440;
   font-size: 2rem;
   font-weight: bold;
   padding-top: 20px;
+  text-align: center;
 }
 
 @media (max-width: 500px) {

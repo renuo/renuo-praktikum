@@ -20,7 +20,7 @@
         </a>
       </div>
     </div>
-    <CustomerStatements />
+    <CustomerStatements class="mt-5" />
   </div>
 </template>
 

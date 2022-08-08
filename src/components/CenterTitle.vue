@@ -1,7 +1,7 @@
 <template>
   <div class="background-header">
     <div class="heading">
-      <h1 class="title text-center">
+      <h1 class="title">
         {{ title }}
       </h1>
     </div>
@@ -20,7 +20,8 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-@import "@/stylesheets/variables.scss";
+@use "@/stylesheets/variables.scss";
+@use "@/stylesheets/global.scss";
 
 @media (max-width: 750px) {
   .heading .title {
