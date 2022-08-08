@@ -4,9 +4,17 @@
     <div class="main-content">
       <Internship />
       <AboutRenuo />
-      <Projects />
-      <!--      <Values />-->
-      <Challenges />
+
+      <Projects class="section-spacing" />
+      <Values class="mt-5" />
+
+      <Challenges class="section-spacing" />
+
+      <p class="text-center py-3">
+        Made with<br />
+        <span class="heart">❤️</span><br />
+        by Renuo IMS Interns {{ currentYear() }}
+      </p>
     </div>
     <Footer />
     <GoUp />
@@ -23,7 +31,7 @@ import Footer from "@/components/Footer";
 import Internship from "@/components/Internship";
 import Navigation from "@/components/Navigation";
 import Projects from "@/components/Projects";
-// import Values from "@/components/Values";
+import Values from "@/components/Values";
 import GoUp from "@/components/GoUpButton";
 
 var VueScrollTo = require("vue-scrollto");
@@ -43,8 +51,8 @@ export default {
     Footer,
     Internship,
     Navigation,
-    Projects
-    // Values
+    Projects,
+    Values
   },
   methods: {
     isActive(menuItem) {
@@ -53,6 +61,9 @@ export default {
     setActive(menuItem) {
       this.activeBody = menuItem;
       VueScrollTo.scrollTo("#" + menuItem, 1500);
+    },
+    currentYear() {
+      return new Date().getFullYear();
     }
   }
 };
@@ -69,5 +80,9 @@ export default {
 
 .outer-container {
   background: #f3f5f7;
+}
+
+.section-spacing {
+  margin-top: 100px;
 }
 </style>

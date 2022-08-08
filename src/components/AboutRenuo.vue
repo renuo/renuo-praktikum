@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Team />
-    <Goodies />
-    <Tools />
-    <Location />
+    <Team class="mt-5" />
+    <Goodies class="mt-5" />
+    <Tools class="mt-5" />
+    <Location class="mt-5" />
   </div>
 </template>
 

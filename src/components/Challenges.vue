@@ -49,7 +49,7 @@
 
       <p class="mx-4">
         Fragen kannst du im
-        <a href="https://github.com/renuo/nearest-vowel/issues">"Issues"</a>
+        <a href="https://github.com/renuo/nearest-vowel/issues">Issues</a>
         Tab stellen.
       </p>
 
@@ -59,7 +59,7 @@
         bereits auf dem GitHub des Projektes unter dem "spec" Ordner.
       </p>
 
-      <h2>Aufgabe</h2>
+      <h2 class="mt-3 mb-2">Aufgabe</h2>
 
       <p class="mx-4">
         Deine Aufgabe ist es, die vorgegebene Funktion auszubauen, sodass sie

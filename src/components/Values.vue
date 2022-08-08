@@ -1,7 +1,9 @@
 <template>
   <div>
-    <CenterTitle id="values" title="Fokus und Stärken" />
-    <p>Wir entwickeln individuelle Software auf höchstem Niveau.</p>
+    <h2 id="values">Fokus und Stärken</h2>
+    <p class="text-center">
+      Wir entwickeln individuelle Software auf höchstem Niveau.
+    </p>
 
     <div class="row align-items-center">
       <div class="col-4 text-end">
@@ -49,14 +51,11 @@
 </template>
 
 <script>
-import CenterTitle from "@/components/CenterTitle";
-
 export default {
-  name: "Values",
-  components: {
-    CenterTitle
-  }
+  name: "Values"
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@use "@/stylesheets/global.scss";
+</style>
