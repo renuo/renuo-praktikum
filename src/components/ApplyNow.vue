@@ -1,7 +1,7 @@
 <template>
   <div class="apply-now-container">
     <h2>
-      Willst du dir einen besseren Einblick in unsere Projekte verschaffen?
+      Willst du dir noch weitere Einblicke in unsere Projekte verschaffen?
     </h2>
     <a href="https://github.com/renuo/">GitHub</a>
   </div>

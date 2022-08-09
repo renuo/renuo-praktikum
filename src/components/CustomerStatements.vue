@@ -2,8 +2,8 @@
   <div>
     <h2>Kundenauszug</h2>
     <p class="mx-4 text-center">
-      Die Stärke der Renuo zeigt sich in der Vielseitigkeit der Projekte, welche
-      von den verschiedensten Branchen und Firmen beauftragt wurden.
+      Die Stärke der Renuo zeigt sich in der Vielseitigkeit ihrer Projekte, welche
+      von den verschiedensten Branchen und Firmen beauftragt werden.
     </p>
     <div class="customer-container-sm d-md-none">
       <!--  Einfügen von Kunden bei Responsive -->
