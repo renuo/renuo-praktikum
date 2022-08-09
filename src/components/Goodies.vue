@@ -2,9 +2,6 @@
   <div>
     <h2>Goodies</h2>
     <h4>Welche es neben der Erfahrung gibt</h4>
-    <a href="https://renuo.ch/jobs" class="btn btn-info" role="button"
-      >Komm zu uns ins Team</a
-    >
     <svg
       viewBox="0 0 541 508"
       fill="none"
