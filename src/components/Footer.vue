@@ -27,35 +27,6 @@
         Wallisellen</span
       >
       -->
-      <div class="container-fluid footer-made-by">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            © 2022 Renuo AG — hello@renuo.ch
-            <a href="https://renuo.ch/en/impressum">Privacy Policy</a>
-          </div>
-          <div class="col-12 col-md-6">
-            <a
-              class="a--no-underline"
-              href="https://google.com/partners/agency?id=2492208531"
-              target="_blank"
-              ><img
-                alt="Google Partner Badge"
-                class="img-fluid"
-                src="https://renuo.ch/images/renuo_partner_google-c129a8534df224352dce0c7f3e1835d1.jpg?vsn=d"
-                style=""/></a
-            ><a
-              class="a--no-underline"
-              href="https://www.swissmadesoftware.org/"
-              target="_blank"
-              ><img
-                alt="Logo swiss made software"
-                class="img-fluid"
-                src="https://renuo.ch/images/renuo_partner_sms-3079a8bfb7886ddf7d71b178fce1f950.jpg?vsn=d"
-                style=""
-            /></a>
-          </div>
-        </div>
-      </div>
     </div>
   </footer>
 </template>
@@ -76,13 +47,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@use "@/stylesheets/variables.scss";
 footer {
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
+  padding-bottom: 20px;
+  background-color: variables.$renuo-base-color;
   .footer-content {
     background-color: #27d79d;
-
+    max-width: 750px;
+    margin: 0px auto;
     /*variables*/
     $white: #fff;
     $github-color: #585858;
@@ -199,13 +173,6 @@ footer {
   text-align: left !important;
 }
 
-.footer-made-by {
-  text-align: left;
-  padding: 0.8rem 2rem;
-  font-size: 0.8rem;
-  line-height: 1.7rem;
-}
-
 i {
   color: white;
   transition: all 0.2s ease-in-out;
@@ -214,18 +181,6 @@ i {
 
 i:hover {
   color: #dedede;
-}
-@media (max-width: 991.98px) {
-  .footer-made-by {
-    text-align: center;
-    font-size: 0.7rem;
-  }
-}
-
-.footer-made-by img {
-  float: right;
-  max-height: 1.7rem;
-  margin-right: 2rem;
 }
 
 @media (min-width: 992px) {
@@ -253,12 +208,6 @@ i:hover {
   i {
     font-size: 40px !important;
     margin: 0px 7.5px !important;
-  }
-  .footer-made-by img {
-    max-height: 1.5rem;
-    margin: auto;
-    float: none;
-    padding: 0 10px;
   }
 
   ul {

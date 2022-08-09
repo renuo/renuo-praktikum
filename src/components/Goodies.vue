@@ -1,10 +1,8 @@
 <template>
   <div>
     <h2>Goodies</h2>
-    <p class="mx-4">
-      Komm zu uns, wir bieten dir nebst Coding-Erfahrung viele weitere Benefits.
-      Lass sie dir nicht entgehen.
-    </p>
+    <h4>Komm zu uns, wir bieten dir nebst Coding-Erfahrung viele weitere Benefits.
+      Lass sie dir nicht entgehen.</h4>
     <a href="https://renuo.ch/jobs" class="btn btn-info" role="button"
       >Komm zu uns ins Team</a
     >

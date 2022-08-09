@@ -17,6 +17,7 @@
       </p>
     </div>
     <Footer />
+    <FooterMadeBy />
     <GoUp />
   </div>
 </template>
@@ -33,6 +34,7 @@ import Navigation from "@/components/Navigation";
 import Projects from "@/components/Projects";
 import Values from "@/components/Values";
 import GoUp from "@/components/GoUpButton";
+import FooterMadeBy from "@/components/FooterMadeBy";
 
 var VueScrollTo = require("vue-scrollto");
 Vue.use(BootstrapVue);
@@ -45,6 +47,7 @@ export default {
     };
   },
   components: {
+    FooterMadeBy,
     GoUp,
     AboutRenuo,
     Challenges,

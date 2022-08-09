@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Tools</h2>
-    <p class="text-center">Mit diesen Werkzeugen arbeiten wir:</p>
+    <h4>Mit diesen Werkzeugen arbeiten wir:</h4>
     <div class="tools-listing">
       <a
         id="rails-run-spec-icon"
