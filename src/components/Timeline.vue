@@ -115,7 +115,6 @@ export default {
       return date.from.getFullYear();
     },
     getToYear(date) {
-      console.log(this.shortToYearFormat);
       if (this.shortToYearFormat) {
         return date.to
           .getFullYear()

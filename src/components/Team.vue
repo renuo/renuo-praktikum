@@ -1,11 +1,11 @@
 <template>
   <div>
     <h2 id="about-renuo">Das Team</h2>
-    <img class="img-fluid" alt="renuo team" src="@/assets/team.png" />
     <h4>Weil wir mehr als nur Mitarbeiter sind</h4>
     <a href="https://renuo.ch/team" class="btn btn-info" role="button"
       >Lerne das Team kennen</a
     >
+    <img class="img-fluid" alt="renuo team" src="@/assets/team.png" />
   </div>
 </template>
 <script>
