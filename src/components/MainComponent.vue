@@ -13,7 +13,7 @@
       <p class="text-center py-3">
         Made with<br />
         <span class="heart">❤️</span><br />
-        by Renuo IMS Interns {{ currentYear() }}
+        by Renuo IMS Interns <CurrentYearComponent />
       </p>
     </div>
     <Footer />
@@ -35,6 +35,7 @@ import Projects from "@/components/Projects";
 import Values from "@/components/Values";
 import GoUp from "@/components/GoUpButton";
 import FooterMadeBy from "@/components/FooterMadeBy";
+import CurrentYearComponent from "@/components/CurrentYearComponent";
 
 var VueScrollTo = require("vue-scrollto");
 Vue.use(BootstrapVue);
@@ -47,6 +48,7 @@ export default {
     };
   },
   components: {
+    CurrentYearComponent,
     FooterMadeBy,
     GoUp,
     AboutRenuo,
@@ -64,9 +66,6 @@ export default {
     setActive(menuItem) {
       this.activeBody = menuItem;
       VueScrollTo.scrollTo("#" + menuItem, 1500);
-    },
-    currentYear() {
-      return new Date().getFullYear();
     }
   }
 };
