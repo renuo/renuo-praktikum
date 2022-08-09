@@ -1,7 +1,8 @@
 <template>
   <div>
     <h2>Goodies</h2>
-    <h4>Welche es neben der Erfahrung gibt</h4>
+    <h4>Komm zu uns, wir bieten dir nebst Coding-Erfahrung viele weitere Benefits.
+      Lass sie dir nicht entgehen.</h4>
     <a href="https://renuo.ch/jobs" class="btn btn-info" role="button"
       >Komm zu uns ins Team</a
     >
