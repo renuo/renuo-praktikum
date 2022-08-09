@@ -20,9 +20,6 @@ addEventListener("scroll", () => {
 
 <style scoped>
 i {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
   aspect-ratio: 1;
   font-size: 40px;
   color: #27d79d;
@@ -32,6 +29,9 @@ i {
 }
 
 a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   height: 75px;
   aspect-ratio: 1;
   display: none;

@@ -2,7 +2,8 @@
   <div>
     <h2 id="about-renuo">Das Team</h2>
     <img class="img-fluid" alt="renuo team" src="@/assets/team.png" />
-    <a href="https://renuo.ch/team" class="btn btn-info my-4" role="button"
+    <h4>Weil wir mehr als nur Mitarbeiter sind</h4>
+    <a href="https://renuo.ch/team" class="btn btn-info" role="button"
       >Lerne das Team kennen</a
     >
   </div>
@@ -21,6 +22,7 @@ export default {
 
 img {
   margin-top: -35px;
+  pointer-events: none;
 }
 
 @media (min-width: 500px) {
