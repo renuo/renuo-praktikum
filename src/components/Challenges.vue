@@ -56,14 +56,14 @@
       <p class="mx-4">
         Das Projekt basiert auf einem einfachem Ruby script, sowie RSpec tests.
         Den Algorithmus musst du selbst schreiben, doch die Tests dazu sind
-        bereits auf dem GitHub des Projektes unter dem "spec" Ordner.
+        bereits auf dem GitHub des Projektes unter dem «spec» Ordner.
       </p>
 
       <h2 class="mt-3 mb-2">Aufgabe</h2>
 
       <p class="mx-4">
         Deine Aufgabe ist es, die vorgegebene Funktion auszubauen, sodass sie
-        mit einem eingegeben String einen Array zurück gibt, welcher die Distanz
+        mit einem eingegebenen String einen Array zurückgibt, welcher die Distanz
         von jedem Buchstaben zum nächsten Vokal zeigt. Das würde dann wie folgt
         aussehen:
       </p>

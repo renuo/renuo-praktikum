@@ -19,10 +19,11 @@
 
 <script>
 import CenterTitle from "@/components/CenterTitle";
+import CurrentYearComponent from "@/components/CurrentYearComponent";
 
 export default {
   name: "IMSButton",
-  components: { CenterTitle }
+  components: { CurrentYearComponent, CenterTitle }
 };
 </script>
 
