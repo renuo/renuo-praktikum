@@ -12,7 +12,7 @@
           ><img
             alt="Google Partner Badge"
             class="img-fluid"
-            src="../../public/img/footer/google_partner.jpg"
+            src="../img/footer/google_partner.jpg"
             style=""/></a
         ><a
           class="a--no-underline"

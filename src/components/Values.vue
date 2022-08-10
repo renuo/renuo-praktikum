@@ -30,19 +30,19 @@ h4 {
 }
 
 div.values-container ul li:nth-child(1) {
-  background-image: url("../../public/img/about_renuo/w1.svg");
+  background-image: url("../img/about_renuo/w1.svg");
 }
 div.values-container ul li:nth-child(2) {
-  background-image: url("../../public/img/about_renuo/w2.svg");
+  background-image: url("../img/about_renuo/w2.svg");
 }
 div.values-container ul li:nth-child(3) {
-  background-image: url("../../public/img/about_renuo/w3.svg");
+  background-image: url("../img/about_renuo/w3.svg");
 }
 div.values-container ul li:nth-child(4) {
-  background-image: url("../../public/img/about_renuo/w4.svg");
+  background-image: url("../img/about_renuo/w4.svg");
 }
 div.values-container ul li:nth-child(5) {
-  background-image: url("../../public/img/about_renuo/w5.svg");
+  background-image: url("../img/about_renuo/w5.svg");
 }
 
 .values-container {

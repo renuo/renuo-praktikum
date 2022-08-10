@@ -424,7 +424,7 @@ rect#header-menu-one {
 }
 
 #open-navigation:hover {
-  background-image: url("../../public/img/footer/nav3_white.png");
+  background-image: url("../img/footer/nav3_white.png");
 }
 
 #open-navigation {
@@ -439,7 +439,7 @@ rect#header-menu-one {
   image-rendering: pixelated;
   image-rendering: optimize-contrast;
   -ms-interpolation-mode: nearest-neighbor;
-  background-image: url("../../public/img/footer/nav3_black.png");
+  background-image: url("../img/footer/nav3_black.png");
 }
 
 #close-navigation {
