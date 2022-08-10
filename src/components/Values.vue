@@ -1,7 +1,7 @@
 <template>
   <div>
-    <CenterTitle id="values" title="Fokus und Stärken" />
-    <p class="subtitle">
+    <h2>Unsere Werte</h2>
+    <p class="text-center mx-4">
       Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere
       Werte:
     </p>
@@ -68,7 +68,7 @@ div.values-container ul li:nth-child(5) {
 
   p {
     text-align: left;
-    font-size: calc(1.325rem + 0.9vw);
+    font-size: calc(1.275rem + 0.3vw);
   }
 }
 </style>

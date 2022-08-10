@@ -1,7 +1,7 @@
 <template>
   <div>
     <CenterTitle title="Komm zu uns ins Team" />
-    <a>
+    <a href="https://www.renuo.ch/en/jobs/ims-internship-2023-2024">
       <p class="main-text">
         IMS Internship
         <CurrentYearComponent
