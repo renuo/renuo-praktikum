@@ -8,7 +8,7 @@
             <span>Entwickelt von der Renuo</span>
             <p>
               Ein von uns Entwickeltes, mehrmals bewährtes Praktikumskonzept,
-              welches dich während deinem Praktikum auf die IDPA vorbereitet.
+              welches dich während deinem Praktikum auf die IPA/IDPA vorbereitet.
             </p>
           </figcaption>
           <!-- Front -->
