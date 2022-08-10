@@ -26,7 +26,7 @@
                 class="btn"
                 href="https://praktikumskonzept.renuo.ch/"
                 target="_blank"
-                >Download</a
+                >Öffnen</a
               >
             </li>
             <li></li>
