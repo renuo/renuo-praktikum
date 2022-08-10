@@ -273,7 +273,7 @@
         id="edge"
       />
 
-      <!-- <img src="@/assets/customer_statements/.png" alt="-icon" id="" /> -->
+      <!-- <header src="@/footer/customer_statements/.png" alt="-icon" id="" /> -->
     </div>
   </div>
 </template>

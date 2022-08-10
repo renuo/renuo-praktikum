@@ -16,12 +16,29 @@
       <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>,
       <a href="https://angular.io/" target="_blank">Angular</a> oder
       <a href="https://reactjs.org/" target="_blank">React</a>. Du wirst für
-      unsere Kundschaft einen Mehrwert generieren und durch die praktische Arbeit viel
-      Erfahrung sammeln, ganz im Sinne von Learning by Doing. Unsere
+      unsere Kundschaft einen Mehrwert generieren und durch die praktische
+      Arbeit viel Erfahrung sammeln, ganz im Sinne von Learning by Doing. Unsere
       Praktikant:innen beteiligen sich weiter auch an Pair Programming, wodurch
-      sie schnell Einblick in unsere Projekte erhalten und mit unseren
-      Methoden und Techniken vertraut werden.
+      sie schnell Einblick in unsere Projekte erhalten und mit unseren Methoden
+      und Techniken vertraut werden.
     </p>
+    <h2>Deine Aufgabe</h2>
+    <ul>
+      <li>
+        <i class="fas fa-check"></i>Softwareentwicklung mit Webtechnologien
+        <br />(Ruby on Rails / Angular / HTML 5 / Javascript)<br />
+      </li>
+      <li>
+        <i class="fas fa-check"></i>Anforderungsanalyse, technische Betreuung
+        und Beratung von Kunden
+      </li>
+      <li>
+        <i class="fas fa-check"></i>Datenbankdesign mit SQL (MySql, Postgres)
+      </li>
+      <li>
+        <i class="fas fa-check"></i>Mitwirkung im Projektmanagement mit Scrum
+      </li>
+    </ul>
   </div>
 </template>
 <script>
@@ -88,7 +105,16 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/stylesheets/global.scss";
+@use "@/stylesheets/global.scss";
+@use "@/stylesheets/variables.scss";
+
+li {
+  list-style-type: none;
+  i {
+    margin-right: 5px;
+    color: variables.$renuo-base-color;
+  }
+}
 
 .centered-gallery-image {
   z-index: 1;

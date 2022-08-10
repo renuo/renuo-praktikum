@@ -12,7 +12,7 @@
           ><img
             alt="Google Partner Badge"
             class="img-fluid"
-            src="https://renuo.ch/images/renuo_partner_google-c129a8534df224352dce0c7f3e1835d1.jpg?vsn=d"
+            src="@/assets/footer/google_partner.jpg"
             style=""/></a
         ><a
           class="a--no-underline"
@@ -21,7 +21,7 @@
           ><img
             alt="Logo swiss made software"
             class="img-fluid"
-            src="https://renuo.ch/images/renuo_partner_sms-3079a8bfb7886ddf7d71b178fce1f950.jpg?vsn=d"
+            src="@/assets/footer/swiss_made_software.jpg"
             style=""
         /></a>
       </div>
