@@ -2,7 +2,11 @@
   <div>
     <CenterTitle id="internship" title="Dein künftiger Praktikumsort" />
     <Notice />
-    <img class="img-fluid" alt="Workspace" src="@/assets/work_space.png" />
+    <img
+      class="img-fluid"
+      alt="Workspace"
+      src="@/assets/about_renuo/work_space.png"
+    />
     <Timeline
       class="timeline-center"
       :timeline-items="timelineItems"
@@ -10,18 +14,8 @@
       :dateLocale="dateLocale"
       :shortToYearFormat="shortToYearFormat"
     />
-    <p class="text-justify m-4">
-      Während deines Praktikums wirst du dich mit vielen verschiedenen
-      Technologien auseinandersetzen – unter anderem mit
-      <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>,
-      <a href="https://angular.io/" target="_blank">Angular</a> oder
-      <a href="https://reactjs.org/" target="_blank">React</a>. Du wirst für
-      unsere Kundschaft einen Mehrwert generieren und durch die praktische
-      Arbeit viel Erfahrung sammeln, ganz im Sinne von Learning by Doing. Unsere
-      Praktikant:innen beteiligen sich weiter auch an Pair Programming, wodurch
-      sie schnell Einblick in unsere Projekte erhalten und mit unseren Methoden
-      und Techniken vertraut werden.
-    </p>
+
+    <Checklist class="mt-4" :list="checklistItems" />
   </div>
 </template>
 <script>
@@ -35,6 +29,7 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 import CenterTitle from "@/components/CenterTitle";
 import Timeline from "@/components/Timeline";
+import Checklist from "@/components/Checklist";
 import Notice from "@/components/Notice";
 
 let now = new Date();
@@ -45,6 +40,7 @@ if (now.getMonth() < 7) {
 export default {
   name: "Internship",
   components: {
+    Checklist,
     Timeline,
     CenterTitle,
     Notice
@@ -52,6 +48,12 @@ export default {
   data: () => ({
     dateLocale: "de-DE",
     shortToYearFormat: false,
+    checklistItems: [
+      "Softwareentwicklung mit Webtechnologien wie <a href='https://rubyonrails.org/' target='_blank'>Ruby on Rails</a>, <a href='https://angular.io/' target='_blank'>Angular</a>, <a href='https://reactjs.org/' target='_blank'>React</a>, HTML 5, Javascript und vielen mehr",
+      "Anforderungsanalyse, technische Betreuung und Beratung von Kunden",
+      "Datenbankdesign mit SQL (MySql, Postgres)",
+      "Mitwirkung im Projektmanagement mit Scrum"
+    ],
     timelineItems: [
       {
         from: new Date(current_year + 1, 7),

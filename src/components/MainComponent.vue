@@ -3,8 +3,8 @@
     <Navigation @selected="setActive" />
     <div class="main-content">
       <Internship />
-      <AboutRenuo />
 
+      <AboutRenuo />
       <Projects class="section-spacing" />
       <Values class="mt-5" />
 
@@ -16,6 +16,7 @@
         by Renuo IMS Interns <CurrentYearComponent :increment="0" />
       </p>
     </div>
+
     <Footer />
     <FooterMadeBy />
     <GoUp />
