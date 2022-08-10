@@ -1,8 +1,10 @@
 <template>
   <div>
     <h2>Goodies</h2>
-    <h4>Wir bieten dir nebst Coding-Erfahrung viele weitere Benefits.
-      Lass sie dir nicht entgehen.</h4>
+    <p class="subtitle">
+      Wir bieten dir nebst Coding-Erfahrung viele weitere Benefits. Lass sie dir
+      nicht entgehen.
+    </p>
     <svg
       viewBox="0 0 541 508"
       fill="none"
@@ -235,7 +237,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@use "../stylesheets/global.scss";
+@use "@/stylesheets/global.scss";
 g#Circles {
   overflow: visible;
 }

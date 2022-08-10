@@ -63,9 +63,9 @@
 
       <p class="mx-4">
         Deine Aufgabe ist es, die vorgegebene Funktion auszubauen, sodass sie
-        mit einem eingegebenen String einen Array zurückgibt, welcher die Distanz
-        von jedem Buchstaben zum nächsten Vokal zeigt. Das würde dann wie folgt
-        aussehen:
+        mit einem eingegebenen String einen Array zurückgibt, welcher die
+        Distanz von jedem Buchstaben zum nächsten Vokal zeigt. Das würde dann
+        wie folgt aussehen:
       </p>
 
       <pre><code class="language-ruby code-display">
@@ -84,7 +84,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import CenterTitle from "@/components/CenterTitle";
 
 export default {
@@ -103,12 +102,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/stylesheets/global.scss";
-.corner-container{
+@use "@/stylesheets/global.scss";
+.corner-container {
   position: relative;
 }
 
-.github-corner{
+.github-corner {
   position: absolute;
   right: 0;
   top: 0;

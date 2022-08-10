@@ -1,7 +1,10 @@
 <template>
   <div>
     <CenterTitle id="values" title="Fokus und Stärken" />
-    <h4>Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere Werte:</h4>
+    <p class="subtitle">
+      Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere
+      Werte:
+    </p>
     <div class="values-container">
       <ul>
         <li><p>Qualität und Präzision</p></li>
@@ -22,6 +25,8 @@ export default {
 
 <style lang="scss">
 @use "@/stylesheets/global.scss";
+@use "@/stylesheets/variables.scss";
+
 h4 {
   margin-bottom: 30px;
 }

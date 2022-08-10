@@ -16,11 +16,11 @@
       <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>,
       <a href="https://angular.io/" target="_blank">Angular</a> oder
       <a href="https://reactjs.org/" target="_blank">React</a>. Du wirst für
-      unsere Kundschaft einen Mehrwert generieren und durch die praktische Arbeit viel
-      Erfahrung sammeln, ganz im Sinne von Learning by Doing. Unsere
+      unsere Kundschaft einen Mehrwert generieren und durch die praktische
+      Arbeit viel Erfahrung sammeln, ganz im Sinne von Learning by Doing. Unsere
       Praktikant:innen beteiligen sich weiter auch an Pair Programming, wodurch
-      sie schnell Einblick in unsere Projekte erhalten und mit unseren
-      Methoden und Techniken vertraut werden.
+      sie schnell Einblick in unsere Projekte erhalten und mit unseren Methoden
+      und Techniken vertraut werden.
     </p>
   </div>
 </template>
@@ -37,7 +37,11 @@ import CenterTitle from "@/components/CenterTitle";
 import Timeline from "@/components/Timeline";
 import Notice from "@/components/Notice";
 
-var current_year = new Date().getFullYear();
+let now = new Date();
+let current_year = now.getFullYear();
+if (now.getMonth() < 7) {
+  current_year = current_year - 1;
+}
 export default {
   name: "Internship",
   components: {
@@ -47,14 +51,13 @@ export default {
   },
   data: () => ({
     dateLocale: "de-DE",
-    colorDots: "#27d79d",
     shortToYearFormat: false,
     timelineItems: [
       {
         from: new Date(current_year + 1, 7),
         title: "Einführung",
         description:
-          "Du wirst von den Mitarbeitenden der Renuo ins Praktikum eingearbeitet und folgst einem detaillierten <a href='https://praktikumskonzept.renuo.ch' style='color: #27d79d' target='_blank'>Plan</a>."
+          "Du wirst von den Mitarbeitenden der Renuo ins Praktikum eingearbeitet und folgst einem detaillierten <a href='https://praktikumskonzept.renuo.ch' target='_blank'>Plan</a>."
       },
       {
         from: new Date(current_year + 1, 8),
@@ -88,7 +91,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/stylesheets/global.scss";
+@use "@/stylesheets/global.scss";
+@use "@/stylesheets/variables.scss";
 
 .centered-gallery-image {
   z-index: 1;
@@ -128,8 +132,8 @@ export default {
     a {
       font-weight: 200;
       padding-bottom: 0.25rem;
-      border-bottom: 1px solid #27d79d;
-      color: #27d79d;
+      border-bottom: 1px solid variables.$renuo-base-color;
+      color: variables.$renuo-base-color;
       transition: all 0.5s;
     }
   }
@@ -141,7 +145,7 @@ export default {
 
 .apply-now {
   font-size: 1.5vw;
-  background-color: #27d79d;
+  background-color: variables.$renuo-base-color;
   margin-bottom: 5rem;
   padding: 1rem;
   background-image: url("https://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
