@@ -73,6 +73,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "@/stylesheets/variables.scss";
+
 .timeline-item {
   .item {
     border-left: 5px solid #ccd5db;
@@ -103,6 +105,7 @@ export default {
     border-radius: 50%;
     left: -10px;
     top: 26px;
+    background: variables.$renuo-base-color !important;
   }
 }
 </style>

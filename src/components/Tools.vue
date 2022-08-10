@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Tools</h2>
-    <p class="text-center">Mit diesen Werkzeugen arbeiten wir</p>
+    <p class="subtitle">Mit diesen Werkzeugen arbeiten wir:</p>
     <div class="tools-listing">
       <a
         id="rails-run-spec-icon"
@@ -95,7 +95,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@use "../stylesheets/global.scss";
+@use "@/stylesheets/global.scss";
+
 div.tools-listing {
   width: 100%;
   aspect-ratio: 720/405;

@@ -1,51 +1,18 @@
 <template>
   <div>
-    <h2 id="values">Fokus und Stärken</h2>
-    <p class="text-center">
-      Wir entwickeln individuelle Software auf höchstem Niveau.
+    <h2>Fokus und Stärken</h2>
+    <p class="text-center mx-4">
+      Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere
+      Werte:
     </p>
-
-    <div class="row align-items-center">
-      <div class="col-4 text-end">
-        <img alt="Qualität und Präzision" src="@/assets/w1.svg" />
-      </div>
-      <div class="col-8 text-start">
-        <h2>
-          Qualität und<br />
-          Präzision
-        </h2>
-      </div>
-      <div class="w-100 mb-3"></div>
-      <div class="col-4 text-end">
-        <img alt="Fairness und Transparenz" src="@/assets/w2.svg" />
-      </div>
-      <div class="col-8 text-start">
-        <h2>
-          Fairness und<br />
-          Transparenz
-        </h2>
-      </div>
-      <div class="w-100 mb-3"></div>
-      <div class="col-4 text-end">
-        <img alt="Verantwortung" src="@/assets/w3.svg" />
-      </div>
-      <div class="col-8 text-start">
-        <h2>Verantwortung</h2>
-      </div>
-      <div class="w-100 mb-3"></div>
-      <div class="col-4 text-end">
-        <img alt="Zusammen" src="@/assets/w4.svg" />
-      </div>
-      <div class="col-8 text-start">
-        <h2>Zusammen</h2>
-      </div>
-      <div class="w-100 mb-3"></div>
-      <div class="col-4 text-end">
-        <img alt="Neue Wege" src="@/assets/w5.svg" />
-      </div>
-      <div class="col-8 text-start">
-        <h2>Neue Wege</h2>
-      </div>
+    <div class="values-container">
+      <ul>
+        <li><p>Qualität und Präzision</p></li>
+        <li><p>Fairness und Transparenz</p></li>
+        <li><p>Verwantwortung</p></li>
+        <li><p>Zusammen</p></li>
+        <li><p>Neue Wege</p></li>
+      </ul>
     </div>
   </div>
 </template>
@@ -58,4 +25,50 @@ export default {
 
 <style lang="scss">
 @use "@/stylesheets/global.scss";
+@use "@/stylesheets/variables.scss";
+
+h4 {
+  margin-bottom: 30px;
+}
+
+div.values-container ul li:nth-child(1) {
+  background-image: url("../assets/about_renuo/w1.svg");
+}
+div.values-container ul li:nth-child(2) {
+  background-image: url("../assets/about_renuo/w2.svg");
+}
+div.values-container ul li:nth-child(3) {
+  background-image: url("../assets/about_renuo/w3.svg");
+}
+div.values-container ul li:nth-child(4) {
+  background-image: url("../assets/about_renuo/w4.svg");
+}
+div.values-container ul li:nth-child(5) {
+  background-image: url("../assets/about_renuo/w5.svg");
+}
+
+.values-container {
+  text-align: center;
+
+  & > ul {
+    display: inline-block;
+    margin-left: 35px;
+  }
+
+  li {
+    background-repeat: no-repeat;
+    background-size: contain;
+    line-height: 30px;
+    padding-left: 45px;
+    list-style-type: none;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    text-align: left;
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
 </style>

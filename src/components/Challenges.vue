@@ -4,8 +4,8 @@
 
     <div>
       <p class="mx-4">
-        <span style="color: red;">Achtung</span> Die Teilnahme ist keine
-        Voraussetzung für eine Bewerbung und nur zum Spass gedacht.
+        Die Teilnahme ist keine Voraussetzung für eine Bewerbung und nur zum
+        Spass gedacht 🥳
       </p>
       <div class="corner-container">
         <a
@@ -56,16 +56,16 @@
       <p class="mx-4">
         Das Projekt basiert auf einem einfachem Ruby script, sowie RSpec tests.
         Den Algorithmus musst du selbst schreiben, doch die Tests dazu sind
-        bereits auf dem GitHub des Projektes unter dem "spec" Ordner.
+        bereits auf dem GitHub des Projektes unter dem «spec» Ordner.
       </p>
 
       <h2 class="mt-3 mb-2">Aufgabe</h2>
 
       <p class="mx-4">
         Deine Aufgabe ist es, die vorgegebene Funktion auszubauen, sodass sie
-        mit einem eingegeben String einen Array zurück gibt, welcher die Distanz
-        von jedem Buchstaben zum nächsten Vokal zeigt. Das würde dann wie folgt
-        aussehen:
+        mit einem eingegebenen String einen Array zurückgibt, welcher die
+        Distanz von jedem Buchstaben zum nächsten Vokal zeigt. Das würde dann
+        wie folgt aussehen:
       </p>
 
       <pre><code class="language-ruby code-display">
@@ -84,7 +84,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import CenterTitle from "@/components/CenterTitle";
 
 export default {
@@ -103,12 +102,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/stylesheets/global.scss";
-.corner-container{
+@use "@/stylesheets/global.scss";
+.corner-container {
   position: relative;
 }
 
-.github-corner{
+.github-corner {
   position: absolute;
   right: 0;
   top: 0;

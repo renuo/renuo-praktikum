@@ -307,29 +307,14 @@
     <div>
       <div id="myNav" class="overlay">
         <div class="overlay-content">
-          <a
-            v-on:click="clickNav"
-            class="nav-link"
-            @click.prevent="passUpNewBody('about-renuo')"
-            >Dein künftiger Praktikumsort</a
+          <a v-on:click="clickNav" class="nav-link" href="#about-renuo"
+            >Unser Team</a
           >
-          <a
-            v-on:click="clickNav"
-            class="nav-link"
-            @click.prevent="passUpNewBody('projects')"
-            >Projects</a
+          <a v-on:click="clickNav" class="nav-link" href="#projects"
+            >Unsere Projekte</a
           >
-          <a
-            v-on:click="clickNav"
-            class="nav-link"
-            @click.prevent="passUpNewBody('internship')"
-            >Dein Praktikum bei uns</a
-          >
-          <a
-            v-on:click="clickNav"
-            class="nav-link"
-            @click.prevent="passUpNewBody('challenges')"
-            >Challenge</a
+          <a v-on:click="clickNav" class="nav-link" href="#challenges"
+            >Coding-Challenge</a
           >
           <a href="https://www.renuo.ch/en/jobs"
             >Jobs <i class="fal fa-external-link"></i
@@ -402,8 +387,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/stylesheets/global.scss";
-@import "@/stylesheets/variables.scss";
+@use "@/stylesheets/global.scss";
+@use "@/stylesheets/variables.scss";
 
 div#svg-container-nav {
   position: absolute;
@@ -439,7 +424,7 @@ rect#header-menu-one {
 }
 
 #open-navigation:hover {
-  background-image: url("../../public/assets/nav3_white.png");
+  background-image: url("../assets/footer/nav3_white.png");
 }
 
 #open-navigation {
@@ -454,7 +439,7 @@ rect#header-menu-one {
   image-rendering: pixelated;
   image-rendering: optimize-contrast;
   -ms-interpolation-mode: nearest-neighbor;
-  background-image: url("../../public/assets/nav3_black.png");
+  background-image: url("../assets/footer/nav3_black.png");
 }
 
 #close-navigation {
@@ -489,21 +474,26 @@ rect#header-menu-one {
 }
 
 .overlay a {
-  padding: 8px;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
   font-size: 2.5rem;
   display: block;
-  color: $renuo-dark-gray !important;
-  transition: 0.3s;
+  color: variables.$renuo-dark-gray !important;
+  width: fit-content;
+  padding: 8px 8px 0px;
+  margin: 0px auto;
+  border-bottom: 2px solid transparent;
 }
 
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1 !important;
+  border-bottom: 2px solid white;
+  margin-bottom: 0px;
 }
 
 .nav-link {
-  color: $renuo-dark-gray !important;
+  color: variables.$renuo-dark-gray !important;
 }
 
 .nav-link:hover {
@@ -542,7 +532,7 @@ rect#header-menu-one {
 
 #navigationbar {
   background-image: url("https://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
-  background-color: $renuo-base-color;
+  background-color: variables.$renuo-base-color;
   width: 100%;
 }
 .navbar-brand {
