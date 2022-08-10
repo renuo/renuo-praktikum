@@ -63,9 +63,9 @@
 
       <p class="mx-4">
         Deine Aufgabe ist es, die vorgegebene Funktion auszubauen, sodass sie
-        mit einem eingegebenen String einen Array zurückgibt, welcher die Distanz
-        von jedem Buchstaben zum nächsten Vokal zeigt. Das würde dann wie folgt
-        aussehen:
+        mit einem eingegebenen String einen Array zurückgibt, welcher die
+        Distanz von jedem Buchstaben zum nächsten Vokal zeigt. Das würde dann
+        wie folgt aussehen:
       </p>
 
       <pre><code class="language-ruby code-display">

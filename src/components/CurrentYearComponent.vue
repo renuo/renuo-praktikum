@@ -16,7 +16,6 @@ export default {
           return now.getFullYear() - 1 + parseInt(this.$props.increment);
         }
       } else {
-        console.log(this.$props.augustchange);
         return now.getFullYear() + parseInt(this.$props.increment);
       }
     }
