@@ -1,7 +1,10 @@
 <template>
   <div>
     <CenterTitle id="values" title="Fokus und Stärken" />
-    <h4>Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere Werte:</h4>
+    <h4>
+      Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere
+      Werte:
+    </h4>
     <div class="values-container">
       <ul>
         <li><p>Qualität und Präzision</p></li>

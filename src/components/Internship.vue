@@ -21,23 +21,15 @@
       sie schnell Einblick in unsere Projekte erhalten und mit unseren Methoden
       und Techniken vertraut werden.
     </p>
-    <h2>Deine Aufgabe</h2>
-    <ul>
-      <li>
-        <i class="fas fa-check"></i>Softwareentwicklung mit Webtechnologien
-        <br />(Ruby on Rails / Angular / HTML 5 / Javascript)<br />
-      </li>
-      <li>
-        <i class="fas fa-check"></i>Anforderungsanalyse, technische Betreuung
-        und Beratung von Kunden
-      </li>
-      <li>
-        <i class="fas fa-check"></i>Datenbankdesign mit SQL (MySql, Postgres)
-      </li>
-      <li>
-        <i class="fas fa-check"></i>Mitwirkung im Projektmanagement mit Scrum
-      </li>
-    </ul>
+    <Checklist
+      title="Deine Aufgabe"
+      :list="[
+        'Softwareentwicklung mit Webtechnologien wie Ruby on Rails, Angular, HTML 5, Javascript und vielen mehr',
+        'Anforderungsanalyse, technische Betreuung und Beratung von Kunden',
+        'Datenbankdesign mit SQL (MySql, Postgres)',
+        'Mitwirkung im Projektmanagement mit Scrum'
+      ]"
+    />
   </div>
 </template>
 <script>
@@ -51,11 +43,13 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 import CenterTitle from "@/components/CenterTitle";
 import Timeline from "@/components/Timeline";
+import Checklist from "@/components/Checklist";
 
 var current_year = new Date().getFullYear();
 export default {
   name: "Internship",
   components: {
+    Checklist,
     Timeline,
     CenterTitle
   },

@@ -1,8 +1,10 @@
 <template>
   <div>
     <h2>Goodies</h2>
-    <h4>Wir bieten dir nebst Coding-Erfahrung viele weitere Benefits.
-      Lass sie dir nicht entgehen.</h4>
+    <h4>
+      Wir bieten dir nebst Coding-Erfahrung viele weitere Benefits. Lass sie dir
+      nicht entgehen.
+    </h4>
     <svg
       viewBox="0 0 541 508"
       fill="none"
