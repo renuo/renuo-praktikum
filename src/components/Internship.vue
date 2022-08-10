@@ -1,6 +1,7 @@
 <template>
   <div>
     <CenterTitle id="internship" title="Dein künftiger Praktikumsort" />
+    <Notice />
     <img class="img-fluid" alt="Workspace" src="@/assets/work_space.png" />
     <Timeline
       class="timeline-center"
@@ -34,13 +35,15 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 import CenterTitle from "@/components/CenterTitle";
 import Timeline from "@/components/Timeline";
+import Notice from "@/components/Notice";
 
 var current_year = new Date().getFullYear();
 export default {
   name: "Internship",
   components: {
     Timeline,
-    CenterTitle
+    CenterTitle,
+    Notice
   },
   data: () => ({
     dateLocale: "de-DE",
