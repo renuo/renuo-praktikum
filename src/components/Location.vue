@@ -32,7 +32,6 @@ export default {
   name: "Location",
   methods: {
     replacemap: function() {
-      console.log(this.$refs.iframe);
       let map = document.createElement("img");
       map.src = "~@/assets/map-fallback.png";
       this.$refs.iframeContainer.removeChild(this.$refs.iframe);
