@@ -1,7 +1,8 @@
 <template>
-  <div class="outer-container">
+  <div class="outer-container position-relative overflow-hidden">
+    <Circles />
     <Navigation @selected="setActive" />
-    <div class="main-content">
+    <div class="main-content position-relative">
       <Internship />
 
       <AboutRenuo />
@@ -36,6 +37,7 @@ import Projects from "@/components/Projects";
 import Values from "@/components/Values";
 import GoUp from "@/components/GoUpButton";
 import FooterMadeBy from "@/components/FooterMadeBy";
+import Circles from "@/components/Circles";
 import CurrentYearComponent from "@/components/CurrentYearComponent";
 
 var VueScrollTo = require("vue-scrollto");
@@ -49,6 +51,7 @@ export default {
     };
   },
   components: {
+    Circles,
     CurrentYearComponent,
     FooterMadeBy,
     GoUp,
