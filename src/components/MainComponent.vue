@@ -7,14 +7,13 @@
       <Book />
       <AboutRenuo />
       <Projects class="section-spacing" />
-      <Values class="mt-5" />
-
       <Challenges class="section-spacing" />
 
       <p class="text-center py-3">
         Made with<br />
         <span class="heart">❤️</span><br />
-        by Renuo IMS Interns <CurrentYearComponent :increment="0" />
+        by Renuo IMS Interns
+        <CurrentYearComponent :increment="0" />
       </p>
     </div>
 
@@ -34,7 +33,6 @@ import Footer from "@/components/Footer";
 import Internship from "@/components/Internship";
 import Navigation from "@/components/Navigation";
 import Projects from "@/components/Projects";
-import Values from "@/components/Values";
 import GoUp from "@/components/GoUpButton";
 import FooterMadeBy from "@/components/FooterMadeBy";
 import Circles from "@/components/Circles";
@@ -62,8 +60,8 @@ export default {
     Internship,
     Navigation,
     Projects,
-    Values,
     Book
+    Projects
   },
   methods: {
     isActive(menuItem) {
@@ -82,8 +80,8 @@ export default {
 .main-content {
   max-width: 900px;
   background: variables.$default-background-color;
-  margin: 20px auto auto;
-  border-radius: 10px;
+  margin: 20px auto 80px;
+  border-radius: 20px;
   box-shadow: 0 0 100px 0 rgb(0 0 0 / 10%);
 }
 

@@ -19,22 +19,21 @@
       </a>
     </div>
     <CustomerStatements class="mt-5" />
+    <Values class="mt-5" />
   </div>
 </template>
 
 <script>
 import CustomerStatements from "@/components/CustomerStatements";
 import CenterTitle from "@/components/CenterTitle";
+import Values from "@/components/Values";
 
 export default {
   name: "Projects",
   components: {
     CustomerStatements,
-    CenterTitle
-  },
-  methods: {},
-  data: function() {
-    return {};
+    CenterTitle,
+    Values
   }
 };
 </script>
@@ -53,18 +52,5 @@ export default {
 
 a {
   scroll-snap-align: start;
-}
-
-div.projects-container a img {
-  height: 100%;
-}
-
-div.projects-container a {
-  height: 100%;
-  transition: all 100ms ease-in-out;
-}
-
-div.projects-container a:hover {
-  transform: scale(1.05);
 }
 </style>

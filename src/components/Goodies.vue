@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Unser Angebot</h2>
-    <p class="subtitle">
+    <p class="subtitle mb-0">
       Weil Erfahrung nicht alles ist:
     </p>
     <svg
@@ -9,7 +9,7 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       overflow="visible"
-      class="mx-4 mb-4"
+      class="p-4"
     >
       <g id="Circles">
         <g id="coffee">
@@ -233,14 +233,15 @@
     <Checklist
       class="mt-4"
       :list="[
-        'Eine top Ausbildung',
+        'Eine top Ausbildung, perfekt fürs <b>ZHAW/OST Studium</b> danach',
+        'Du bekommst eines der neusten <b>MacBook Pro\'s</b>, welches du selber einrichten darfst',
         'Spannende und vielseitige Projekte',
         'Neue Technologien',
         'Selbstständige Arbeitsweise',
         'Flexible Arbeitszeiten',
-        'Ein technisch sehr kompetentes, kollegiales und junges Team',
-        'Betreuung deine IPA',
-        'Wir haben viele IMS-Abgänger unter uns und wissen genau, was auf dich zukommt!'
+        'Ein technisch sehr kompetentes, <b>kollegiales und junges Team</b>',
+        'Betreuung deine IPA <b>(5+ in den vergangenen Jahren)</b>',
+        'Wir haben viele <b>IMS-Abgänger</b> unter uns und wissen genau, was auf dich zukommt!'
       ]"
     />
   </div>
@@ -264,6 +265,12 @@ export default {
 
 g#Circles {
   overflow: visible;
+}
+
+svg {
+  max-width: 650px;
+  margin: auto;
+  display: block;
 }
 
 @keyframes float {
