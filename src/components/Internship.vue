@@ -9,27 +9,8 @@
       :dateLocale="dateLocale"
       :shortToYearFormat="shortToYearFormat"
     />
-    <p class="text-justify m-4">
-      Während deines Praktikums wirst du dich mit vielen verschiedenen
-      Technologien auseinandersetzen – unter anderem mit
-      <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>,
-      <a href="https://angular.io/" target="_blank">Angular</a> oder
-      <a href="https://reactjs.org/" target="_blank">React</a>. Du wirst für
-      unsere Kundschaft einen Mehrwert generieren und durch die praktische
-      Arbeit viel Erfahrung sammeln, ganz im Sinne von Learning by Doing. Unsere
-      Praktikant:innen beteiligen sich weiter auch an Pair Programming, wodurch
-      sie schnell Einblick in unsere Projekte erhalten und mit unseren Methoden
-      und Techniken vertraut werden.
-    </p>
-    <Checklist
-      title="Deine Aufgabe"
-      :list="[
-        'Softwareentwicklung mit Webtechnologien wie Ruby on Rails, Angular, HTML 5, Javascript und vielen mehr',
-        'Anforderungsanalyse, technische Betreuung und Beratung von Kunden',
-        'Datenbankdesign mit SQL (MySql, Postgres)',
-        'Mitwirkung im Projektmanagement mit Scrum'
-      ]"
-    />
+
+    <Checklist class="mt-4" :list="checklistItems" />
   </div>
 </template>
 <script>
@@ -57,6 +38,12 @@ export default {
     dateLocale: "de-DE",
     colorDots: "#27d79d",
     shortToYearFormat: false,
+    checklistItems: [
+      "Softwareentwicklung mit Webtechnologien wie <a href='https://rubyonrails.org/' target='_blank'>Ruby on Rails</a>, <a href='https://angular.io/' target='_blank'>Angular</a>, <a href='https://reactjs.org/' target='_blank'>React</a>, HTML 5, Javascript und vielen mehr",
+      "Anforderungsanalyse, technische Betreuung und Beratung von Kunden",
+      "Datenbankdesign mit SQL (MySql, Postgres)",
+      "Mitwirkung im Projektmanagement mit Scrum"
+    ],
     timelineItems: [
       {
         from: new Date(current_year + 1, 7),
@@ -101,6 +88,7 @@ export default {
 
 li {
   list-style-type: none;
+
   i {
     margin-right: 5px;
     color: variables.$renuo-base-color;
