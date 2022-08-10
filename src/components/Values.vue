@@ -1,7 +1,10 @@
 <template>
   <div>
     <CenterTitle id="values" title="Fokus und Stärken" />
-    <h4>Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere Werte:</h4>
+    <h4>
+      Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere
+      Werte:
+    </h4>
     <div class="values-container">
       <ul>
         <li><p>Qualität und Präzision</p></li>
@@ -27,19 +30,19 @@ h4 {
 }
 
 div.values-container ul li:nth-child(1) {
-  background-image: url("../assets/w1.svg");
+  background-image: url("../../public/img/about_renuo/w1.svg");
 }
 div.values-container ul li:nth-child(2) {
-  background-image: url("../assets/w2.svg");
+  background-image: url("../../public/img/about_renuo/w2.svg");
 }
 div.values-container ul li:nth-child(3) {
-  background-image: url("../assets/w3.svg");
+  background-image: url("../../public/img/about_renuo/w3.svg");
 }
 div.values-container ul li:nth-child(4) {
-  background-image: url("../assets/w4.svg");
+  background-image: url("../../public/img/about_renuo/w4.svg");
 }
 div.values-container ul li:nth-child(5) {
-  background-image: url("../assets/w5.svg");
+  background-image: url("../../public/img/about_renuo/w5.svg");
 }
 
 .values-container {

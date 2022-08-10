@@ -12,7 +12,7 @@
           ><img
             alt="Google Partner Badge"
             class="img-fluid"
-            src="https://renuo.ch/images/renuo_partner_google-c129a8534df224352dce0c7f3e1835d1.jpg?vsn=d"
+            src="../../public/img/footer/google_partner.jpg"
             style=""/></a
         ><a
           class="a--no-underline"
