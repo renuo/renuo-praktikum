@@ -4,8 +4,16 @@ h1, h2 {
   color: variables.$renuo-base-color;
 }
 
-h1, h2, h4:not(.title-item) {
+h1, h2, h4:not(.title-item), p.subtitle {
   text-align: center;
+}
+
+p.subtitle {
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: calc(1.275rem + 0.3vw);
 }
 
 a.btn.btn-info {

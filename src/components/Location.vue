@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Standort</h2>
-    <h4>Hier findest du uns:</h4>
+    <p class="subtitle">Hier findest du uns:</p>
     <div class="map img-fluid iframe-container">
       <iframe
         style="height: 100%; width: 100%"
@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/stylesheets/global.scss";
+@use "@/stylesheets/global.scss";
 .cat {
   width: 20vw;
   position: absolute;

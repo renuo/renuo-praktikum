@@ -1,16 +1,13 @@
 <template>
   <div>
     <CenterTitle title="Komm zu uns ins Team" />
-    <a>
+    <a href="https://www.renuo.ch/en/jobs/ims-internship-2023-2024">
       <p class="main-text">
         IMS Internship
         <CurrentYearComponent
-          augustchange="true"
-          increment="1"
-        />/<CurrentYearComponent
-          augustchange="true"
-          increment="2"
-        ></CurrentYearComponent>
+          :augustchange="true"
+          :increment="1"
+        />/<CurrentYearComponent :augustchange="true" :increment="2" />
       </p>
       <p class="sub-text">100 %</p>
     </a>
@@ -28,7 +25,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@use "../stylesheets/variables.scss";
+@use "@/stylesheets/variables.scss";
 
 a {
   background-color: variables.$renuo-base-color;

@@ -18,11 +18,12 @@ addEventListener("scroll", () => {
 });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@use "@/stylesheets/variables.scss";
 i {
   aspect-ratio: 1;
   font-size: 40px;
-  color: #27d79d;
+  color: variables.$renuo-base-color;
   background-color: #fff;
   border-radius: 50%;
   border: 2px solid #fff;

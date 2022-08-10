@@ -32,7 +32,11 @@ import Timeline from "@/components/Timeline";
 import Checklist from "@/components/Checklist";
 import Notice from "@/components/Notice";
 
-var current_year = new Date().getFullYear();
+let now = new Date();
+let current_year = now.getFullYear();
+if (now.getMonth() < 7) {
+  current_year = current_year - 1;
+}
 export default {
   name: "Internship",
   components: {
@@ -43,7 +47,6 @@ export default {
   },
   data: () => ({
     dateLocale: "de-DE",
-    colorDots: "#27d79d",
     shortToYearFormat: false,
     checklistItems: [
       "Softwareentwicklung mit Webtechnologien wie <a href='https://rubyonrails.org/' target='_blank'>Ruby on Rails</a>, <a href='https://angular.io/' target='_blank'>Angular</a>, <a href='https://reactjs.org/' target='_blank'>React</a>, HTML 5, Javascript und vielen mehr",
@@ -56,7 +59,7 @@ export default {
         from: new Date(current_year + 1, 7),
         title: "Einführung",
         description:
-          "Du wirst von den Mitarbeitenden der Renuo ins Praktikum eingearbeitet und folgst einem detaillierten <a href='https://praktikumskonzept.renuo.ch' style='color: #27d79d' target='_blank'>Plan</a>."
+          "Du wirst von den Mitarbeitenden der Renuo ins Praktikum eingearbeitet und folgst einem detaillierten <a href='https://praktikumskonzept.renuo.ch' target='_blank'>Plan</a>."
       },
       {
         from: new Date(current_year + 1, 8),
@@ -92,15 +95,6 @@ export default {
 <style lang="scss" scoped>
 @use "@/stylesheets/global.scss";
 @use "@/stylesheets/variables.scss";
-
-li {
-  list-style-type: none;
-
-  i {
-    margin-right: 5px;
-    color: variables.$renuo-base-color;
-  }
-}
 
 .centered-gallery-image {
   z-index: 1;
@@ -140,8 +134,8 @@ li {
     a {
       font-weight: 200;
       padding-bottom: 0.25rem;
-      border-bottom: 1px solid #27d79d;
-      color: #27d79d;
+      border-bottom: 1px solid variables.$renuo-base-color;
+      color: variables.$renuo-base-color;
       transition: all 0.5s;
     }
   }
@@ -153,7 +147,7 @@ li {
 
 .apply-now {
   font-size: 1.5vw;
-  background-color: #27d79d;
+  background-color: variables.$renuo-base-color;
   margin-bottom: 5rem;
   padding: 1rem;
   background-image: url("https://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");

@@ -1,10 +1,10 @@
 <template>
   <div>
     <CenterTitle id="values" title="Fokus und Stärken" />
-    <h4>
+    <p class="text-center mx-4">
       Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere
       Werte:
-    </h4>
+    </p>
     <div class="values-container">
       <ul>
         <li><p>Qualität und Präzision</p></li>
@@ -25,6 +25,8 @@ export default {
 
 <style lang="scss">
 @use "@/stylesheets/global.scss";
+@use "@/stylesheets/variables.scss";
+
 h4 {
   margin-bottom: 30px;
 }
@@ -66,7 +68,7 @@ div.values-container ul li:nth-child(5) {
 
   p {
     text-align: left;
-    font-size: calc(1.325rem + 0.9vw);
+    font-size: calc(1.275rem + 0.3vw);
   }
 }
 </style>

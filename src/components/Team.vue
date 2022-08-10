@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 id="about-renuo">Das Team</h2>
-    <h4>Weil wir mehr als nur Mitarbeiter sind</h4>
+    <p class="subtitle">Weil wir mehr als nur Mitarbeiter sind</p>
     <a href="https://renuo.ch/team" class="btn btn-info" role="button"
       >Lerne das Team kennen</a
     >
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@use "../stylesheets/global.scss";
+@use "@/stylesheets/global.scss";
 
 img {
   margin-top: -35px;

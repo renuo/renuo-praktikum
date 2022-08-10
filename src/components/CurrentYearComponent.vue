@@ -9,14 +9,14 @@ export default {
   methods: {
     currentYear() {
       let now = new Date();
-      if (this.$props.augustchange === "true") {
+      if (this.$props.augustchange) {
         if (now.getMonth() >= 7) {
-          return now.getFullYear() + parseInt(this.$props.increment);
+          return now.getFullYear() + this.$props.increment;
         } else {
-          return now.getFullYear() - 1 + parseInt(this.$props.increment);
+          return now.getFullYear() - 1 + this.$props.increment;
         }
       } else {
-        return now.getFullYear() + parseInt(this.$props.increment);
+        return now.getFullYear() + this.$props.increment;
       }
     }
   }

@@ -84,7 +84,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import CenterTitle from "@/components/CenterTitle";
 
 export default {
@@ -103,12 +102,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/stylesheets/global.scss";
-.corner-container{
+@use "@/stylesheets/global.scss";
+.corner-container {
   position: relative;
 }
 
-.github-corner{
+.github-corner {
   position: absolute;
   right: 0;
   top: 0;

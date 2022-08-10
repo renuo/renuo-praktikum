@@ -13,7 +13,7 @@
       <p class="text-center py-3">
         Made with<br />
         <span class="heart">❤️</span><br />
-        by Renuo IMS Interns <CurrentYearComponent />
+        by Renuo IMS Interns <CurrentYearComponent :increment="0" />
       </p>
     </div>
 
@@ -72,7 +72,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@use "../stylesheets/variables.scss";
+@use "@/stylesheets/variables.scss";
 
 .main-content {
   max-width: 770px;
