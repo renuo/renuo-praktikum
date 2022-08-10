@@ -61,7 +61,6 @@ export default {
     Navigation,
     Projects,
     Book
-    Projects
   },
   methods: {
     isActive(menuItem) {
