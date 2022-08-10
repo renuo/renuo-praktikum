@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@use "../stylesheets/variables.scss";
+@use "@/stylesheets/variables.scss";
 
 .circles li {
   position: absolute;
