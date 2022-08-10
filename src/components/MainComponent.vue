@@ -4,7 +4,7 @@
     <Navigation @selected="setActive" />
     <div class="main-content position-relative">
       <Internship />
-
+      <Book />
       <AboutRenuo />
       <Projects class="section-spacing" />
       <Values class="mt-5" />
@@ -39,6 +39,7 @@ import GoUp from "@/components/GoUpButton";
 import FooterMadeBy from "@/components/FooterMadeBy";
 import Circles from "@/components/Circles";
 import CurrentYearComponent from "@/components/CurrentYearComponent";
+import Book from "@/components/Book";
 
 var VueScrollTo = require("vue-scrollto");
 Vue.use(BootstrapVue);
@@ -61,7 +62,8 @@ export default {
     Internship,
     Navigation,
     Projects,
-    Values
+    Values,
+    Book
   },
   methods: {
     isActive(menuItem) {
