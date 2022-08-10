@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Unser Angebot</h2>
-    <p class="subtitle">
+    <p class="subtitle mb-0">
       Weil Erfahrung nicht alles ist:
     </p>
     <svg
@@ -9,7 +9,7 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       overflow="visible"
-      class="mx-4 mb-4"
+      class="p-4"
     >
       <g id="Circles">
         <g id="coffee">
@@ -264,6 +264,12 @@ export default {
 
 g#Circles {
   overflow: visible;
+}
+
+svg {
+  max-width: 650px;
+  margin: auto;
+  display: block;
 }
 
 @keyframes float {

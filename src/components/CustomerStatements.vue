@@ -293,29 +293,29 @@ export default {
   column-gap: 5%;
   row-gap: 15px;
   align-items: center;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+
+  margin: auto;
+  max-width: 400px;
 
   img {
     width: 100%;
   }
 }
 
-img {
-  filter: grayscale(100%);
-  transition: all 200ms ease-in-out;
-}
-
-img:hover {
-  filter: grayscale(0%);
-  transform: scale(1.1);
-}
-
 .customer-container {
   aspect-ratio: 720/405;
   width: 100%;
   position: relative;
+
+  img {
+    filter: grayscale(100%);
+    transition: all 200ms ease-in-out;
+  }
+
+  img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
 
   img#jumbo {
     aspect-ratio: 57/23;

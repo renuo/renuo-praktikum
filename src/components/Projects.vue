@@ -19,22 +19,21 @@
       </a>
     </div>
     <CustomerStatements class="mt-5" />
+    <Values class="mt-5" />
   </div>
 </template>
 
 <script>
 import CustomerStatements from "@/components/CustomerStatements";
 import CenterTitle from "@/components/CenterTitle";
+import Values from "@/components/Values";
 
 export default {
   name: "Projects",
   components: {
     CustomerStatements,
-    CenterTitle
-  },
-  methods: {},
-  data: function() {
-    return {};
+    CenterTitle,
+    Values
   }
 };
 </script>
