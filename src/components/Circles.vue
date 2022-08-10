@@ -10,9 +10,9 @@ import Shape from "@/components/Shape";
 import Vue from "vue";
 
 export default {
-  name: "CirclesLeft",
+  name: "Circles",
   mounted() {
-    if (window.innerWidth > 770) {
+    if (window.innerWidth > 900) {
       this.addShape();
     }
   },
@@ -28,7 +28,7 @@ export default {
         instance,
         parseInt(instance.$refs["shape"].style.animationDuration.slice(0, -1)) /
           0.001,
-        true
+        leftCircles
       );
       instance = new ComponentClass();
       instance.$mount();
@@ -37,9 +37,9 @@ export default {
         instance,
         parseInt(instance.$refs["shape"].style.animationDuration.slice(0, -1)) /
           0.001,
-        false
+        rightCircles
       );
-      if (window.innerWidth > 770) {
+      if (window.innerWidth > 900) {
         setTimeout(
           () => this.addShape(),
           Math.floor(Math.random() * 4000 - window.innerWidth) + 200
@@ -48,7 +48,6 @@ export default {
     },
     deleteShape: function deleteShape(instance, delay, group) {
       setTimeout(() => {
-        group.removeChild(instance.$el);
         group.removeChild(instance.$el);
         instance.$destroy();
       }, delay);
@@ -59,9 +58,10 @@ export default {
 
 <style scoped lang="scss">
 .circles {
-  position: absolute;
+  position: fixed;
   top: 0;
-  height: calc(100% - 950px);
+  bottom: 0;
+  height: 100vh;
   width: calc((100vw - 750px) / 2);
   z-index: 0;
   padding: 0;
