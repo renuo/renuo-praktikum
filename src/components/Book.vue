@@ -56,7 +56,7 @@ export default {
 
 <style scoped lang="scss">
 /*
-	A. Mini Reset
+	A. Mini Reset -- Source: https://codepen.io/siiron/pen/nBYGoB
 */
 *,
 *:after,
