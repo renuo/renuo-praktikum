@@ -233,14 +233,15 @@
     <Checklist
       class="mt-4"
       :list="[
-        'Eine top Ausbildung',
+        'Eine top Ausbildung, perfekt fürs <b>ZHAW/OST Studium</b> danach',
+        'Du bekommst eines der neusten <b>MacBook Pro\'s</b>, welches du selber einrichten darfst',
         'Spannende und vielseitige Projekte',
         'Neue Technologien',
         'Selbstständige Arbeitsweise',
         'Flexible Arbeitszeiten',
-        'Ein technisch sehr kompetentes, kollegiales und junges Team',
-        'Betreuung deine IPA',
-        'Wir haben viele IMS-Abgänger unter uns und wissen genau, was auf dich zukommt!'
+        'Ein technisch sehr kompetentes, <b>kollegiales und junges Team</b>',
+        'Betreuung deine IPA <b>(5+ in den vergangenen Jahren)</b>',
+        'Wir haben viele <b>IMS-Abgänger</b> unter uns und wissen genau, was auf dich zukommt!'
       ]"
     />
   </div>

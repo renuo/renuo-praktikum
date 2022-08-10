@@ -53,17 +53,4 @@ export default {
 a {
   scroll-snap-align: start;
 }
-
-div.projects-container a img {
-  height: 100%;
-}
-
-div.projects-container a {
-  height: 100%;
-  transition: all 100ms ease-in-out;
-}
-
-div.projects-container a:hover {
-  transform: scale(1.05);
-}
 </style>
