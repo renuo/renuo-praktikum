@@ -1,16 +1,15 @@
 <template>
   <div>
-    <h2>Goodies</h2>
-    <h4>Welche es neben der Erfahrung gibt</h4>
-    <a href="https://renuo.ch/jobs" class="btn btn-info" role="button"
-      >Komm zu uns ins Team</a
-    >
+    <h2>Unser Angebot</h2>
+    <p class="subtitle">
+      Weil Erfahrung nicht alles ist:
+    </p>
     <svg
       viewBox="0 0 541 508"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       overflow="visible"
-      class="mx-4"
+      class="mx-4 mb-4"
     >
       <g id="Circles">
         <g id="coffee">
@@ -225,11 +224,35 @@
         </g>
       </g>
     </svg>
+
+    <p class="mx-4 text-center">
+      Wir bieten dir nebst Coding-Erfahrung viele weitere Benefits. Lass sie dir
+      nicht entgehen.
+    </p>
+
+    <Checklist
+      class="mt-4"
+      :list="[
+        'Eine top Ausbildung',
+        'Spannende und vielseitige Projekte',
+        'Neue Technologien',
+        'Selbstständige Arbeitsweise',
+        'Flexible Arbeitszeiten',
+        'Ein technisch sehr kompetentes, kollegiales und junges Team',
+        'Betreuung deine IPA',
+        'Wir haben viele IMS-Abgänger unter uns und wissen genau, was auf dich zukommt!'
+      ]"
+    />
   </div>
 </template>
 <script>
+import Checklist from "@/components/Checklist";
+
 export default {
   name: "Goodies",
+  components: {
+    Checklist
+  },
   data() {
     return {};
   }
@@ -237,7 +260,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@use "../stylesheets/global.scss";
+@use "@/stylesheets/global.scss";
+
 g#Circles {
   overflow: visible;
 }
@@ -259,33 +283,43 @@ g {
 g#worklife {
   animation-delay: 200ms;
 }
+
 g#coffee {
   animation-delay: 150ms;
 }
+
 g#investment {
   animation-delay: 400ms;
 }
+
 g#community {
   animation-delay: 600ms;
 }
+
 g#softdrinks {
   animation-delay: 50ms;
 }
+
 g#events {
   animation-delay: 0ms;
 }
+
 g#desk {
   animation-delay: 300ms;
 }
+
 g#goodies {
   animation-delay: 250ms;
 }
+
 g#wallet {
   animation-delay: 150ms;
 }
+
 g#technology {
   animation-delay: 400ms;
 }
+
 g#week {
   animation-delay: 200ms;
 }

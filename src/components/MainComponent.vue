@@ -4,8 +4,8 @@
     <Navigation @selected="setActive" />
     <div class="main-content position-relative">
       <Internship />
-      <AboutRenuo />
 
+      <AboutRenuo />
       <Projects class="section-spacing" />
       <Values class="mt-5" />
 
@@ -14,9 +14,10 @@
       <p class="text-center py-3">
         Made with<br />
         <span class="heart">❤️</span><br />
-        by Renuo IMS Interns {{ currentYear() }}
+        by Renuo IMS Interns <CurrentYearComponent :increment="0" />
       </p>
     </div>
+
     <Footer />
     <FooterMadeBy />
     <GoUp />
@@ -37,6 +38,7 @@ import Values from "@/components/Values";
 import GoUp from "@/components/GoUpButton";
 import FooterMadeBy from "@/components/FooterMadeBy";
 import Circles from "@/components/Circles";
+import CurrentYearComponent from "@/components/CurrentYearComponent";
 
 var VueScrollTo = require("vue-scrollto");
 Vue.use(BootstrapVue);
@@ -50,6 +52,7 @@ export default {
   },
   components: {
     Circles,
+    CurrentYearComponent,
     FooterMadeBy,
     GoUp,
     AboutRenuo,
@@ -67,25 +70,19 @@ export default {
     setActive(menuItem) {
       this.activeBody = menuItem;
       VueScrollTo.scrollTo("#" + menuItem, 1500);
-    },
-    currentYear() {
-      return new Date().getFullYear();
     }
   }
 };
 </script>
 <style lang="scss">
-@use "../stylesheets/variables.scss";
+@use "@/stylesheets/variables.scss";
 
 .main-content {
-  max-width: 770px;
+  max-width: 900px;
   background: variables.$default-background-color;
   margin: 20px auto auto;
   border-radius: 10px;
-}
-
-.outer-container {
-  background: #f3f5f7;
+  box-shadow: 0 0 100px 0 rgb(0 0 0 / 10%);
 }
 
 .section-spacing {

@@ -1,11 +1,19 @@
 <template>
   <div>
     <h2 id="about-renuo">Das Team</h2>
-    <img class="img-fluid" alt="renuo team" src="@/assets/team.png" />
-    <h4>Weil wir mehr als nur Mitarbeiter sind</h4>
-    <a href="https://renuo.ch/team" class="btn btn-info" role="button"
+    <p class="subtitle">Weil wir mehr als nur Mitarbeiter sind</p>
+    <a
+      href="https://renuo.ch/team"
+      class="btn btn-info"
+      role="button"
+      target="_blank"
       >Lerne das Team kennen</a
     >
+    <img
+      class="img-fluid"
+      alt="renuo team"
+      src="@/assets/about_renuo/team.png"
+    />
   </div>
 </template>
 <script>
@@ -18,7 +26,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@use "../stylesheets/global.scss";
+@use "@/stylesheets/global.scss";
 
 img {
   margin-top: -35px;

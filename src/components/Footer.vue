@@ -54,7 +54,7 @@ footer {
   padding-bottom: 20px;
   background-color: variables.$renuo-base-color;
   .footer-content {
-    background-color: #27d79d;
+    background-color: variables.$renuo-base-color;
     max-width: 750px;
     margin: 0px auto;
     /*variables*/

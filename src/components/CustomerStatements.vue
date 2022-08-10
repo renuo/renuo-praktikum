@@ -2,31 +2,67 @@
   <div>
     <h2>Kundenauszug</h2>
     <p class="mx-4 text-center">
-      Die Stärke der Renuo zeigt sich in der Vielseitigkeit der Projekte, welche
-      von den verschiedensten Branchen und Firmen beauftragt wurden.
+      Die Stärke der Renuo zeigt sich in der Vielseitigkeit ihrer Projekte,
+      welche von den verschiedensten Branchen und Firmen beauftragt werden.
     </p>
+
     <div class="customer-container-sm d-md-none">
-      <!--  Einfügen von Kunden bei Responsive -->
-      <img
-        src="@/assets/customer_statements/jumbo.png"
-        alt="jumbo-icon"
-        id="jumbo"
-      />
-      <img
-        src="@/assets/customer_statements/graubuenden.png"
-        alt="graubuenden-icon"
-        id="graubuenden"
-      />
-      <img
-        src="@/assets/customer_statements/migrol.png"
-        alt="migrol-icon"
-        id="migrol"
-      />
-      <img
-        src="@/assets/customer_statements/renovero.png"
-        alt="renovero-icon"
-        id="renovero"
-      />
+      <a
+        href="https://www.renuo.ch/de/references/jumbo-mobile-app"
+        target="_blank"
+      >
+        <img
+          src="@/assets/customer_statements/jumbo.png"
+          alt="jumbo-icon"
+          id="jumbo"
+        />
+      </a>
+      <a href="https://www.manor.ch/de">
+        <img
+          src="@/assets/customer_statements/manor.png"
+          alt="manor-icon"
+          id="manor"
+        />
+      </a>
+      <a
+        href="https://www.renuo.ch/de/references/graubuenden-ferien"
+        target="_blank"
+      >
+        <img
+          src="@/assets/customer_statements/graubuenden.png"
+          alt="graubuenden-icon"
+          id="graubuenden"
+        />
+      </a>
+      <a
+        href="https://www.renuo.ch/de/references/migrol-onboarding-app-and-portal"
+        target="_blank"
+      >
+        <img
+          src="@/assets/customer_statements/migrol.png"
+          alt="migrol-icon"
+          id="migrol"
+        />
+      </a>
+      <a
+        href="https://www.renuo.ch/de/references/renovero-offerten-wizard"
+        target="_blank"
+      >
+        <img
+          src="@/assets/customer_statements/renovero.png"
+          alt="renovero-icon"
+          id="renovero"
+        />
+      </a>
+      <a
+        href="https://www.mcdonalds.com/ch/de-ch.html?gclid=CjwKCAjwi8iXBhBeEiwAKbUofd3PSHrG2AaSkiBev7_8oCaawe0PLwynisuaRP2TL5oteef9ZPbEURoCdOQQAvD_BwE"
+      >
+        <img
+          src="@/assets/customer_statements/mcdonalds.png"
+          alt="mcdonals-icon"
+          id="mcdonalds"
+        />
+      </a>
     </div>
 
     <div class="customer-container d-none d-md-block">
@@ -237,7 +273,7 @@
         id="edge"
       />
 
-      <!-- <img src="@/assets/customer_statements/.png" alt="-icon" id="" /> -->
+      <!-- <header src="@/footer/customer_statements/.png" alt="-icon" id="" /> -->
     </div>
   </div>
 </template>
@@ -249,9 +285,34 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@use "../stylesheets/global.scss";
+@use "@/stylesheets/global.scss";
 
-div.customer-container {
+.customer-container-sm {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 5%;
+  row-gap: 15px;
+  align-items: center;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+img {
+  filter: grayscale(100%);
+  transition: all 200ms ease-in-out;
+}
+
+img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.customer-container {
   aspect-ratio: 720/405;
   width: 100%;
   position: relative;
@@ -464,15 +525,6 @@ div.customer-container {
   & > * {
     position: absolute;
     display: block;
-  }
-}
-
-div.customer-container-sm {
-  img#jumbo {
-    aspect-ratio: 40/20;
-    height: 3.17%;
-    left: 3%;
-    top: 3%;
   }
 }
 </style>

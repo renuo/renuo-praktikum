@@ -1,7 +1,12 @@
 <template>
   <div>
     <CenterTitle id="internship" title="Dein künftiger Praktikumsort" />
-    <img class="img-fluid" alt="Workspace" src="@/assets/work_space.png" />
+    <Notice />
+    <img
+      class="img-fluid"
+      alt="Workspace"
+      src="@/assets/about_renuo/work_space.png"
+    />
     <Timeline
       class="timeline-center"
       :timeline-items="timelineItems"
@@ -9,18 +14,8 @@
       :dateLocale="dateLocale"
       :shortToYearFormat="shortToYearFormat"
     />
-    <p class="text-justify m-4">
-      Während deines Praktikums wirst du dich mit vielen verschiedenen
-      Technologien auseinandersetzen – unter anderem mit
-      <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>,
-      <a href="https://angular.io/" target="_blank">Angular</a> oder
-      <a href="https://reactjs.org/" target="_blank">React</a>. Du wirst für
-      Kunden einen Mehrwert generieren und durch die praktische Arbeit viel
-      Erfahrung sammeln, ganz im Sinne von Learning by Doing. Unsere
-      PraktikantInnen beteiligen sich weiter auch an Pair Programming, wodurch
-      sie schnell Einblick in unsere Projekte erhalten und sich an unsere
-      Methoden und Techniken gewöhnen.
-    </p>
+
+    <Checklist class="mt-4" :list="checklistItems" />
   </div>
 </template>
 <script>
@@ -34,30 +29,43 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 import CenterTitle from "@/components/CenterTitle";
 import Timeline from "@/components/Timeline";
+import Checklist from "@/components/Checklist";
+import Notice from "@/components/Notice";
 
-var current_year = new Date().getFullYear();
+let now = new Date();
+let current_year = now.getFullYear();
+if (now.getMonth() < 7) {
+  current_year = current_year - 1;
+}
 export default {
   name: "Internship",
   components: {
+    Checklist,
     Timeline,
-    CenterTitle
+    CenterTitle,
+    Notice
   },
   data: () => ({
     dateLocale: "de-DE",
-    colorDots: "#27d79d",
     shortToYearFormat: false,
+    checklistItems: [
+      "Softwareentwicklung mit Webtechnologien wie <a href='https://rubyonrails.org/' target='_blank'>Ruby on Rails</a>, <a href='https://angular.io/' target='_blank'>Angular</a>, <a href='https://reactjs.org/' target='_blank'>React</a>, HTML 5, Javascript und vielen mehr",
+      "Anforderungsanalyse, technische Betreuung und Beratung von Kunden",
+      "Datenbankdesign mit SQL (MySql, Postgres)",
+      "Mitwirkung im Projektmanagement mit Scrum"
+    ],
     timelineItems: [
       {
         from: new Date(current_year + 1, 7),
         title: "Einführung",
         description:
-          "Du wirst von den Mitarbeitenden von Renuo in das Praktikum eingearbeitet und folgst einem detailierten <a href='https://praktikumskonzept.renuo.ch' style='color: #27d79d' target='_blank'>Plan</a>."
+          "Du wirst von den Mitarbeitenden der Renuo ins Praktikum eingearbeitet und folgst einem detaillierten <a href='https://praktikumskonzept.renuo.ch' target='_blank'>Plan</a>."
       },
       {
         from: new Date(current_year + 1, 8),
         title: "Kundenprojekt",
         description:
-          "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für einen Kunden. Du wirst während dem Projekt vom Team unterstützt."
+          "Du arbeitest an einem eigenen Projekt und erzeugst Mehrwert für unsere Kundschaft. Du wirst während dem Projekt vom ganzen Team unterstützt."
       },
       {
         from: new Date(current_year + 1, 9),
@@ -72,20 +80,21 @@ export default {
         from: new Date(current_year + 2, 2),
         title: "IPA (5+)",
         description:
-          "Der Abschluss der schulischen Aufgaben. Bei Renuo unterstützen wir dich, eine gute Note zu erreichen."
+          "Der Abschluss der schulischen Aufgaben. Bei der Renuo unterstützen wir dich, eine gute Note zu erreichen."
       },
       {
         from: new Date(current_year + 2, 8),
         title: "Studium (Arbeiten)",
         description:
-          "Nach deinem Praktikum hast du die Möglichkeit, ein Studium zu beginnen oder weiter bei uns zu arbeiten."
+          "Nach deinem Praktikum hast du die Möglichkeit, ein Studium zu beginnen und/oder weiter bei uns zu arbeiten."
       }
     ]
   })
 };
 </script>
 <style lang="scss" scoped>
-@import "@/stylesheets/global.scss";
+@use "@/stylesheets/global.scss";
+@use "@/stylesheets/variables.scss";
 
 .centered-gallery-image {
   z-index: 1;
@@ -125,8 +134,8 @@ export default {
     a {
       font-weight: 200;
       padding-bottom: 0.25rem;
-      border-bottom: 1px solid #27d79d;
-      color: #27d79d;
+      border-bottom: 1px solid variables.$renuo-base-color;
+      color: variables.$renuo-base-color;
       transition: all 0.5s;
     }
   }
@@ -138,7 +147,7 @@ export default {
 
 .apply-now {
   font-size: 1.5vw;
-  background-color: #27d79d;
+  background-color: variables.$renuo-base-color;
   margin-bottom: 5rem;
   padding: 1rem;
   background-image: url("https://renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");

@@ -1,7 +1,10 @@
 <template>
   <div>
-    <CenterTitle id="values" title="Fokus und Stärken" />
-    <h4>Wir entwickeln individuelle Software auf höchstem Niveau.</h4>
+    <h2>Fokus und Stärken</h2>
+    <p class="text-center mx-4">
+      Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere
+      Werte:
+    </p>
     <div class="values-container">
       <ul>
         <li><p>Qualität und Präzision</p></li>
@@ -22,24 +25,26 @@ export default {
 
 <style lang="scss">
 @use "@/stylesheets/global.scss";
+@use "@/stylesheets/variables.scss";
+
 h4 {
   margin-bottom: 30px;
 }
 
 div.values-container ul li:nth-child(1) {
-  background-image: url("../assets/w1.svg");
+  background-image: url("../assets/about_renuo/w1.svg");
 }
 div.values-container ul li:nth-child(2) {
-  background-image: url("../assets/w2.svg");
+  background-image: url("../assets/about_renuo/w2.svg");
 }
 div.values-container ul li:nth-child(3) {
-  background-image: url("../assets/w3.svg");
+  background-image: url("../assets/about_renuo/w3.svg");
 }
 div.values-container ul li:nth-child(4) {
-  background-image: url("../assets/w4.svg");
+  background-image: url("../assets/about_renuo/w4.svg");
 }
 div.values-container ul li:nth-child(5) {
-  background-image: url("../assets/w5.svg");
+  background-image: url("../assets/about_renuo/w5.svg");
 }
 
 .values-container {
@@ -63,7 +68,7 @@ div.values-container ul li:nth-child(5) {
 
   p {
     text-align: left;
-    font-size: calc(1.325rem + 0.9vw);
+    font-size: calc(1.275rem + 0.3vw);
   }
 }
 </style>
