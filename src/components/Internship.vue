@@ -1,7 +1,12 @@
 <template>
   <div>
     <CenterTitle id="internship" title="Dein künftiger Praktikumsort" />
-    <img class="img-fluid" alt="Workspace" src="@/assets/work_space.png" />
+    <Notice />
+    <img
+      class="img-fluid"
+      alt="Workspace"
+      src="@/assets/about_renuo/work_space.png"
+    />
     <Timeline
       class="timeline-center"
       :timeline-items="timelineItems"
@@ -25,6 +30,7 @@ Vue.use(IconsPlugin);
 import CenterTitle from "@/components/CenterTitle";
 import Timeline from "@/components/Timeline";
 import Checklist from "@/components/Checklist";
+import Notice from "@/components/Notice";
 
 var current_year = new Date().getFullYear();
 export default {
@@ -32,7 +38,8 @@ export default {
   components: {
     Checklist,
     Timeline,
-    CenterTitle
+    CenterTitle,
+    Notice
   },
   data: () => ({
     dateLocale: "de-DE",
