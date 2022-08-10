@@ -5,7 +5,11 @@
     <a href="https://renuo.ch/team" class="btn btn-info" role="button"
       >Lerne das Team kennen</a
     >
-    <img class="img-fluid" alt="renuo team" src="@/assets/team.png" />
+    <img
+      class="img-fluid"
+      alt="renuo team"
+      src="@/assets/about_renuo/team.png"
+    />
   </div>
 </template>
 <script>

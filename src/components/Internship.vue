@@ -2,7 +2,11 @@
   <div>
     <CenterTitle id="internship" title="Dein künftiger Praktikumsort" />
     <Notice />
-    <img class="img-fluid" alt="Workspace" src="@/assets/work_space.png" />
+    <img
+      class="img-fluid"
+      alt="Workspace"
+      src="@/assets/about_renuo/work_space.png"
+    />
     <Timeline
       class="timeline-center"
       :timeline-items="timelineItems"

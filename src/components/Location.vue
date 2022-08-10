@@ -13,7 +13,7 @@
         aria-hidden="false"
         tabindex="0"
       ></iframe>
-      <img class="cat" src="@/assets/cat.png" />
+      <img class="cat" src="@/assets/about_renuo/cat.png" />
     </div>
     <blockquote class="text-center">
       "Aa zelle Bölle schelle, d’Chatz gaht uf Walliselle"
