@@ -2,8 +2,9 @@
   <div>
     <h2>Standort</h2>
     <p class="subtitle">Hier findest du uns:</p>
-    <div class="map img-fluid iframe-container">
+    <div class="map img-fluid iframe-container" ref="iframeContainer">
       <iframe
+        ref="iframe"
         style="height: 100%; width: 100%"
         class="img-fluid remove-border"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d219721.87235802517!2d8.508321660161725!3d47.35673387013604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b1b31f3d935%3A0x4ac272717f6e976!2sRenuo%20AG!5e0!3m2!1sen!2sch!4v1597845570738!5m2!1sen!2sch"
@@ -28,12 +29,27 @@
 
 <script>
 export default {
-  name: "Location"
+  name: "Location",
+  methods: {
+    replacemap: function() {
+      console.log(this.$refs.iframe);
+      let map = document.createElement("img");
+      map.src = "~@/assets/map-fallback.png";
+      this.$refs.iframeContainer.removeChild(this.$refs.iframe);
+    }
+  },
+  mounted() {
+    if (!window.navigator.onLine) {
+      this.replacemap();
+    }
+    window.addEventListener("offline", () => this.replacemap());
+  }
 };
 </script>
 
 <style scoped lang="scss">
 @use "@/stylesheets/global.scss";
+
 .cat {
   width: 20vw;
   position: absolute;
@@ -44,6 +60,10 @@ export default {
 
 .map {
   position: relative;
+  background-image: url("~@/assets/map-fallback.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .iframe-container {
