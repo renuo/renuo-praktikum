@@ -2,15 +2,14 @@
   <div>
     <h2>Unser Angebot</h2>
     <p class="subtitle">
-      Wir bieten dir nebst Coding-Erfahrung viele weitere Benefits. Lass sie dir
-      nicht entgehen.
+      Weil Erfahrung nicht alles ist:
     </p>
     <svg
       viewBox="0 0 541 508"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       overflow="visible"
-      class="mx-4"
+      class="mx-4 mb-4"
     >
       <g id="Circles">
         <g id="coffee">
@@ -226,6 +225,11 @@
       </g>
     </svg>
 
+    <p class="mx-4 text-center">
+      Wir bieten dir nebst Coding-Erfahrung viele weitere Benefits. Lass sie dir
+      nicht entgehen.
+    </p>
+
     <Checklist
       class="mt-4"
       :list="[
@@ -257,6 +261,7 @@ export default {
 
 <style scoped lang="scss">
 @use "@/stylesheets/global.scss";
+
 g#Circles {
   overflow: visible;
 }

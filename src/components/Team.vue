@@ -2,7 +2,11 @@
   <div>
     <h2 id="about-renuo">Das Team</h2>
     <p class="subtitle">Weil wir mehr als nur Mitarbeiter sind</p>
-    <a href="https://renuo.ch/team" class="btn btn-info" role="button"
+    <a
+      href="https://renuo.ch/team"
+      class="btn btn-info"
+      role="button"
+      target="_blank"
       >Lerne das Team kennen</a
     >
     <img

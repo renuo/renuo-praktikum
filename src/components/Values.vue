@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CenterTitle id="values" title="Fokus und Stärken" />
+    <h2>Fokus und Stärken</h2>
     <p class="text-center mx-4">
       Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere
       Werte:

@@ -75,14 +75,11 @@ export default {
 @use "@/stylesheets/variables.scss";
 
 .main-content {
-  max-width: 770px;
+  max-width: 900px;
   background: variables.$default-background-color;
   margin: 20px auto auto;
   border-radius: 10px;
-}
-
-.outer-container {
-  background: #f3f5f7;
+  box-shadow: 0 0 100px 0 rgb(0 0 0 / 10%);
 }
 
 .section-spacing {
