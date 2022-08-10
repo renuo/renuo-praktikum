@@ -2,7 +2,7 @@
   <div class="outer-container position-relative overflow-hidden">
     <Circles />
     <Navigation @selected="setActive" />
-    <div class="main-content" style="position: relative">
+    <div class="main-content position-relative">
       <Internship />
       <AboutRenuo />
 
