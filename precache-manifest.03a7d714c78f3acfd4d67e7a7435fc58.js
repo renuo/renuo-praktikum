@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab3e6353e650965620b4",
-    "url": "/css/app.6dc530c8.css"
+    "revision": "453f456adfe84da88468",
+    "url": "/css/app.cd3460e1.css"
   },
   {
     "revision": "c9f3f9dd66428af4afad",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a26d914b5d17dcd62313ef4cf879f57f",
     "url": "/img/cloudflare.a26d914b.png"
+  },
+  {
+    "revision": "54bb47a939a806ab5a77697ca8b5a7f5",
+    "url": "/img/cover.54bb47a9.png"
   },
   {
     "revision": "cccad92f14661352b0eb8ea93dc15281",
@@ -122,6 +126,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "db649768701a8607a717df35f493b1a2",
     "url": "/img/manor.db649768.png"
+  },
+  {
+    "revision": "d2de8f8bd88a1504310d190f1b374112",
+    "url": "/img/map-fallback.d2de8f8b.png"
   },
   {
     "revision": "d7b5c3752f852f2219b34c8e1c5df07c",
@@ -256,12 +264,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/zhdk.a64431c3.png"
   },
   {
-    "revision": "40e91e3ef8c3edc63d66e21541793ab5",
+    "revision": "31a22d863d29bf50707a1ae63108f9e5",
     "url": "/index.html"
   },
   {
-    "revision": "ab3e6353e650965620b4",
-    "url": "/js/app.51078ee9.js"
+    "revision": "453f456adfe84da88468",
+    "url": "/js/app.d764e686.js"
   },
   {
     "revision": "c9f3f9dd66428af4afad",
