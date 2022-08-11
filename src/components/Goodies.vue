@@ -13,7 +13,7 @@
     >
       <g id="Circles">
         <g id="coffee">
-          <circle id="coffee_circle" cx="466" cy="418" r="45" fill="#A593CD" />
+          <circle id="coffee_circle" cx="466" cy="418" r="45" fill="#2EBD69" />
           <text
             id="coffee_text"
             fill="white"
@@ -29,7 +29,7 @@
           </text>
         </g>
         <g id="week">
-          <circle id="week_circle" cx="481" cy="170" r="60" fill="#A593CD" />
+          <circle id="week_circle" cx="481" cy="170" r="60" fill="#2EBD69" />
           <text
             id="week_text"
             fill="white"
@@ -51,7 +51,7 @@
             cx="283"
             cy="119"
             r="75"
-            fill="#A593CD"
+            fill="#2EBD69"
           />
           <text
             id="technology_text"
@@ -68,7 +68,7 @@
           </text>
         </g>
         <g id="wallet">
-          <circle id="wallet_circle" cx="195" cy="52" r="45" fill="#A593CD" />
+          <circle id="wallet_circle" cx="195" cy="52" r="45" fill="#2EBD69" />
           <text
             id="wallet_text"
             fill="white"
@@ -84,7 +84,7 @@
           </text>
         </g>
         <g id="desk">
-          <circle id="desk_circle" cx="387" cy="60" r="60" fill="#A593CD" />
+          <circle id="desk_circle" cx="387" cy="60" r="60" fill="#2EBD69" />
           <text
             id="desk_text"
             fill="white"
@@ -99,7 +99,7 @@
           </text>
         </g>
         <g id="events">
-          <circle id="events_circle" cx="387" cy="226" r="60" fill="#A593CD" />
+          <circle id="events_circle" cx="387" cy="226" r="60" fill="#2EBD69" />
           <text
             id="events_text"
             fill="white"
@@ -120,7 +120,7 @@
             cx="372"
             cy="362"
             r="75"
-            fill="#A593CD"
+            fill="#2EBD69"
           />
           <text
             id="softdrinks_text"
@@ -142,7 +142,7 @@
             cx="75"
             cy="289"
             r="75"
-            fill="#A593CD"
+            fill="#2EBD69"
           />
           <text
             id="community_text"
@@ -163,7 +163,7 @@
             cx="203"
             cy="418"
             r="90"
-            fill="#A593CD"
+            fill="#2EBD69"
           />
           <text
             id="investment_text"
@@ -185,7 +185,7 @@
             cx="132"
             cy="154"
             r="60"
-            fill="#A593CD"
+            fill="#2EBD69"
           />
           <text
             id="worklife_text"
@@ -207,7 +207,7 @@
             cx="243"
             cy="257"
             r="100"
-            fill="#29D28B"
+            fill="#27d79d"
           />
           <text
             id="goodies_text"
