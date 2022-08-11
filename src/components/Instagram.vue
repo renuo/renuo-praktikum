@@ -27,10 +27,10 @@ export default {
   img {
     width: 100%;
     aspect-ratio: 1;
-    opacity: 40%;
+    opacity: 0.4;
     transition: all 0.75s ease-in-out;
     &:hover {
-      opacity: 100%;
+      opacity: 1;
       transition: all 50ms ease-in-out;
     }
   }
