@@ -4,7 +4,8 @@
     <Goodies class="mt-5" />
     <Tools class="mt-5" />
     <Location class="mt-5" />
-    <IMSButton class="mt-5" />
+
+    <IMSButton class="mt-5" id="ims" />
   </div>
 </template>
 

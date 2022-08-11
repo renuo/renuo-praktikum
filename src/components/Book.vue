@@ -100,7 +100,12 @@ ul {
   padding: 0;
   list-style: none;
   position: relative;
-  left: -30px;
+}
+
+@media screen and (min-width: 606px) {
+  ul {
+    left: -30px;
+  }
 }
 
 a {
@@ -132,9 +137,15 @@ a {
 .align {
   clear: both;
   margin: 90px auto 20px;
-  width: 100%;
+  width: 100vw;
   max-width: 1170px;
   text-align: center;
+}
+
+div.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .align > li {
