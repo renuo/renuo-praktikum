@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-div.instagram-grid {
+.instagram-grid {
   width: 90%;
   margin: 0 auto;
   aspect-ratio: 1;
