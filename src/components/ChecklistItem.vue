@@ -20,6 +20,7 @@ export default {
 
 li {
   list-style-type: none;
+  margin-bottom: 5px;
 
   &:before {
     font-family: "Font Awesome 5 Pro";

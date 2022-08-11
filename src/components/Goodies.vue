@@ -9,7 +9,6 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       overflow="visible"
-      class="p-4"
     >
       <g id="Circles">
         <g id="coffee">
@@ -269,7 +268,7 @@ g#Circles {
 
 svg {
   max-width: 650px;
-  margin: auto;
+  margin: 0 auto;
   display: block;
 }
 

@@ -47,12 +47,19 @@ div.values-container ul li:nth-child(5) {
   background-image: url("../assets/about_renuo/w5.svg");
 }
 
+@media screen and (max-width: 318px) {
+  p {
+    font-size: calc(0.5rem + 3vw) !important;
+  }
+}
+
 .values-container {
   text-align: center;
 
   & > ul {
     display: inline-block;
-    margin-left: 35px;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   li {

@@ -123,7 +123,7 @@
         id="zhdk"
       />
       <img
-        src="@/assets/customer_statements/topax.png"
+        src="@/assets/customer_statements/topax.svg"
         alt="topax-icon"
         id="topax"
       />
@@ -287,13 +287,18 @@ export default {
 <style scoped lang="scss">
 @use "@/stylesheets/global.scss";
 
+@media screen and (max-width: 440px) {
+  .customer-container-sm {
+    margin: 0px 20px !important;
+  }
+}
+
 .customer-container-sm {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   column-gap: 5%;
   row-gap: 15px;
   align-items: center;
-
   margin: auto;
   max-width: 400px;
 

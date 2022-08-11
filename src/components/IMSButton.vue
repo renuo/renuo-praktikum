@@ -27,6 +27,12 @@ export default {
 <style scoped lang="scss">
 @use "@/stylesheets/variables.scss";
 
+@media screen and (max-width: 510px) {
+  a {
+    margin: 0px 10px !important;
+  }
+}
+
 a {
   background-color: variables.$renuo-base-color;
   background-image: url("https://www.renuo.ch/images/header-gray-c059a3ec41d8322d3e3fa1656b578ccb.svg?vsn=d");
