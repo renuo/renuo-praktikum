@@ -7,7 +7,7 @@
             <h1>Unser Praktikumskonzept</h1>
             <span>Entwickelt von der Renuo</span>
             <p>
-              Ein von uns Entwickeltes, mehrmals bewährtes Praktikumskonzept,
+              Ein von uns entwickeltes und bewährtes Praktikumskonzept,
               welches dich während deinem Praktikum auf die IPA/IDPA
               vorbereitet.
             </p>
