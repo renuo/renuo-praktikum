@@ -50,7 +50,7 @@ export default {
     shortToYearFormat: false,
     checklistItems: [
       "Softwareentwicklung mit Webtechnologien wie <a href='https://rubyonrails.org/' target='_blank'>Ruby on Rails</a>, <a href='https://angular.io/' target='_blank'>Angular</a>, <a href='https://reactjs.org/' target='_blank'>React</a>, HTML 5, Javascript und vielen mehr",
-      "Anforderungsanalyse, technische Betreuung und Beratung von Kunden",
+      "Anforderungsanalyse, technische Betreuung und Beratung der Kundschaft",
       "Datenbankdesign mit SQL (MySql, Postgres)",
       "Mitwirkung im Projektmanagement mit Scrum"
     ],
