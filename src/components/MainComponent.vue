@@ -77,7 +77,7 @@ export default {
 @use "@/stylesheets/variables.scss";
 
 .main-content {
-  max-width: 900px;
+  max-width: variables.$mobile-width;
   background: variables.$default-background-color;
   margin: 20px auto 80px;
   border-radius: 20px;
@@ -85,6 +85,6 @@ export default {
 }
 
 .section-spacing {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 </style>

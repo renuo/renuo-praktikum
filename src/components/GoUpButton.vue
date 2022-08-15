@@ -31,9 +31,9 @@ i {
 
 a {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  height: 75px;
+  bottom: calc(5px + 4vw);
+  right: calc(5px + 4vw);
+  height: 44px;
   aspect-ratio: 1;
   display: none;
 }

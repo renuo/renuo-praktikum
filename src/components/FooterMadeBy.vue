@@ -2,7 +2,7 @@
   <div class="container-fluid footer-made-by">
     <div class="row">
       <div class="col-12 col-md-6">
-        © 2022 Renuo AG — hello@renuo.ch
+        © 2022 Renuo AG — <a href="mailto:hello@renuo.ch">hello@renuo.ch</a>
       </div>
       <div class="col-12 col-md-6">
         <a
