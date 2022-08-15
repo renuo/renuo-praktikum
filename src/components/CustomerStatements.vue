@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Kundenauszug</h2>
+    <CenterTitle id="cutomerstatements" title="Kundenauszug" />
     <p class="mx-4 text-center">
       Die Stärke der Renuo zeigt sich in der Vielseitigkeit ihrer Projekte,
       welche von den verschiedensten Branchen und Firmen beauftragt werden.
@@ -279,8 +279,10 @@
 </template>
 
 <script>
+import CenterTitle from "@/components/CenterTitle";
 export default {
-  name: "Customer_statements"
+  name: "Customer_statements",
+  components: { CenterTitle }
 };
 </script>
 

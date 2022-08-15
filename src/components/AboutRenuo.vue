@@ -2,6 +2,7 @@
   <div>
     <Team class="mt-5" />
     <Goodies class="mt-5" />
+    <Values class="mt-5" />
     <Tools class="mt-5" />
     <Location class="mt-5" />
 
@@ -17,6 +18,7 @@ import Goodies from "@/components/Goodies";
 
 import "timeline-vuejs/dist/timeline-vuejs.css";
 import IMSButton from "@/components/IMSButton";
+import Values from "@/components/Values";
 
 export default {
   name: "About Renuo",
@@ -26,6 +28,7 @@ export default {
     };
   },
   components: {
+    Values,
     IMSButton,
     Location,
     Team,
