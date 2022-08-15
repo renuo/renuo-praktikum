@@ -240,7 +240,7 @@
         'Selbstständige Arbeitsweise',
         'Flexible Arbeitszeiten',
         'Ein technisch sehr kompetentes, <b>kollegiales und junges Team</b>',
-        'Betreuung deine IPA <b>(5+ in den vergangenen Jahren)</b>',
+        'Betreuung deiner IPA <b>(5+ in den vergangenen Jahren)</b>',
         'Wir haben viele <b>IMS-Abgänger</b> unter uns und wissen genau, was auf dich zukommt!'
       ]"
     />
