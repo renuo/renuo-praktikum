@@ -6,7 +6,7 @@
       <Internship />
       <Book />
       <AboutRenuo />
-      <Projects class="section-spacing" />
+      <Projects style="margin-top: -80px" />
       <Challenges class="section-spacing" />
 
       <p class="text-center py-3">

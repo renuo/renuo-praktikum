@@ -9,7 +9,7 @@
       <ul>
         <li><p>Qualität und Präzision</p></li>
         <li><p>Fairness und Transparenz</p></li>
-        <li><p>Verwantwortung</p></li>
+        <li><p>Verantwortung</p></li>
         <li><p>Zusammen</p></li>
         <li><p>Neue Wege</p></li>
       </ul>
