@@ -2,8 +2,8 @@
   <div>
     <h2>Fokus und Stärken</h2>
     <p class="text-center mx-4">
-      Wir entwickeln individuelle Software auf höchstem Niveau. Dies sind unsere
-      Werte:
+      Wir entwickeln für Kunden individuelle Software auf höchstem Niveau. Das
+      sind unsere Werte:
     </p>
     <div class="values-container">
       <ul>
@@ -31,6 +31,10 @@ h4 {
   margin-bottom: 30px;
 }
 
+h2 {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 div.values-container ul li:nth-child(1) {
   background-image: url("../assets/about_renuo/w1.svg");
 }
@@ -45,6 +49,10 @@ div.values-container ul li:nth-child(4) {
 }
 div.values-container ul li:nth-child(5) {
   background-image: url("../assets/about_renuo/w5.svg");
+}
+
+div.values-container {
+  padding-top: 30px;
 }
 
 @media screen and (max-width: 318px) {

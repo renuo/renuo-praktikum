@@ -26,14 +26,12 @@
 <script>
 import CustomerStatements from "@/components/CustomerStatements";
 import CenterTitle from "@/components/CenterTitle";
-import Values from "@/components/Values";
 
 export default {
   name: "Projects",
   components: {
     CustomerStatements,
-    CenterTitle,
-    Values
+    CenterTitle
   }
 };
 </script>

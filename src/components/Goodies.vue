@@ -270,6 +270,8 @@ svg {
   max-width: 650px;
   margin: 0 auto;
   display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 @keyframes float {
